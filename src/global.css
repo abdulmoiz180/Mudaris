@@ -7,6 +7,10 @@
   font-family: "Inter", sans-serif;
   font-family: "DM Sans", sans-serif;
 }
+/* i added this so bg color will be black in all */
+body{
+background-color: black !important;
+}
 :root {
   --primary-clr: #020103;
   --secondary-clr: #4d3763;

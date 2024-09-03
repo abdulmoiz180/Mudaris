@@ -1,0 +1,168 @@
+.container {
+  background: linear-gradient(180deg, rgba(42, 25, 60, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),
+              radial-gradient(circle at center, #2a193c 50%, #000000 90%);
+  background-blend-mode: overlay;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 253px;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent !important;
+}
+
+.cardText {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: #9855ff;
+  border-radius: 40px;
+  padding: 0 !important;
+}
+
+.NewText {
+  font-size: 10px;
+  background-color: #9855ff;
+  color: black;
+  width: 34px;
+  height: 18px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContainerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainHeading {
+  background: linear-gradient(180deg, #ffffff 54.17%, #b372cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 82px;
+  font-weight: 500 !important;
+  line-height: 84px;
+  text-align: center;
+  width: 80%;
+}
+
+.mainDescription {
+  font-size: 22px !important;
+  color: white;
+  text-align: center;
+  width: 50%;
+  z-index: 2;
+}
+
+.ContainerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.LandingPageVideo {
+  width: 95%;
+  border: 10px solid black;
+  box-shadow: -1px -41px 55px 3px rgba(98, 42, 154, 0.69);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.BlurGlow {
+  width: 50%;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(50px);
+  margin-top: -200px;
+}
+
+button {
+  padding: 5px 15px;
+  width: fit-content;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    justify-content: flex-start;
+  }
+  .mainHeading {
+    font-size: 80px !important;
+  }
+  .mainDescription {
+    font-size: 30px !important;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  .mainHeading {
+    width: 90%;
+    font-size: 80px !important;
+  }
+  .mainDescription {
+    font-size: 28px !important;
+    width: 80%;
+  }
+  button {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .mainHeading {
+    width: 100%;
+  }
+  .mainDescription {
+    font-size: 25px !important;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    justify-content: flex-start;
+  }
+  .ContainerContent {
+    gap: 15px;
+  }
+  .mainHeading {
+    font-size: 40px !important;
+    width: 100%;
+  }
+  .mainDescription {
+    font-size: 18px !important;
+    width: 100%;
+  }
+  .LandingPageVideo {
+    width: 100%;
+  }
+}
+
+@media screen and (width: 344px) {
+  .mainHeading {
+    font-size: 39px !important;
+    width: 100%;
+  }
+}
