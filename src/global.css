@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+:root {
+  --primary-clr: #020103;
+  --secondary-clr: #4d3763;
+  --footer-bg: #060e1e; /* variable name could be changed in future...    */
+  --secondary-font-clr: rgba(255, 255, 255, 0.62);
+  --white-normal: #f3f3f3;
+}
+.white-normal {
+  color: var(--white-normal) !important;
+}
+.row {
+  display: flex;
+}
+.monts {
+  font-family: "Montserrat", sans-serif !important;
+}
+.inter {
+  font-family: "Inter", sans-serif !important;
+}
+.dm-sans {
+  font-family: "DM Sans", sans-serif !important;
+}
+.footer-bg {
+  background-color: var(--footer-bg);
+}
+.primary-bg {
+  background-color: var(--primary-clr);
+}
+.flex-center {
+  align-items: center !important;
+}
+.secondary-font-clr {
+  color: var(--secondary-font-clr) !important;
+}
+.title {
+  font-size: 64px;
+  /* font size is not decided yet... */
+  /* do not use it... */
+}
+.description {
+  font-size: 22px;
+  /* font size is not decided yet... */
+  /* do not use it... */
+}
+.primaryFont {
+  font-family: var(--primaryFont) !important;
+}
+.secondaryFont {
+  font-family: var(--secondaryFont) !important;
+}
+.primaryColor {
+  color: var(--primary-clr);
+}
+.secondaryColor {
+  color: var(--secondary-clr);
+}
+.bg-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.flex {
+  display: flex;
+}
+.gap-5 {
+  gap: 5px;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.testing {
+  border: 1px solid black;
+}
+.clr-white {
+  color: #fff;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+.center {
+  text-align: center;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.width-90 {
+  width: 85%; /* kindly check this block in resonsiveness and code accordingly */
+  margin: auto;
+}
+.fs-48 {
+  font-size: 48px !important;
+}
+
+/* responsive code */
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 44px;
+  }
+  .h2 {
+    font-size: 44px !important;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .width-90 {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .width-90 {
+    width: 100%; /* kindly check this block in resonsiveness and code accordingly */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .width-90 {
+    width: 90%; /* kindly check this block in resonsiveness and code accordingly */
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .row {
+    flex-direction: row;
+  }
+  .width-90 {
+    width: 85%; /* kindly check this block in resonsiveness and code accordingly */
+  }
+}
+/* @media only screen and (min-width: 600px) {
+    .title {
+      font-size: 44px;
+    }
+  
+    .h2 {
+      font-size: 44px !important;
+    }
+    .description {
+      font-size: 16px;
+    }
+    p {
+      width: 100% !important;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+  .description{
+    font-size: 18px;
+  }
+  }
+  @media only screen and (min-width: 992px) {
+    .title {
+      font-size: 44px;
+    }
+    .h2 {
+      font-size: 32px !important;
+    }
+    .description {
+      font-size: 20px;
+    }
+  } */
