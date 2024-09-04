@@ -3,11 +3,14 @@ import "./home.css"
 import E_Learn from '../../components/E_Learn'
 import Footer from '../../components/Footer'
 import Hero from '../../components/Hero/Index'
+import FAQ from '../../components/Accordion'
+
 const Home = () => {
   return (
-    <section>
+    <section className='home-page primary-bg '>
       <Hero/>
       <E_Learn />
+      <FAQ />
       <Footer />
     </section>
   )
