@@ -13,6 +13,14 @@
   --footer-bg: #060e1e; /* variable name could be changed in future...    */
   --secondary-font-clr: rgba(255, 255, 255, 0.62);
   --white-normal: #f3f3f3;
+  --purple: #9855ff;
+  --gray: #e6e6e6;
+}
+.gray {
+  color: var(--gray) !important;
+}
+.purple {
+  color: var(--purple) !important;
 }
 .white-normal {
   color: var(--white-normal) !important;
@@ -41,32 +49,9 @@
 .secondary-font-clr {
   color: var(--secondary-font-clr) !important;
 }
-.title {
-  font-size: 64px;
-  /* font size is not decided yet... */
-  /* do not use it... */
+.transparent {
+  background-color: transparent !important;
 }
-.description {
-  font-size: 22px;
-  /* font size is not decided yet... */
-  /* do not use it... */
-}
-.primaryFont {
-  font-family: var(--primaryFont) !important;
-}
-.secondaryFont {
-  font-family: var(--secondaryFont) !important;
-}
-.primaryColor {
-  color: var(--primary-clr);
-}
-.secondaryColor {
-  color: var(--secondary-clr);
-}
-.bg-primary {
-  background-color: var(--bg-primary) !important;
-}
-
 .mt-20 {
   margin-top: 20px;
 }

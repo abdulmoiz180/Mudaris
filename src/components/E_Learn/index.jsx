@@ -18,11 +18,11 @@ const E_Learn = () => {
         <Box component="div" className="why_card_wrapper flex border-gradient">
           {whyCard[0].img.map((image, index) => (
             <>
-              <Box key={index} component="div" className="why_card column">
+              <Box key={index} component="div" className=" why_card column">
                 <Box component="div" className="why-img-wrapper">
                   <img src={image} alt={`icon-${index}`} />
                 </Box>
-                <Typography variant="body1" className="inter why-card-content">
+                <Typography variant="body1" className="inter  why-card-content">
                   {whyCard[0].content[index]}
                 </Typography>
               </Box>

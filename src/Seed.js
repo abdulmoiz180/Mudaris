@@ -3,10 +3,8 @@ import Instagram from "./assets/icons/Instagram.svg";
 import LinkedIn from "./assets/icons/LinkedIn.svg";
 import Youtube from "./assets/icons/Lozenge.svg";
 import Twitter from "./assets/icons/Twitter.svg";
- 
 
-//talha's seed imports
-import ClientPic from "./assets/Images/Client.png";
+import Client from "./assets/Images/Client.png";
 import bestsellerLabel from "./assets/Icons/bestsellerLabel.png";
 import certificateIcon from "./assets/Icons/certificateIcon.png";
 import clockIcon from "./assets/Icons/clockIcon.png";
@@ -23,58 +21,6 @@ import videoIcon from "./assets/Icons/videoIcon.png";
 import brightStarfilled from "./assets/Icons/brightStarfilled.png";
 import supermemo from "./assets/Icons/supermemo.png";
 import globalicon from "./assets/Icons/globalicon.png";
-
-
-
-export const footerContent = [
-  {
-    title: "E-Learn",
-    links: [
-      "About",
-      "Teach on E-Learn",
-      "Roadmap",
-      "Careers",
-      "News",
-      "Our Team",
-      "Become a Partner",
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      "Portfolio",
-      "developers",
-      "Testimonials",
-      "Blogs",
-      "Affiliate",
-      "Our Scholarships",
-    ],
-  },
-  {
-    title: "More",
-    links: [
-      "FAQ",
-      "Help Centers",
-      "Terms",
-      "Privacy",
-      "Code of Conduct",
-      "Cookie Setting",
-    ],
-  },
-];
-export let copyWrite = [
-  {
-    // icons: [Instagram, LinkedIn, Twitter, FaceBook, Youtube],
-  },
-  {
-    text: "© 2022 E-Learn, Inc. All rights reserved.",
-  },
-];
-
-
-
-// talha's seed
-
 export let Introduction = [
   {
     title: "Watch Our Introduction Video",
@@ -138,30 +84,6 @@ export let tabOne = [
     discount: "30%",
     tag: "New",
   },
-
-  {
-    coursetitle: "Mastering Effective Communication Skills",
-    reviews: "(244 reviews)",
-    rating: "4.8",
-    originalprice: "",
-    discountedprice: "Rp150,000",
-    videos: "24",
-    duration: "8.5h",
-    discount: "30%",
-    tag: "BestSeller",
-  },
-
-  {
-    coursetitle: "Mastering Effective Communication Skills",
-    reviews: "(244 reviews)",
-    rating: "4.8",
-    originalprice: "",
-    discountedprice: "Rp150,000",
-    videos: "24",
-    duration: "8.5h",
-    discount: "30%",
-    tag: "BestSeller",
-  },
 ];
 
 export let tabOneicons = [
@@ -203,7 +125,7 @@ export let clientdata = [
       "This platform has revolutionized our training programs. The results speak for themselves!",
     clientname: "Talia Taylor",
     clientrole: "John Doe, CEO of @ Quantum",
-    img: ClientPic,
+    img: Client,
   },
 ];
 
@@ -237,65 +159,6 @@ export let studentReviews = [
 export let studentReviewsicon = [
   {
     brightstar: brightStarfilled,
-  },
-];
-
-export let footercolumn1 = [
-  {
-    title: "E-Learn",
-    description:
-      "E-Learn is a global online learning platform that offers anyone, anywhere access to online courses.",
-  },
-];
-
-export let footercolumn2 = [
-  {
-    title: "E-Learn",
-  },
-  {
-    li1: "About",
-    li2: "Teach on E-Learn",
-    li3: "Roadmap",
-    li4: "Careers",
-    li5: "News",
-    li6: "Our Team",
-    li7: "Become a Partner",
-  },
-];
-
-export let footercolumn3 = [
-  {
-    title: "Community",
-  },
-  {
-    li1: "Portfolio",
-    li2: "Developers",
-    li3: "Testimonials",
-    li4: "Blogs",
-    li5: "Affiliate",
-    li6: "Our Scholarships",
-  },
-];
-
-export let footercolumn4 = [
-  {
-    title: "More",
-  },
-  {
-    li1: "FAQ",
-    li2: "Help Centers",
-    li3: "Terms",
-    li4: "Privacy",
-    li5: "Code of Conduct",
-    li6: "Our Scholarships",
-    li7: "Cookie Setting",
-  },
-];
-
-export let footerIcons = [
-  {
-    elearn: supermemo,
-    global: globalicon,
   },
 ];
 
@@ -350,3 +213,122 @@ export let GetStarted = [
   },
 ];
 
+
+export const faqArray = [
+  {
+    question: "Can I download course materials?",
+    answer:
+      "Yes, downloadable materials are available for most courses and can be accessed in the course dashboard.",
+  },
+  {
+    question: "How do I reset my password?",
+    answer:
+      "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions sent to your email.",
+  },
+  {
+    question: "Is there a mobile app available?",
+    answer:
+      "Yes, we have a mobile app available for both Android and iOS platforms. You can download it from the respective app stores.",
+  },
+  {
+    question: "How do I get a course certificate?",
+    answer:
+      "To receive a course certificate, you must complete all required assignments and pass the final exam. The certificate will be available for download in your profile.",
+  },
+  {
+    question: "What if I need help with the course content?",
+    answer:
+      "If you need help with the course content, you can reach out to our support team or join our community forums to get assistance from instructors and peers.",
+  },
+  {
+    question: "Can I upgrade my subscription plan?",
+    answer:
+      "Yes, you can upgrade your subscription plan at any time from your account settings. The new plan will be effective immediately.",
+  },
+  {
+    question: "Are there any discounts available?",
+    answer:
+      "We offer various discounts throughout the year. Keep an eye on our website and newsletters for the latest promotions and discounts.",
+  },
+  {
+    question: "How do I cancel my subscription?",
+    answer:
+      "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
+  },
+];
+// export let faqContent = [
+//   {
+//     title: "Frequently Asked Questions",
+//     description:
+//       "Still you have any questions? Contact our Team via hello@squareup.com",
+//   },
+//   {
+//     questions: [
+//       "Can I download course materials?",
+//       "How do I reset my password?",
+//       "Is there a mobile app available?",
+//       "How do I get a course certificate?",
+//       "What if I need help with the course content?",
+//       "Can I upgrade my subscription plan?",
+//       "Are there any discounts available?",
+//       "How do I cancel my subscription?",
+//     ],
+//   },
+//   {
+//     answers: [
+//       "Yes, downloadable materials are available for most courses and can be accessed in the course dashboard.",
+//       "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions sent to your email.",
+//       "Yes, we have a mobile app available for both Android and iOS platforms. You can download it from the respective app stores.",
+//       "To receive a course certificate, you must complete all required assignments and pass the final exam. The certificate will be available for download in your profile.",
+//       "If you need help with the course content, you can reach out to our support team or join our community forums to get assistance from instructors and peers.",
+//       "Yes, you can upgrade your subscription plan at any time from your account settings. The new plan will be effective immediately.",
+//       "We offer various discounts throughout the year. Keep an eye on our website and newsletters for the latest promotions and discounts.",
+//       "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
+//     ],
+//   },
+// ];
+
+export const footerContent = [
+  {
+    title: "E-Learn",
+    links: [
+      "About",
+      "Teach on E-Learn",
+      "Roadmap",
+      "Careers",
+      "News",
+      "Our Team",
+      "Become a Partner",
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      "Portfolio",
+      "developers",
+      "Testimonials",
+      "Blogs",
+      "Affiliate",
+      "Our Scholarships",
+    ],
+  },
+  {
+    title: "More",
+    links: [
+      "FAQ",
+      "Help Centers",
+      "Terms",
+      "Privacy",
+      "Code of Conduct",
+      "Cookie Setting",
+    ],
+  },
+];
+export let copyWrite = [
+  {
+    // icons: [Instagram, LinkedIn, Twitter, FaceBook, Youtube],
+  },
+  {
+    text: "© 2022 E-Learn, Inc. All rights reserved.",
+  },
+];
