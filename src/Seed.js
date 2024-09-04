@@ -19,6 +19,7 @@ import imgTimemanagement from "./assets/Icons/imgTimemanagement.png";
 import newLabel from "./assets/Icons/newLabel.png";
 import videoIcon from "./assets/Icons/videoIcon.png";
 import brightStarfilled from "./assets/Icons/brightStarfilled.png";
+import starReview from './assets/Icons/Star Review.png';
 import supermemo from "./assets/Icons/supermemo.png";
 import globalicon from "./assets/Icons/globalicon.png";
 export let Introduction = [
@@ -129,7 +130,7 @@ export let clientdata = [
   },
 ];
 
-export let studentReviews = [
+export let StudentReviews = [
   {
     title: "Hear from Our Students",
   },
@@ -139,35 +140,39 @@ export let studentReviews = [
       "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
     studentname: "Diamond Forest",
     coursetaken: "NLP - Natural Language Processing w/ Python",
+     brightstar: starReview
   },
-
+  {
+    review:
+      "Easy to understand and very straight forward",
+    studentname: " Robert Fox",
+     brightstar: starReview
+  },
+  
   {
     review:
       "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
     studentname: "Devon Lane",
     coursetaken: "Learn Figma Essentials for UI UX Design(2022)",
+     brightstar: starReview
   },
-
   {
     review:
       "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
     studentname: " Kathryn Murphy",
     coursetaken: "UI Design: Make a Beautiful Website",
+     brightstar: starReview
   },
-];
-
-export let studentReviewsicon = [
   {
-    brightstar: brightStarfilled,
+    review:
+      "Very nice courses on what some covered. I",
   },
 ];
-
 export let paymentPlans = [
   {
     title: "Choose Your Plan",
     description: "Simple, flexible, and affordable pricing for everyone.",
   },
-
   {
     plan1: "Monthly Plan",
     price: "$29/mo",
@@ -176,7 +181,6 @@ export let paymentPlans = [
     perk3: "Basic customer support",
     perk4: "Access to community forums",
   },
-
   {
     plan2: "2 Year Plan",
     price: "$79/mo",
@@ -187,7 +191,6 @@ export let paymentPlans = [
     perk5: "Content suggestions",
     perk6: "Link optimization",
   },
-
   {
     plan3: "Year Plan",
     price: "$149/mo",
@@ -197,12 +200,10 @@ export let paymentPlans = [
     perk4: "Exclusive webinars and events",
     perk5: "Everything in the Monthly Plan",
   },
-
   {
     subscribe: "Subscribe Now",
   },
 ];
-
 export let GetStarted = [
   {
     title: "Get Started with a Free Trial",
@@ -212,7 +213,7 @@ export let GetStarted = [
     freetrial: "7-days free trial",
   },
 ];
-
+export default paymentPlans
 
 export const faqArray = [
   {
