@@ -7,7 +7,7 @@ import FAQ from '../../components/Accordion'
 
 const Home = () => {
   return (
-    <section className='home-page primary-bg '>
+    <section className='home-page column primary-bg '>
       <Hero/>
       <E_Learn />
       <FAQ />

@@ -93,6 +93,7 @@
     height: 250px;
     justify-content: center;
     padding: 30px !important;
+    align-items: center; /*on request of wahaj zafar*/
   }
   .why-cards-container {
     margin: 10px !important;
@@ -117,6 +118,7 @@
     height: 250px;
     justify-content: center;
     padding: 30px !important;
+    align-items: center; /*on request of wahaj zafar*/
   }
   .why-cards-container {
     margin: 20px !important;
@@ -146,6 +148,7 @@
     width: 380px;
     height: 250px;
     gap: 30px;
+    align-items: start;
   }
   .why_card_wrapper {
     gap: 20px 40px;
