@@ -7,6 +7,10 @@
   font-family: "Inter", sans-serif;
   font-family: "DM Sans", sans-serif;
 }
+/* i am adding bg color black so we dont have to do at any component */
+body{
+  background-color: black !important;
+}
 :root {
   --primary-clr: #020103;
   --secondary-clr: #4d3763;
