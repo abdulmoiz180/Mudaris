@@ -1,11 +1,10 @@
-import React from "react";
-import "./home.css";
-import E_Learn from "../../components/E_Learn";
-import Footer from "../../components/Footer";
-import Hero from "../../components/Hero/Index";
-import FAQ from "../../components/Accordion";
-import Courses from "../../components/Courses";
-import Cards from "../../components/Courses/Card";
+import "./home.css"
+import E_Learn from '../../components/E_Learn'
+import Footer from '../../components/Footer'
+import Hero from '../../components/Hero/Index'
+import FAQ from '../../components/Accordion'
+import PriceCards from '../../components/PriceCards/Index'
+
 
 const Home = () => {
   return (
@@ -13,6 +12,7 @@ const Home = () => {
       <Hero/>
       <Courses />
       <E_Learn />
+      <PriceCards/>
       <FAQ />
       <Footer />
     </section>

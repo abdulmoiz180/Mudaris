@@ -1,13 +1,4 @@
-import FaceBook from "./assets/icons/FaceBook.svg";
-import Instagram from "./assets/icons/Instagram.svg";
-import LinkedIn from "./assets/icons/LinkedIn.svg";
-import Youtube from "./assets/icons/Lozenge.svg";
-import Twitter from "./assets/icons/Twitter.svg";
 
-import Client from "./assets/Images/Client.png";
-import bestsellerLabel from "./assets/Icons/bestsellerLabel.png";
-import certificateIcon from "./assets/Icons/certificateIcon.png";
-import clockIcon from "./assets/Icons/clockIcon.png";
 import dimStarFilled from "./assets/Icons/dimStarFilled.png";
 import dimStarHalffilled from "./assets/Icons/dimStarHalffilled.png";
 import dimStarOutlined from "./assets/Icons/dimStarOutlined.png";
@@ -19,6 +10,7 @@ import imgTimemanagement from "./assets/Icons/imgTimemanagement.png";
 import newLabel from "./assets/Icons/newLabel.png";
 import videoIcon from "./assets/Icons/videoIcon.png";
 import brightStarfilled from "./assets/Icons/brightStarfilled.png";
+import starReview from './assets/Icons/Star Review.png';
 import supermemo from "./assets/Icons/supermemo.png";
 import globalicon from "./assets/Icons/globalicon.png";
 export let Introduction = [
@@ -55,7 +47,7 @@ export let clientdata = [
   },
 ];
 
-export let studentReviews = [
+export let StudentReviews = [
   {
     title: "Hear from Our Students",
   },
@@ -65,35 +57,39 @@ export let studentReviews = [
       "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
     studentname: "Diamond Forest",
     coursetaken: "NLP - Natural Language Processing w/ Python",
+     brightstar: starReview
   },
-
+  {
+    review:
+      "Easy to understand and very straight forward",
+    studentname: " Robert Fox",
+     brightstar: starReview
+  },
+  
   {
     review:
       "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
     studentname: "Devon Lane",
     coursetaken: "Learn Figma Essentials for UI UX Design(2022)",
+     brightstar: starReview
   },
-
   {
     review:
       "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
     studentname: " Kathryn Murphy",
     coursetaken: "UI Design: Make a Beautiful Website",
+     brightstar: starReview
   },
-];
-
-export let studentReviewsicon = [
   {
-    brightstar: brightStarfilled,
+    review:
+      "Very nice courses on what some covered. I",
   },
 ];
-
 export let paymentPlans = [
   {
     title: "Choose Your Plan",
     description: "Simple, flexible, and affordable pricing for everyone.",
   },
-
   {
     plan1: "Monthly Plan",
     price: "$29/mo",
@@ -102,7 +98,6 @@ export let paymentPlans = [
     perk3: "Basic customer support",
     perk4: "Access to community forums",
   },
-
   {
     plan2: "2 Year Plan",
     price: "$79/mo",
@@ -113,7 +108,6 @@ export let paymentPlans = [
     perk5: "Content suggestions",
     perk6: "Link optimization",
   },
-
   {
     plan3: "Year Plan",
     price: "$149/mo",
@@ -123,12 +117,10 @@ export let paymentPlans = [
     perk4: "Exclusive webinars and events",
     perk5: "Everything in the Monthly Plan",
   },
-
   {
     subscribe: "Subscribe Now",
   },
 ];
-
 export let GetStarted = [
   {
     title: "Get Started with a Free Trial",
@@ -138,6 +130,7 @@ export let GetStarted = [
     freetrial: "7-days free trial",
   },
 ];
+
 
 export const faqArray = [
   {
@@ -181,37 +174,6 @@ export const faqArray = [
       "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
   },
 ];
-// export let faqContent = [
-//   {
-//     title: "Frequently Asked Questions",
-//     description:
-//       "Still you have any questions? Contact our Team via hello@squareup.com",
-//   },
-//   {
-//     questions: [
-//       "Can I download course materials?",
-//       "How do I reset my password?",
-//       "Is there a mobile app available?",
-//       "How do I get a course certificate?",
-//       "What if I need help with the course content?",
-//       "Can I upgrade my subscription plan?",
-//       "Are there any discounts available?",
-//       "How do I cancel my subscription?",
-//     ],
-//   },
-//   {
-//     answers: [
-//       "Yes, downloadable materials are available for most courses and can be accessed in the course dashboard.",
-//       "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions sent to your email.",
-//       "Yes, we have a mobile app available for both Android and iOS platforms. You can download it from the respective app stores.",
-//       "To receive a course certificate, you must complete all required assignments and pass the final exam. The certificate will be available for download in your profile.",
-//       "If you need help with the course content, you can reach out to our support team or join our community forums to get assistance from instructors and peers.",
-//       "Yes, you can upgrade your subscription plan at any time from your account settings. The new plan will be effective immediately.",
-//       "We offer various discounts throughout the year. Keep an eye on our website and newsletters for the latest promotions and discounts.",
-//       "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
-//     ],
-//   },
-// ];
 
 export const footerContent = [
   {
