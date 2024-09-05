@@ -19,16 +19,15 @@ export const TabComponent = ({ tabs }) => {
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setItems(1);
-      } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
+      } else if (window.innerWidth >= 600 && window.innerWidth <= 769) {
+        setItems(1);
+      } else if (window.innerWidth >= 769 && window.innerWidth <= 992) {
         setItems(2);
-      }
-      else if (window.innerWidth >= 992 && window.innerWidth <= 1140) {
+      } else if (window.innerWidth >= 992 && window.innerWidth <= 1140) {
         setItems(2);
-      }
-      else if (window.innerWidth >= 1140 && window.innerWidth <= 1300) {
+      } else if (window.innerWidth >= 1140 && window.innerWidth <= 1300) {
         setItems(3);
-      }
-      else if (window.innerWidth >= 1350) {
+      } else if (window.innerWidth >= 1350) {
         setItems(4);
       }
     };
@@ -108,7 +107,7 @@ export const TabComponent = ({ tabs }) => {
     autoplay: false,
     dots: true,
     loop: true,
-    dotsEach: true
+    dotsEach: true,
   };
   return (
     <div className="tab-container">
