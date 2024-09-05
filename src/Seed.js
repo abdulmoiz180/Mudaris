@@ -19,7 +19,7 @@ import imgTimemanagement from "./assets/Icons/imgTimemanagement.png";
 import newLabel from "./assets/Icons/newLabel.png";
 import videoIcon from "./assets/Icons/videoIcon.png";
 import brightStarfilled from "./assets/Icons/brightStarfilled.png";
-import starReview from './assets/Icons/Star Review.png';
+import starReview from "./assets/Icons/Star Review.png";
 import supermemo from "./assets/Icons/supermemo.png";
 import globalicon from "./assets/Icons/globalicon.png";
 export let Introduction = [
@@ -130,7 +130,7 @@ export let clientdata = [
   },
 ];
 
-export let StudentReviews = [
+const StudentReviews = [
   {
     title: "Hear from Our Students",
   },
@@ -140,34 +140,56 @@ export let StudentReviews = [
       "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
     studentname: "Diamond Forest",
     coursetaken: "NLP - Natural Language Processing w/ Python",
-     brightstar: starReview
+    brightstar: starReview,
   },
   {
-    review:
-      "Easy to understand and very straight forward",
+    review: "Easy to understand and very straight forward",
     studentname: " Robert Fox",
-     brightstar: starReview
+    brightstar: starReview,
   },
-  
   {
     review:
       "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
     studentname: "Devon Lane",
     coursetaken: "Learn Figma Essentials for UI UX Design(2022)",
-     brightstar: starReview
+    brightstar: starReview,
   },
   {
     review:
       "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
     studentname: " Kathryn Murphy",
     coursetaken: "UI Design: Make a Beautiful Website",
-     brightstar: starReview
+    brightstar: starReview,
+  },
+  {
+    review: "Very nice courses on what some covered",
+    studentname: "Jazib Faisal",
+    coursetaken: "SQL: Database Basics",
+    brightstar: starReview,
   },
   {
     review:
-      "Very nice courses on what some covered. I",
+      "This course gave me a strong understanding of data structures and algorithms. The instructor’s examples were clear, and the real-world applications made it easier to grasp difficult concepts.",
+    studentname: "Leslie Alexander",
+    coursetaken: "Data Structures and Algorithms in Python",
+    brightstar: starReview,
+  },
+  {
+    review:
+      "The course was very practical and hands-on, which I loved. I was able to build a full-stack web application from scratch. The step-by-step guidance made complex topics approachable.",
+    studentname: "Eleanor Pena",
+    coursetaken: "Full Stack Web Development with JavaScript",
+    brightstar: starReview,
+  },
+  {
+    review:
+      "A fantastic course for anyone interested in deep learning! The lessons are structured so well that even complex topics are easy to follow. The best part is the projects that provide real-world experience.",
+    studentname: "Cameron Williamson",
+    coursetaken: "Deep Learning A-Z: Hands-On Artificial Neural Networks",
+    brightstar: starReview,
   },
 ];
+export default StudentReviews;
 export let paymentPlans = [
   {
     title: "Choose Your Plan",
@@ -213,7 +235,6 @@ export let GetStarted = [
     freetrial: "7-days free trial",
   },
 ];
-export default paymentPlans
 
 export const faqArray = [
   {

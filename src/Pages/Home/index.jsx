@@ -5,15 +5,17 @@ import Footer from '../../components/Footer'
 import Hero from '../../components/Hero/Index'
 import FAQ from '../../components/Accordion'
 import PriceCards from '../../components/PriceCards/Index'
+import Review from '../../components/Review/Index'
 
 const Home = () => {
   return (
     <section className='home-page column primary-bg '>
-      <Hero/>
+      {/* <Hero/>
       <PriceCards/>
-      <E_Learn />
-      <FAQ />
-      <Footer />
+      <E_Learn /> */}
+      {/* <FAQ /> */}
+      {/* <Footer /> */}
+      <Review/>
     </section>
   )
 }
