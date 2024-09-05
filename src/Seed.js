@@ -28,81 +28,7 @@ export let Introduction = [
   },
 ];
 
-export let Courses = [
-  {
-    title: "Discover Top Course",
-  },
-];
 
-export let tabOne = [
-  {
-    title: "All Categories",
-  },
-
-  {
-    coursetitle: "Mastering Effective Communication Skills",
-    reviews: "(244 reviews)",
-    rating: "4.8",
-    originalprice: "Rp320,000",
-    discountedprice: "Rp150,000",
-    videos: "24",
-    duration: "8.5h",
-    discount: "30%",
-    tag: "BestSeller",
-  },
-  {
-    coursetitle: "Becoming a Power Negotiator: Win-Win Strategies",
-    reviews: "(425 reviews)",
-    rating: "4.2",
-    originalprice: "Rp250,000",
-    discountedprice: "Rp100,000",
-    videos: "6",
-    duration: "4h",
-    discount: "30%",
-  },
-
-  {
-    coursetitle: "Time Management Techniques for Maximum Productivity",
-    reviews: "(227 reviews)",
-    rating: "4.7",
-    originalprice: "550,000",
-    discountedprice: "Rp250,000",
-    videos: "8",
-    duration: "1.5h",
-    discount: "30%",
-    tag: "New",
-  },
-
-  {
-    coursetitle: "Sentiment Analysis with Deep Learning using BERT",
-    reviews: "(25 reviews)",
-    rating: "4.9",
-    originalprice: "400,000",
-    discountedprice: "Rp120,000",
-    videos: "32",
-    duration: "12.5h",
-    discount: "30%",
-    tag: "New",
-  },
-];
-
-export let tabOneicons = [
-  {
-    bestseller: bestsellerLabel,
-    certificate: certificateIcon,
-    clock: clockIcon,
-    dimstar: dimStarFilled,
-    dimstarhalf: dimStarHalffilled,
-    dimstarout: dimStarOutlined,
-    heart: heartIcon,
-    becoming: imgBecoming,
-    master: imgMaster,
-    sentimentanalysis: imgSentimentAnalysis,
-    timemanagement: imgTimemanagement,
-    new: newLabel,
-    video: videoIcon,
-  },
-];
 
 export let othertabs = [
   "Development",
@@ -212,7 +138,6 @@ export let GetStarted = [
     freetrial: "7-days free trial",
   },
 ];
-
 
 export const faqArray = [
   {
