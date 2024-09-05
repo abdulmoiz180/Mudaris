@@ -1,3 +1,8 @@
-.home-page{
-    gap: 150px;
+.home-page {
+  gap: 150px;
+}
+@media only screen and (max-width: 600px) {
+  .home-page {
+    gap: 50px;
+  }
 }

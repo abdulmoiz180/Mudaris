@@ -19,13 +19,18 @@ export const TabComponent = ({ tabs }) => {
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setItems(1);
-      } else if (window.innerWidth >= 768 && window.innerWidth <= 1200) {
+      } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
+        setItems(2);
+      }
+      else if (window.innerWidth >= 992 && window.innerWidth <= 1140) {
+        setItems(2);
+      }
+      else if (window.innerWidth >= 1140 && window.innerWidth <= 1300) {
         setItems(3);
       }
-      //else if (window.innerWidth >= 1200) {
-      //   // const Item = imgs.length / 2;
-      //   setItems(Item);
-      // }
+      else if (window.innerWidth >= 1350) {
+        setItems(4);
+      }
     };
     // Add event listener for window resize
     window.addEventListener("resize", handleResize);
@@ -100,7 +105,7 @@ export const TabComponent = ({ tabs }) => {
     items: items,
     nav: true,
     rewind: true,
-    autoplay: true,
+    autoplay: false,
     dots: true,
     loop: true,
     dotsEach: true

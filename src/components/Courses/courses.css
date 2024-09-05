@@ -3,10 +3,14 @@
   border-bottom: 1px solid #494a4b;
   width: 100%;
 }
+.courses-section {
+  width: 90%;
+  margin: auto;
+}
 .course-content {
   transition: opacity 0.3s ease-in-out;
 }
-.courses-box{
+.courses-box {
   margin-top: 30px;
 }
 .fade-in {
@@ -66,5 +70,103 @@
 .owl-theme .owl-dots .owl-dot:hover span {
   background-color: #8c45ff !important;
   opacity: 1 !important;
+}
 
+@media only screen and (max-width: 600px) {
+  .courses-section .fs-48 {
+    text-align: center;
+    font-size: 34px !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .MuiTabs-indicator {
+    background-color: transparent !important;
+  }
+  .course-content {
+    width: 100%;
+    margin: 0 10px;
+  }
+  .owl-theme .owl-nav,
+  .owl-theme .owl-dots {
+    display: none;
+  }
+  .courses-section {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .courses-section .fs-48 {
+    text-align: center;
+    font-size: 44px !important;
+  }
+  .css-xiduvl-MuiPaper-root-MuiCard-root {
+    max-width: 100% !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    width: 100% !important;
+    flex-wrap: wrap;
+    justify-content: start !important;
+  }
+  .MuiTabs-indicator {
+    background-color: transparent !important;
+  }
+  .course-content {
+    width: 100%;
+    margin: 0 10px;
+    height: 450px;
+  }
+  .owl-theme .owl-nav,
+  .owl-theme .owl-dots {
+    display: none;
+  }
+  .owl-carousel .owl-item {
+    margin: 0 10px !important;
+  }
+  .courses-section {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .courses-section .fs-48 {
+    text-align: start;
+    margin-left: 5%;
+    font-size: 48px !important;
+  }
+  .courses-section {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .tab-buttons {
+    width: calc(100% - 20px);
+    margin: auto;
+  } 
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: center !important;
+    gap: 20px;
+  }
+  .MuiTabs-indicator {
+    background-color: #8c45ff !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: center !important;
+  }
+  .course-content {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .tab-buttons {
+    gap: 50px;
+    border-bottom: 1px solid #494a4b;
+    width: 90%;
+    margin: auto;
+  } 
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: space-between !important;
+  }
+  .course-content {
+    height: 400px;
+  }
 }
