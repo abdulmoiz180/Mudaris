@@ -1,4 +1,4 @@
-import "./home.css";
+
 import E_Learn from "../../components/E_Learn";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero/Index";

@@ -1,3 +1,4 @@
+
 import starReview from "./assets/Icons/Star Review.png";
 import Client from "./assets/Images/Client.png"
 export let Introduction = [
@@ -32,7 +33,7 @@ export let clientdata = [
   },
 ];
 
-export let StudentReviews = [
+const StudentReviews = [
   {
     title: "Hear from Our Students",
   },
@@ -49,7 +50,6 @@ export let StudentReviews = [
     studentname: " Robert Fox",
     brightstar: starReview,
   },
-
   {
     review:
       "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
@@ -65,9 +65,37 @@ export let StudentReviews = [
     brightstar: starReview,
   },
   {
+    review: "Very nice courses on what some covered",
+    studentname: "Jazib Faisal",
+    coursetaken: "SQL: Database Basics",
+    brightstar: starReview,
+  },
+  {
+    review:
+      "This course gave me a strong understanding of data structures and algorithms. The instructor’s examples were clear, and the real-world applications made it easier to grasp difficult concepts.",
+    studentname: "Leslie Alexander",
+    coursetaken: "Data Structures and Algorithms in Python",
+    brightstar: starReview,
+  },
+  {
+    review:
+      "The course was very practical and hands-on, which I loved. I was able to build a full-stack web application from scratch. The step-by-step guidance made complex topics approachable.",
+    studentname: "Eleanor Pena",
+    coursetaken: "Full Stack Web Development with JavaScript",
+    brightstar: starReview,
+  },
+  {
+    review:
+      "A fantastic course for anyone interested in deep learning! The lessons are structured so well that even complex topics are easy to follow. The best part is the projects that provide real-world experience.",
+    studentname: "Cameron Williamson",
+    coursetaken: "Deep Learning A-Z: Hands-On Artificial Neural Networks",
+    brightstar: starReview,
+  },
+  {
     review: "Very nice courses on what some covered. I",
   },
 ];
+export default StudentReviews;
 export let paymentPlans = [
   {
     title: "Choose Your Plan",
