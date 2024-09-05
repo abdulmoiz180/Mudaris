@@ -10,7 +10,7 @@ import Upload from "../../assets/Icons/upload.png";
 import "./Elearn.css";
 const E_Learn = () => {
   return (
-    <section className="Elearn-section primary-bg">
+    <section className="Elearn-section">
       <div className="width-90 why-cards-container ">
         <Typography component="h6" className="inter fs-48 why-title clr-white">
           Why E-Learn?
