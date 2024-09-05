@@ -7,7 +7,7 @@ import {
   Button,
   Container,
 } from "@mui/material";
-import paymentPlans from "../../Seed";
+import {paymentPlans} from "../../Seed";
 import "./PriceCard.css";
 import Line from '../../assets/Icons/line.png';
 import Tick from "../../assets/Icons/tick.png";
