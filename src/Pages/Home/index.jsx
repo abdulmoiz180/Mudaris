@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Hero from '../../components/Hero/Index'
 import FAQ from '../../components/Accordion'
 import PriceCards from '../../components/PriceCards/Index'
-
+import Courses from "../../components/Courses"
 
 const Home = () => {
   return (

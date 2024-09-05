@@ -1,26 +1,11 @@
-
-import dimStarFilled from "./assets/Icons/dimStarFilled.png";
-import dimStarHalffilled from "./assets/Icons/dimStarHalffilled.png";
-import dimStarOutlined from "./assets/Icons/dimStarOutlined.png";
-import heartIcon from "./assets/Icons/heartIcon.png";
-import imgBecoming from "./assets/Icons/imgBecoming.png";
-import imgMaster from "./assets/Icons/imgMaster.png";
-import imgSentimentAnalysis from "./assets/Icons/imgSentimentAnalysis.png";
-import imgTimemanagement from "./assets/Icons/imgTimemanagement.png";
-import newLabel from "./assets/Icons/newLabel.png";
-import videoIcon from "./assets/Icons/videoIcon.png";
-import brightStarfilled from "./assets/Icons/brightStarfilled.png";
-import starReview from './assets/Icons/Star Review.png';
-import supermemo from "./assets/Icons/supermemo.png";
-import globalicon from "./assets/Icons/globalicon.png";
+import starReview from "./assets/Icons/Star Review.png";
+import Client from "./assets/Images/Client.png"
 export let Introduction = [
   {
     title: "Watch Our Introduction Video",
     description: `Discover how our platform help you achieve`,
   },
 ];
-
-
 
 export let othertabs = [
   "Development",
@@ -57,32 +42,30 @@ export let StudentReviews = [
       "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
     studentname: "Diamond Forest",
     coursetaken: "NLP - Natural Language Processing w/ Python",
-     brightstar: starReview
+    brightstar: starReview,
   },
   {
-    review:
-      "Easy to understand and very straight forward",
+    review: "Easy to understand and very straight forward",
     studentname: " Robert Fox",
-     brightstar: starReview
+    brightstar: starReview,
   },
-  
+
   {
     review:
       "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
     studentname: "Devon Lane",
     coursetaken: "Learn Figma Essentials for UI UX Design(2022)",
-     brightstar: starReview
+    brightstar: starReview,
   },
   {
     review:
       "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
     studentname: " Kathryn Murphy",
     coursetaken: "UI Design: Make a Beautiful Website",
-     brightstar: starReview
+    brightstar: starReview,
   },
   {
-    review:
-      "Very nice courses on what some covered. I",
+    review: "Very nice courses on what some covered. I",
   },
 ];
 export let paymentPlans = [
@@ -130,7 +113,6 @@ export let GetStarted = [
     freetrial: "7-days free trial",
   },
 ];
-
 
 export const faqArray = [
   {
