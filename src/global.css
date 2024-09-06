@@ -17,11 +17,11 @@
   --purple: #9855ff;
   --gray: #e6e6e6;
 }
-.dark-gray{
-  color: #AAAAAA !important;
+.dark-gray {
+  color: #aaaaaa !important;
 }
 
-.line-through{
+.line-through {
   text-decoration: line-through !important;
 }
 .gray {

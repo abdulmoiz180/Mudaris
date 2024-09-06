@@ -7,9 +7,9 @@ import {
   Button,
   Container,
 } from "@mui/material";
-import {paymentPlans} from "../../Seed";
+import { paymentPlans } from "../../Seed";
 import "./PriceCard.css";
-import Line from '../../assets/Icons/line.png';
+import Line from "../../assets/Icons/line.png";
 import Tick from "../../assets/Icons/tick.png";
 
 export const PriceCards = () => {
@@ -37,7 +37,14 @@ export const PriceCards = () => {
                 <img src={Line} className="linePic" alt="line separator" />
               </Box>
               <ul className="plan-perks">
-                {[plan.perk1, plan.perk2, plan.perk3, plan.perk4, plan.perk5, plan.perk6]
+                {[
+                  plan.perk1,
+                  plan.perk2,
+                  plan.perk3,
+                  plan.perk4,
+                  plan.perk5,
+                  plan.perk6,
+                ]
                   .filter(Boolean)
                   .map((perk, perkIndex) => (
                     <Box className="perk flex inter" key={perkIndex}>

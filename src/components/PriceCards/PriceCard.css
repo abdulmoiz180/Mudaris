@@ -130,8 +130,9 @@
     url(../../Assets/Images/Pattern.png) !important;
   background-size: cover !important;
   background-blend-mode: screen;
+  overflow: hidden !important;
 }
-.plan-card:nth-child(1):hover ~ .plan-card:nth-child(3n-1){
+.plan-card:nth-child(1):hover ~ .plan-card:nth-child(3n-1) {
   background: linear-gradient(180deg, #010002 0%, #361764 100%) !important;
   background-size: cover !important;
   background-blend-mode: screen !important;
