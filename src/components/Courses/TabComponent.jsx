@@ -104,7 +104,7 @@ export const TabComponent = ({ tabs }) => {
     items: items,
     nav: true,
     rewind: true,
-    autoplay: false,
+    autoplay: true,
     dots: true,
     loop: true,
     dotsEach: true,
