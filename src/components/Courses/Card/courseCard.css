@@ -1,0 +1,49 @@
+.course-card-img {
+  object-fit: cover !important;
+  height: 180px !important;
+}
+.course-card-title {
+  font-family: Manrope;
+  font-size: 20px !important;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+.courses-card {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  gap: 10px;
+}
+.label-img {
+  width: 100px !important;
+}
+.discount-tag {
+  width: max-content;
+  padding: 2px 5px;
+  background: #744399;
+}
+.course-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .course-card-img {
+    object-fit: fill !important;
+    width: 350px !important;
+  }
+  .courses-card,
+  .owl-item {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .course-card-img {
+    object-fit: fill !important;
+    width: 350px !important;
+  }
+  .courses-card,
+  .owl-item {
+    width: 350px;
+  }
+}
