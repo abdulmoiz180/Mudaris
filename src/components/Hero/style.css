@@ -10,8 +10,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
-
+.css-6fm6rz-MuiPaper-root-MuiCard-root {
+  box-shadow: none !important;
+}
 .card {
   width: 253px;
   height: 42px;
