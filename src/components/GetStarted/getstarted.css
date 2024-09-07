@@ -1,17 +1,18 @@
 .container {
-    background: #000000;
-    background: radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%);
-    background: -webkit-radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%);
-    background: -moz-radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%);
-
+    background: 
+      url(../../assets/Images/boxpattern.png), /* Pattern image */
+      radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%) !important;
+    background-size: cover; /* Ensure the pattern image covers the container */
+    background-blend-mode: color-dodge; /* Blend the image and gradient if needed */
+    
     height: auto; /* Allow it to adjust to content */
     min-height: 55vh; /* Ensure a minimum height */
-
     width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important
 }
 
 body {
@@ -37,7 +38,7 @@ body {
     background-color: #fff;
     border-radius: 8px;
     text-align: center;
-    margin-left: -30%;
+    margin-left: -33%;
     width: 33%;
     height: 47px;
     font-size: 15px;
@@ -83,10 +84,10 @@ body {
 width: 40%;    
 }
 .field{
-width: 35%;
+width: 38%;
 }
 .button{
-width: 39%;    
+width: 32%;    
 }    
 }
 
@@ -98,4 +99,8 @@ width: 39%;
 .field{
     width: 32%;    
 }
+
+.button{
+    width: 32%;    
+    }   
 }
