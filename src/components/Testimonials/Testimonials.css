@@ -1,162 +1,155 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
 }
 
 .box1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 23%;
-    gap: 15px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 433px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-
 .box1 h1 {
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: -0.84px;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.84px;
 }
 
 .box1 p {
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.002px;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.002px;
 }
 
 .avatar {
-    display: none;
+  display: none;
 }
 
 .box2 {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
-
 
 /* rgba(140, 69, 255, 0.50) */
 .ellipse {
-    width: 312px;
-    height: 234px;
-    border-radius: 312px;
-    background: rgba(140, 69, 255, 0.50) ;
-    filter: blur(127px);
-    position: absolute;
-    margin: 0px 150px;
+  width: 312px;
+  height: 234px;
+  border-radius: 312px;
+  background: rgba(140, 69, 255, 0.5);
+  filter: blur(127px);
+  position: absolute;
+  margin: 0px 150px;
 }
 
 .client-review {
-    display: flex;
-    width: 22%;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    margin-left: -29%;
-
+  position: absolute;
+  display: flex;
+  max-width: 362px;
+  width: 100%;
+  right: 510px;
+  top: 310px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
 }
-.image-container{
-position: relative;    
+.image-container {
+  position: relative;
 }
-
 
 .clienttext {
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: -0.002px;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.002px;
 }
 
 .clientname {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.002px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.002px;
 }
 
 .clientrole {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.001px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.001px;
 }
-/*
+
 @media only screen and (max-width: 600px) {
+  .box1 {
+    width: 80%;
+  }
 
-    .box1 {
-        width: 80%;
-    }
+  .box1 h1 {
+    font-size: 36px;
+  }
 
-    .box1 h1 {
-        font-size: 36px;
+  .box1 p {
+    font-size: 14px;
+  }
 
-    }
+  .box2 {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+  }
 
-    .box1 p {
-        font-size: 14px;
-    }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
 
+  .avatar {
+    display: block;
+  }
 
-    .box2 {
-        flex-direction: column;
-        width: 90%;
-        align-items: center;
-    }
+  .square-image {
+    display: none;
+  }
 
-    .image-container {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
+  .client-review {
+    right: 0;
+    position: static;
+  }
 
-    .avatar {
-        display: block;
-    }
+  .ellipse {
+    display: none;
+  }
 
-    .square-image {
-        display: none;
+  .clienttext {
+    font-size: 15px;
+    font-weight: 400;
+  }
 
-    }
+  .clientname {
+    font-size: 12px;
+  }
 
-    .client-review {
-        margin-left: 0px;
-        width: 80%;
-        gap: 7px;
-    }
-
-    .ellipse {
-        display: none;
-    }
-
-    .clienttext{
-        font-size: 15px;
-        font-weight: 400;
-    }
-
-    .clientname {
-        font-size: 12px;
-    }
-
-    .clientrole {
-        font-size: 10px;
-    }
+  .clientrole {
+    font-size: 10px;
+  }
 }
 
-@media only screen and (min-width: 600px) {
+/*@media only screen and (min-width: 600px) {
 
     .box1 {
         width: 80%;
