@@ -33,7 +33,7 @@ export let clientdata = [
   },
 ];
 
-const StudentReviews = [
+export let StudentReviews = [
   {
     title: "Hear from Our Students",
   },
@@ -95,7 +95,6 @@ const StudentReviews = [
     review: "Very nice courses on what some covered. I",
   },
 ];
-export default StudentReviews;
 export let paymentPlans = [
   {
     title: "Choose Your Plan",
@@ -132,6 +131,7 @@ export let paymentPlans = [
     subscribe: "Subscribe Now",
   },
 ];
+export default paymentPlans
 export let GetStarted = [
   {
     title: "Get Started with a Free Trial",
