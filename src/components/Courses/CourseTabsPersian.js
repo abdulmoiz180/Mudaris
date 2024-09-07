@@ -7,7 +7,7 @@ import imgMaster from "../../assets/Icons/imgMaster.png";
 import imgSentimentAnalysis from "../../assets/Icons/imgSentimentAnalysis.png";
 import imgTimemanagement from "../../assets/Icons/imgTimemanagement.png";
 
-export const tabs = [
+export const tabsPersian = [
   {
     name: "همه دسته ها",
     courses: [
@@ -31,7 +31,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -111,7 +112,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -192,7 +194,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -273,7 +276,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -354,7 +358,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -435,7 +440,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -516,7 +522,8 @@ export const tabs = [
         profileImage: imgMaster,
       },
       {
-        courseTitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
         reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
@@ -573,5 +580,4 @@ export const tabs = [
       },
     ],
   },
-  
 ];

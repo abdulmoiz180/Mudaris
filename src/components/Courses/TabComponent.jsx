@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { tabs } from "./CourseTabs";
+import React, { useState, useEffect, useContext } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./courses.css";
@@ -7,8 +6,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Cards from "./Card";
+import { GlobalContext } from "../../globalContext/GobalContext";
 
 export const TabComponent = ({ tabs }) => {
+  const { courseTab } = useContext(GlobalContext);
   const [selectedTab, setSelectedTab] = useState(tabs[0].name);
   const [value, setValue] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -21,14 +22,11 @@ export const TabComponent = ({ tabs }) => {
         setItems(1);
       } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
         setItems(2);
-      }
-      else if (window.innerWidth >= 992 && window.innerWidth <= 1140) {
+      } else if (window.innerWidth >= 992 && window.innerWidth <= 1140) {
         setItems(2);
-      }
-      else if (window.innerWidth >= 1140 && window.innerWidth <= 1300) {
+      } else if (window.innerWidth >= 1140 && window.innerWidth <= 1300) {
         setItems(3);
-      }
-      else if (window.innerWidth >= 1350) {
+      } else if (window.innerWidth >= 1350) {
         setItems(4);
       }
     };
@@ -66,7 +64,7 @@ export const TabComponent = ({ tabs }) => {
           },
         }}
       >
-        {tabs.map((tab, index) => (
+        {courseTab.map((tab, index) => (
           <Tab
             value={index}
             key={index}
@@ -108,7 +106,7 @@ export const TabComponent = ({ tabs }) => {
     autoplay: false,
     dots: true,
     loop: true,
-    dotsEach: true
+    dotsEach: true,
   };
   return (
     <div className="tab-container">
@@ -127,9 +125,10 @@ export const TabComponent = ({ tabs }) => {
 };
 
 function CoursesTabs() {
+  const { courseTab } = useContext(GlobalContext);
   return (
     <div className="App">
-      <TabComponent tabs={tabs} />
+      <TabComponent tabs={courseTab} />
     </div>
   );
 }
