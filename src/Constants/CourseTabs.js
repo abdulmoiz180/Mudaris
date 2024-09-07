@@ -1,11 +1,11 @@
-import bestsellerLabel from "../../assets/Icons/bestsellerLabel.png";
-import dimStarFilled from "../../assets/Icons/dimStarFilled.png";
-import dimStarHalffilled from "../../assets/Icons/dimStarHalffilled.png";
-import dimStarOutlined from "../../assets/Icons/dimStarOutlined.png";
-import imgBecoming from "../../assets/Icons/imgBecoming.png";
-import imgMaster from "../../assets/Icons/imgMaster.png";
-import imgSentimentAnalysis from "../../assets/Icons/imgSentimentAnalysis.png";
-import imgTimemanagement from "../../assets/Icons/imgTimemanagement.png";
+import dimStarFilled from "../assets/Icons/dimStarFilled.png";
+import dimStarHalffilled from "../assets/Icons/dimStarHalffilled.png";
+import dimStarOutlined from "../assets/Icons/dimStarOutlined.png";
+import imgBecoming from "../assets/Icons/imgBecoming.png";
+import imgMaster from "../assets/Icons/imgMaster.png";
+import imgSentimentAnalysis from "../assets/Icons/imgSentimentAnalysis.png";
+import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
+import bestsellerLabel from "../assets/Icons/bestsellerLabel.png";
 
 export const tabsEnglish = [
   {

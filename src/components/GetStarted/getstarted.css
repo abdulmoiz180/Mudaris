@@ -1,0 +1,101 @@
+.container {
+    background: #000000;
+    background: radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%);
+    background: -webkit-radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%);
+    background: -moz-radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%);
+
+    height: auto; /* Allow it to adjust to content */
+    min-height: 55vh; /* Ensure a minimum height */
+
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+body {
+    background-color: black !important;
+}
+
+.main-heading {
+    font-size: 56px;
+    width: 34%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+}
+
+.field {
+    display: flex;
+    width: 33%;
+    align-items: center;
+}
+
+.button {
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: -30%;
+    width: 33%;
+    height: 47px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: -0.0101em;
+}
+
+.credit {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.0001em;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-heading {
+        width: 90%;
+        font-size: 44px;
+    }
+
+    .field {
+        width: 100%;
+    }
+    .button{
+    font-size: 13px;    
+    }
+}
+
+@media only screen and (min-width: 600px) {
+   .main-heading {
+    width: 54%;
+    }
+
+    .field {
+    width: 55%;
+    }
+
+}
+
+@media only screen and (min-width:992px){
+.main-heading{
+width: 40%;    
+}
+.field{
+width: 35%;
+}
+.button{
+width: 39%;    
+}    
+}
+
+@media only screen and (min-width:1200px){
+.main-heading{
+    font-size: 56px;
+    width: 34%;    
+}
+.field{
+    width: 32%;    
+}
+}
