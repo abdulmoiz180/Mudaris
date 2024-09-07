@@ -32,7 +32,8 @@
     object-fit: fill !important;
     width: 350px !important;
   }
-  .courses-card, .owl-item  {
+  .courses-card,
+  .owl-item {
     width: 350px;
   }
 }
@@ -41,7 +42,8 @@
     object-fit: fill !important;
     width: 350px !important;
   }
-  .courses-card, .owl-item  {
+  .courses-card,
+  .owl-item {
     width: 350px;
   }
 }

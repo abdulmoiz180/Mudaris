@@ -6,16 +6,20 @@ import FAQ from "../../components/Accordion";
 import GetStart from "../../components/GetStarted";
 import PriceCards from "../../components/PriceCards/Index";
 import Courses from "../../components/Courses";
-// import { GetStarted } from "../../Seed";
+import { GetStarted } from "../../Seed";
 
+import "./home.css";
+import Review from "../../components/Review/Index";
 const Home = () => {
   return (
     <section className="home-page column primary-bg">
-      <Hero/> 
-     
+       <ResponsiveAppBar/>
+    
+      <Hero />
       <Courses />
-       <E_Learn />
-      <PriceCards/>
+      <Review />
+      <E_Learn />
+      <PriceCards />
       <FAQ />
       <GetStart/>
       <Footer />

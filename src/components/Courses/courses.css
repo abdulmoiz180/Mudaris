@@ -71,7 +71,9 @@
   background-color: #8c45ff !important;
   opacity: 1 !important;
 }
-
+.active {
+  height: 100% !important;
+}
 @media only screen and (max-width: 600px) {
   .courses-section .fs-48 {
     text-align: center;
@@ -104,17 +106,20 @@
   .css-xiduvl-MuiPaper-root-MuiCard-root {
     max-width: 100% !important;
   }
+  .MuiTabs-indicator {
+    background-color: transparent !important;
+  }
   .css-heg063-MuiTabs-flexContainer {
     width: 100% !important;
     flex-wrap: wrap;
-    justify-content: start !important;
+    justify-content: center !important;
   }
   .MuiTabs-indicator {
     background-color: transparent !important;
   }
   .course-content {
     width: 100%;
-    margin: 0 10px;
+    margin: 0;
     height: 450px;
   }
   .owl-theme .owl-nav,
@@ -126,6 +131,9 @@
   }
   .courses-section {
     width: 100%;
+  }
+  .owl-carousel .owl-item {
+    width: max-content !important;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -141,19 +149,40 @@
   .tab-buttons {
     width: calc(100% - 20px);
     margin: auto;
-  } 
+  }
+  .MuiTabs-indicator {
+    background-color: transparent !important;
+  }
   .css-heg063-MuiTabs-flexContainer {
     justify-content: center !important;
     gap: 20px;
   }
   .MuiTabs-indicator {
-    background-color: #8c45ff !important;
+    background-color: transparent !important;
   }
   .css-heg063-MuiTabs-flexContainer {
     justify-content: center !important;
   }
   .course-content {
     height: 400px;
+  }
+  .owl-carousel .owl-item {
+    width: max-content !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .owl-carousel .owl-item {
+    width: max-content !important;
+  }
+  .tab-buttons {
+    width: 90%;
+    margin: auto;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: space-between !important;
+  }
+  .MuiTabs-indicator {
+    background-color: #9855ff !important;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -162,11 +191,51 @@
     border-bottom: 1px solid #494a4b;
     width: 90%;
     margin: auto;
-  } 
+  }
   .css-heg063-MuiTabs-flexContainer {
     justify-content: space-between !important;
   }
+
   .course-content {
-    height: 400px;
+    width: 90%;
+    margin: auto;
+    height: 550px;
+  }
+  .owl-carousel .owl-item {
+    margin: 0 !important;
+  }
+  .tab-container {
+    /* width: calc(100% - 50px); */
+    margin: auto;
+  }
+  .owl-carousel .owl-item {
+    width: 378px !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .courses-section .fs-48 {
+    text-align: start;
+    margin-left: 0;
+    font-size: 48px !important;
+  }
+  .tab-container {
+    width: 100% !important;
+    margin: auto;
+  }
+  .tab-buttons {
+    gap: 50px;
+    width: 100%;
+  }
+  .courses-section {
+    width: 90%;
+    margin: auto !important;
+  }
+  .course-content {
+    height: 100%;
+    width: 100% !important;
+  }
+  .owl-carousel .owl-item {
+    width: 378px !important;
   }
 }

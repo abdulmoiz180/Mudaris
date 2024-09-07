@@ -20,7 +20,9 @@ export const TabComponent = ({ tabs }) => {
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setItems(1);
-      } else if (window.innerWidth >= 768 && window.innerWidth <= 992) {
+      } else if (window.innerWidth >= 600 && window.innerWidth <= 769) {
+        setItems(1);
+      } else if (window.innerWidth >= 769 && window.innerWidth <= 992) {
         setItems(2);
       } else if (window.innerWidth >= 992 && window.innerWidth <= 1140) {
         setItems(2);
@@ -103,7 +105,7 @@ export const TabComponent = ({ tabs }) => {
     items: items,
     nav: true,
     rewind: true,
-    autoplay: false,
+    autoplay: true,
     dots: true,
     loop: true,
     dotsEach: true,
