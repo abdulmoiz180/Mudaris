@@ -110,6 +110,9 @@ li {
   font-size: 48px !important;
 }
 
+.lightgray{
+color: #FFFFFFB2;
+}
 /* responsive code */
 
 @media only screen and (max-width: 600px) {
