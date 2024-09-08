@@ -11,14 +11,17 @@ import Courses from "../../components/Courses";
 const Home = () => {
   return (
     <section className="home-page column primary-bg">
-      <Hero/> 
+
+       
+         <Hero/> 
      
       <Courses />
        <E_Learn />
       <PriceCards/>
-      <FAQ />
       <GetStart/>
-      <Footer />
+      <FAQ />
+     
+      <Footer /> 
     </section>
   );
 };
