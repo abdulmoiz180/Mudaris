@@ -46,7 +46,7 @@ const Footer = () => {
               <ul>
                 {content.links.map((l, i) => (
                   <li key={i} className="secondary-font-clr dm-sans">
-                    {l}
+                  {l}
                   </li>
                 ))}
               </ul>

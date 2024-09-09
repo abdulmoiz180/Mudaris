@@ -7,10 +7,7 @@
   font-family: "Inter", sans-serif;
   font-family: "DM Sans", sans-serif;
 }
-/* i am adding bg color black so we dont have to do at any component */
-body{
-  background-color: black !important;
-}
+
 :root {
   --primary-clr: #020103;
   --secondary-clr: #4d3763;
@@ -19,6 +16,13 @@ body{
   --white-normal: #f3f3f3;
   --purple: #9855ff;
   --gray: #e6e6e6;
+}
+.dark-gray {
+  color: #aaaaaa !important;
+}
+
+.line-through {
+  text-decoration: line-through !important;
 }
 .gray {
   color: var(--gray) !important;
@@ -59,6 +63,9 @@ body{
 .mt-20 {
   margin-top: 20px;
 }
+.mt-10 {
+  margin-top: 10px;
+}
 .flex {
   display: flex;
 }
@@ -73,7 +80,7 @@ body{
   border: 1px solid black;
 }
 .clr-white {
-  color: #fff;
+  color: #fff !important;
 }
 .column {
   display: flex;

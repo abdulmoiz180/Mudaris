@@ -1,107 +1,10 @@
-import FaceBook from "./assets/icons/FaceBook.svg";
-import Instagram from "./assets/icons/Instagram.svg";
-import LinkedIn from "./assets/icons/LinkedIn.svg";
-import Youtube from "./assets/icons/Lozenge.svg";
-import Twitter from "./assets/icons/Twitter.svg";
 
-import Client from "./assets/Images/Client.png";
-import bestsellerLabel from "./assets/Icons/bestsellerLabel.png";
-import certificateIcon from "./assets/Icons/certificateIcon.png";
-import clockIcon from "./assets/Icons/clockIcon.png";
-import dimStarFilled from "./assets/Icons/dimStarFilled.png";
-import dimStarHalffilled from "./assets/Icons/dimStarHalffilled.png";
-import dimStarOutlined from "./assets/Icons/dimStarOutlined.png";
-import heartIcon from "./assets/Icons/heartIcon.png";
-import imgBecoming from "./assets/Icons/imgBecoming.png";
-import imgMaster from "./assets/Icons/imgMaster.png";
-import imgSentimentAnalysis from "./assets/Icons/imgSentimentAnalysis.png";
-import imgTimemanagement from "./assets/Icons/imgTimemanagement.png";
-import newLabel from "./assets/Icons/newLabel.png";
-import videoIcon from "./assets/Icons/videoIcon.png";
-import brightStarfilled from "./assets/Icons/brightStarfilled.png";
 import starReview from "./assets/Icons/Star Review.png";
-import supermemo from "./assets/Icons/supermemo.png";
-import globalicon from "./assets/Icons/globalicon.png";
+import Client from "./assets/Images/Client.png"
 export let Introduction = [
   {
     title: "Watch Our Introduction Video",
     description: `Discover how our platform help you achieve`,
-  },
-];
-
-export let Courses = [
-  {
-    title: "Discover Top Course",
-  },
-];
-
-export let tabOne = [
-  {
-    title: "All Categories",
-  },
-
-  {
-    coursetitle: "Mastering Effective Communication Skills",
-    reviews: "(244 reviews)",
-    rating: "4.8",
-    originalprice: "Rp320,000",
-    discountedprice: "Rp150,000",
-    videos: "24",
-    duration: "8.5h",
-    discount: "30%",
-    tag: "BestSeller",
-  },
-  {
-    coursetitle: "Becoming a Power Negotiator: Win-Win Strategies",
-    reviews: "(425 reviews)",
-    rating: "4.2",
-    originalprice: "Rp250,000",
-    discountedprice: "Rp100,000",
-    videos: "6",
-    duration: "4h",
-    discount: "30%",
-  },
-
-  {
-    coursetitle: "Time Management Techniques for Maximum Productivity",
-    reviews: "(227 reviews)",
-    rating: "4.7",
-    originalprice: "550,000",
-    discountedprice: "Rp250,000",
-    videos: "8",
-    duration: "1.5h",
-    discount: "30%",
-    tag: "New",
-  },
-
-  {
-    coursetitle: "Sentiment Analysis with Deep Learning using BERT",
-    reviews: "(25 reviews)",
-    rating: "4.9",
-    originalprice: "400,000",
-    discountedprice: "Rp120,000",
-    videos: "32",
-    duration: "12.5h",
-    discount: "30%",
-    tag: "New",
-  },
-];
-
-export let tabOneicons = [
-  {
-    bestseller: bestsellerLabel,
-    certificate: certificateIcon,
-    clock: clockIcon,
-    dimstar: dimStarFilled,
-    dimstarhalf: dimStarHalffilled,
-    dimstarout: dimStarOutlined,
-    heart: heartIcon,
-    becoming: imgBecoming,
-    master: imgMaster,
-    sentimentanalysis: imgSentimentAnalysis,
-    timemanagement: imgTimemanagement,
-    new: newLabel,
-    video: videoIcon,
   },
 ];
 
@@ -187,6 +90,9 @@ export let StudentReviews = [
     studentname: "Cameron Williamson",
     coursetaken: "Deep Learning A-Z: Hands-On Artificial Neural Networks",
     brightstar: starReview,
+  },
+  {
+    review: "Very nice courses on what some covered. I",
   },
 ];
 export let paymentPlans = [
@@ -278,37 +184,6 @@ export const faqArray = [
       "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
   },
 ];
-// export let faqContent = [
-//   {
-//     title: "Frequently Asked Questions",
-//     description:
-//       "Still you have any questions? Contact our Team via hello@squareup.com",
-//   },
-//   {
-//     questions: [
-//       "Can I download course materials?",
-//       "How do I reset my password?",
-//       "Is there a mobile app available?",
-//       "How do I get a course certificate?",
-//       "What if I need help with the course content?",
-//       "Can I upgrade my subscription plan?",
-//       "Are there any discounts available?",
-//       "How do I cancel my subscription?",
-//     ],
-//   },
-//   {
-//     answers: [
-//       "Yes, downloadable materials are available for most courses and can be accessed in the course dashboard.",
-//       "To reset your password, go to the login page and click on the 'Forgot Password' link. Follow the instructions sent to your email.",
-//       "Yes, we have a mobile app available for both Android and iOS platforms. You can download it from the respective app stores.",
-//       "To receive a course certificate, you must complete all required assignments and pass the final exam. The certificate will be available for download in your profile.",
-//       "If you need help with the course content, you can reach out to our support team or join our community forums to get assistance from instructors and peers.",
-//       "Yes, you can upgrade your subscription plan at any time from your account settings. The new plan will be effective immediately.",
-//       "We offer various discounts throughout the year. Keep an eye on our website and newsletters for the latest promotions and discounts.",
-//       "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
-//     ],
-//   },
-// ];
 
 export const footerContent = [
   {
