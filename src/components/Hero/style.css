@@ -10,8 +10,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
-
+.css-6fm6rz-MuiPaper-root-MuiCard-root {
+  box-shadow: none !important;
+}
 .card {
   width: 253px;
   height: 42px;
@@ -201,8 +204,18 @@
   opacity: 0.6;
   left: 190px;
 }
-.hero-section-button::before {
+.HeroComponentButtonDiv{
+  width: 137px;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .hero-section-button::before {
   position: absolute;
+
   content: "";
   width: 137px;
   top: -6px;
@@ -210,7 +223,7 @@
   height: 60px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
+} */
 
 @media only screen and (max-width: 1030px) {
   .mainHeading {

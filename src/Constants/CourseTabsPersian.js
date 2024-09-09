@@ -1,19 +1,19 @@
-import bestsellerLabel from "../../assets/Icons/bestsellerLabel.png";
-import dimStarFilled from "../../assets/Icons/dimStarFilled.png";
-import dimStarHalffilled from "../../assets/Icons/dimStarHalffilled.png";
-import dimStarOutlined from "../../assets/Icons/dimStarOutlined.png";
-import imgBecoming from "../../assets/Icons/imgBecoming.png";
-import imgMaster from "../../assets/Icons/imgMaster.png";
-import imgSentimentAnalysis from "../../assets/Icons/imgSentimentAnalysis.png";
-import imgTimemanagement from "../../assets/Icons/imgTimemanagement.png";
+import bestsellerPersian from "../assets/Icons/bestsellerPersian.png";
+import dimStarFilled from "../assets/Icons/dimStarFilled.png";
+import dimStarHalffilled from "../assets/Icons/dimStarHalffilled.png";
+import dimStarOutlined from "../assets/Icons/dimStarOutlined.png";
+import imgBecoming from "../assets/Icons/imgBecoming.png";
+import imgMaster from "../assets/Icons/imgMaster.png";
+import imgSentimentAnalysis from "../assets/Icons/imgSentimentAnalysis.png";
+import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
 
-export const tabsEnglish = [
+export const tabsPersian = [
   {
-    name: "All Categories",
+    name: "همه دسته ها",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -27,12 +27,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -49,8 +50,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -64,12 +65,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -83,17 +84,17 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],
   },
   {
-    name: "Development",
+    name: "بازاریابی",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -107,12 +108,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -129,8 +131,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -144,12 +146,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -163,17 +165,18 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],
   },
+
   {
-    name: "IT & Software",
+    name: "سبک زندگی",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -187,12 +190,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -209,8 +213,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -224,12 +228,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -243,17 +247,18 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],
   },
+
   {
-    name: "Design",
+    name: "تجارت",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -267,12 +272,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -289,8 +295,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -304,12 +310,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -323,17 +329,18 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],
   },
+
   {
-    name: "Business",
+    name: "طراحی",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -347,12 +354,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -369,8 +377,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -384,12 +392,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -403,17 +411,18 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],
   },
+
   {
-    name: "Lifestyle",
+    name: "فناوری اطلاعات و نرم افزار",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -427,12 +436,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -449,8 +459,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -464,12 +474,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -483,17 +493,18 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],
   },
+
   {
-    name: "Marketing",
+    name: "توسعه",
     courses: [
       {
-        courseTitle: "Mastering Effective Communication Skills",
-        reviews: "244 reviews",
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
         rating: 4.8,
         rateStar: [
           dimStarFilled,
@@ -507,12 +518,13 @@ export const tabsEnglish = [
         videos: 24,
         duration: "8.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgMaster,
       },
       {
-        courseTitle: "Becoming a Power Negotiator: Win-Win Strategies",
-        reviews: "425 reviews",
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
         rating: 4.2,
         rateStar: [
           dimStarFilled,
@@ -529,8 +541,8 @@ export const tabsEnglish = [
         profileImage: imgBecoming,
       },
       {
-        courseTitle: "Time Management Techniques for Maximum Productivity",
-        reviews: "227 reviews",
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
         rating: 4.7,
         rateStar: [
           dimStarFilled,
@@ -544,12 +556,12 @@ export const tabsEnglish = [
         videos: 8,
         duration: "1.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgTimemanagement,
       },
       {
-        courseTitle: "Sentiment Analysis with Deep Learning using BERT",
-        reviews: "25 reviews",
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
         rating: 4.9,
         rateStar: [
           dimStarFilled,
@@ -563,7 +575,7 @@ export const tabsEnglish = [
         videos: 32,
         duration: "12.5h",
         discount: "30%",
-        tag: bestsellerLabel,
+        tag: bestsellerPersian,
         profileImage: imgSentimentAnalysis,
       },
     ],

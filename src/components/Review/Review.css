@@ -52,14 +52,6 @@
   font-size: 18px !important;
   font-weight: 500 !important;
 }
-/* .ua {
-  background-image: url(../../assets/Images/Base.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  height: 900px;
-  background-size: 100% 460px;
-} */
 .reviewComponentParentSection {
   position: relative;
 }
@@ -75,9 +67,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.active {
-  height: 1000px;
 }
 .viewBtn {
   border-radius: 20px !important;
@@ -97,6 +86,12 @@
   color: rgb(38, 3, 95) !important;
   font-weight: bold !important;
 }
+.View{
+  align-items: flex-end !important;
+}
+.active {
+  max-height: 1000px !important;
+}
 @media only screen and (max-width: 1030px) {
   .View{
     align-items: flex-end !important;
@@ -112,7 +107,6 @@
   .review {
     width: 44%;
   }
-
 }
 @media only screen and (max-width: 667px) {
   .heading {
@@ -135,13 +129,13 @@
   align-items: flex-end !important;
 }
   .review {
-    width: 100%;
+    width: 100%;    
   }
   .reviewWrapper {
     flex-direction: column;
     flex-wrap: nowrap !important;
   }
   .active {
-    height: 100%;
+    max-height: 100%;
   }
 }

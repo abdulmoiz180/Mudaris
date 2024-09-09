@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { tabs } from "./CourseTabs";
+import { tabsEnglish } from "./CourseTabs";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./courses.css";
@@ -78,7 +78,7 @@ export const TabComponent = ({ tabs }) => {
   };
 
   const renderCourses = () => {
-    const selectedCourses = tabs.find(
+    const selectedCourses = tabsEnglish.find(
       (tab) => tab.name === selectedTab
     ).courses;
 
@@ -128,7 +128,7 @@ export const TabComponent = ({ tabs }) => {
 function CoursesTabs() {
   return (
     <div className="App">
-      <TabComponent tabs={tabs} />
+      <TabComponent tabs={tabsEnglish} />
     </div>
   );
 }

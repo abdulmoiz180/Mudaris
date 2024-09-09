@@ -38,9 +38,11 @@ const Hero = () => {
           <Typography variant="body1" className="mainDescription inter">
             Discover how our platform can help you achieve your learning goals.
           </Typography>
+          <div className="HeroComponentButtonDiv">
           <button className="hero-section-button inter" onClick={videoPlay}>
             {video ? "Pause Video" : "Play Video"}
           </button>
+          </div>
           <span className="hero-bg-lines">
             <img src={BlurGlow} className="BlurGlow" />
           </span>
