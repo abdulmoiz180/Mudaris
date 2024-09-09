@@ -110,9 +110,10 @@ li {
   font-size: 48px !important;
 }
 
-span{
-  color: #D4A1FF;
-  }
+.lightgray{
+color: #FFFFFFB2;
+}
+
   
   .input-text{
   color : #FFFFFF80;  
