@@ -1,17 +1,18 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Box, Button, Divider, Typography } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
-import { copyWrite, footerContent } from "../../Seed";
+import { copyWrite_eng, footerContent } from "../../Constants/Seed";
 import FaceBook from "../../assets/icons/FaceBook.svg";
 import Instagram from "../../assets/icons/Instagram.svg";
 import LinkedIn from "../../assets/icons/LinkedIn.svg";
 import Youtube from "../../assets/icons/Lozenge.svg";
+import { useLanguage } from "../../globalContext/GlobalProvider";
 import Twitter from "../../assets/icons/Twitter.svg";
-import { GlobalContext } from "../../globalContext/GobalContext";
 const Footer = () => {
-  const { toggleLanguage } = useContext(GlobalContext);
+  const { toggleLanguage } = useLanguage();
+
   return (
     <footer className="footer-bg align-center">
       <div className="footer-section row">
@@ -72,7 +73,7 @@ const Footer = () => {
         </div>
 
         <Typography variant="p" className="secondary-font-clr footer-p dm-sans">
-          {copyWrite[1].text}
+          {copyWrite_eng[1].text}
         </Typography>
       </div>
     </footer>

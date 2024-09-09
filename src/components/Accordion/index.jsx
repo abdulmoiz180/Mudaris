@@ -3,8 +3,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { faqArray } from "../../Seed"; // Ensure this path is correct
+import { faqArray } from "../../Constants/Seed"; // Ensure this path is correct
 import "./faq.css"; // Ensure you have the styles needed in this file
 import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
@@ -60,7 +59,7 @@ export default function FAQ() {
                   0{index + 1}
                 </Typography>
               </span>
-           
+
               <Typography
                 className={`faq-question inter flex flex-center ${
                   expanded === index ? "purple" : "clr-white"
