@@ -11,12 +11,23 @@ import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
 import bestsellerLabel from "../assets/Icons/bestsellerLabel.png";
 import starReview from "../assets/Icons/Star Review.png";
 import Client from "../assets/Images/Client.png";
+import Heart from "../assets/Icons/Heart.png";
+import Cart from "../assets/Icons/Bag.png";
+
 export let Introduction_eng = {
   title: "Watch Our Introduction Video",
   description: `Discover how our platform help you achieve`,
+vidbtn:"Play Video",
+latest:"Latest Recommendation",
+tag:"NEW",
+
 };
 
-export let clientdata = [
+
+export const pagesnav_eng = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
+export const navRightBtns_eng = ["EN", Heart, Cart, "Sign In", "Get Started"];
+
+export let clientdata_eng = [
   {
     title: "Our Clients",
     description:
@@ -32,7 +43,7 @@ export let clientdata = [
   },
 ];
 
-const StudentReviews = [
+export const StudentReviews_eng = [
   {
     title: "Hear from Our Students",
   },
@@ -94,8 +105,9 @@ const StudentReviews = [
     review: "Very nice courses on what some covered. I",
   },
 ];
-export default StudentReviews;
-export let paymentPlans = [
+export default StudentReviews_eng;
+
+export let paymentPlans_eng = [
   {
     title: "Choose Your Plan",
     description: "Simple, flexible, and affordable pricing for everyone.",
@@ -131,7 +143,7 @@ export let paymentPlans = [
     subscribe: "Subscribe Now",
   },
 ];
-export let GetStarted = [
+export let GetStarted_eng = [
   {
     title: "Get Started with a Free Trial",
     inputfield: "Your Email",
@@ -141,7 +153,16 @@ export let GetStarted = [
   },
 ];
 
-export const faqArray = [
+export const faqTitle_eng = [
+  {
+    title: "سوالات متداول",
+    description:
+      "هنوز سوالی دارید؟ با تیم ما از طریق hello@squareup.com تماس بگیرید",
+  },
+];
+
+
+export const faqArray_eng = [
   {
     question: "Can I download course materials?",
     answer:
@@ -184,7 +205,7 @@ export const faqArray = [
   },
 ];
 
-export const footerContent = [
+export const footerContent_eng = [
   {
     title: "E-Learn",
     links: [

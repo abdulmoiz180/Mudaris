@@ -2,13 +2,38 @@ import {
   tabsEnglish,
   Introduction_eng,
   copyWrite_eng,
+  clientdata_eng,
+  StudentReviews_eng,
+  paymentPlans_eng,
+  GetStarted_eng,
+  faqArray_eng,
+  faqTitle_eng,
+  footerContent_eng,
+  pagesnav_eng,
+  navRightBtns_eng,
 } from "../Constants/Seed";
 import {
   tabsPersian,
   Introduction_per,
   copyWrite_per,
+  clientdata_per,
+  StudentReviews_per,
+  paymentPlans_per,
+  GetStarted_per,
+  faqArray_per,
+  faqTitle_per,
+  footerContent_per,
+  pagesnav_per,
+  navRightBtns_per
+  
 } from "../Constants/SeedPersian";
-export let importArray_eng = [tabsEnglish, Introduction_eng, copyWrite_eng];
-export let importArray_per = [tabsPersian, Introduction_per, copyWrite_per];
+
+export let importArray_eng = [tabsEnglish, Introduction_eng, copyWrite_eng,  clientdata_eng, 
+  StudentReviews_eng, paymentPlans_eng, GetStarted_eng, faqArray_eng, faqTitle_eng, footerContent_eng, pagesnav_eng, 
+  navRightBtns_eng];
+
+export let importArray_per = [tabsPersian, Introduction_per, copyWrite_per, clientdata_per, 
+  StudentReviews_per,paymentPlans_per, GetStarted_per,faqArray_per, faqTitle_per, footerContent_per, pagesnav_per, 
+  navRightBtns_per];
 // do not disturb the index
 //one should be _eng and other one is _per

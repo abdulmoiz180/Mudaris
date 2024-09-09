@@ -3,7 +3,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { faqArray } from "../../Constants/Seed"; // Ensure this path is correct
+import { faqArray_eng } from "../../Constants/Seed"; // Ensure this path is correct
 import "./faq.css"; // Ensure you have the styles needed in this file
 import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
@@ -25,7 +25,7 @@ export default function FAQ() {
         </Typography>
       </Box>
       <div className="faq-container column ">
-        {faqArray.map((faq, index) => (
+        {faqArray_eng.map((faq, index) => (
           <Accordion
             key={index}
             expanded={expanded === index}
