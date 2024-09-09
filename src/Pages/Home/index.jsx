@@ -6,16 +6,18 @@ import PriceCards from "../../components/PriceCards/Index";
 import Courses from "../../components/Courses";
 import "./home.css";
 import Review from "../../components/Review/Index";
+import Testimonials from "../../components/Testimonials/Testimonials";
 const Home = () => {
   return (
     <section className="home-page column primary-bg">
-      {/* <Hero /> */}
-      <Courses />
-      {/* <Review />
+       <Hero /> 
+      <Testimonials />
+       <Courses />
+      <Review />
       <E_Learn />
       <PriceCards />
       <FAQ />
-      <GetStart /> */}
+      <GetStart />
     </section>
   );
 };
