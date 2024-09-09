@@ -254,14 +254,9 @@ export const footerContent = [
     ],
   },
 ];
-export let copyWrite_per = [
-  {
-    // icons: [Instagram, LinkedIn, Twitter, FaceBook, Youtube],
-  },
-  {
-    text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
-  },
-];
+export let copyWrite_per = {
+  text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
+};
 
 export const tabsPersian = [
   {

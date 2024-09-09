@@ -220,14 +220,10 @@ export const footerContent = [
     ],
   },
 ];
-export let copyWrite_eng = [
-  {
-    // icons: [Instagram, LinkedIn, Twitter, FaceBook, Youtube],
-  },
-  {
-    text: "© 2022 E-Learn, Inc. All rights reserved.",
-  },
-];
+export let copyWrite_eng = {
+  text: "© 2022 E-Learn, Inc. All rights reserved.",
+};
+
 export const tabsEnglish = [
   {
     name: "All Categories",

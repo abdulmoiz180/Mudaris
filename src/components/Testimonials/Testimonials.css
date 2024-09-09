@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .testim-container {
   display: flex;
   flex-direction: column;
@@ -203,66 +197,71 @@
   }
 }
 @media only screen and (min-width: 768px) {
-.avatar{
-display: none;  
-}
-.square-image{
-display: block;
-width: 100%;  
-}
+  .avatar {
+    display: none;
+  }
+  .square-image {
+    display: block;
+    width: 100%;
+  }
 
-.client-review{
-position: absolute;
-right: 50px; 
+  .client-review {
+    position: absolute;
+    margin-right: 20%;
+  }
 }
-
+@media only screen and (min-width: 800px) {
+  .client-review {
+    position: absolute;
+    margin-right: 10%;
+  }
 }
-@media only screen and (min-width: 900px) {
-.client-review{
-  right: 110px;
-}  
-}
-
-
 @media only screen and (min-width: 992px) {
-.client-review{
-right: 170px;  
-}  
-}
-@media only screen and (min-width: 1200px){
-.client-review{
-  right: 310px;
-}  
-.testim-box{
-  width: 433px;  
+  .client-review {
+    position: absolute;
+    margin-right: 10%;
+  }
 }
 
-.testim-box h1 {
-  font-size: 56px;
-}
+@media only screen and (min-width: 1200px) {
+  .client-review {
+    margin-left: 30%;
+  }
+  .testim-box {
+    width: 433px;
+  }
 
-.testim-box p {
-  font-size: 20px;
-}
+  .testim-box h1 {
+    font-size: 56px;
+  }
 
-.ellipse {
-display: block;
-}
+  .testim-box p {
+    font-size: 20px;
+  }
 
-.clienttext {
-  font-size: 23px;
-}
+  .ellipse {
+    display: block;
+  }
 
-.clientname {
-  font-size: 16px;
-}
+  .clienttext {
+    font-size: 23px;
+  }
 
-.clientrole {
-  font-size: 14px;
+  .clientname {
+    font-size: 16px;
+  }
+
+  .clientrole {
+    font-size: 14px;
+  }
 }
+@media only screen and (min-width: 1300px) {
+  .client-review {
+    margin-right: 25%;
+  }
 }
-@media only screen and (min-width: 1300px){
-.client-review{
-right: 610px;  
-}  
+@media only screen and (min-width: 1500px) {
+  .client-review {
+    margin-right: 30%;
+  }
 }

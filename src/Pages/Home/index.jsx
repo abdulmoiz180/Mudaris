@@ -10,14 +10,14 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 const Home = () => {
   return (
     <section className="home-page column primary-bg">
-      <Hero />
-      <Testimonials />
+      {/* <Hero /> */}
+      {/* <Testimonials />
       <Courses />
       <Review />
       <E_Learn />
       <PriceCards />
       <FAQ />
-      <GetStart />
+      <GetStart /> */}
     </section>
   );
 };
