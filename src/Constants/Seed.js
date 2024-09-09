@@ -27,21 +27,18 @@ tag:"NEW",
 export const pagesnav_eng = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
 export const navRightBtns_eng = ["EN", Heart, Cart, "Sign In", "Get Started"];
 
-export let clientdata_eng = [
-  {
+export let clientdata_eng = {
+
     title: "Our Clients",
     description:
-      "Empowering top companies and institutions with innovative learning solutions.",
-  },
-
-  {
+"Empowering top companies and institutions with innovative learning solutions.",
     platformdescription:
       "This platform has revolutionized our training programs. The results speak for themselves!",
     clientname: "Talia Taylor",
     clientrole: "John Doe, CEO of @ Quantum",
     img: Client,
-  },
-];
+  }
+
 
 export const StudentReviews_eng = [
   {

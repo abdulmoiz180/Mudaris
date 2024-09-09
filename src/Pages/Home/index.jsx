@@ -11,13 +11,13 @@ const Home = () => {
   return (
     <section className="home-page column primary-bg">
       <Hero />
-      {/* <Testimonials /> */}
-      {/* <Courses /> */}
-      {/* <Review />
+      <Testimonials />
+       <Courses />
+       <Review />
       <E_Learn />
       <PriceCards />
       <FAQ />
-      <GetStart /> */}
+      <GetStart /> 
     </section>
   );
 };

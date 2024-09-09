@@ -17,10 +17,10 @@ export const PriceCards = () => {
     <Container className="price-container">
       <Box className="text-container">
         <Typography variant="h1" className="plan-title inter">
-          {paymentPlans[0].title}
+          {paymentPlans_eng[0].title}
         </Typography>
         <Typography variant="body1" className="plan-description inter">
-          {paymentPlans[0].description}
+          {paymentPlans_eng[0].description}
         </Typography>
       </Box>
       <Box className="card-wrapper">
@@ -56,7 +56,7 @@ export const PriceCards = () => {
             </CardContent>
             <Box className="ButtonDiv">
               <Button className="subscribe-button">
-                {paymentPlans[4].subscribe}
+                {paymentPlans_eng[4].subscribe}
               </Button>
             </Box>
           </Card>
