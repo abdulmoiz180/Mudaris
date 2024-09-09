@@ -3,7 +3,6 @@ import { GlobalContext } from "./GobalContext";
 import { importArray_eng, importArray_per } from "./importArray";
 
 export const useLanguage = () => useContext(GlobalContext);
-// do not try to contribute in this f*king code... you are not worth it...
 const GlobalProvider = ({ children }) => {
   const [language, setLanguage] = useState("english");
   const data = language === "persian" ? importArray_eng : importArray_per;
