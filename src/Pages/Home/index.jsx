@@ -9,13 +9,13 @@ import Review from "../../components/Review/Index";
 const Home = () => {
   return (
     <section className="home-page column primary-bg">
-      <Hero />
+      {/* <Hero /> */}
       <Courses />
-      <Review />
+      {/* <Review />
       <E_Learn />
       <PriceCards />
       <FAQ />
-      <GetStart />
+      <GetStart /> */}
     </section>
   );
 };

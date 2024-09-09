@@ -1,106 +1,106 @@
 .container {
-    background: 
-      url(../../assets/Images/boxpattern.png), /* Pattern image */
-      radial-gradient(circle farthest-corner at top center, #000000 0%, #622a9a 0%, #000000 50%) !important;
-    background-size: cover; /* Ensure the pattern image covers the container */
-    background-blend-mode: color-dodge; /* Blend the image and gradient if needed */
-    
-    height: auto; /* Allow it to adjust to content */
-    min-height: 55vh; /* Ensure a minimum height */
-    width: 100% !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important
-}
+  background: url(../../assets/Images/boxpattern.png),
+    /* Pattern image */
+      radial-gradient(
+        circle farthest-corner at top center,
+        #000000 0%,
+        #622a9a 0%,
+        #000000 50%
+      ) !important;
+  background-size: cover; /* Ensure the pattern image covers the container */
+  background-blend-mode: color-dodge; /* Blend the image and gradient if needed */
 
-body {
-    background-color: black !important;
+  height: auto; /* Allow it to adjust to content */
+  min-height: 55vh; /* Ensure a minimum height */
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
 
 .main-heading {
-    font-size: 56px;
-    width: 34%;
-    text-align: center;
-    font-weight: 500;
-    line-height: 65px;
-    letter-spacing: -0.015em;
+  font-size: 56px;
+  width: 34%;
+  text-align: center;
+  font-weight: 500;
+  line-height: 65px;
+  letter-spacing: -0.015em;
 }
 
 .field {
-    display: flex;
-    width: 33%;
-    align-items: center;
+  display: flex;
+  width: 33%;
+  align-items: center;
 }
 
 .button {
-    background-color: #fff;
-    border-radius: 8px;
-    text-align: center;
-    margin-left: -33%;
-    width: 33%;
-    height: 47px;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 31px;
-    letter-spacing: -0.0101em;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: -33%;
+  width: 33%;
+  height: 47px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.0101em;
 }
 
 .credit {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: -0.0001em;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.0001em;
 }
 
 @media only screen and (max-width: 600px) {
-    .main-heading {
-        width: 90%;
-        font-size: 44px;
-    }
+  .main-heading {
+    width: 90%;
+    font-size: 44px;
+  }
 
-    .field {
-        width: 100%;
-    }
-    .button{
-    font-size: 13px;    
-    }
+  .field {
+    width: 100%;
+  }
+  .button {
+    font-size: 13px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-   .main-heading {
+  .main-heading {
     width: 54%;
-    }
+  }
 
-    .field {
+  .field {
     width: 55%;
-    }
-
+  }
 }
 
-@media only screen and (min-width:992px){
-.main-heading{
-width: 40%;    
-}
-.field{
-width: 38%;
-}
-.button{
-width: 32%;    
-}    
+@media only screen and (min-width: 992px) {
+  .main-heading {
+    width: 40%;
+  }
+  .field {
+    width: 38%;
+  }
+  .button {
+    width: 32%;
+  }
 }
 
-@media only screen and (min-width:1200px){
-.main-heading{
+@media only screen and (min-width: 1200px) {
+  .main-heading {
     font-size: 56px;
-    width: 34%;    
-}
-.field{
-    width: 32%;    
-}
+    width: 34%;
+  }
+  .field {
+    width: 32%;
+  }
 
-.button{
-    width: 32%;    
-    }   
+  .button {
+    width: 32%;
+  }
 }

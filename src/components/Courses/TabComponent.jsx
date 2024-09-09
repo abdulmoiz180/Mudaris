@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
+import { tabsEnglish } from "./CourseTabs";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./courses.css";
@@ -6,10 +7,8 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Cards from "./Card";
-import { GlobalContext } from "../../globalContext/GobalContext";
 
 export const TabComponent = ({ tabs }) => {
-  const { courseTab } = useContext(GlobalContext);
   const [selectedTab, setSelectedTab] = useState(tabs[0].name);
   const [value, setValue] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -66,7 +65,7 @@ export const TabComponent = ({ tabs }) => {
           },
         }}
       >
-        {courseTab.map((tab, index) => (
+        {tabs.map((tab, index) => (
           <Tab
             value={index}
             key={index}
@@ -79,7 +78,7 @@ export const TabComponent = ({ tabs }) => {
   };
 
   const renderCourses = () => {
-    const selectedCourses = tabs.find(
+    const selectedCourses = tabsEnglish.find(
       (tab) => tab.name === selectedTab
     ).courses;
 
@@ -127,10 +126,9 @@ export const TabComponent = ({ tabs }) => {
 };
 
 function CoursesTabs() {
-  const { courseTab } = useContext(GlobalContext);
   return (
     <div className="App">
-      <TabComponent tabs={courseTab} />
+      <TabComponent tabs={tabsEnglish} />
     </div>
   );
 }
