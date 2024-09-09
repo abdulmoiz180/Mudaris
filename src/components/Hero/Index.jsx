@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <Container className="container">
+    <Container className="HeroPagecontainer">
       <Box className="ContainerContent">
         <Card className="card">
           <CardContent className="cardText inter">
@@ -41,9 +41,11 @@ const Hero = () => {
           <Typography variant="body1" className="mainDescription inter">
             {data[1].description}
           </Typography>
+          <div className="HeroComponentButtonDiv">
           <button className="hero-section-button inter" onClick={videoPlay}>
             {video ? "Pause Video" : "Play Video"}
           </button>
+          </div>
           <span className="hero-bg-lines">
             <img src={BlurGlow} className="BlurGlow" />
           </span>

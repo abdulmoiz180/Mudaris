@@ -1,4 +1,4 @@
-.container {
+.HeroPagecontainer {
   background: linear-gradient(
       180deg,
       rgba(42, 25, 60, 0.8) 0%,
@@ -87,7 +87,6 @@
   width: 95%;
   border: 10px solid black;
   box-shadow: -1px -41px 55px 3px rgba(98, 42, 154, 0.69);
-  z-index: 2;
   overflow: hidden;
 }
 
@@ -101,12 +100,15 @@
 /* moiz code */
 .video-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .video-container::before {
-  width: 1100px;
-  height: 500px;
   content: "";
   position: absolute;
+  width: 95%;
+  height: 80%;
   bottom: 10px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.8%, #050208 86.04%);
 }
@@ -115,8 +117,8 @@
   border: 1px solid hsl(0, 0%, 22%, 0.5);
   background: rgba(140, 69, 255, 0.8);
   position: absolute;
-  left: 536px;
-  bottom: 244px;
+  /* left: 536px;
+  bottom: 244px; */
   display: flex;
   padding: 40px;
   align-items: center;
@@ -202,8 +204,18 @@
   opacity: 0.6;
   left: 190px;
 }
-.hero-section-button::before {
+.HeroComponentButtonDiv{
+  width: 137px;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .hero-section-button::before {
   position: absolute;
+
   content: "";
   width: 137px;
   top: -6px;
@@ -211,22 +223,9 @@
   height: 60px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    justify-content: flex-start;
-  }
-  .mainHeading {
-    font-size: 80px !important;
-    position: relative;
-  }
-  .mainDescription {
-    font-size: 30px !important;
-    width: 80%;
-  }
-}
+} */
 
-@media only screen and (max-width: 858px) {
+@media only screen and (max-width: 1030px) {
   .mainHeading {
     width: 90%;
     font-size: 80px !important;
@@ -237,6 +236,26 @@
   }
   button {
     font-weight: 600;
+  }
+  .hero-bg-lines::before {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: -131px;
+    left: -196px;
+    border-radius: 50%;
+  }
+  .ContainerText::before {
+    width: 95%;
+    height: 650px;
+    top: 95px;
+    border-radius: 50%;
+  }
+  .hero-bg-lines::after {
+    top: -45px;
+    left: -170px;
+    border-radius: 50%;
+    height: 450px;
   }
 }
 
@@ -251,7 +270,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
+  .HeroPagecontainer {
     justify-content: flex-start;
   }
   .ContainerContent {
@@ -279,6 +298,87 @@
       padding: 20px;
     }
   }
+  .video-container {
+    position: relative;
+  }
+  .video-container::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3.8%, #050208 86.04%);
+  }
+  .hero-play-wrapper {
+    padding: 20px !important;
+  }
+
+  .video-fade-out {
+    opacity: 0;
+  }
+  .video-fade-in {
+    opacity: 1;
+  }
+  .hero-play-wrapper img:hover {
+    cursor: pointer;
+  }
+
+  .hero-section-button {
+    padding: 5px 15px;
+    width: fit-content;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    z-index: 5;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+  .hero-bg-lines {
+    position: relative;
+  }
+  .hero-bg-lines::after {
+    width: 290px;
+    height: 264px;
+    position: absolute;
+    content: "";
+    flex-shrink: 0;
+    border-radius: 565.299px;
+    border: 1px solid #fff;
+    opacity: 0.2;
+    top: -30px;
+    left: -42px;
+  }
+  .hero-bg-lines::before {
+    display: none;
+  }
+  .ContainerText::before {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 148px;
+    border-radius: 61%;
+  }
+  .mainHeading::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/Icons//circle.svg);
+    width: 21.911px;
+    height: 21.911px;
+    top: 220px;
+    opacity: 0.6;
+    left: 190px;
+  }
+  .hero-section-button::before {
+    position: absolute;
+    content: "";
+    width: 137px;
+    top: -6px;
+    left: -15px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 @media screen and (width: 344px) {
@@ -286,4 +386,13 @@
     font-size: 39px !important;
     width: 100%;
   }
+  .ContainerText::before {
+    width: 100%;
+    height: 300px;
+    top: 150px;
+}
+.hero-bg-lines::after {
+  width: 285px;
+  height: 250px;
+}
 }
