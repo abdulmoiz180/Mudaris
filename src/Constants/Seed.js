@@ -1,6 +1,5 @@
-
-import starReview from "./assets/Icons/Star Review.png";
-import Client from "./assets/Images/Client.png"
+import starReview from "../assets/Icons/Star Review.png";
+import Client from "../assets/Images/Client.png";
 export let Introduction = [
   {
     title: "Watch Our Introduction Video",
@@ -33,7 +32,7 @@ export let clientdata = [
   },
 ];
 
-export let StudentReviews = [
+const StudentReviews = [
   {
     title: "Hear from Our Students",
   },
@@ -95,6 +94,7 @@ export let StudentReviews = [
     review: "Very nice courses on what some covered. I",
   },
 ];
+export default StudentReviews;
 export let paymentPlans = [
   {
     title: "Choose Your Plan",
@@ -131,7 +131,6 @@ export let paymentPlans = [
     subscribe: "Subscribe Now",
   },
 ];
-export default paymentPlans
 export let GetStarted = [
   {
     title: "Get Started with a Free Trial",

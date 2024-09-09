@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import React, { useState, useRef } from "react";
 import "./Review.css";
 import { Typography } from "@mui/material";
-import StudentReviews from "../../Seed";
+import {StudentReviews} from "../../Seed";
 import Base from "../../assets/Images/Base.png";
 import { Button } from "@mui/material";
 const Review = () => {
