@@ -8,9 +8,9 @@ import "../../Seed.js"
 
 function GetStart() {
   return (
-    <Container className = "container">
-   <h1 className="clr-white inter main-heading">Get Started with a <span>Free</span> Trial</h1>
-   <Box className = "field">
+    <Container className = "get-start-container">
+   <h1 className="clr-white inter get-start-heading">Get Started with a <span>Free</span> Trial</h1>
+   <Box className = "get-email-field">
    <TextField
   type="email"
   placeholder="Your email"
@@ -38,9 +38,9 @@ function GetStart() {
   }}
 />
 
-   <button className="button inter button-text">Join waitlist</button>
+   <button className="get-start-button inter button-text">Join waitlist</button>
    </Box>
-   <p className="credit inter input-text">No Credit card required. 7-days free trial</p>
+   <p className="get-start-credit  inter input-text">No Credit card required. 7-days free trial</p>
  </Container>
 
   );
