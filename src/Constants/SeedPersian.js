@@ -11,22 +11,24 @@ import imgBecoming from "../assets/Icons/imgBecoming.png";
 import imgMaster from "../assets/Icons/imgMaster.png";
 import imgSentimentAnalysis from "../assets/Icons/imgSentimentAnalysis.png";
 import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
+import Heart from "../assets/Icons/Heart.png";
+import Cart from "../assets/Icons/Bag.png";
 
-export let navlinks = [
-  "شروع کنید",
-  "وارد شوید",
-  "نمونه کارها",
-  "تجزیه و تحلیل شخصی",
-  "کاوش کنید",
-];
+export const pagesnav_per = ["کاوش کنید", "تجزیه و تحلیل شخصی", "اکنون امتحان کنید", "نمونه کارها"];
+export const navRightBtns_per = ["فارسی", Heart, Cart, "وارد شوید", "شروع کنید"];
+
 
 export let Introduction_per = {
   title: "ویدیوی معرفی ما را تماشا کنید",
   description:
     "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
-};
+    vidbtn:"پخش ویدیو",
+    latest:"آخرین توصیه",
+    tag:"جدید",
 
-export const whyElearn = [
+  };
+
+export const whyElearn_per = [
   {
     title: "چرا آموزش الکترونیکی؟",
     box1: "بحث 24/7",
@@ -38,7 +40,7 @@ export const whyElearn = [
   },
 ];
 
-export let clientdata = [
+export let clientdata_per = [
   {
     title: "مشتریان ما",
     description:
@@ -54,7 +56,7 @@ export let clientdata = [
   },
 ];
 
-const StudentReviews_per = [
+export const StudentReviews_per = [
   {
     title: "از دانش آموزان ما بشنوید",
   },
@@ -121,7 +123,7 @@ const StudentReviews_per = [
 ];
 export default StudentReviews_per;
 
-export let paymentPlans = [
+export let paymentPlans_per = [
   {
     title: "برنامه خود را انتخاب کنید",
     description: "قیمت ساده، انعطاف پذیر و مقرون به صرفه برای همه.",
@@ -157,7 +159,7 @@ export let paymentPlans = [
     subscribe: "اکنون مشترک شوید",
   },
 ];
-export let GetStarted = [
+export let GetStarted_per = [
   {
     title: "با یک آزمایش رایگان شروع کنید",
     inputfield: "ایمیل شما",
@@ -167,7 +169,7 @@ export let GetStarted = [
   },
 ];
 
-export const faqTitle = [
+export const faqTitle_per = [
   {
     title: "سوالات متداول",
     description:
@@ -175,7 +177,7 @@ export const faqTitle = [
   },
 ];
 
-export const faqArray = [
+export const faqArray_per = [
   {
     question: "آیا می توانم مطالب درسی را دانلود کنم؟",
     answer:
@@ -218,7 +220,7 @@ export const faqArray = [
   },
 ];
 
-export const footerContent = [
+export const footerContent_per = [
   {
     title: "آموزش الکترونیکی",
     links: [

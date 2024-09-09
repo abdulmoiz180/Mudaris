@@ -7,7 +7,7 @@ import {
   Button,
   Container,
 } from "@mui/material";
-import { paymentPlans } from "../../Constants/Seed";
+import { paymentPlans_eng } from "../../Constants/Seed";
 import "./PriceCard.css";
 import Line from "../../assets/Icons/line.png";
 import Tick from "../../assets/Icons/tick.png";
@@ -24,7 +24,7 @@ export const PriceCards = () => {
         </Typography>
       </Box>
       <Box className="card-wrapper">
-        {paymentPlans.slice(1, 4).map((plan, index) => (
+        {paymentPlans_eng.slice(1, 4).map((plan, index) => (
           <Card key={index} className="plan-card">
             <CardContent>
               <Box className="plan-upper">
