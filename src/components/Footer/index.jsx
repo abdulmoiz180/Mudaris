@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Button, Divider, Typography } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
 import { copyWrite, footerContent } from "../../Seed";
 import FaceBook from "../../assets/icons/FaceBook.svg";
@@ -9,7 +9,9 @@ import Instagram from "../../assets/icons/Instagram.svg";
 import LinkedIn from "../../assets/icons/LinkedIn.svg";
 import Youtube from "../../assets/icons/Lozenge.svg";
 import Twitter from "../../assets/icons/Twitter.svg";
+import { GlobalContext } from "../../globalContext/GobalContext";
 const Footer = () => {
+  const { toggleLanguage } = useContext(GlobalContext);
   return (
     <footer className="footer-bg align-center">
       <div className="footer-section row">
@@ -26,11 +28,15 @@ const Footer = () => {
               anywhere access to online courses.
             </Typography>
           </Box>
-          <Button variant="outlined" className="footer-btn clr-white inter">
+          <Button
+            variant="outlined"
+            // onClick={toggleLanguage}
+            className="footer-btn clr-white inter"
+          >
             <span>
               <LanguageIcon />
             </span>
-            English 
+            English
             <span>
               <ArrowForwardIosIcon className="footer-arrow-icon" />
             </span>
@@ -46,7 +52,7 @@ const Footer = () => {
               <ul>
                 {content.links.map((l, i) => (
                   <li key={i} className="secondary-font-clr dm-sans">
-                  {l}
+                    {l}
                   </li>
                 ))}
               </ul>

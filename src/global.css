@@ -113,6 +113,19 @@ li {
 .lightgray{
 color: #FFFFFFB2;
 }
+
+  
+  .input-text{
+  color : #FFFFFF80;  
+  }
+  .button-text{
+  color: #000000;
+  
+  }
+  .input-border{
+  color: #FFFFFF26;  
+  }
+
 /* responsive code */
 
 @media only screen and (max-width: 600px) {
@@ -150,6 +163,7 @@ color: #FFFFFFB2;
     width: 85%; /* kindly check this block in resonsiveness and code accordingly */
   }
 }
+
 /* @media only screen and (min-width: 600px) {
     .title {
       font-size: 44px;
