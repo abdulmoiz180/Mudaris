@@ -1,9 +1,9 @@
 import React from "react";
-
+import { useLanguage } from "../../globalContext/GlobalProvider";
 import Box from "@mui/material/Box";
 import "./courses.css";
 import { Typography } from "@mui/material";
-import CoursesTabs from "./TabComponent";
+import { TabComponent } from "./TabComponent";
 const Courses = () => {
   return (
     <section className="courses-section">
@@ -14,7 +14,7 @@ const Courses = () => {
         Discover Top Course
       </Typography>
       <Box className="courses-box">
-        <CoursesTabs />
+        <TabComponent />
       </Box>
     </section>
   );

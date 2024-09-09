@@ -67,13 +67,23 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              sx={{
+                display: {
+                  xs: "block",
+                  md: "none",
+                },
+              }}
             >
-              {pages.map((page) => (
+              {pages.map((page, index) => (
                 <Button
-                  key={page}
+                  key={index}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{
+                    my: 2,
+                    color: "#aaaaaa",
+                    display: "block",
+                    fontFamily: "inherit",
+                  }}
                 >
                   {page === "Explore" ? (
                     <>
@@ -91,15 +101,16 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <div className="Btns">
               <div className="btnContainer">
-                {pages.map((page) => (
+                {pages.map((page, i) => (
                   <Button
-                    key={page}
+                    key={i}
                     onClick={handleCloseNavMenu}
+                    className="nav-menu-btn"
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
                     {page === "Explore" ? (
                       <>
-                        Explore <ArrowDropDownIcon />
+                        Explore <ArrowDropDownIcon key={i} />
                       </>
                     ) : (
                       page
@@ -107,28 +118,31 @@ function ResponsiveAppBar() {
                   </Button>
                 ))}
               </div>
-              
+
               {/* Right-side Buttons */}
-              <div className="navBarBtns2">
-              <div className="BorderDiv">
+              <Box component="div" className="navBarBtns2 BorderDiv">
                 {RightBtns.map((btn, index) => (
                   <div className="rightbtn">
-                  <Button
-                    key={index}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
-                    className="inter "
-                  >
-                    {isImageUrl(btn) ? (
-                      <img src={btn} alt="icon" style={{ width: 24, height: 24 }} />
-                    ) : (
-                      btn
-                    )}
-                  </Button>
+                    <Button
+                      key={index}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "white", display: "block" }}
+                      className="inter"
+                    >
+                      {isImageUrl(btn) ? (
+                        <img
+                          src={btn}
+                          alt="icon"
+                          key={index}
+                          style={{ width: 24, height: 24 }}
+                        />
+                      ) : (
+                        btn
+                      )}
+                    </Button>
                   </div>
                 ))}
-                </div>
-              </div>
+              </Box>
             </div>
           </Box>
         </Toolbar>
