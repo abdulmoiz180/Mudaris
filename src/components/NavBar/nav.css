@@ -101,11 +101,92 @@
   align-items: center;
 }
 .css-1xomo8h-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
-  background-color: transparent !important;
+  background-color: var(--footer-bg) !important;
+}
+.css-20bmp1-MuiSvgIcon-root {
+  fill: #aaaaaa !important;
+}
+.css-1lvtzne {
+  justify-content: flex-end !important;
 }
 
 @media only screen and (max-width: 600px) {
-  .css-1lvtzne {
-    justify-content: flex-end !important;
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .css-1jmxzwo-MuiToolbar-root {
+    min-height: 60px !important;
+    justify-content: center !important;
+  }
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 100% !important;
+  }
+  .css-hhdjsd-MuiContainer-root {
+    padding: 0 !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 100% !important;
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 912px) {
+  .Btns {
+    gap: 10px;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+  .css-1jmxzwo-MuiToolbar-root {
+    height: 250px !important;
+  }
+  .css-1q2doa3-MuiTypography-root {
+    margin-left: 50px !important;
+  }
+}
+@media only screen and (min-width: 1163px) {
+  .css-1jmxzwo-MuiToolbar-root {
+    height: 100px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .css-1jmxzwo-MuiToolbar-root {
+    min-height: 60px !important;
+    justify-content: center !important;
+  }
+  .Btns {
+    gap: 0px;
+    flex-wrap: nowrap !important;
+  }
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 90% !important;
+  }
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 100% !important;
+    padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .css-1jmxzwo-MuiToolbar-root {
+    min-height: 60px !important;
+    justify-content: space-between !important;
+  }
+  .Btns {
+    gap: 0px;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+  }
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 90% !important;
+  }
+  .css-nt0iva-MuiPaper-root-MuiAppBar-root {
+    width: 90% !important;
+    padding: 0;
+  }
+  .css-1q2doa3-MuiTypography-root {
+    margin-left: 0px !important;
   }
 }
