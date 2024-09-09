@@ -3,7 +3,7 @@ import { Box, Button, Divider, Typography } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
-import { copyWrite_eng, footerContent_eng} from "../../Constants/Seed";
+import { footerContent_eng } from "../../Constants/Seed";
 import FaceBook from "../../assets/icons/FaceBook.svg";
 import Instagram from "../../assets/icons/Instagram.svg";
 import LinkedIn from "../../assets/icons/LinkedIn.svg";
@@ -18,14 +18,13 @@ const Footer = () => {
         <Box component="div" className="footer-left-section column">
           <Box component="div" className="footer-content-wrapper">
             <Typography variant="h6" className="clr-white footer-h2 monts">
-              E-Learn
+              {data[9][0].title}
             </Typography>
             <Typography
               variant="p"
               className="secondary-font-clr footer-p dm-sans"
             >
-              Sinau is a global online learning platform that offers anyone,
-              anywhere access to online courses.
+              {data[12]}
             </Typography>
           </Box>
           <Button
@@ -44,7 +43,7 @@ const Footer = () => {
         </Box>
 
         <Box component="div" className="flex footer-right-section">
-          {footerContent_eng.map((content, index) => (
+          {data[9].map((content, index) => (
             <Box component="div" key={index} className="sublinks-wrapper">
               <Typography variant="h6" className="white-normal">
                 {content.title}

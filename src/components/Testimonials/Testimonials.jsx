@@ -4,16 +4,15 @@ import "./Testimonials.css";
 import Client from "../../assets/Images/Client.png";
 import Ellipse7 from "../../assets/Images/Ellipse7.png";
 import Avatar from "../../assets/Images/Avatar.png";
+import { useLanguage } from "../../globalContext/GlobalProvider";
 
 function Testimonials() {
+  const { data } = useLanguage();
   return (
     <Box className="testim-container">
       <Box className="testim-box">
         <h1 className="clients clr-white inter">Our Clients</h1>
-        <p className="clients clr-white inter">
-          Empowering top companies and institutions with innovative learning
-          solutions.
-        </p>
+        <p className="clients clr-white inter">{data[3].description}</p>
       </Box>
       <Box className="testim-second-box">
         <div className="testim-image-container">

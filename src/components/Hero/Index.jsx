@@ -29,9 +29,9 @@ const Hero = () => {
         <Card className="card">
           <CardContent className="cardText inter">
             <Typography variant="p" className="NewText">
-              NEW
+              {data[1].tag}
             </Typography>
-            <Typography variant="p">Latest Recommendation</Typography>
+            <Typography variant="p">{data[1].latest}</Typography>
           </CardContent>
         </Card>
         <Box className="ContainerText">
@@ -42,9 +42,9 @@ const Hero = () => {
             {data[1].description}
           </Typography>
           <div className="HeroComponentButtonDiv">
-          <button className="hero-section-button inter" onClick={videoPlay}>
-            {video ? "Pause Video" : "Play Video"}
-          </button>
+            <button className="hero-section-button inter" onClick={videoPlay}>
+              {video ? `${data[1].vidbtn}` : `${data[1].vidbtn}`}
+            </button>
           </div>
           <span className="hero-bg-lines">
             <img src={BlurGlow} className="BlurGlow" />

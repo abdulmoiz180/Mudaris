@@ -1,6 +1,3 @@
-// _per with every variable...
-// do not touch any object or anything else...
-
 import starReview from "../assets/Icons/Star Review.png";
 import Client from "../assets/Images/Client.png";
 import bestsellerPersian from "../assets/Icons/bestsellerPersian.png";
@@ -14,19 +11,28 @@ import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
 import Heart from "../assets/Icons/Heart.png";
 import Cart from "../assets/Icons/Bag.png";
 
-export const pagesnav_per = ["کاوش کنید", "تجزیه و تحلیل شخصی", "اکنون امتحان کنید", "نمونه کارها"];
-export const navRightBtns_per = ["فارسی", Heart, Cart, "وارد شوید", "شروع کنید"];
-
+export const pagesnav_per = [
+  "کاوش کنید",
+  "تجزیه و تحلیل شخصی",
+  "اکنون امتحان کنید",
+  "نمونه کارها",
+];
+export const navRightBtns_per = [
+  "فارسی",
+  Heart,
+  Cart,
+  "وارد شوید",
+  "شروع کنید",
+];
 
 export let Introduction_per = {
   title: "ویدیوی معرفی ما را تماشا کنید",
   description:
     "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
-    vidbtn:"پخش ویدیو",
-    latest:"آخرین توصیه",
-    tag:"جدید",
-
-  };
+  vidbtn: "پخش ویدیو",
+  latest: "آخرین توصیه",
+  tag: "جدید",
+};
 
 export const whyElearn_per = [
   {
@@ -40,21 +46,17 @@ export const whyElearn_per = [
   },
 ];
 
-export let clientdata_per = [
-  {
-    title: "مشتریان ما",
-    description:
-      "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
-  },
+export let clientdata_per = {
+  title: "مشتریان ما",
+  description:
+    "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
 
-  {
-    platformdescription:
-      "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
-    clientname: "تالیا تیلور",
-    clientrole: "جان دو، مدیرعامل @ Quantum",
-    img: Client,
-  },
-];
+  platformdescription:
+    "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
+  clientname: "تالیا تیلور",
+  clientrole: "جان دو، مدیرعامل @ Quantum",
+  img: Client,
+};
 
 export const StudentReviews_per = [
   {
@@ -256,9 +258,13 @@ export const footerContent_per = [
     ],
   },
 ];
+export let footerDescription_per =
+  "E-Learn یک پلت فرم یادگیری آنلاین جهانی است که به هر کسی و در هر کجا دسترسی به دوره های آنلاین را ارائه می دهد. ";
+
 export let copyWrite_per = {
   text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
 };
+export let courseTitle_per = "دوره برتر را کشف کنید";
 
 export const tabsPersian = [
   {

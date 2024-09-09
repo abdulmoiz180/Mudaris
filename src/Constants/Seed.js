@@ -17,31 +17,30 @@ import Cart from "../assets/Icons/Bag.png";
 export let Introduction_eng = {
   title: "Watch Our Introduction Video",
   description: `Discover how our platform help you achieve`,
-vidbtn:"Play Video",
-latest:"Latest Recommendation",
-tag:"NEW",
-
+  vidbtn: "Play Video",
+  latest: "Latest Recommendation",
+  tag: "NEW",
 };
 
-
-export const pagesnav_eng = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
+export const pagesnav_eng = [
+  "Explore",
+  "Analysis Personalize",
+  "Try Now",
+  "Portfolio",
+];
 export const navRightBtns_eng = ["EN", Heart, Cart, "Sign In", "Get Started"];
 
-export let clientdata_eng = [
-  {
-    title: "Our Clients",
-    description:
-      "Empowering top companies and institutions with innovative learning solutions.",
-  },
+export let clientdata_eng = {
+  title: "Our Clients",
+  description:
+    "Empowering top companies and institutions with innovative learning solutions.",
 
-  {
-    platformdescription:
-      "This platform has revolutionized our training programs. The results speak for themselves!",
-    clientname: "Talia Taylor",
-    clientrole: "John Doe, CEO of @ Quantum",
-    img: Client,
-  },
-];
+  platformdescription:
+    "This platform has revolutionized our training programs. The results speak for themselves!",
+  clientname: "Talia Taylor",
+  clientrole: "John Doe, CEO of @ Quantum",
+  img: Client,
+};
 
 export const StudentReviews_eng = [
   {
@@ -161,7 +160,6 @@ export const faqTitle_eng = [
   },
 ];
 
-
 export const faqArray_eng = [
   {
     question: "Can I download course materials?",
@@ -241,10 +239,13 @@ export const footerContent_eng = [
     ],
   },
 ];
+
+export let footerDescription_eng =
+  "Sinau is a global online learning platform that offers anyone, anywhere access to online courses.";
 export let copyWrite_eng = {
   text: "© 2022 E-Learn, Inc. All rights reserved.",
 };
-
+export let courseTitle_eng = "Discover Top Course";
 export const tabsEnglish = [
   {
     name: "All Categories",
