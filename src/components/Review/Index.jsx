@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React, { useState, useRef } from "react";
 import "./Review.css";
+import StudentReviews from "../../Constants/Seed";
 import { Typography } from "@mui/material";
-import {StudentReviews} from "../../Seed";
 import Base from "../../assets/Images/Base.png";
 import { Button } from "@mui/material";
 const Review = () => {
@@ -17,7 +17,7 @@ const Review = () => {
       bg.current.className = "ReviewComponentButton View";
     } else {
       Wrap.current.className = "reviewWrapper";
-      bg.current.style.backgroundImage = `url(${Base})`
+      bg.current.style.backgroundImage = `url(${Base})`;
       bg.current.style.backgroundSize = "cover";
       bg.current.style.backgroundRepeat = "no-repeat";
       bg.current.className = "ReviewComponentButton";
@@ -56,7 +56,7 @@ const Review = () => {
       </Box>
       <Box className="ReviewComponentButton" ref={bg}>
         <Button className="dm-sans viewBtn" onClick={viewMore}>
-            {More ? 'View More' : 'Show Less'}
+          {More ? "View More" : "Show Less"}
         </Button>
       </Box>
     </section>

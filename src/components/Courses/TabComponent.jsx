@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { tabsEnglish } from "./CourseTabs";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./courses.css";
@@ -7,15 +6,24 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Cards from "./Card";
+import { useLanguage } from "../../globalContext/GlobalProvider";
 
-export const TabComponent = ({ tabs }) => {
-  const [selectedTab, setSelectedTab] = useState(tabs[0].name);
-  const [value, setValue] = useState(0);
+export const TabComponent = () => {
+  const { data } = useLanguage();
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [items, setItems] = useState(4); // Initial value of items
+  const [items, setItems] = useState(4);
+  const [selectedTab, setSelectedTab] = useState(data[0].name);
+  const [value, setValue] = useState(0);
 
-  // Update the number of items based on screen width
   useEffect(() => {
+    if (data && data.length > 0) {
+      setSelectedTab((prevTab) => data[0].name || prevTab); // Set the first tab as selected when data changes
+      setValue(0);
+
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 300);
+    }
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setItems(1);
@@ -41,12 +49,13 @@ export const TabComponent = ({ tabs }) => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, [data]);
+
   const handleChange = (event, newValue) => {
     setIsTransitioning(true);
     setTimeout(() => {
       setValue(newValue);
-      setSelectedTab(tabs[newValue].name);
+      setSelectedTab(data[newValue].name);
       setIsTransitioning(false);
     }, 300); // Match with CSS transition duration
   };
@@ -65,7 +74,7 @@ export const TabComponent = ({ tabs }) => {
           },
         }}
       >
-        {tabs.map((tab, index) => (
+        {data.map((tab, index) => (
           <Tab
             value={index}
             key={index}
@@ -76,13 +85,12 @@ export const TabComponent = ({ tabs }) => {
       </Tabs>
     );
   };
-
   const renderCourses = () => {
-    const selectedCourses = tabsEnglish.find(
-      (tab) => tab.name === selectedTab
-    ).courses;
+    const selectedTabData = data.find((tab) => tab.name === selectedTab);
 
-    return selectedCourses.map((course, index) => (
+    if (!selectedTabData || !selectedTabData.courses) return null;
+
+    return selectedTabData.courses.map((course, index) => (
       <div key={index} className="course-cards-container clr-white">
         <Cards
           courseTitle={course.courseTitle}
@@ -100,6 +108,7 @@ export const TabComponent = ({ tabs }) => {
       </div>
     ));
   };
+
   var options = {
     items: items,
     nav: true,
@@ -124,13 +133,3 @@ export const TabComponent = ({ tabs }) => {
     </div>
   );
 };
-
-function CoursesTabs() {
-  return (
-    <div className="App">
-      <TabComponent tabs={tabsEnglish} />
-    </div>
-  );
-}
-
-export default CoursesTabs;

@@ -1,5 +1,16 @@
+// _per with every variable...
+// do not touch any object or anything else...
+
 import starReview from "../assets/Icons/Star Review.png";
 import Client from "../assets/Images/Client.png";
+import bestsellerPersian from "../assets/Icons/bestsellerPersian.png";
+import dimStarFilled from "../assets/Icons/dimStarFilled.png";
+import dimStarHalffilled from "../assets/Icons/dimStarHalffilled.png";
+import dimStarOutlined from "../assets/Icons/dimStarOutlined.png";
+import imgBecoming from "../assets/Icons/imgBecoming.png";
+import imgMaster from "../assets/Icons/imgMaster.png";
+import imgSentimentAnalysis from "../assets/Icons/imgSentimentAnalysis.png";
+import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
 
 export let navlinks = [
   "شروع کنید",
@@ -9,65 +20,11 @@ export let navlinks = [
   "کاوش کنید",
 ];
 
-export let Introduction = [
-  {
-    title: "ویدیوی معرفی ما را تماشا کنید",
-    description:
-      "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
-  },
-];
-
-export let tabOne = [
-  {
-    title: "همه دسته ها",
-  },
-
-  {
-    coursetitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
-    reviews: "(25 بررسی ها)",
-    rating: "4.9",
-    originalprice: "Rp120,000",
-    discountedprice: "Rp400,000",
-    videos: "32",
-    duration: "12.5h",
-    discount: "30%",
-    tag: "جدید",
-  },
-  {
-    coursetitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
-    reviews: "(227 بررسی ها)",
-    rating: "4.7",
-    originalprice: "Rp250,000",
-    discountedprice: "Rp550,000",
-    videos: "8",
-    duration: "1.5h",
-    discount: "30%",
-    tag: "جدید",
-  },
-
-  {
-    coursetitle: "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
-    reviews: "(425 بررسی ها)",
-    rating: "4.2",
-    originalprice: "100,000",
-    discountedprice: "Rp250,000",
-    videos: "6",
-    duration: "4h",
-    discount: "30%",
-  },
-
-  {
-    coursetitle: "تسلط بر مهارت های ارتباط موثر",
-    reviews: "(244 بررسی ها)",
-    rating: "4.9",
-    originalprice: "150,000",
-    discountedprice: "Rp320,000",
-    videos: "24",
-    duration: "8.5h",
-    discount: "30%",
-    tag: "پرفروش",
-  },
-];
+export let Introduction_per = {
+  title: "ویدیوی معرفی ما را تماشا کنید",
+  description:
+    "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
+};
 
 export const whyElearn = [
   {
@@ -79,15 +36,6 @@ export const whyElearn = [
     box5: "گواهی",
     box6: "با مربی برنامه ریزی کنید",
   },
-];
-
-export let othertabs = [
-  "بازاریابی",
-  "سبک زندگی",
-  "تجارت",
-  "طراحی",
-  "فناوری اطلاعات و نرم افزار",
-  "توسعه",
 ];
 
 export let clientdata = [
@@ -106,7 +54,7 @@ export let clientdata = [
   },
 ];
 
-const StudentReviews = [
+const StudentReviews_per = [
   {
     title: "از دانش آموزان ما بشنوید",
   },
@@ -171,7 +119,7 @@ const StudentReviews = [
     studentname: "نام دانشجو نامشخص",
   },
 ];
-export default StudentReviews;
+export default StudentReviews_per;
 
 export let paymentPlans = [
   {
@@ -306,11 +254,581 @@ export const footerContent = [
     ],
   },
 ];
-export let copyWrite = [
+export let copyWrite_per = {
+  text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
+};
+
+export const tabsPersian = [
   {
-    // icons: [Instagram, LinkedIn, Twitter, FaceBook, Youtube],
+    name: "همه دسته ها",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
   },
   {
-    text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
+    name: "بازاریابی",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
+  },
+
+  {
+    name: "سبک زندگی",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
+  },
+
+  {
+    name: "تجارت",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
+  },
+
+  {
+    name: "طراحی",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
+  },
+
+  {
+    name: "فناوری اطلاعات و نرم افزار",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
+  },
+
+  {
+    name: "توسعه",
+    courses: [
+      {
+        courseTitle: "تسلط بر مهارت های ارتباط موثر",
+        reviews: "244 بررسی ها",
+        rating: 4.8,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp320,000",
+        discountedPrice: "Rp150,000",
+        videos: 24,
+        duration: "8.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgMaster,
+      },
+      {
+        courseTitle:
+          "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+        reviews: "425 بررسی ها",
+        rating: 4.2,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarOutlined,
+        ],
+        originalPrice: "Rp250,000",
+        discountedPrice: "Rp100,000",
+        videos: 6,
+        duration: "4h",
+        discount: "30%",
+        profileImage: imgBecoming,
+      },
+      {
+        courseTitle: "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+        reviews: "227 بررسی ها",
+        rating: 4.7,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp550,000",
+        discountedPrice: "Rp250,000",
+        videos: 8,
+        duration: "1.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgTimemanagement,
+      },
+      {
+        courseTitle: "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+        reviews: "25 بررسی ها",
+        rating: 4.9,
+        rateStar: [
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarFilled,
+          dimStarHalffilled,
+        ],
+        originalPrice: "Rp400,000",
+        discountedPrice: "Rp120,000",
+        videos: 32,
+        duration: "12.5h",
+        discount: "30%",
+        tag: bestsellerPersian,
+        profileImage: imgSentimentAnalysis,
+      },
+    ],
   },
 ];

@@ -4,7 +4,10 @@ import "./style.css";
 import LandingPageVideo from "../../assets/LandingPageVideo.mp4";
 import BlurGlow from "../../assets/Images/blur2.png";
 import Play from "../../assets/Icons/play.svg";
+import { useLanguage } from "../../globalContext/GlobalProvider";
 const Hero = () => {
+  const { data } = useLanguage();
+
   const [video, setVideo] = useState(false);
   const videoRef = useRef(null);
 
@@ -33,10 +36,10 @@ const Hero = () => {
         </Card>
         <Box className="ContainerText">
           <Typography variant="h1" className="mainHeading inter">
-            Watch Our Introduction Video
+            {data[1].title}
           </Typography>
           <Typography variant="body1" className="mainDescription inter">
-            Discover how our platform can help you achieve your learning goals.
+            {data[1].description}
           </Typography>
           <div className="HeroComponentButtonDiv">
           <button className="hero-section-button inter" onClick={videoPlay}>

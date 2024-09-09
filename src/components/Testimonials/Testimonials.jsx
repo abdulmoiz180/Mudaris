@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import "./Testimonials.css";
-import "../../global.css";
 import Client from "../../assets/Images/Client.png";
 import Ellipse7 from "../../assets/Images/Ellipse7.png";
 import Avatar from "../../assets/Images/Avatar.png";
