@@ -30,7 +30,7 @@ const Footer = () => {
           </Box>
           <Button
             variant="outlined"
-            // onClick={toggleLanguage}
+            onClick={toggleLanguage}
             className="footer-btn clr-white inter"
           >
             <span>
