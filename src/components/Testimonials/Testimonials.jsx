@@ -4,15 +4,17 @@ import "./Testimonials.css";
 import Client from "../../assets/Images/Client.png";
 import Ellipse7 from "../../assets/Images/Ellipse7.png";
 import Avatar from "../../assets/Images/Avatar.png";
+import {useLanguage} from "../../globalContext/GlobalProvider";
 
 function Testimonials() {
+  const { data } = useLanguage();
+
   return (
     <Box className="testim-container">
       <Box className="testim-box">
-        <h1 className="clients clr-white inter">Our Clients</h1>
+        <h1 className="clients clr-white inter">{data[3].title}</h1>
         <p className="clients clr-white inter">
-          Empowering top companies and institutions with innovative learning
-          solutions.
+        {data[3].description}
         </p>
       </Box>
       <Box className="testim-second-box">
@@ -23,12 +25,11 @@ function Testimonials() {
         </div>
         <div className="client-review">
           <p className="clr-white inter clienttext">
-            This platform has revolutionized our training programs. The results
-            speak for themselves!
+          {data[3].platformdescription}
           </p>
-          <p className="clr-white inter clientname">Talia Taylor</p>
+          <p className="clr-white inter clientname">{data[3].clientname}</p>
           <p className="lightgray inter clientrole">
-            John Doe, CEO of @ Quantum
+            {data[3].clientrole}
           </p>
         </div>
       </Box>

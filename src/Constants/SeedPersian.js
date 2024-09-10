@@ -59,21 +59,16 @@ export const whyElearn_per = [
   },
 ];
 
-export let clientdata_per = [
-  {
+export let clientdata_per = {
     title: "مشتریان ما",
     description:
       "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
-  },
-
-  {
     platformdescription:
       "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
     clientname: "تالیا تیلور",
     clientrole: "جان دو، مدیرعامل @ Quantum",
     img: Client,
-  },
-];
+  }
 
 export const StudentReviews_per = [
   {
