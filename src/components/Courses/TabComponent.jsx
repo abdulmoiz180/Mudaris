@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./courses.css";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Cards from "./Card";
 import { useLanguage } from "../../globalContext/GlobalProvider";
+import Slider from "react-slick";
 
 export const TabComponent = () => {
   const { data } = useLanguage();
@@ -106,15 +106,6 @@ export const TabComponent = () => {
     ));
   };
 
-  var options = {
-    items: items,
-    nav: true,
-    rewind: true,
-    autoplay: true,
-    dots: true,
-    loop: true,
-    dotsEach: true,
-  };
   return (
     <div className="tab-container">
       <div className="tab-buttons flex">{renderTabs()}</div>
@@ -123,10 +114,43 @@ export const TabComponent = () => {
           isTransitioning ? "fade-out" : "fade-in"
         }`}
       >
-        <OwlCarousel className="owl-theme" {...options}>
-          {renderCourses()}
-        </OwlCarousel>
+        <Slider {...settings}>{renderCourses()}</Slider>
       </div>
     </div>
   );
+};
+
+var settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
