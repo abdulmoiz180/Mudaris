@@ -7,17 +7,23 @@ import Courses from "../../components/Courses";
 import "./home.css";
 import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import { useLanguage } from "../../globalContext/GlobalProvider";
+
 const Home = () => {
+  const { toggleLanguage, data, language } = useLanguage(); // Access language separately
+
   return (
-    <section className="home-page column primary-bg">
-      <Hero />
+    <section
+      className="home-page column primary-bg"
+      dir={language === "persian" ? "ltr" : "rtl"} // Use language directly
+   <Hero />
       <Testimonials />
-       <Courses />
-       <Review />
+      <Courses />
+      <Review />
       <E_Learn />
       <PriceCards />
       <FAQ />
-      <GetStart /> 
+      <GetStart />
     </section>
   );
 };

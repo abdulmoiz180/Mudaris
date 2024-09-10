@@ -123,6 +123,12 @@ li {
 .input-border {
   color: #ffffff26;
 }
+.align-right{
+  text-align: right !important;
+}
+.align-left{
+  text-align: left !important;
+}
 
 /* responsive code */
 

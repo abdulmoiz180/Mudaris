@@ -6,11 +6,9 @@ import BlurGlow from "../../assets/Images/blur2.png";
 import Play from "../../assets/Icons/play.svg";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 const Hero = () => {
-  const { data } = useLanguage();
-
+  const { data,language} = useLanguage();
   const [video, setVideo] = useState(false);
   const videoRef = useRef(null);
-
   const videoPlay = () => {
     setVideo((prevState) => {
       const newState = !prevState;
@@ -24,14 +22,14 @@ const Hero = () => {
   };
 
   return (
-    <Container className="container">
+    <Container className="HeroPagecontainer">
       <Box className="ContainerContent">
         <Card className="card">
-          <CardContent className="cardText inter">
+          <CardContent className={`cardText inter ${language==="english" ? `w-half`:`` }`}>
             <Typography variant="p" className="NewText">
-              NEW
+              {data[1].tag}
             </Typography>
-            <Typography variant="p">Latest Recommendation</Typography>
+            <Typography variant="p">{data[1].latest}</Typography>
           </CardContent>
         </Card>
         <Box className="ContainerText">
@@ -41,9 +39,12 @@ const Hero = () => {
           <Typography variant="body1" className="mainDescription inter">
             {data[1].description}
           </Typography>
-          <button className="hero-section-button inter" onClick={videoPlay}>
-            {video ? "Pause Video" : "Play Video"}
-          </button>
+          <div className="HeroComponentButtonDiv">
+            <button 
+            className={`hero-section-button inter  ${language==="english" ? `w-half`:` ` }`} onClick={videoPlay}>
+              {video ? data[1].pausebtn : data[1].playbtn}
+            </button>
+          </div>
           <span className="hero-bg-lines">
             <img src={BlurGlow} className="BlurGlow" />
           </span>

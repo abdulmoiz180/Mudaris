@@ -46,13 +46,16 @@
   border-radius: 10px !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   background: rgba(0, 0, 0, 0.06) !important;
+  transition: 1s ease-in-out !important;
+}
+.plan-card:hover{
+  transform: scale(1.04);
 }
 .plan-heading {
   font-weight: 500;
   font-size: 24px;
   color: #ffffff;
 }
-
 .plan-price {
   font-weight: 400;
   font-size: 16px;
@@ -116,10 +119,15 @@
   box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) !important;
   backdrop-filter: blur(7px) !important;
 }
+.plan-card:nth-child(odd):hover ~ .plan-card:nth-child(3n-1) {
+  background: linear-gradient(180deg, #010002 0%, #361764 100%) !important;
+  background-size: cover !important;
+  background-blend-mode: screen !important;
+}
 .plan-card:nth-child(2) {
-  box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48);
-  -webkit-box-shadow: 0px -41px 533px 61px rgba(152, 85, 255, 0.48);
-  -moz-box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48);
+  box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48) !important;
+  -webkit-box-shadow: 0px -41px 533px 61px rgba(152, 85, 255, 0.48) !important;
+  -moz-box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48)!important;
   background: linear-gradient(180deg, #010002 0%, #361764 100%),
     url(../../assets/Images/Pattern.png) !important;
   background-size: cover !important;
@@ -131,11 +139,6 @@
   background-size: cover !important;
   background-blend-mode: screen;
   overflow: hidden !important;
-}
-.plan-card:nth-child(1):hover ~ .plan-card:nth-child(3n-1) {
-  background: linear-gradient(180deg, #010002 0%, #361764 100%) !important;
-  background-size: cover !important;
-  background-blend-mode: screen !important;
 }
 @media only screen and (max-width: 1030px) {
   .card-wrapper {

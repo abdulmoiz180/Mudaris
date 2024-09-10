@@ -11,8 +11,7 @@ import Youtube from "../../assets/icons/Lozenge.svg";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Twitter from "../../assets/icons/Twitter.svg";
 const Footer = () => {
-  const { toggleLanguage } = useLanguage();
-
+  const { toggleLanguage, data } = useLanguage();
   return (
     <footer className="footer-bg align-center">
       <div className="footer-section row">
@@ -73,7 +72,7 @@ const Footer = () => {
         </div>
 
         <Typography variant="p" className="secondary-font-clr footer-p dm-sans">
-          {copyWrite_eng[1].text}
+          {data[2].text}
         </Typography>
       </div>
     </footer>
