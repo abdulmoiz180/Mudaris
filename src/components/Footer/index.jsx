@@ -23,7 +23,7 @@ const Footer = () => {
               variant="p"
               className="secondary-font-clr footer-p dm-sans"
             >
-              {/* {data[12]} */}
+              {data[13]}
             </Typography>
           </Box>
           <Button
