@@ -13,14 +13,20 @@ import starReview from "../assets/Icons/Star Review.png";
 import Client from "../assets/Images/Client.png";
 import Heart from "../assets/Icons/Heart.png";
 import Cart from "../assets/Icons/Bag.png";
-
+import Home from "../assets/Icons/Home.svg";
+import CaseStudy from "../assets/Icons/caseStudy.svg";
+import Discussion from "../assets/Icons/communication.svg";
+import Schedule from "../assets/Icons/scheduel.svg";
+import Certificate from "../assets/Icons/diploma.svg";
+import Upload from "../assets/Icons/upload.png";
 export let Introduction_eng = {
   title: "Watch Our Introduction Video",
-  description: `Discover how our platform help you achieve`,
+  description: `Discover how our platform can help you achieve your learning goals.`,
 vidbtn:"Play Video",
 latest:"Latest Recommendation",
 tag:"NEW",
-
+pausebtn:"Pause Video",
+playbtn:"Play Video"
 };
 
 
@@ -42,7 +48,20 @@ export let clientdata_eng = [
     img: Client,
   },
 ];
-
+export let whyElearn_eng=[
+  {
+     img: [Home, CaseStudy, Discussion, Schedule, Certificate, Upload],
+  },
+  {
+  title:"Why E-Learn?",
+  box1:"Learn anything, anywhere",
+  box2:"Case Studies",
+  box3:"Discussion 24/7",
+  box4:"Schedule with mentor",
+  box5:"Certificate",
+  box6:"Upload Portfolio"
+  }
+]
 export const StudentReviews_eng = [
   {
     title: "Hear from Our Students",
@@ -143,15 +162,14 @@ export let paymentPlans_eng = [
     subscribe: "Subscribe Now",
   },
 ];
-export let GetStarted_eng = [
-  {
-    title: "Get Started with a Free Trial",
+export let GetStarted_eng = {
+    title1: "Get Started with a ",
+    span:"Free",
+    title2:"Trial",
     inputfield: "Your Email",
     buttontext: "Join Waitlist",
-    creditcard: "No credit card required.",
-    freetrial: "7-days free trial",
-  },
-];
+    creditcard: "No credit card required. 7-days free trial",
+  }
 
 export const faqTitle_eng = [
   {

@@ -13,22 +13,41 @@ import imgSentimentAnalysis from "../assets/Icons/imgSentimentAnalysis.png";
 import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
 import Heart from "../assets/Icons/Heart.png";
 import Cart from "../assets/Icons/Bag.png";
-
-export const pagesnav_per = ["کاوش کنید", "تجزیه و تحلیل شخصی", "اکنون امتحان کنید", "نمونه کارها"];
-export const navRightBtns_per = ["فارسی", Heart, Cart, "وارد شوید", "شروع کنید"];
-
+import Home from "../assets/Icons/Home.svg";
+import CaseStudy from "../assets/Icons/caseStudy.svg";
+import Discussion from "../assets/Icons/communication.svg";
+import Schedule from "../assets/Icons/scheduel.svg";
+import Certificate from "../assets/Icons/diploma.svg";
+import Upload from "../assets/Icons/upload.png";
+export const pagesnav_per = [
+  "کاوش کنید",
+  "تجزیه و تحلیل شخصی",
+  "اکنون امتحان کنید",
+  "نمونه کارها",
+];
+export const navRightBtns_per = [
+  "فارسی",
+  Heart,
+  Cart,
+  "وارد شوید",
+  "شروع کنید",
+];
 
 export let Introduction_per = {
   title: "ویدیوی معرفی ما را تماشا کنید",
   description:
     "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
-    vidbtn:"پخش ویدیو",
-    latest:"آخرین توصیه",
-    tag:"جدید",
-
-  };
+  vidbtn: "پخش ویدیو",
+  latest: "آخرین توصیه",
+  tag: "جدید",
+  pausebtn: "مکث ویدیو",
+  playbtn: "پخش ویدیو"
+};
 
 export const whyElearn_per = [
+  {
+    img: [Home, CaseStudy, Discussion, Schedule, Certificate, Upload],
+  },
   {
     title: "چرا آموزش الکترونیکی؟",
     box1: "بحث 24/7",
@@ -159,15 +178,15 @@ export let paymentPlans_per = [
     subscribe: "اکنون مشترک شوید",
   },
 ];
-export let GetStarted_per = [
-  {
-    title: "با یک آزمایش رایگان شروع کنید",
-    inputfield: "ایمیل شما",
-    buttontext: "به لیست انتظار بپیوندید",
-    creditcard: "بدون نیاز به کارت اعتباری",
-    freetrial: "7 روز آزمایشی رایگان",
-  },
-];
+export let GetStarted_per = {
+  title1: "با یک آزمایش ",
+  span: " رایگان",
+  title2: " شروع کنید",
+  inputfield: "ایمیل شما",
+  buttontext: "به لیست انتظار بپیوندید",
+  creditcard: "بدون نیاز به کارت اعتباری",
+  freetrial: "7 روز آزمایشی رایگان",
+};
 
 export const faqTitle_per = [
   {
