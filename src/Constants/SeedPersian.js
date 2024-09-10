@@ -41,7 +41,7 @@ export let Introduction_per = {
   latest: "آخرین توصیه",
   tag: "جدید",
   pausebtn: "مکث ویدیو",
-  playbtn: "پخش ویدیو"
+  playbtn: "پخش ویدیو",
 };
 
 export const whyElearn_per = [
@@ -60,15 +60,15 @@ export const whyElearn_per = [
 ];
 
 export let clientdata_per = {
-    title: "مشتریان ما",
-    description:
-      "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
-    platformdescription:
-      "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
-    clientname: "تالیا تیلور",
-    clientrole: "جان دو، مدیرعامل @ Quantum",
-    img: Client,
-  }
+  title: "مشتریان ما",
+  description:
+    "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
+  platformdescription:
+    "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
+  clientname: "تالیا تیلور",
+  clientrole: "جان دو، مدیرعامل @ Quantum",
+  img: Client,
+};
 
 export const StudentReviews_per = [
   {
@@ -233,7 +233,8 @@ export const faqArray_per = [
       "برای لغو اشتراک خود، به تنظیمات حساب خود بروید و گزینه 'لغو اشتراک' را انتخاب کنید. برای تکمیل فرآیند لغو، مراحل را دنبال کنید.",
   },
 ];
-
+export let footerDescription_per =
+  "E-Learn یک پلت فرم یادگیری آنلاین جهانی است که به هر کسی و در هر کجا دسترسی به دوره های آنلاین را ارائه می دهد.";
 export const footerContent_per = [
   {
     title: "آموزش الکترونیکی",
@@ -273,6 +274,7 @@ export const footerContent_per = [
 export let copyWrite_per = {
   text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
 };
+export const tabsTitle_per = "دوره برتر را کشف کنید";
 
 export const tabsPersian = [
   {

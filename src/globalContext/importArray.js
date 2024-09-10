@@ -12,6 +12,8 @@ import {
   pagesnav_eng,
   navRightBtns_eng,
   whyElearn_eng,
+  tabsTitle_eng,
+  footerDescription_eng,
 } from "../Constants/Seed";
 import {
   tabsPersian,
@@ -27,6 +29,8 @@ import {
   pagesnav_per,
   navRightBtns_per,
   whyElearn_per,
+  footerDescription_per,
+  tabsTitle_per,
 } from "../Constants/SeedPersian";
 
 export let importArray_eng = [
@@ -43,6 +47,8 @@ export let importArray_eng = [
   pagesnav_eng,
   navRightBtns_eng,
   whyElearn_eng,
+  footerDescription_eng,
+  tabsTitle_eng,
 ];
 
 export let importArray_per = [
@@ -59,6 +65,8 @@ export let importArray_per = [
   pagesnav_per,
   navRightBtns_per,
   whyElearn_per,
+  footerDescription_per,
+  tabsTitle_per,
 ];
 // do not disturb the index
 //one should be _eng and other one is _per

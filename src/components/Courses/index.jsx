@@ -14,7 +14,7 @@ const Courses = () => {
         className="fs-48 inter course-setion-title  clr-white"
         variant="h6"
       >
-        {data[13]}
+        {data[14]}
       </Typography>
       <Box className="courses-box">
         <TabComponent />

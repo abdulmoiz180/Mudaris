@@ -14,7 +14,7 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 
 function ResponsiveAppBar() {
-  const { toggleLanguage, data } = useLanguage();
+  const { data } = useLanguage();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {

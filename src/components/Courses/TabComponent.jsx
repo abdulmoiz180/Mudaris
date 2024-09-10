@@ -14,12 +14,11 @@ export const TabComponent = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [items, setItems] = useState(4);
   const [selectedTab, setSelectedTab] = useState(data[0].name);
-  console.log(data[0].name);
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    if (data[0] && data[0].length > 0) {
-      setSelectedTab(data[0].name); // Set the first tab as selected when data changes
+    if (data[0] && data[0].length > data[0]) {
+      setSelectedTab(data[0].name);
       setValue(0);
     }
     const handleResize = () => {
