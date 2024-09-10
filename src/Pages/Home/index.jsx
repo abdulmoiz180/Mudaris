@@ -10,15 +10,13 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 
 const Home = () => {
-  const { toggleLanguage, data, language } = useLanguage(); // Access language separately
+  const { language } = useLanguage(); // Access language separately
 
   return (
     <section
       className="home-page column primary-bg"
       dir={language === "persian" ? "ltr" : "rtl"} 
       >
-   <Hero />
-      <Testimonials />
       <Courses />
       <Review />
       <E_Learn />

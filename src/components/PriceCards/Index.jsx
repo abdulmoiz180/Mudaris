@@ -1,13 +1,20 @@
 import React from "react";
-import { Box, Card, CardContent, Typography, Button, Container } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Typography,
+  Button,
+  Container,
+} from "@mui/material";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./PriceCard.css";
 import Line from "../../assets/Icons/line.png";
 import Tick from "../../assets/Icons/tick.png";
 
 export const PriceCards = () => {
-  const { data,language } = useLanguage();
-  const paymentPlans = data[5]; 
+  const { data, language } = useLanguage();
+  const paymentPlans = data[5];
 
   return (
     <Container className="price-container">
@@ -15,13 +22,17 @@ export const PriceCards = () => {
         <Typography variant="h1" className="plan-title inter">
           {paymentPlans[0].title}
         </Typography>
-        <Typography variant="body1" className="plan-descrip tion inter">
-          {paymentPlans[0].description}
+        <Typography variant="body1" className="plan-description inter">
         </Typography>
       </Box>
       <Box className="card-wrapper">
         {paymentPlans.slice(1, 4).map((plan, index) => (
-          <Card key={index} className={`plan-card ${language==="english" ? `align-right`:`align-left` }`}>
+          <Card
+            key={index}
+            className={`plan-card ${
+              language === "english" ? `align-right` : `align-left`
+            }`}
+          >
             <CardContent>
               <Box className="plan-upper">
                 <Typography variant="h5" className="plan-heading inter">

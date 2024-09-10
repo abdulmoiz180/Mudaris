@@ -4,7 +4,7 @@ import { importArray_eng, importArray_per } from "./importArray";
 
 export const useLanguage = () => useContext(GlobalContext);
 const GlobalProvider = ({ children }) => {
-  const [language, setLanguage] = useState("english");
+  const [language, setLanguage] = useState("persian");
   const data = language === "persian" ? importArray_eng : importArray_per;
 
   const toggleLanguage = () => {
@@ -12,7 +12,7 @@ const GlobalProvider = ({ children }) => {
   };
 
   return (
-    <GlobalContext.Provider value={{ toggleLanguage, data,language }}>
+    <GlobalContext.Provider value={{ toggleLanguage, data, language }}>
       {children}
     </GlobalContext.Provider>
   );
