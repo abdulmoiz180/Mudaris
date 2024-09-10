@@ -183,13 +183,13 @@ export let GetStarted_per = {
   freetrial: "7 روز آزمایشی رایگان",
 };
 
-export const faqTitle_per = [
-  {
+export const faqTitle_per = {
+  
     title: "سوالات متداول",
     description:
       "هنوز سوالی دارید؟ با تیم ما از طریق hello@squareup.com تماس بگیرید",
-  },
-];
+  
+};
 
 export const faqArray_per = [
   {
