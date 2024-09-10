@@ -7,20 +7,27 @@ import "slick-carousel/slick/slick-theme.css";
 import Cards from "./Card";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Slider from "react-slick";
+const debug = (value) => {
+  console.log(`i am ${value}-> `, value);
+};
 
 export const TabComponent = () => {
   const { data } = useLanguage();
-
+  let CourseData = data[0];
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [items, setItems] = useState(4);
-  const [selectedTab, setSelectedTab] = useState(data[0].name);
+  const [selectedTab, setSelectedTab] = useState(CourseData[0].name);
   const [value, setValue] = useState(0);
+  // debug(selectedTab);
+  useEffect(() => {
+    // Ensure that selectedTab and value are reset when data (language) changes
+    if (data[0] && data[0].length > 0) {
+      setSelectedTab(data[0][0].name); // Reset to the first tab's name
+      setValue(0); // Reset the tab index to the first tab
+    }
+  }, [data]);
 
   useEffect(() => {
-    if (data[0] && data[0].length > data[0]) {
-      setSelectedTab(data[0].name);
-      setValue(0);
-    }
     const handleResize = () => {
       if (window.innerWidth <= 600) {
         setItems(1);
@@ -36,17 +43,15 @@ export const TabComponent = () => {
         setItems(4);
       }
     };
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Call handleResize initially
     handleResize();
 
-    // Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [data[0]]);
+  });
+  // This will trigger whenever the language changes
 
   const handleChange = (event, newValue) => {
     setIsTransitioning(true);
@@ -71,7 +76,7 @@ export const TabComponent = () => {
           },
         }}
       >
-        {data[0].map((tab, index) => (
+        {CourseData.map((tab, index) => (
           <Tab
             value={index}
             key={index}
@@ -83,10 +88,11 @@ export const TabComponent = () => {
     );
   };
   const renderCourses = () => {
-    const selectedTabData = data[0].find((tab) => tab.name === selectedTab);
+    const selectedTabData = CourseData?.find((tab) => tab.name === selectedTab);
 
-    if (!selectedTabData || !selectedTabData.courses) return null;
-
+    if (!selectedTabData || !selectedTabData.courses) {
+      return <div>Select any tab please...</div>;
+    }
     return selectedTabData.courses.map((course, index) => (
       <div key={index} className="course-cards-container clr-white">
         <Cards
@@ -105,6 +111,41 @@ export const TabComponent = () => {
       </div>
     ));
   };
+  var settings = {
+    dots: true,
+    infinite: false, // Change to true to enable continuous scrolling
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1, // Reduce this value to ensure smoother scrolling
+    initialSlide: 0,
+
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
+  };
 
   return (
     <div className="tab-container">
@@ -114,43 +155,10 @@ export const TabComponent = () => {
           isTransitioning ? "fade-out" : "fade-in"
         }`}
       >
-        <Slider {...settings}>{renderCourses()}</Slider>
+        <Slider key={selectedTab} {...settings}>
+          {renderCourses()}
+        </Slider>
       </div>
     </div>
   );
-};
-
-var settings = {
-  dots: true,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
 };
