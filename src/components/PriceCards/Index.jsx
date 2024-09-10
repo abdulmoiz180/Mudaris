@@ -23,7 +23,6 @@ export const PriceCards = () => {
           {paymentPlans[0].title}
         </Typography>
         <Typography variant="body1" className="plan-description inter">
-          {paymentPlans[0].description}
         </Typography>
       </Box>
       <Box className="card-wrapper">

@@ -15,11 +15,8 @@ const Home = () => {
   return (
     <section
       className="home-page column primary-bg"
-      dir={language === "persian" ? "ltr" : "rtl"}
-    >
-      // Use language directly
-      <Hero />
-      <Testimonials />
+      dir={language === "persian" ? "ltr" : "rtl"} 
+      >
       <Courses />
       <Review />
       <E_Learn />
