@@ -12,10 +12,9 @@ const GlobalProvider = ({ children }) => {
   };
 
   return (
-    <GlobalContext.Provider value={{ toggleLanguage, data }}>
+    <GlobalContext.Provider value={{ toggleLanguage, data,language }}>
       {children}
     </GlobalContext.Provider>
   );
 };
-
 export default GlobalProvider;

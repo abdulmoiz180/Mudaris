@@ -4,17 +4,25 @@ import "../../global.css";
 import "./getstarted.css";
 import { Container } from "@mui/material";
 import { TextField } from "@mui/material";
+import { useLanguage } from "../../globalContext/GlobalProvider";
 
 function GetStart() {
+  const { data,language } = useLanguage();
+
   return (
     <Container className="get-start-container">
+      {/* Displaying the title */}
       <h1 className="clr-white inter get-start-heading">
-        Get Started with a <span>Free</span> Trial
+        {data[6].title1}
+        <span>{data[6].span}</span>
+        {data[6].title2}
       </h1>
+   
+      {/* Input field with placeholder */}
       <Box className="get-email-field">
         <TextField
           type="email"
-          placeholder="Your email"
+          placeholder={data[6].inputfield}
           variant="outlined"
           className="custom-input"
           fullWidth
@@ -39,12 +47,15 @@ function GetStart() {
           }}
         />
 
-        <button className="get-start-button inter button-text">
-          Join waitlist
+        {/* Button with text */}
+        <button className={`get-start-button inter button-text ${language==="english" ? `m-right`:` ` }`}>
+          {data[6].buttontext}
         </button>
       </Box>
-      <p className="get-start-credit  inter input-text">
-        No Credit card required. 7-days free trial
+
+      {/* Credit card information */}
+      <p className="get-start-credit inter input-text">
+        {data[6].creditcard}
       </p>
     </Container>
   );
