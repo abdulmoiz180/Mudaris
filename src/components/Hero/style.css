@@ -30,12 +30,12 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #000;
   color: #9855ff;
-  border-radius: 40px;
+  border-radius: 50px;
   padding: 0 !important;
 }
-
 .NewText {
   font-size: 10px;
   background-color: #9855ff;
@@ -47,7 +47,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .ContainerContent {
   display: flex;
   flex-direction: column;
@@ -62,7 +61,7 @@
   font-weight: 500 !important;
   line-height: 84px;
   text-align: center;
-  width: 80%;
+  width: 66%;
 }
 
 .mainDescription {
@@ -97,7 +96,6 @@
   filter: blur(50px);
   margin-top: -200px;
 }
-/* moiz code */
 .video-container {
   position: relative;
   display: flex;
@@ -117,8 +115,6 @@
   border: 1px solid hsl(0, 0%, 22%, 0.5);
   background: rgba(140, 69, 255, 0.8);
   position: absolute;
-  /* left: 536px;
-  bottom: 244px; */
   display: flex;
   padding: 40px;
   align-items: center;
@@ -142,7 +138,6 @@
 .hero-play-wrapper img:hover {
   cursor: pointer;
 }
-
 .hero-section-button {
   padding: 5px 15px;
   width: fit-content;
@@ -204,7 +199,7 @@
   opacity: 0.6;
   left: 190px;
 }
-.HeroComponentButtonDiv{
+.HeroComponentButtonDiv {
   width: 137px;
   height: 60px;
   border-radius: 12px;
@@ -213,18 +208,13 @@
   align-items: center;
   justify-content: center;
 }
-/* .hero-section-button::before {
-  position: absolute;
 
-  content: "";
-  width: 137px;
-  top: -6px;
-  left: -15px;
-  height: 60px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-} */
-
+.w-full{
+  width: 80%;
+}
+.w-half{
+  width: 66% !important;
+}
 @media only screen and (max-width: 1030px) {
   .mainHeading {
     width: 90%;
@@ -369,16 +359,6 @@
     opacity: 0.6;
     left: 190px;
   }
-  .hero-section-button::before {
-    position: absolute;
-    content: "";
-    width: 137px;
-    top: -6px;
-    left: -15px;
-    height: 60px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
 }
 
 @media screen and (width: 344px) {
@@ -390,9 +370,9 @@
     width: 100%;
     height: 300px;
     top: 150px;
-}
-.hero-bg-lines::after {
-  width: 285px;
-  height: 250px;
-}
+  }
+  .hero-bg-lines::after {
+    width: 285px;
+    height: 250px;
+  }
 }

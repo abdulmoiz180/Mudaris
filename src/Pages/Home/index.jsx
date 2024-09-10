@@ -7,15 +7,24 @@ import Courses from "../../components/Courses";
 import "./home.css";
 import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import { useLanguage } from "../../globalContext/GlobalProvider";
+
 const Home = () => {
+  const { language } = useLanguage(); // Access language separately
+
   return (
-    <section className="home-page column primary-bg">
+    <section
+      className="home-page column primary-bg"
+      dir={language === "persian" ? "ltr" : "rtl"} 
+      >
       <Hero />
-      <Testimonials />
-      {/*<Courses /> */}
+        
+              <Testimonials />
+
+      <Courses />
       <Review />
       <E_Learn />
-      {/*<PriceCards />*/}
+      <PriceCards />
       <FAQ />
       <GetStart />
     </section>

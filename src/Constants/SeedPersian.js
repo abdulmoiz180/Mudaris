@@ -13,22 +13,41 @@ import imgSentimentAnalysis from "../assets/Icons/imgSentimentAnalysis.png";
 import imgTimemanagement from "../assets/Icons/imgTimemanagement.png";
 import Heart from "../assets/Icons/Heart.png";
 import Cart from "../assets/Icons/Bag.png";
-
-export const pagesnav_per = ["کاوش کنید", "تجزیه و تحلیل شخصی", "اکنون امتحان کنید", "نمونه کارها"];
-export const navRightBtns_per = ["فارسی", Heart, Cart, "وارد شوید", "شروع کنید"];
-
+import Home from "../assets/Icons/Home.svg";
+import CaseStudy from "../assets/Icons/caseStudy.svg";
+import Discussion from "../assets/Icons/communication.svg";
+import Schedule from "../assets/Icons/scheduel.svg";
+import Certificate from "../assets/Icons/diploma.svg";
+import Upload from "../assets/Icons/upload.png";
+export const pagesnav_per = [
+  "کاوش کنید",
+  "تجزیه و تحلیل شخصی",
+  "اکنون امتحان کنید",
+  "نمونه کارها",
+];
+export const navRightBtns_per = [
+  "فارسی",
+  Heart,
+  Cart,
+  "وارد شوید",
+  "شروع کنید",
+];
 
 export let Introduction_per = {
   title: "ویدیوی معرفی ما را تماشا کنید",
   description:
     "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
-    vidbtn:"پخش ویدیو",
-    latest:"آخرین توصیه",
-    tag:"جدید",
-
-  };
+  vidbtn: "پخش ویدیو",
+  latest: "آخرین توصیه",
+  tag: "جدید",
+  pausebtn: "مکث ویدیو",
+  playbtn: "پخش ویدیو",
+};
 
 export const whyElearn_per = [
+  {
+    img: [Home, CaseStudy, Discussion, Schedule, Certificate, Upload],
+  },
   {
     title: "چرا آموزش الکترونیکی؟",
     box1: "بحث 24/7",
@@ -40,21 +59,16 @@ export const whyElearn_per = [
   },
 ];
 
-export let clientdata_per = [
-  {
-    title: "مشتریان ما",
-    description:
-      "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
-  },
-
-  {
-    platformdescription:
-      "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
-    clientname: "تالیا تیلور",
-    clientrole: "جان دو، مدیرعامل @ Quantum",
-    img: Client,
-  },
-];
+export let clientdata_per = {
+  title: "مشتریان ما",
+  description:
+    "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
+  platformdescription:
+    "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
+  clientname: "تالیا تیلور",
+  clientrole: "جان دو، مدیرعامل @ Quantum",
+  img: Client,
+};
 
 export const StudentReviews_per = [
   {
@@ -159,15 +173,15 @@ export let paymentPlans_per = [
     subscribe: "اکنون مشترک شوید",
   },
 ];
-export let GetStarted_per = [
-  {
-    title: "با یک آزمایش رایگان شروع کنید",
-    inputfield: "ایمیل شما",
-    buttontext: "به لیست انتظار بپیوندید",
-    creditcard: "بدون نیاز به کارت اعتباری",
-    freetrial: "7 روز آزمایشی رایگان",
-  },
-];
+export let GetStarted_per = {
+  title1: "با یک آزمایش ",
+  span: " رایگان",
+  title2: " شروع کنید",
+  inputfield: "ایمیل شما",
+  buttontext: "به لیست انتظار بپیوندید",
+  creditcard: "بدون نیاز به کارت اعتباری",
+  freetrial: "7 روز آزمایشی رایگان",
+};
 
 export const faqTitle_per = [
   {
@@ -219,7 +233,8 @@ export const faqArray_per = [
       "برای لغو اشتراک خود، به تنظیمات حساب خود بروید و گزینه 'لغو اشتراک' را انتخاب کنید. برای تکمیل فرآیند لغو، مراحل را دنبال کنید.",
   },
 ];
-
+export let footerDescription_per =
+  "E-Learn یک پلت فرم یادگیری آنلاین جهانی است که به هر کسی و در هر کجا دسترسی به دوره های آنلاین را ارائه می دهد.";
 export const footerContent_per = [
   {
     title: "آموزش الکترونیکی",
@@ -259,6 +274,7 @@ export const footerContent_per = [
 export let copyWrite_per = {
   text: "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است.",
 };
+export const tabsTitle_per = "دوره برتر را کشف کنید";
 
 export const tabsPersian = [
   {
