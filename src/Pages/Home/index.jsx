@@ -12,10 +12,10 @@ const Home = () => {
     <section className="home-page column primary-bg">
       <Hero />
       <Testimonials />
-      <Courses />
+      {/*<Courses /> */}
       <Review />
       <E_Learn />
-      <PriceCards />
+      {/*<PriceCards />*/}
       <FAQ />
       <GetStart />
     </section>
