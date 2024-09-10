@@ -177,6 +177,7 @@ export const faqTitle_eng = {
     description: "Still you have any questions? Contact our Team via hello@squareup.com",
   };
 
+
 export const faqArray_eng = [
   {
     question: "Can I download course materials?",
