@@ -3,7 +3,6 @@ import { Box, Button, Divider, Typography } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
-import { footerContent_eng } from "../../Constants/Seed";
 import FaceBook from "../../assets/icons/FaceBook.svg";
 import Instagram from "../../assets/icons/Instagram.svg";
 import LinkedIn from "../../assets/icons/LinkedIn.svg";
@@ -24,7 +23,7 @@ const Footer = () => {
               variant="p"
               className="secondary-font-clr footer-p dm-sans"
             >
-              {data[12]}
+              {/* {data[12]} */}
             </Typography>
           </Box>
           <Button
