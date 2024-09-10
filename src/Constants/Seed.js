@@ -173,9 +173,8 @@ export let GetStarted_eng = {
 
 export const faqTitle_eng = [
   {
-    title: "سوالات متداول",
-    description:
-      "هنوز سوالی دارید؟ با تیم ما از طریق hello@squareup.com تماس بگیرید",
+    title: "Frequently Asked Questions",
+    description: "Still you have any questions? Contact our Team via hello@squareup.com",
   },
 ];
 

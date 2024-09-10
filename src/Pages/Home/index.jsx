@@ -17,6 +17,10 @@ const Home = () => {
       className="home-page column primary-bg"
       dir={language === "persian" ? "ltr" : "rtl"} 
       >
+      <Hero />
+        
+              <Testimonials />
+
       <Courses />
       <Review />
       <E_Learn />
