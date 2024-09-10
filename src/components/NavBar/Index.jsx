@@ -10,14 +10,11 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Logo from "../../assets/Icons/Nav/Frame 1.png";
-import Heart from "../../assets/Icons/Heart.png";
-import Cart from "../../assets/Icons/Bag.png";
+import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 
-const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
-const RightBtns = ["EN", Heart, Cart, "Sign In", "Get Started"];
-
 function ResponsiveAppBar() {
+  const { toggleLanguage, data } = useLanguage();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -74,7 +71,7 @@ function ResponsiveAppBar() {
                 },
               }}
             >
-              {pages.map((page, index) => (
+              {data[10].map((page, index) => (
                 <Button
                   key={index}
                   onClick={handleCloseNavMenu}
@@ -101,7 +98,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <div className="Btns">
               <div className="btnContainer">
-                {pages.map((page, i) => (
+                {data[10].map((page, i) => (
                   <Button
                     key={i}
                     onClick={handleCloseNavMenu}
@@ -121,7 +118,7 @@ function ResponsiveAppBar() {
 
               {/* Right-side Buttons */}
               <Box component="div" className="navBarBtns2 BorderDiv">
-                {RightBtns.map((btn, index) => (
+                {data[11].map((btn, index) => (
                   <div className="rightbtn">
                     <Button
                       key={index}

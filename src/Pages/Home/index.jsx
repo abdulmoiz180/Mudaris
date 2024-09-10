@@ -21,7 +21,7 @@ const Home = () => {
       <Courses />
       <Review />
       <E_Learn />
-      <PriceCards />
+      {/* <PriceCards />  */}
       <FAQ />
       <GetStart />
     </section>

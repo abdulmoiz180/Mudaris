@@ -10,19 +10,17 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 
 export const TabComponent = () => {
   const { data } = useLanguage();
+
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [items, setItems] = useState(4);
   const [selectedTab, setSelectedTab] = useState(data[0].name);
+  console.log(data[0].name);
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    if (data && data.length > 0) {
-      setSelectedTab((prevTab) => data[0].name || prevTab); // Set the first tab as selected when data changes
+    if (data[0] && data[0].length > 0) {
+      setSelectedTab(data[0].name); // Set the first tab as selected when data changes
       setValue(0);
-
-      setTimeout(() => {
-        setIsTransitioning(false);
-      }, 300);
     }
     const handleResize = () => {
       if (window.innerWidth <= 600) {
@@ -49,13 +47,13 @@ export const TabComponent = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [data]);
+  }, [data[0]]);
 
   const handleChange = (event, newValue) => {
     setIsTransitioning(true);
     setTimeout(() => {
       setValue(newValue);
-      setSelectedTab(data[newValue].name);
+      setSelectedTab(data[0][newValue].name);
       setIsTransitioning(false);
     }, 300); // Match with CSS transition duration
   };
@@ -74,7 +72,7 @@ export const TabComponent = () => {
           },
         }}
       >
-        {data.map((tab, index) => (
+        {data[0].map((tab, index) => (
           <Tab
             value={index}
             key={index}
@@ -86,7 +84,7 @@ export const TabComponent = () => {
     );
   };
   const renderCourses = () => {
-    const selectedTabData = data.find((tab) => tab.name === selectedTab);
+    const selectedTabData = data[0].find((tab) => tab.name === selectedTab);
 
     if (!selectedTabData || !selectedTabData.courses) return null;
 
