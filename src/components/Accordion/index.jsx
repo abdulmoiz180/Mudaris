@@ -8,14 +8,12 @@ import "./faq.css"; // Ensure you have the styles needed in this file
 import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
 import { Box } from "@mui/material";
-import { useLanguage } from "../../globalContext/GlobalProvider"
 export default function FAQ() {
   const [expanded, setExpanded] = useState(false);
 
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-  const {data} = useLanguage();
   return (
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
@@ -27,7 +25,7 @@ export default function FAQ() {
         </Typography>
       </Box>
       <div className="faq-container column ">
-        {data[7].map((faq, index) => (
+        {faqArray_eng.map((faq, index) => (
           <Accordion
             key={index}
             expanded={expanded === index}
