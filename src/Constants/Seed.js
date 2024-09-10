@@ -171,12 +171,11 @@ export let GetStarted_eng = {
   creditcard: "No credit card required. 7-days free trial",
 };
 
-export const faqTitle_eng = [
-  {
+export const faqTitle_eng = {
+  
     title: "Frequently Asked Questions",
     description: "Still you have any questions? Contact our Team via hello@squareup.com",
-  },
-];
+  };
 
 export const faqArray_eng = [
   {

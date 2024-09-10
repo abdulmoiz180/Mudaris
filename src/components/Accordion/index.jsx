@@ -20,10 +20,10 @@ export default function FAQ() {
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
         <Typography variant="h6" className="clr-white inter faq-title">
-          Frequently Asked Questions
+         {data[8].title}
         </Typography>
         <Typography className="clr-white inter faq-subtitle">
-          Still you have any questions? Contact our Team via hello@squareup.com
+        {data[8].description}
         </Typography>
       </Box>
       <div className="faq-container column ">
