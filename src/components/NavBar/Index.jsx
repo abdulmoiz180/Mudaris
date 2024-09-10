@@ -14,7 +14,7 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 
 function ResponsiveAppBar() {
-  const { data } = useLanguage();
+  const { toggleLanguage, data } = useLanguage();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -122,9 +122,12 @@ function ResponsiveAppBar() {
                   <div className="rightbtn">
                     <Button
                       key={index}
-                      onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: "white", display: "block" }}
                       className="inter"
+                      onClick={
+                        (btn === "EN",
+                        "فارسی" ? toggleLanguage : handleCloseNavMenu)
+                      }
                     >
                       {isImageUrl(btn) ? (
                         <img

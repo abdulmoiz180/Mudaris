@@ -4,13 +4,15 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { faqArray_eng } from "../../Constants/Seed"; // Ensure this path is correct
-import "./faq.css"; // Ensure you have the styles needed in this file
+import "./faq.css"; 
 import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
 import { Box } from "@mui/material";
+import { useLanguage } from "../../globalContext/GlobalProvider";
+
 export default function FAQ() {
   const [expanded, setExpanded] = useState(false);
-
+  const { data,language } = useLanguage();
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
@@ -18,14 +20,14 @@ export default function FAQ() {
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
         <Typography variant="h6" className="clr-white inter faq-title">
-          Frequently Asked Questions
+         {data[8].title}
         </Typography>
         <Typography className="clr-white inter faq-subtitle">
-          Still you have any questions? Contact our Team via hello@squareup.com
+        {data[8].description}
         </Typography>
       </Box>
       <div className="faq-container column ">
-        {faqArray_eng.map((faq, index) => (
+        {data[7].map((faq, index) => (
           <Accordion
             key={index}
             expanded={expanded === index}

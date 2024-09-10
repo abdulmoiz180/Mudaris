@@ -48,7 +48,7 @@
   color: #9855ff;
   font-size: 11px !important;
   font-weight: 400 !important;
-  width: 70px !important;
+  width: fit-content !important;
   height: 30px !important;
   margin-left: -50px;
 }
