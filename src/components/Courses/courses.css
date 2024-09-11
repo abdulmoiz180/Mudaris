@@ -67,16 +67,32 @@
   .css-heg063-MuiTabs-flexContainer {
     width: 100% !important;
     flex-direction: column;
-  }
+    align-items: center;
+}
   .MuiTabs-indicator {
     background-color: transparent !important;
   }
   .course-content {
-    width: 100%;
-    margin: 0 10px;
+    width: 90%;
+    margin: auto;
   }
   .courses-section {
     width: 100%;
+  }
+  /* .slick-track {
+    display: flex !important;
+    flex-direction: column !important;
+  } */
+  .slick-slide {
+    width: 100% !important;
+  }
+  .slick-prev,
+  .slick-next {
+    display: flex !important;
+    align-items: flex-end !important;
+    top: 100% !important;
+    width: 324px !important;
+    height: 34px !important;
   }
 }
 @media only screen and (min-width: 600px) {

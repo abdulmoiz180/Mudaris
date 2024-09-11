@@ -23,7 +23,7 @@ const Footer = () => {
               variant="p"
               className="secondary-font-clr footer-p dm-sans"
             >
-              {data[13]}
+              {data[13].description}
             </Typography>
           </Box>
           <Button
@@ -34,7 +34,7 @@ const Footer = () => {
             <span>
               <LanguageIcon />
             </span>
-            English
+            {data[13].button}
             <span>
               <ArrowForwardIosIcon className="footer-arrow-icon" />
             </span>

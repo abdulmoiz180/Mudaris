@@ -313,7 +313,7 @@
 
   .hero-section-button {
     padding: 5px 15px;
-    width: fit-content;
+    width: fit-content !important;
     height: 45px;
     background: #ffffff;
     border-radius: 8px;

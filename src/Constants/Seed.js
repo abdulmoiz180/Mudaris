@@ -172,11 +172,10 @@ export let GetStarted_eng = {
 };
 
 export const faqTitle_eng = {
-  
-    title: "Frequently Asked Questions",
-    description: "Still you have any questions? Contact our Team via hello@squareup.com",
-  };
-
+  title: "Frequently Asked Questions",
+  description:
+    "Still you have any questions? Contact our Team via hello@squareup.com",
+};
 
 export const faqArray_eng = [
   {
@@ -220,8 +219,11 @@ export const faqArray_eng = [
       "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process.",
   },
 ];
-export let footerDescription_eng =
-  "Sinau is a global online learning platform that offers anyone, anywhere access to online courses.";
+export let footerDescription_eng = {
+  description:
+    "Sinau is a global online learning platform that offers anyone, anywhere access to online courses.",
+  button: "English",
+};
 export const footerContent_eng = [
   {
     title: "E-Learn",

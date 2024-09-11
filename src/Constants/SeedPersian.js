@@ -184,11 +184,9 @@ export let GetStarted_per = {
 };
 
 export const faqTitle_per = {
-  
-    title: "سوالات متداول",
-    description:
-      "هنوز سوالی دارید؟ با تیم ما از طریق hello@squareup.com تماس بگیرید",
-  
+  title: "سوالات متداول",
+  description:
+    "هنوز سوالی دارید؟ با تیم ما از طریق hello@squareup.com تماس بگیرید",
 };
 
 export const faqArray_per = [
@@ -233,8 +231,11 @@ export const faqArray_per = [
       "برای لغو اشتراک خود، به تنظیمات حساب خود بروید و گزینه 'لغو اشتراک' را انتخاب کنید. برای تکمیل فرآیند لغو، مراحل را دنبال کنید.",
   },
 ];
-export let footerDescription_per =
-  "E-Learn یک پلت فرم یادگیری آنلاین جهانی است که به هر کسی و در هر کجا دسترسی به دوره های آنلاین را ارائه می دهد.";
+export let footerDescription_per = {
+  description:
+    "E-Learn یک پلت فرم یادگیری آنلاین جهانی است که به هر کسی و در هر کجا دسترسی به دوره های آنلاین را ارائه می دهد.",
+  button: "فارسی",
+};
 export const footerContent_per = [
   {
     title: "آموزش الکترونیکی",
