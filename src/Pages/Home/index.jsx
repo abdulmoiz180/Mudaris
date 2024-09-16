@@ -8,6 +8,7 @@ import "./home.css";
 import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
+import Community from "../../components/Community";
 
 const Home = () => {
   const { language } = useLanguage(); // Access language separately
@@ -17,12 +18,12 @@ const Home = () => {
       className="home-page column primary-bg"
       dir={language === "persian" ? "ltr" : "rtl"}
     >
-      <Hero/>
+      <Hero />
+      <Testimonials />
       <Courses />
       <Review />
-      <E_Learn />
       <PriceCards />
-      <Testimonials/>
+      <Community />
       <FAQ />
       <GetStart />
     </section>
