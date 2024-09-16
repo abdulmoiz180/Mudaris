@@ -8,28 +8,84 @@
     "pausebtn": "Pause Video",
     "playbtn": "Play Video"
   },
-  "pagesnav_eng": [
+  "pagesnav": [
     "Explore",
     "Analysis Personalize",
     "Try Now",
     "Portfolio"
   ],
-  "navRightBtns_eng": [
+  "navRightBtns": [
     "EN",
-    "../assets/Icons/Heart.png",
-    "../assets/Icons/Bag.png",
+    "../../src/assets/Icons/Heart.png",
+    "../../src/assets/Icons/Bag.png",
     "Sign In",
     "Get Started"
   ],
-  "clientdata_eng": {
+  "clientdata": {
     "title": "Our Clients",
     "description": "Empowering top companies and institutions with innovative learning solutions.",
     "platformdescription": "This platform has revolutionized our training programs. The results speak for themselves!",
     "clientname": "Talia Taylor",
     "clientrole": "John Doe, CEO of @ Quantum",
-    "img": "../assets/Images/Client.png"
+    "img": "../../src/assets/Images/Client.png"
   },
-  "whyElearn_eng": [
+  "StudentReviews": [
+    {
+      "title": "Hear from Our Students"
+    },
+    {
+      "review": "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
+      "studentname": "Diamond Forest",
+      "coursetaken": "NLP - Natural Language Processing w/ Python",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "Easy to understand and very straight forward",
+      "studentname": "Robert Fox",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
+      "studentname": "Devon Lane",
+      "coursetaken": "Learn Figma Essentials for UI UX Design(2022)",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
+      "studentname": "Kathryn Murphy",
+      "coursetaken": "UI Design: Make a Beautiful Website",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "Very nice courses on what some covered",
+      "studentname": "Jazib Faisal",
+      "coursetaken": "SQL: Database Basics",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "This course gave me a strong understanding of data structures and algorithms. The instructor’s examples were clear, and the real-world applications made it easier to grasp difficult concepts.",
+      "studentname": "Leslie Alexander",
+      "coursetaken": "Data Structures and Algorithms in Python",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "The course was very practical and hands-on, which I loved. I was able to build a full-stack web application from scratch. The step-by-step guidance made complex topics approachable.",
+      "studentname": "Eleanor Pena",
+      "coursetaken": "Full Stack Web Development with JavaScript",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "A fantastic course for anyone interested in deep learning! The lessons are structured so well that even complex topics are easy to follow. The best part is the projects that provide real-world experience.",
+      "studentname": "Cameron Williamson",
+      "coursetaken": "Deep Learning A-Z: Hands-On Artificial Neural Networks",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "Very nice courses on what some covered",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    }
+  ],
+  "whyElearn": [
     {
       "img": [
         "../assets/Icons/Home.svg",
@@ -50,62 +106,7 @@
       "box6": "Upload Portfolio"
     }
   ],
-  "StudentReviews_eng": [
-    {
-      "title": "Hear from Our Students"
-    },
-    {
-      "review": "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
-      "studentname": "Diamond Forest",
-      "coursetaken": "NLP - Natural Language Processing w/ Python",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "Easy to understand and very straight forward",
-      "studentname": "Robert Fox",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
-      "studentname": "Devon Lane",
-      "coursetaken": "Learn Figma Essentials for UI UX Design(2022)",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
-      "studentname": "Kathryn Murphy",
-      "coursetaken": "UI Design: Make a Beautiful Website",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "Very nice courses on what some covered",
-      "studentname": "Jazib Faisal",
-      "coursetaken": "SQL: Database Basics",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "This course gave me a strong understanding of data structures and algorithms. The instructor’s examples were clear, and the real-world applications made it easier to grasp difficult concepts.",
-      "studentname": "Leslie Alexander",
-      "coursetaken": "Data Structures and Algorithms in Python",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "The course was very practical and hands-on, which I loved. I was able to build a full-stack web application from scratch. The step-by-step guidance made complex topics approachable.",
-      "studentname": "Eleanor Pena",
-      "coursetaken": "Full Stack Web Development with JavaScript",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "A fantastic course for anyone interested in deep learning! The lessons are structured so well that even complex topics are easy to follow. The best part is the projects that provide real-world experience.",
-      "studentname": "Cameron Williamson",
-      "coursetaken": "Deep Learning A-Z: Hands-On Artificial Neural Networks",
-      "brightstar": "../assets/Icons/Star Review.png"
-    },
-    {
-      "review": "Very nice courses on what some covered. I"
-    }
-  ],
-  "paymentPlans_eng": [
+  "paymentPlans": [
     {
       "title": "Choose Your Plan",
       "description": "Simple, flexible, and affordable pricing for everyone."
@@ -141,7 +142,7 @@
       "subscribe": "Subscribe Now"
     }
   ],
-  "GetStarted_eng": {
+  "GetStarted": {
     "title1": "Get Started with a ",
     "span": "Free",
     "title2": "Trial",
@@ -149,11 +150,11 @@
     "buttontext": "Join Waitlist",
     "creditcard": "No credit card required. 7-days free trial"
   },
-  "faqTitle_eng": {
+  "faqTitle": {
     "title": "Frequently Asked Questions",
     "description": "Still you have any questions? Contact our Team via hello@squareup.com"
   },
-  "faqArray_eng": [
+  "faqArray": [
     {
       "question": "Can I download course materials?",
       "answer": "Yes, downloadable materials are available for most courses and can be accessed in the course dashboard."
@@ -187,8 +188,9 @@
       "answer": "To cancel your subscription, go to your account settings and select 'Cancel Subscription.' Follow the prompts to complete the cancellation process."
     }
   ],
-  "footerDescription_eng": "Sinau is a global online learning platform that offers anyone, anywhere access to online courses.",
-  "footerContent_eng": [
+  "footerDescription": "Sinau is a global online learning platform that offers anyone, anywhere access to online courses.",
+   "togglebutton":"English",
+  "footerContent": [
     {
       "title": "E-Learn",
       "links": [
@@ -224,11 +226,11 @@
       ]
     }
   ],
-  "copyWrite_eng": {
+  "copyWrite": {
     "text": "© 2022 E-Learn, Inc. All rights reserved."
   },
-  "tabsTitle_eng": "Discover Top Course",
-  "tabsEnglish": [
+    "tabsTitle": "Discover Top Course",
+  "tabs": [
     {
       "name": "All Categories",
       "courses": [

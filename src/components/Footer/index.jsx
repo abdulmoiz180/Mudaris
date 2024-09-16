@@ -9,21 +9,20 @@ import LinkedIn from "../../assets/icons/LinkedIn.svg";
 import Youtube from "../../assets/icons/Lozenge.svg";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Twitter from "../../assets/icons/Twitter.svg";
+
 const Footer = () => {
   const { toggleLanguage, data } = useLanguage();
+if(!data)return <h2>data is loading....</h2>
   return (
     <footer className="footer-bg align-center">
       <div className="footer-section row">
         <Box component="div" className="footer-left-section column">
           <Box component="div" className="footer-content-wrapper">
             <Typography variant="h6" className="clr-white footer-h2 monts">
-              {data[9][0].title}
+              {data.footerContent[0].title} {/* Assuming this is the title for the left section */}
             </Typography>
-            <Typography
-              variant="p"
-              className="secondary-font-clr footer-p dm-sans"
-            >
-              {data[13]}
+            <Typography variant="p" className="secondary-font-clr footer-p dm-sans">
+              {data.footerDescription}
             </Typography>
           </Box>
           <Button
@@ -34,7 +33,7 @@ const Footer = () => {
             <span>
               <LanguageIcon />
             </span>
-            English
+            {data.togglebutton}
             <span>
               <ArrowForwardIosIcon className="footer-arrow-icon" />
             </span>
@@ -42,7 +41,7 @@ const Footer = () => {
         </Box>
 
         <Box component="div" className="flex footer-right-section">
-          {data[9].map((content, index) => (
+          {data.footerContent.map((content, index) => (
             <Box component="div" key={index} className="sublinks-wrapper">
               <Typography variant="h6" className="white-normal">
                 {content.title}
@@ -60,17 +59,17 @@ const Footer = () => {
       </div>
       <Divider />
 
-      <div className="copy-write space-between flex-center ">
+      <div className="copy-write space-between flex-center">
         <div className="footer-icons flex">
-          <img src={Instagram} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Twitter} alt="" />
-          <img src={FaceBook} alt="" />
-          <img src={Youtube} alt="" />
+          <img src={Instagram} alt="Instagram" />
+          <img src={LinkedIn} alt="LinkedIn" />
+          <img src={Twitter} alt="Twitter" />
+          <img src={FaceBook} alt="Facebook" />
+          <img src={Youtube} alt="YouTube" />
         </div>
 
         <Typography variant="p" className="secondary-font-clr footer-p dm-sans">
-          {data[2].text}
+          {data.copyWrite.text}
         </Typography>
       </div>
     </footer>
