@@ -8,27 +8,27 @@ import "./home.css";
 import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
-// import ResponsiveAppBar from "../../components/NavBar/Index";
+import Community from "../../components/Community";
+
 
 const Home = () => {
   const { language } = useLanguage(); // Access language separately
 
   return (
-    <>
-      <section
-        className="home-page column primary-bg"
-        dir={language === "english" ? "ltr" : "rtl"}
-      >
-        <Hero />
-        <Testimonials />
-        <Courses />
-        <Review />
-        <E_Learn />
-        <PriceCards/>
-        <FAQ />
-        <GetStart /> 
-      </section>
-    </>
+    <section
+      className="home-page column primary-bg"
+      dir={language === "persian" ? "ltr" : "rtl"}
+    >
+      <Hero />
+      <Testimonials />
+      <Courses />
+      <Review />
+      <PriceCards />
+      <Community />
+      <FAQ />
+      <GetStart />
+    </section>
+
   );
 };
 
