@@ -2,20 +2,26 @@ import React from "react";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Box from "@mui/material/Box";
 import "./courses.css";
+import TabComponent from './TabComponent'
 import { Typography } from "@mui/material";
-import { TabComponent } from "./TabComponent";
-
 const Courses = () => {
-  const { data } = useLanguage();
+  const { data, language } = useLanguage();
+
+  // Check if data is loaded
+  if (!data) {
+    console.log('data ni arha');
+    return <div>Loading...</div>; // Loading state if data isn't available
+  }
 
   return (
     <section className="courses-section">
       <Typography
-        className="fs-48 inter course-setion-title  clr-white"
+        className="fs-48 inter course-setion-title clr-white"
         variant="h6"
       >
-        {data[14]}
+        {data["tabsTitle"]}
       </Typography>
+
       <Box className="courses-box">
         <TabComponent />
       </Box>

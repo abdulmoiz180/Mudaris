@@ -9,7 +9,13 @@ const Review = () => {
   const wrap = useRef(null);
   const bg = useRef(null);
   const { data } = useLanguage();
-  const studentReviews = data[4];
+
+  // Check if data is available and valid before accessing it
+  if (!data || !data.StudentReviews || data.StudentReviews.length === 0) {
+    return <div>Loading...</div>;  // Return loading state if data is not available
+  }
+
+  const studentReviews = data.StudentReviews;
 
   const viewMore = () => {
     setMore(!more);
@@ -30,32 +36,34 @@ const Review = () => {
     <section className="reviewComponentParentSection">
       <Box component="div" className="ReviewContainer">
         <Typography variant="h2" className="inter title heading">
-          {studentReviews[0].title}
+          {studentReviews[0].title} {/* Access the title */}
         </Typography>
         <Box component="div" ref={wrap} className="reviewWrapper">
-          {studentReviews.slice(1).map((review, index) => (
-            <Box key={index} component="div" className="review">
-              <Typography variant="h4" className="dm-sans reviewcontent">
-                {review.review}
-              </Typography>
-              <Box component="div" className="contentwrap">
-                <Box component="div" className="reviewers">
-                  <Typography variant="body1" className="dm-sans studentname">
-                    {review.studentname}
-                  </Typography>
-                  {review.coursetaken && (
-                    <Typography variant="body1" className="dm-sans course">
-                      {review.coursetaken}
+          {studentReviews.map((review, index) => (
+            index !== 0 && (  // Skip the first entry (title object)
+              <Box key={index} component="div" className="review">
+                <Typography variant="h4" className="dm-sans reviewcontent">
+                  {review.review}
+                </Typography>
+                <Box component="div" className="contentwrap">
+                  <Box component="div" className="reviewers">
+                    <Typography variant="body1" className="dm-sans studentname">
+                      {review.studentname || "Anonymous"} 
                     </Typography>
-                  )}
-                </Box>
-                <Box component="div" className="ratingsImageStar">
-                  {review.brightstar && (
-                    <img src={review.brightstar} alt="Rating Star" />
-                  )}
+                    {review.coursetaken && (
+                      <Typography variant="body1" className="dm-sans course">
+                        {review.coursetaken}
+                      </Typography>
+                    )}
+                  </Box>
+                  <Box component="div" className="ratingsImageStar">
+                    {review.brightstar && (
+                      <img src={review.brightstar} alt="Rating Star" />
+                    )}
+                  </Box>
                 </Box>
               </Box>
-            </Box>
+            )
           ))}
         </Box>
       </Box>

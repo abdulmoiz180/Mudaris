@@ -7,22 +7,22 @@ import { TextField } from "@mui/material";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 
 function GetStart() {
-  const { data,language } = useLanguage();
-
+  const { data, language } = useLanguage();
+if (!data) return <h2>data not loading</h2>
   return (
     <Container className="get-start-container">
       {/* Displaying the title */}
       <h1 className="clr-white inter get-start-heading">
-        {data[6].title1}
-        <span>{data[6].span}</span>
-        {data[6].title2}
+        {data.GetStarted.title1}
+        <span>{data.GetStarted.span}</span>
+        {data.GetStarted.title2}
       </h1>
-   
+
       {/* Input field with placeholder */}
       <Box className="get-email-field">
         <TextField
           type="email"
-          placeholder={data[6].inputfield}
+          placeholder={data.GetStarted.inputfield}
           variant="outlined"
           className="custom-input"
           fullWidth
@@ -48,14 +48,14 @@ function GetStart() {
         />
 
         {/* Button with text */}
-        <button className={`get-start-button inter button-text ${language==="english" ? `m-right`:` ` }`}>
-          {data[6].buttontext}
+        <button className={`get-start-button inter button-text ${language === "persian" ? `m-right` : ``}`}>
+          {data.GetStarted.buttontext}
         </button>
       </Box>
 
       {/* Credit card information */}
       <p className="get-start-credit inter input-text">
-        {data[6].creditcard}
+        {data.GetStarted.creditcard}
       </p>
     </Container>
   );

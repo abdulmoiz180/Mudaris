@@ -3,31 +3,32 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import { faqArray_eng } from "../../Constants/Seed"; // Ensure this path is correct
-import "./faq.css"; 
 import AddIcon from "@mui/icons-material/Add";
 import CloseIcon from "@mui/icons-material/Close";
 import { Box } from "@mui/material";
 import { useLanguage } from "../../globalContext/GlobalProvider";
+import "./faq.css";
 
 export default function FAQ() {
   const [expanded, setExpanded] = useState(false);
-  const { data,language } = useLanguage();
+  const { data, language } = useLanguage();
+
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+if(!data)return <><h2>not loading</h2></>
   return (
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
         <Typography variant="h6" className="clr-white inter faq-title">
-         {data[8].title}
+          {data.faqTitle.title}
         </Typography>
         <Typography className="clr-white inter faq-subtitle">
-        {data[8].description}
+          {data.faqTitle.description}
         </Typography>
       </Box>
-      <div className="faq-container column ">
-        {data[7].map((faq, index) => (
+      <div className="faq-container column">
+        {data.faqArray.map((faq, index) => (
           <Accordion
             key={index}
             expanded={expanded === index}
@@ -38,11 +39,11 @@ export default function FAQ() {
               expandIcon={
                 expanded === index ? (
                   <CloseIcon
-                    className={expanded === index ? `purple` : `clr-white`}
+                    className={expanded === index ? "purple" : "clr-white"}
                   />
                 ) : (
                   <AddIcon
-                    className={expanded === index ? `purple` : `clr-white`}
+                    className={expanded === index ? "purple" : "clr-white"}
                   />
                 )
               }
@@ -54,14 +55,13 @@ export default function FAQ() {
             >
               <span className="faq-number-container flex flex-center">
                 <Typography
-                  className={`faq-number inter  ${
+                  className={`faq-number inter ${
                     expanded === index ? "purple" : "clr-white"
                   }`}
                 >
                   0{index + 1}
                 </Typography>
               </span>
-
               <Typography
                 className={`faq-question inter flex flex-center ${
                   expanded === index ? "purple" : "clr-white"
