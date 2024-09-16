@@ -14,6 +14,7 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 
 function ResponsiveAppBar() {
+  const { language } = useLanguage();
   const { toggleLanguage, data } = useLanguage();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -29,6 +30,9 @@ function ResponsiveAppBar() {
   const isImageUrl = (url) => {
     return /\.(png|jpg|jpeg|gif|svg)$/.test(url);
   };
+
+  // Ensure that data is loaded before rendering
+  if (!data) return <div>Loading...</div>;
 
   return (
     <AppBar position="static" className="Navbar">
@@ -71,7 +75,7 @@ function ResponsiveAppBar() {
                 },
               }}
             >
-              {data[10].map((page, index) => (
+              {data.pagesnav.map((page, index) => (
                 <Button
                   key={index}
                   onClick={handleCloseNavMenu}
@@ -98,7 +102,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <div className="Btns">
               <div className="btnContainer">
-                {data[10].map((page, i) => (
+                {data.pagesnav.map((page, i) => (
                   <Button
                     key={i}
                     onClick={handleCloseNavMenu}
@@ -118,15 +122,15 @@ function ResponsiveAppBar() {
 
               {/* Right-side Buttons */}
               <Box component="div" className="navBarBtns2 BorderDiv">
-                {data[11].map((btn, index) => (
-                  <div className="rightbtn">
+                {data.navRightBtns.map((btn, index) => (
+                  <div className="rightbtn" key={index}>
                     <Button
-                      key={index}
                       sx={{ my: 2, color: "white", display: "block" }}
                       className="inter"
                       onClick={
-                        (btn === "EN",
-                        "فارسی" ? toggleLanguage : handleCloseNavMenu)
+                        btn === "EN" || btn === "فارسی"
+                          ? toggleLanguage
+                          : handleCloseNavMenu
                       }
                     >
                       {isImageUrl(btn) ? (

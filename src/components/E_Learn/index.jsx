@@ -4,14 +4,25 @@ import "./Elearn.css";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 
 const E_Learn = () => {
-  const { data,language } = useLanguage();
-  
-  const whyElearn = data[12]; 
+  const { data, language } = useLanguage();
+
+  // Ensure `data` exists before accessing `data.whyElearn`
+  if (!data || !data.whyElearn) {
+    console.log("Data is not loading");
+    return <div>Data is loading...</div>;
+  }
+
+  const whyElearn = data.whyElearn;
 
   return (
     <section className="Elearn-section">
       <div className="width-90 why-cards-container">
-        <Typography component="h6" className={`inter fs-48 why-title clr-white  ${language==="english" ? `align-right`:`align-left` }`}>
+        <Typography
+          component="h6"
+          className={`inter fs-48 why-title clr-white ${
+            language === "persian" ? `align-right` : `align-left`
+          }`}
+        >
           {whyElearn[1].title}
         </Typography>
         <Box component="div" className="why_card_wrapper flex border-gradient">
@@ -26,9 +37,10 @@ const E_Learn = () => {
                 </Typography>
               </Box>
               <div className="vertical"></div>
-              {(index + 1) % 3 === 0 && index !== whyElearn[0].img.length - 1 && (
-                <div className="horizontal-line"></div>
-              )}
+              {(index + 1) % 3 === 0 &&
+                index !== whyElearn[0].img.length - 1 && (
+                  <div className="horizontal-line"></div>
+                )}
             </React.Fragment>
           ))}
         </Box>

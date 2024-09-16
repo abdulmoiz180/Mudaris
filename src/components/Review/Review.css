@@ -81,26 +81,26 @@
   color: #fff !important;
   text-transform: capitalize !important;
 }
-.viewBtn:hover{
+.viewBtn:hover {
   background-color: rgb(255, 255, 255) !important;
   color: rgb(38, 3, 95) !important;
   font-weight: bold !important;
 }
-.View{
+.View {
   align-items: flex-end !important;
 }
 .active {
-  max-height: 1000px !important;
+  height: 1400px;
 }
 @media only screen and (max-width: 1030px) {
-  .View{
+  .View {
     align-items: flex-end !important;
   }
   .review {
     width: 45%;
   }
 }
-  @media only screen and (max-width: 820px) {
+@media only screen and (max-width: 820px) {
   .reviewcontent {
     font-size: 22px !important;
   }
@@ -118,18 +118,18 @@
   }
   .studentname {
     font-size: 20px !important;
-}
-.course {
-  font-size: 12px !important;
-}
-.ReviewContainer {
-  gap: 30px;
-}
-.View{
-  align-items: flex-end !important;
-}
+  }
+  .course {
+    font-size: 12px !important;
+  }
+  .ReviewContainer {
+    gap: 30px;
+  }
+  .View {
+    align-items: flex-end !important;
+  }
   .review {
-    width: 100%;    
+    width: 100%;
   }
   .reviewWrapper {
     flex-direction: column;

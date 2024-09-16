@@ -14,24 +14,30 @@ import Tick from "../../assets/Icons/tick.png";
 
 export const PriceCards = () => {
   const { data, language } = useLanguage();
-  const paymentPlans = data[5];
+
+  // Ensure data is correctly loaded
+  if (!data) {
+    return <div>Loading...</div>; // Handle loading state
+  }
+
+  const paymentPlans = data.paymentPlans; // Correct access to paymentPlans
 
   return (
     <Container className="price-container">
       <Box className="text-container">
         <Typography variant="h1" className="plan-title inter">
-          {paymentPlans[0].title}
+          {data.paymentPlans[0].title}
         </Typography>
         <Typography variant="body1" className="plan-description inter">
-        {paymentPlans[0].description}
+          {data.paymentPlans[0].description}
         </Typography>
       </Box>
-      <Box className="card-wrapper">
+       <Box className="card-wrapper">
         {paymentPlans.slice(1, 4).map((plan, index) => (
           <Card
             key={index}
             className={`plan-card ${
-              language === "english" ? `align-right` : `align-left`
+              language === "persian" ? `align-right` : `align-left`
             }`}
           >
             <CardContent>
@@ -69,7 +75,7 @@ export const PriceCards = () => {
             </Box>
           </Card>
         ))}
-      </Box>
+      </Box> 
     </Container>
   );
 };

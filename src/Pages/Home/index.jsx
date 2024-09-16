@@ -10,6 +10,7 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Community from "../../components/Community";
 
+
 const Home = () => {
   const { language } = useLanguage(); // Access language separately
 
@@ -27,6 +28,7 @@ const Home = () => {
       <FAQ />
       <GetStart />
     </section>
+
   );
 };
 
