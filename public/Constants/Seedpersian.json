@@ -792,5 +792,36 @@
         }
       ]
     }
-  ]
-}
+
+  ],
+  "gettoknow":{
+  
+  "headtitle": "دکتر عنایت مدرس را بیشتر بشناسید",  
+  "headdescription": "سلام من عنایت مدرس هستم - از فقر و ناداری به سومین دانشگاه جهان راه‌ یافتم، با سازمان ملل کار کردم، در بزرگترین همایش‌های جهانی دعوت شدم، زندگی هزاران فرد را متحول ساختم، ده‌ها نهاد و تجارت موفق را بنیاد گذاشتم، با بهترین رسانه‌های ملی و بین‌المللی کار کردم، طبابت و کارشناسی ارشدم را در معتبرترین دانشگاه دنیا به اتمام رساندم. فعلا هم چندین تجارت آنلاین و برنامه‌‌های بی‌نظیر دیگر را رهبری می‌کنم. حالا اینجا آمدم تا دانش، تجارب و مهارت‌هایی را که در این مسیر فرا گرفتم، صادقانه و خالصانه با شما شریک بسازم که بتواند شما را از دام فقر نجات دهد و به خواب‌هایتان برساند.",
+  "buttonlabel": "Round 5 is closed",
+  "img": "../assets/Images/Dr-img.png",
+  "transformtitle": "تا کنون زندگی هزاران انسان را متحول ساختم",
+  "transformdescription": "از فقر و ناداری تا سومین دانشگاه برتر جهان، از همکاری با سازمان ملل تا دعوت شدن در بزرگترین همایش‌های جهانی، از کار با بهترین رسانه‌‌های ملی و بین‌المللی تا رهبری چندین نهاد و تجارت موفق، از طبابت تا پایان رساندن کارشناسی ارشد، از ساختن ده‌ها تجارت آنلاین پیشتاز تا تغییر زندگی هزاران فرد در سراسر جهان. حالا هم آمدم تا شما را با آخرین دانش و مهارت‌های پولساز عصر امروز مجهز بسازم تا به خواب‌های تان برسید.",
+  "featuredline": "AS FEATURED IN - همکاران دکتر مدرس"
+  },
+  
+  "companylogos": [
+  "../assets/Images/sciencespo.png",
+  "../assets/Images/tolonews.png",
+  "../assets/Images/1tv.png",
+  "../assets/Images/mudaris.png",
+  "../assets/Images/undplogo.png",
+  "../assets/Images/onelogo.png" 
+  ],
+  
+  "getajob":{
+  "headtitle":"Get a job and side income with 31 sessions in (two months).",    
+  "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job. But where is the problem? Most people do not know where to start and how to start? At Modars Academy, we teach you these skills from (A to Z) in a practical way",
+  "descriptionpara2": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
+  "descriptionpara3": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
+  "descriptionpara4": "Know that education and learning is always a long-term and valuable investment for you Read the following carefully if you want to change your life forever",
+  "contentinfobox": "The following content will be taught all at once in these 60 days        The most complete educational package of the digital age The package that every person needs in today's era"
+  }
+  
+  }
+

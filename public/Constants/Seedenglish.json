@@ -8,12 +8,7 @@
     "pausebtn": "Pause Video",
     "playbtn": "Play Video"
   },
-  "pagesnav": [
-    "Explore",
-    "Analysis Personalize",
-    "Try Now",
-    "Portfolio"
-  ],
+  "pagesnav": ["Explore", "Analysis Personalize", "Try Now", "Portfolio"],
   "navRightBtns": [
     "EN",
     "../../src/assets/Icons/Heart.png",
@@ -189,7 +184,7 @@
     }
   ],
   "footerDescription": "Sinau is a global online learning platform that offers anyone, anywhere access to online courses.",
-   "togglebutton":"English",
+  "togglebutton": "English",
   "footerContent": [
     {
       "title": "E-Learn",
@@ -229,7 +224,7 @@
   "copyWrite": {
     "text": "© 2022 E-Learn, Inc. All rights reserved."
   },
-    "tabsTitle": "Discover Top Course",
+  "tabsTitle": "Discover Top Course",
   "tabs": [
     {
       "name": "All Categories",
@@ -791,6 +786,127 @@
         }
       ]
     }
-    
-  ]
+  ],
+  "gettoknow": {
+    "headtitle": "Get to know Dr. Enayat Modares more",
+    "headdescription": "Hello, I am Inayat Modares - I came from poverty to the third university in the world, I worked with the United Nations, I was invited to the biggest world conferences, I changed the lives of thousands of people, tens of institutions andI founded a successful business, worked with the best national and international media, completed my medicine and master's degree in the most prestigious university in the world. At the moment, there are several online businesses and unique programs ",
+    "headdescription2": "I lead the other. Now I came here to honestly and sincerely share the knowledge, experiences and skills I have learned along the way, which can save you from the trap of poverty and fulfill your dreams. deliver",
+    "buttonlabel": "Round 5 is closed",
+    "img": "../assets/Images/Dr-img.png",
+    "transformtitle": "So far, I have transformed the lives of thousands of people",
+    "transformdescription": "From poverty to the third best university in the world, from cooperation with the United Nations to being invited to the biggest world conferences, from working with the best national and international media to leading several institutions. and successful business, from practicing medicine to completing a master's degree, from building dozens of leading online businesses to changing the lives of thousands of people around the world. Now I came to you with the latest knowledge and Today's money making skills will equip you to achieve your dreams",
+    "featuredline": "AS FEATURED IN - Associates of Dr. Modares"
+  },
+
+  "companylogos": {
+    "logo0": "../assets/Images/sciencespo.png",
+    "logo1": "../assets/Images/tolonews.png",
+    "logo2": "../assets/Images/1tv.png",
+    "logo3": "../assets/Images/mudaris.png",
+    "logo4": "../assets/Images/undplogo.png",
+    "logo5": "../assets/Images/onelogo.png"
+  },
+
+  "getajob": {
+    "headtitle": "Get a job and side income with 31 sessions in (two months).",
+    "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job. But where is the problem? Most people do not know where to start and how to start? At Modars Academy, we teach you these skills from (A to Z) in a practical way",
+    "descriptionpara2": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
+    "descriptionpara3": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
+    "descriptionpara4": "Know that education and learning is always a long-term and valuable investment for you Read the following carefully if you want to change your life forever",
+    "contentinfobox": "The following content will be taught all at once in these 60 days        The most complete educational package of the digital age The package that every person needs in today's era"
+  },
+  "numbersforparentarray": {
+    "number1": "1",
+    "number2": "2",
+    "number3": "3",
+    "number4": "4"
+  },
+  "parentarray": [
+    {
+      "Important": [
+        {
+          "title": "Important:",
+          "title2": "Read This Before Making Your Decision",
+          "description": "Lorem ipsum dolor sit amet",
+          "lineImg": "../assets/Icons/linewo.png"
+        },
+        {
+          "symbol": "../assets/Icons/Symbol.png",
+          "Cardtitle": "Have Excuses for Not Joining?",
+          "Carddescription": "Think again. Overcome the reasons holding you back and take the leap toward a brighter future."
+        },
+        {
+          "symbol": "../assets/Icons/Symbol (1).png",
+          "Cardtitle": "Hear Me Out",
+          "Carddescription": "Before you make a decision, let me share why this course could be life-changing for you."
+        },
+        {
+          "symbol": "../assets/Icons/Symbol (2).png",
+          "Cardtitle": "Is This Course Right for You?",
+          "Carddescription": "Whether you're an aspiring entrepreneur or a professional looking to upskill, this course is designed for anyone ready to take their career to the next level."
+        },
+        {
+          "symbol": "../assets/Icons/Symbol (3).png",
+          "Cardtitle": "Still Reading? Let’s Talk",
+          "Carddescription": "If you've made it this far, you're already serious about improving yourself. Now, let’s dive in and make it happen."
+        }
+      ]
+    },
+    {
+      "participate": [
+        {
+          "title": "Why should I participate in Madras",
+          "title2": "Academy?",
+          "description": "Lorem ipsum dolor sit amet",
+          "lineImg": "../assets/Icons/linewo.png"
+        },
+        {
+          "Cardtitle": "Master Money-Making Skills",
+          "Carddescription": "Learn the most valuable, real-world skills that generate income in today’s competitive marketplace. From entrepreneurship to digital marketing, you’ll be equipped with the knowledge to succeed.",
+          "symbol": "../assets/Icons/moneyicon.png"
+        },
+        {
+          "Cardtitle": "World-Class Curriculum",
+          "Carddescription": "Benefit from an education inspired by Harvard, Cambridge, and Stanford. Our program combines the academic rigor of top universities with practical, actionable insights.",
+          "symbol": "../assets/Icons/currciculumicon.png"
+        },
+        {
+          "Cardtitle": "Network with the Brightest Minds",
+          "Carddescription": "Surround yourself with innovators and thinkers. Build lasting connections with experts and peers who are shaping the future.",
+          "symbol": "../assets/Icons/networkbrighticon.png"
+        },
+        {
+          "Cardtitle": "University-Level Learning in Weeks",
+          "Carddescription": "Get the same in-depth education as a full university session, but in a condensed and efficient format. Our 60-day program is designed to give you maximum value in minimal time.",
+          "symbol": "../assets/Icons/unilevelicon.png"
+        }
+      ]
+    }
+  ],
+  "digitaleducation": {
+    "headtitle": "Unlock the Most Comprehensive Digital Education Package in Just 60 Days",
+    "description": "A complete program designed for success in today’s digital world.",
+    "seebtn": "See All"
+  },
+
+  "digitaleducationimages": {
+    "Development": "../assets/Images/Developmentimg.png",
+    "Design": "../assets/Images/Designimg.png",
+    "Marketing": "../assets/Images/Marketingimg.png",
+    "Business": "../assets/Images/Businessimg.png",
+    "DataScience": "../assets/Images/DataScienceimg.png",
+    "Technology": "../assets/Images/Technologyimg.png",
+    "DevelopmentDuplicate": "../assets/Images/Developmentimg.png",
+    "DesignDuplicate": "../assets/Images/Designimg.png",
+    "MarketingDuplicate": "../assets/Images/Marketingimg.png",
+    "BusinessDuplicate": "../assets/Images/Businessimg.png",
+    "DataScienceDuplicate": "../assets/Images/DataScienceimg.png",
+    "TechnologyDuplicate": "../assets/Images/Technologyimg.png",
+    "DevelopmentDuplicateDummy": "../assets/Images/Developmentimg.png",
+    "DesignDuplicateDummy": "../assets/Images/Designimg.png",
+    "MarketingDuplicateDummy": "../assets/Images/Marketingimg.png",
+    "BusinessDuplicateDummy": "../assets/Images/Businessimg.png",
+    "DataScienceDuplicateDummy": "../assets/Images/DataScienceimg.png",
+    "TechnologyDuplicateDummy": "../assets/Images/Technologyimg.png"
+  }
 }
