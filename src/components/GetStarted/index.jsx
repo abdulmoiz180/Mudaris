@@ -8,7 +8,7 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 
 function GetStart() {
   const { data, language } = useLanguage();
-if (!data) return <h2>data not loading</h2>
+  if (!data) return <h2>data not loading</h2>;
   return (
     <Container className="get-start-container">
       {/* Displaying the title */}
@@ -47,8 +47,11 @@ if (!data) return <h2>data not loading</h2>
           }}
         />
 
-        {/* Button with text */}
-        <button className={`get-start-button inter button-text ${language === "persian" ? `m-right` : ``}`}>
+        <button
+          className={`get-start-button inter button-text ${
+            language === "persian" ? `m-right` : ``
+          }`}
+        >
           {data.GetStarted.buttontext}
         </button>
       </Box>

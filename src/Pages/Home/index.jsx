@@ -9,10 +9,10 @@ import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import GettoKnow from "../../components/GettoKnow/Index";
-import LineCards from "../../components/LineCards";
+import LineCards from "../../components/ReadIt";
+import DigitalEducation from "../../components/DigitalEducationSlider";
 const Home = () => {
-  const { data,language } = useLanguage(); // Access language separately
-  if (!data) return <div>Loading...</div>;
+  const {language } = useLanguage(); 
   return (
     <>
       <section
@@ -25,8 +25,8 @@ const Home = () => {
         <Review />
         <E_Learn />
         <PriceCards/>
-        <LineCards data={data.readthis}/>
-        <LineCards data={data.whyshouldiparticipate}/>
+        <DigitalEducation/>
+        <LineCards/>
         <GettoKnow/>
         <FAQ />
         <GetStart /> 
