@@ -787,6 +787,40 @@
       ]
     }
   ],
+
+"whatyouget":[
+{
+"headtitle1":"HERE'S WHAT YOU GET",
+"headtitle2":"When You Join Educate Today, You Get Full & Immediate Access To",
+"headtitle3":"You Get Full & Immediate Access To"
+},
+
+{
+"role":"Agency Navigator",
+"description":"Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
+"video":"../assets/Images/AgencyNavigatorMale.png",
+"playbutton": "../assets/Images/playbuttonimg.png",
+"blueverifiedbadge":"../assets/Icons/blueverifiedbadge.png",
+"purpleboxtext":"HTML"
+},
+{
+"role":"6-Figure Sales Rep",
+"description":"Inside of 6-Figure Sales Rep, Paul is gonna teach you the best and most timeless high-income skill to go from zero to six figures in record time. He'll give you the same proven sales process that we use internally at all of my companies and that Paul has used to train hundreds of people from all walks of life and turn them into world class Remote Sales Rep.",
+"video":"../assets/Images/6-FigureSalesRep.png",
+"playbutton": "../assets/Images/playbuttonimg.png",
+"blueverifiedbadge":"../assets/Icons/blueverifiedbadge.png",
+"purpleboxtext":"Business"
+},
+{
+"role":"Agency Navigator",
+"description":"Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
+"video":"../assets/Images/AgencyNavigatorFemale.png",
+"playbutton": "../assets/Images/playbuttonimg.png",
+"blueverifiedbadge":"../assets/Icons/blueverifiedbadge.png",
+"purpleboxtext":"Social Media"
+}
+],
+
   "gettoknow": {
     "headtitle": "Get to know Dr. Enayat Modares more",
     "headdescription": "Hello, I am Inayat Modares - I came from poverty to the third university in the world, I worked with the United Nations, I was invited to the biggest world conferences, I changed the lives of thousands of people, tens of institutions andI founded a successful business, worked with the best national and international media, completed my medicine and master's degree in the most prestigious university in the world. At the moment, there are several online businesses and unique programs ",
@@ -809,11 +843,15 @@
 
   "getajob": {
     "headtitle": "Get a job and side income with 31 sessions in (two months).",
-    "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job. But where is the problem? Most people do not know where to start and how to start? At Modars Academy, we teach you these skills from (A to Z) in a practical way",
-    "descriptionpara2": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
-    "descriptionpara3": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
-    "descriptionpara4": "Know that education and learning is always a long-term and valuable investment for you Read the following carefully if you want to change your life forever",
-    "contentinfobox": "The following content will be taught all at once in these 60 days        The most complete educational package of the digital age The package that every person needs in today's era"
+    "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job.",
+    "descriptionquestion1":"But where is the problem?",
+    "descriptionquestion2":" Most people do not know where to start and how to start?",
+    "descriptionanswer":"At Modars Academy, we teach you these skills from (A to Z) in a practical way",
+    "descriptionpara3": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
+    "descriptionpara4": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
+    "descriptionparaknowthat1": "Know that education and learning is always a long-term and valuable investment for you",
+    "descriptionparaknowthat2":"Read the following carefully if you want to change your life forever",
+    "contentinfobox": "The following content will be taught all at once in these 60 days📚The most complete educational package of the digital age 💻📷 The package that every person needs in today's era"
   },
   "readthis": [
     {
