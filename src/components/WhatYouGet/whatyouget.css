@@ -1,0 +1,108 @@
+.whatyouget-container{
+background: radial-gradient(38.46% 38.46% at 50.04% 61.54%, rgba(86, 41, 157, 0) 0%, #020103 100%);
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin: auto;
+
+}
+
+.whatyouget-headings{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: 25px;
+color: rgba(255, 255, 255, 1) !important;
+}
+
+.wyg-para1{
+font-size: 20px;
+font-weight: 400;
+letter-spacing: -0.0001em;
+       
+}
+    
+.wyg-head1{
+font-size: 56px;
+font-weight: 500;
+letter-spacing: -0.015em;
+width: 50%;
+}
+    
+.wyg-para2{
+font-size: 20px;
+font-weight: 400;
+letter-spacing: -0.0001em;
+            
+}
+
+.whatyouget-card{
+display: flex;
+flex-direction: row-reverse;
+align-items: center; 
+gap: 30px;   
+background: rgba(16, 10, 23, 1);
+border: 1px solid rgba(31, 18, 43, 1);
+width: 60%;
+}
+
+.whatyouget-card-text{
+display: flex;
+flex-direction: column;
+gap: 20px;    
+}
+.whatyouget-card-text h2{
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 0.002em;
+color: rgba(208, 208, 208, 1)!important;        
+}
+
+
+.whatyouget-card-text p{
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 0.002em;
+color: rgba(170, 170, 170, 1)!important;    
+width: 90%;
+}
+
+
+.whatyouget-cards{
+display: flex;
+flex-direction:column; 
+gap: 20px;  
+align-items: center;
+}
+.badgeandrole{
+display: flex;
+flex-direction: row;
+gap: 20px;      
+}
+.whatyouget-verified-badge{
+height: 18px !important;
+width: 18px !important;
+margin-top: 8px;    
+}
+.whatyouget-card-imagecontainer{
+position: relative;
+}
+
+
+.purple-box-text{
+position: absolute;
+top: 10px;
+left: 10px; 
+background-image: url('../../assets/Images/purpleboximg.png');
+padding: 2px;   
+color: rgba(208, 208, 208, 1)!important; 
+}
+
+.whatyouget-playbutton{
+position: absolute;
+left: 100px; 
+top: 60px;   
+}
+
+
