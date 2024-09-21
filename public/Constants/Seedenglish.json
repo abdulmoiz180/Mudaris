@@ -853,72 +853,98 @@
     "descriptionparaknowthat2":"Read the following carefully if you want to change your life forever",
     "contentinfobox": "The following content will be taught all at once in these 60 days📚The most complete educational package of the digital age 💻📷 The package that every person needs in today's era"
   },
-  "readthis": [
+  "numbersforparentarray": {
+    "number1": "1",
+    "number2": "2",
+    "number3": "3",
+    "number4": "4"
+  },
+  "parentarray": [
     {
-      "title": "Important:",
-      "title2": "Read This Before Making Your Decision",
-      "description": "Lorem ipsum dolor sit amet",
-      "lineImg": "../assets/Images/line.png"
+      "Important": [
+        {
+          "title": "Important:",
+          "title2": "Read This Before Making Your Decision",
+          "description": "Lorem ipsum dolor sit amet",
+          "lineImg": "../assets/Icons/linewo.png"
+        },
+        {
+          "symbol": "../assets/Icons/Symbol.png",
+          "Cardtitle": "Have Excuses for Not Joining?",
+          "Carddescription": "Think again. Overcome the reasons holding you back and take the leap toward a brighter future."
+        },
+        {
+          "symbol": "../assets/Icons/Symbol (1).png",
+          "Cardtitle": "Hear Me Out",
+          "Carddescription": "Before you make a decision, let me share why this course could be life-changing for you."
+        },
+        {
+          "symbol": "../assets/Icons/Symbol (2).png",
+          "Cardtitle": "Is This Course Right for You?",
+          "Carddescription": "Whether you're an aspiring entrepreneur or a professional looking to upskill, this course is designed for anyone ready to take their career to the next level."
+        },
+        {
+          "symbol": "../assets/Icons/Symbol (3).png",
+          "Cardtitle": "Still Reading? Let’s Talk",
+          "Carddescription": "If you've made it this far, you're already serious about improving yourself. Now, let’s dive in and make it happen."
+        }
+      ]
     },
     {
-      "symbol": "../assets/Icons/Symbol.png",
-      "title": "Have Excuses for Not Joining?",
-      "description": "Think again. Overcome the reasons holding you back and take the leap toward a brighter future.",
-      "number": "1"
-    },
-    {
-      "symbol": "../assets/Icons/Symbol (1).png",
-      "title": "Hear Me Out",
-      "description": "Before you make a decision, let me share why this course could be life-changing for you.",
-      "number": "2"
-    },
-    {
-      "symbol": "../assets/Icons/Symbol (2).png",
-      "title": "Is This Course Right for You?",
-      "description": "Whether you're an aspiring entrepreneur or a professional looking to upskill, this course is designed for anyone ready to take their career to the next level.",
-      "number": "3"
-    },
-    {
-      "symbol": "../assets/Icons/Symbol (3).png",
-      "title": "Still Reading? Let’s Talk",
-      "description": "If you've made it this far, you're already serious about improving yourself. Now, let’s dive in and make it happen.",
-      "number": "4"
+      "participate": [
+        {
+          "title": "Why should I participate in Madras",
+          "title2": "Academy?",
+          "description": "Lorem ipsum dolor sit amet",
+          "lineImg": "../assets/Icons/linewo.png"
+        },
+        {
+          "Cardtitle": "Master Money-Making Skills",
+          "Carddescription": "Learn the most valuable, real-world skills that generate income in today’s competitive marketplace. From entrepreneurship to digital marketing, you’ll be equipped with the knowledge to succeed.",
+          "symbol": "../assets/Icons/moneyicon.png"
+        },
+        {
+          "Cardtitle": "World-Class Curriculum",
+          "Carddescription": "Benefit from an education inspired by Harvard, Cambridge, and Stanford. Our program combines the academic rigor of top universities with practical, actionable insights.",
+          "symbol": "../assets/Icons/currciculumicon.png"
+        },
+        {
+          "Cardtitle": "Network with the Brightest Minds",
+          "Carddescription": "Surround yourself with innovators and thinkers. Build lasting connections with experts and peers who are shaping the future.",
+          "symbol": "../assets/Icons/networkbrighticon.png"
+        },
+        {
+          "Cardtitle": "University-Level Learning in Weeks",
+          "Carddescription": "Get the same in-depth education as a full university session, but in a condensed and efficient format. Our 60-day program is designed to give you maximum value in minimal time.",
+          "symbol": "../assets/Icons/unilevelicon.png"
+        }
+      ]
     }
   ],
-  "whyshouldiparticipate": [
-    {
-      "title": "Why should I participate in Madras",
-      "title2": "Academy?",
-      "description": "Lorem ipsum dolor sit amet",
-      "lineImg": "../assets/Images/line.png"
-    },
+  "digitaleducation": {
+    "headtitle": "Unlock the Most Comprehensive Digital Education Package in Just 60 Days",
+    "description": "A complete program designed for success in today’s digital world.",
+    "seebtn": "See All"
+  },
 
-    {
-      "title": "Master Money-Making Skills",
-      "description": "Learn the most valuable, real-world skills that generate income in today’s competitive marketplace. From entrepreneurship to digital marketing, you’ll be equipped with the knowledge to succeed.",
-      "symbol": "../assets/Icons/moneyicon.png",
-      "number": "1"
-    },
-
-    {
-      "title": "World-Class Curriculum",
-      "description": "Benefit from an education inspired by Harvard, Cambridge, and Stanford. Our program combines the academic rigor of top universities with practical, actionable insights.",
-      "symbol": "../assets/Icons/currciculumicon.png",
-      "number": "2"
-    },
-
-    {
-      "title": "Network with the Brightest Minds",
-      "description": "Surround yourself with innovators and thinkers. Build lasting connections with experts and peers who are shaping the future.",
-      "symbol": "../assets/Icons/networkbrighticon.png",
-      "number": "3"
-    },
-
-    {
-      "title": "University-Level Learning in Weeks",
-      "description": "Get the same in-depth education as a full university session, but in a condensed and efficient format. Our 60-day program is designed to give you maximum value in minimal time.",
-      "symbol": "../assets/Icons/unilevelicon.png",
-      "number": "4"
-    }
-  ]
+  "digitaleducationimages": {
+    "Development": "../assets/Images/Developmentimg.png",
+    "Design": "../assets/Images/Designimg.png",
+    "Marketing": "../assets/Images/Marketingimg.png",
+    "Business": "../assets/Images/Businessimg.png",
+    "DataScience": "../assets/Images/DataScienceimg.png",
+    "Technology": "../assets/Images/Technologyimg.png",
+    "DevelopmentDuplicate": "../assets/Images/Developmentimg.png",
+    "DesignDuplicate": "../assets/Images/Designimg.png",
+    "MarketingDuplicate": "../assets/Images/Marketingimg.png",
+    "BusinessDuplicate": "../assets/Images/Businessimg.png",
+    "DataScienceDuplicate": "../assets/Images/DataScienceimg.png",
+    "TechnologyDuplicate": "../assets/Images/Technologyimg.png",
+    "DevelopmentDuplicateDummy": "../assets/Images/Developmentimg.png",
+    "DesignDuplicateDummy": "../assets/Images/Designimg.png",
+    "MarketingDuplicateDummy": "../assets/Images/Marketingimg.png",
+    "BusinessDuplicateDummy": "../assets/Images/Businessimg.png",
+    "DataScienceDuplicateDummy": "../assets/Images/DataScienceimg.png",
+    "TechnologyDuplicateDummy": "../assets/Images/Technologyimg.png"
+  }
 }

@@ -209,12 +209,12 @@
   justify-content: center;
 }
 
-.w-full{
+.w-full {
   width: 80%;
 }
-.w-half{
+/* .w-half{
   width: 66% !important;
-}
+} */
 @media only screen and (max-width: 1030px) {
   .mainHeading {
     width: 90%;

@@ -1,14 +1,12 @@
 .importanttoread {
   color: white;
-  background: #000000; /* Base black background */
-
+  background: #000000;
   background: radial-gradient(
     40% 40% at 50% 60%,
     rgba(152, 85, 255, 0) 0%,
     rgba(152, 85, 255, 0.22) 50%,
     #020103 100%
   );
-  
 }
 .LineCardContainerMain {
   display: flex;
@@ -110,7 +108,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  /* margin: 0 0 20px 0; */
 }
 .importanttoreadCarddescription {
   font-size: 22px !important;
@@ -121,6 +118,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 95%;
 }
 .importanttoreadCardnumberDiv {
   height: 56px;
@@ -140,4 +138,96 @@
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+}
+/* extra work  */
+.importanttoreadCardnumberDiv {
+  position: absolute;
+  right: -20px;
+}
+.importanttoreadCardnumberDiv:nth-child(1) {
+  top: 0px;
+  left: -20px;
+}
+.importanttoreadCardnumberDiv:nth-child(2) {
+  top: 630px;
+  right: 3px;
+}
+.importanttoreadCardnumberDiv:nth-child(3) {
+  bottom: 635px;
+}
+.specialClassForSecondComponent:nth-child(3){
+  bottom: 675px;
+}
+.specialClassForSecondComponent:nth-child(2){
+  top: 675px;
+}
+
+/* .importanttoreadCardnumberDiv */
+@media screen and (max-width: 1180px) {
+  .uaatest {
+    width: 95%;
+  }
+  .importanttoreadCard {
+    width: 385.062px;
+    padding: 30px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 932px) {
+  .importanttoreadCard {
+    padding: 30px;
+    gap: 20px;
+    width: 350.062px;
+  }  
+  .specialClassForSecondComponent:nth-child(3) {
+    bottom: 705px;
+}
+}
+@media screen and (max-width: 830px) {
+  .LineCardContainerMainPic {
+    display: none;
+  }
+  .uaatest {
+    justify-content: center !important;
+  }
+  .importanttoreadcardContainer {
+    gap: 100px;
+  }
+  .LineCardContainerMainTitleDesc {
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 770px) {
+  .LineCardContainerMainPic {
+    display: none;
+  }
+  .LineCardContainerMainTitleDesc {
+    margin-bottom: 10px;
+}
+  .LineCardContainerMainTitle {
+    font-size: 36px !important;
+    line-height: 40px !important;
+  }
+  .importanttoreadcardContainer {
+    gap: 50px;
+  }
+  .importanttoreadCard {
+    padding: 30px;
+    gap: 20px;
+    width: 350.062px;
+  }
+  .importanttoreadCarddescription {
+    font-size: 18px !important;
+    line-height: 120% !important;
+  }
+  .importanttoreadCardtitle {
+    font-size: 28px !important;
+    line-height: 120% !important;
+  }
+  .importanttoreadCardPicDiv {
+    padding: 15px;
+  }
+  .uaatest {
+    justify-content: center !important;
+  }
 }

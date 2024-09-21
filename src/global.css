@@ -117,7 +117,9 @@ li {
 .fs-48 {
   font-size: 48px !important;
 }
-
+.description {
+  font-size: 20px !important;
+}
 .lightgray {
   color: #ffffffb2;
 }
@@ -131,10 +133,10 @@ li {
 .input-border {
   color: #ffffff26;
 }
-.align-right{
+.align-right {
   text-align: right !important;
 }
-.align-left{
+.align-left {
   text-align: left !important;
 }
 
