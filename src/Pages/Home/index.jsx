@@ -11,6 +11,8 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import GettoKnow from "../../components/GettoKnow/Index";
 import LineCards from "../../components/ReadIt";
 import DigitalEducation from "../../components/DigitalEducationSlider";
+import GetaJob from "../../components/GetaJob";
+import WhatYouGet from "../../components/WhatYouGet";
 const Home = () => {
   const {language } = useLanguage(); 
   return (
@@ -27,6 +29,8 @@ const Home = () => {
         <PriceCards/>
         <DigitalEducation/>
         <LineCards/>
+        <GetaJob/>
+        <WhatYouGet/>
         <GettoKnow/>
         <FAQ />
         <GetStart /> 
