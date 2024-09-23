@@ -1,19 +1,42 @@
 .slick-slider {
   margin: 0;
 }
+.slick-dots li {
+  width: 25px;
+  height: 20px;
+  margin: 0px 5px;
+}
 .slick-dots li button:before {
-  color: white !important; /* Change the dot color to white */
+  width: 10px !important;
+  height: 6px !important;
+  color: #c8a6ff !important; /* Change the dot color to white */
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
   color: white !important; /* Ensure active dot is also white */
+  width: 10px !important;
+  height: 6px !important;
+  color: #c8a6ff !important; /* Change the dot color to white */
 }
 
 .slick-list {
   padding: 0 10px;
 }
+.slick-dots li button:before {
+  width: 10px !important; /* Set the new width */
+  height: 6px !important; /* Set the new height */
+  background-color: #90829d;
+  color: transparent !important; /* Keep the dot color */
+}
 
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  background-color: #8c45ff;
+  color: transparent !important; /* Ensure active dot is white */
+  width: 25px !important; /* Set the new width for active dots */
+  height: 8px !important; /* Set the new height for active dots */
+}
 /* Slide container */
 .DigitalEducationSlide {
   padding: 30px;
@@ -63,4 +86,78 @@
   background: rgba(140, 69, 255, 0.4);
   box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset;
   backdrop-filter: blur(7px);
+}
+.DigitalEducationSlide {
+  color: white;
+}
+.PicBgDigitalEducationSlide{
+  width: 200px !important;
+  height: 313px !important;
+}
+.DigitalEducationSlideNewandPicBox {
+  display: flex;
+  padding: 10px;
+}
+.DigitalEducationSlideNewChildBox {
+  border-radius: 16px;
+  background: #351763;
+  padding: 4px 12px !important;
+}
+.DigitalEducationSlideNew {
+  text-transform: capitalize;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+.DigitalEducationCardTitle {
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.DigitalEducationSlideTitleandPicBox {
+  display: flex;
+  justify-content: center;
+  height: 75%;
+  margin: auto;
+  align-items: flex-end;
+}
+.DigitalEducationSlideTitleandPicBoxwith-description {
+  width: 90% !important;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.DigitalEducationSlideDescription {
+  text-align: center !important;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+@media screen and (max-width: 667px) {
+  .DigitalEducationComponentMainTitle {
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    line-height: 140% !important;
+    letter-spacing: -0.72px !important;
+  }
+  .DigitalEducationComponentTextComponent {
+    width: 85%;
+    flex-direction: column;
+    gap: 20px !important;
+    align-items: flex-start;
+  }
+  .DigitalEducationComponentTitleDesc {
+    gap: 20px;
+    width: 100%;
+  }
+  .DigitalEducationComponentButtonDiv Button {
+    width: 100px;
+    height: 50px;
+  }
+  .DigitalEducationSlide {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
