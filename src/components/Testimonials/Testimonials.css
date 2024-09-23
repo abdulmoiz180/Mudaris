@@ -207,7 +207,8 @@
 
   .client-review {
     position: absolute;
-    margin-right: 20%;
+    margin-right: 12%;
+    max-width: 330px;
   }
 }
 @media only screen and (min-width: 800px) {
