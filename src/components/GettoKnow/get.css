@@ -1,0 +1,210 @@
+.GetToknowMainSection {
+  background: linear-gradient(180deg, #020103 0%, #151516 100%);
+}
+.GetToknowMainContainer {
+  width: 85% !important;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+.GetToknowContent {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 80px !important;
+  width: 100% !important;
+}
+.GetToknowTextContent {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  color: #fff;
+  width: 100% !important;
+}
+.GetToknowTextContent h2 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 65px;
+  letter-spacing: -0.84px;
+}
+.GetToknowTextContent p {
+  color: #e1e1e1;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.paraDivGettoKnow {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.paraDivGettoKnow p {
+  width: 90%;
+}
+.GetToknowTextContent Button {
+  display: flex !important;
+  height: 64px !important;
+  padding: 8px 32px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(140, 69, 255, 0.4);
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(7px);
+  color: #fff;
+  text-transform: initial !important;
+  transition: 0.4s ease-in-out !important;
+}
+.GetToknowTextContent Button:hover {
+  background: rgba(140, 69, 255, 0.6);
+  box-shadow: 0px 0px 12px 6px rgba(255, 255, 255, 0.3) inset;
+}
+.GetToknowContentbelowContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+.GetToknowTextContentbelow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  border-radius: 24px;
+  background: #020103;
+  width: 90%;
+  padding: 56px 0;
+}
+.GetToknowTextContentbelowMainText {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+}
+.GetToknowTextContentbelowMainText h4 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.48px;
+}
+.GetToknowTextContentbelowMainText p {
+  color: #e1e1e1;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.GetToknowContentbelowLogoBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.GetToknowContentbelowLogo {
+  display: flex;
+  width: 172px;
+  height: 172px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16.512px;
+  background: #020103;
+}
+@media screen and (max-width: 1280px) {
+  .GetToknowContent {
+    gap: 50px !important;
+}
+.GetToknowMainContainer {
+  width: 90% !important;
+}
+}
+@media screen and (max-width: 1030px) {
+  .GetToknowContent img {
+    width: 50%;
+  }
+  .GetToknowTextContent h2 {
+    font-size: 44px !important;
+  }
+  .GetToknowTextContent p {
+    font-size: 18px !important;
+  }
+  .GetToknowContent {
+    gap: 40px !important;
+  }
+  .GetToknowMainContainer {
+    width: 95% !important;
+  }
+  .GetToknowTextContentbelowMainText p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 932px) {
+.GetToknowTextContent h2 {
+  font-size: 40px !important;
+  line-height: 50px;
+}
+.GetToknowTextContent p {
+  font-size: 16px !important;
+}
+}
+@media screen and (max-width: 830px) {
+  .GetToknowContent img {
+    width: 80%;
+  }
+  .GetToknowContent {
+  flex-direction: column;
+  }
+  .GetToknowTextContent {
+    width: 80% !important;
+}
+.GetToknowTextContent p {
+  font-size: 22px;
+}
+}
+@media screen and (max-width: 670px) {
+  .GetToknowMainContainer {
+    width: 90% !important;
+  }
+  .GetToknowContent {
+    flex-direction: column !important;
+  }
+  .GetToknowContent img {
+    width: 95%;
+  }
+  .GetToknowTextContent {
+    gap: 20px !important;
+    width: 100% !important;
+  }
+  .GetToknowTextContent h2 {
+    font-size: 44px;
+    line-height: 45px;
+  }
+  .GetToknowTextContent p {
+    font-size: 18px;
+  }
+  .paraDivGettoKnow p {
+    width: 100%;
+  }
+  .GetToknowTextContentbelowMainText h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: -0.48px;
+  }
+  .GetToknowTextContentbelow {
+    width: 100%;
+  }
+  .GetToknowTextContentbelowMainText p {
+    font-size: 18px;
+  }
+  .GetToknowContentbelowLogo {
+    width: 122px;
+    height: 122px;
+  }
+}

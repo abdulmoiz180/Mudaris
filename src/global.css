@@ -6,6 +6,8 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Inter", sans-serif;
   font-family: "DM Sans", sans-serif;
+  font-family: "Public Sans", sans-serif;
+
 }
 
 :root {
@@ -47,6 +49,10 @@ body {
 }
 .dm-sans {
   font-family: "DM Sans", sans-serif !important;
+}
+
+.public-sans{
+font-family: "Public Sans", sans-serif !important;
 }
 .footer-bg {
   background-color: var(--footer-bg);
