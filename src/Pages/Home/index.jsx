@@ -8,6 +8,8 @@ import "./home.css";
 import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
+import Community from "../../components/Community";
+
 import GettoKnow from "../../components/GettoKnow/Index";
 import LineCards from "../../components/ReadIt";
 import DigitalEducation from "../../components/DigitalEducationSlider";
@@ -17,7 +19,7 @@ import GetaJob from '../../components/GetaJob'
 const Home = () => {
   const {language } = useLanguage(); 
   return (
-    <>
+
       <section
         className="home-page column primary-bg"
         dir={language === "english" ? "ltr" : "rtl"}
@@ -37,7 +39,6 @@ const Home = () => {
         <FAQ />
         <GetStart /> 
       </section>
-    </>
   );
 };
 
