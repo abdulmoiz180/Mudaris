@@ -10,25 +10,16 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Community from "../../components/Community";
 
-
 const Home = () => {
   const { language } = useLanguage(); // Access language separately
 
   return (
     <section
-      className="home-page column primary-bg"
-      dir={language === "persian" ? "ltr" : "rtl"}
+      className="home-page column"
+      dir={language === "persian" ? "rtl" : "ltr"}
     >
-      <Hero />
-      <Testimonials />
-      <Courses />
-      <Review />
       <PriceCards />
-      <Community />
-      <FAQ />
-      <GetStart />
     </section>
-
   );
 };
 

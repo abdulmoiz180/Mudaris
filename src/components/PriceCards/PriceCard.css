@@ -48,7 +48,7 @@
   background: rgba(0, 0, 0, 0.06) !important;
   transition: 1s ease-in-out !important;
 }
-.plan-card:hover{
+.plan-card:hover {
   transform: scale(1.04);
 }
 .plan-heading {
@@ -127,7 +127,7 @@
 .plan-card:nth-child(2) {
   box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48) !important;
   -webkit-box-shadow: 0px -41px 533px 61px rgba(152, 85, 255, 0.48) !important;
-  -moz-box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48)!important;
+  -moz-box-shadow: -1px 9px 225px 81px rgba(152, 85, 255, 0.48) !important;
   background: linear-gradient(180deg, #010002 0%, #361764 100%),
     url(../../assets/Images/Pattern.png) !important;
   background-size: cover !important;
@@ -139,6 +139,102 @@
   background-size: cover !important;
   background-blend-mode: screen;
   overflow: hidden !important;
+}
+
+/* screen */
+/* .checkout-card-upper{
+
+} */
+
+.payment-screen .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #1e44cc !important ;
+  border-radius: 50px !important;
+}
+.payment-screen .css-1jk99ih-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white !important;
+  background-color: #141415 !important;
+  border-radius: 50px !important;
+}
+.checkout-fields {
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* there is difference between filed and fields... */
+.checkout-field {
+  flex: 1 1 calc(50% - 20px) !important;
+}
+.checkout-tab-container {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.checkout-btn {
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(140, 69, 255, 0.4) !important;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset !important;
+  backdrop-filter: blur(7px) !important;
+  height: 64px;
+  width: 780px;
+  text-transform: inherit !important;
+}
+.debit-container {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.payment-screen .css-heg063-MuiTabs-flexContainer {
+  justify-content: flex-start !important;
+}
+.payment-screen .fs-36 {
+  font-size: 36px !important;
+  letter-spacing: -0.36px !important;
+}
+.payment-screen .fs-16 {
+  font-size: 16px;
+}
+.payment-screen .fs-24-w-500 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.payment-screen .checkout-section {
+  width: 70%;
+  gap: 30px;
+}
+.payment-screen .fs-18 {
+  font-size: 18px !important;
+}
+.payment-screen .checkout-subscribe-btn {
+  height: 50px !important;
+  font-size: 22px !important;
+}
+.payment-screen {
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}
+.payment-screen .crypto-container {
+  width: 600px !important;
+}
+.payment-screen .g-20 {
+  gap: 20px;
+}
+.payment-screen .checkout-plan-card {
+  background: linear-gradient(180deg, #010002 0%, #361764 100%),
+    url(../../Assets/Images/Pattern.png) !important;
+  background-size: cover !important;
+  background-blend-mode: screen;
+  overflow: hidden !important;
+}
+.payment-screen .g-10 {
+  gap: 10px;
+}
+
+/* card override css */
+.checkout-plan-card {
+  height: 600px;
+  width: 350px;
 }
 @media only screen and (max-width: 1030px) {
   .card-wrapper {

@@ -1,0 +1,96 @@
+.css-c09uja-MuiPaper-root-MuiDialog-paper {
+  background: #020103 !important;
+  border: 1px solid #66757f !important;
+  border-radius: 50px !important;
+  height: 100% !important;
+}
+.css-19kok5i-MuiDialogActions-root {
+  align-items: center !important;
+}
+.form {
+  padding: 40px 0 !important;
+  width: 450px;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid white;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+.form-title {
+  color: #fff;
+  text-align: center;
+  font-size: 32px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  letter-spacing: -0.32px !important;
+}
+.google-btn {
+  background-color: #141415 !important;
+  border: 1px solid #d2d2d2 !important;
+  gap: 20px;
+  padding: 10px 0 !important;
+}
+.signup-btn-group {
+  display: flex;
+  border-radius: 50px !important;
+  text-transform: inherit !important;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.facebook-btn {
+  gap: 20px;
+  padding: 10px 0 !important;
+}
+.signup-btn {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  background: rgba(140, 69, 255, 0.4) !important;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset !important;
+  backdrop-filter: blur(7px) !important;
+  width: 400px;
+  height: 54px;
+}
+.signup-form-label {
+  font-size: 16px;
+  width: 100%;
+  margin-left: 30px;
+}
+.fs-13 {
+  color: #929292;
+
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
+.fs-12 {
+  color: #cdcdcd;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.form .g-10 {
+  gap: 10px;
+}
+.form .ml-20 {
+  margin-left: 20px;
+}
+.form .g-20 {
+  gap: 20px;
+}

@@ -12,12 +12,12 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Logo from "../../assets/Icons/Nav/Frame 1.png";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
-
+import { GlobalContext } from "../../globalContext/GobalContext";
+import Signup from "../../Pages/Signup";
 function ResponsiveAppBar() {
-  const { language } = useLanguage();
   const { toggleLanguage, data } = useLanguage();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-
+  const { handleClickOpen } = React.useContext(GlobalContext);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -123,32 +123,42 @@ function ResponsiveAppBar() {
               {/* Right-side Buttons */}
               <Box component="div" className="navBarBtns2 BorderDiv">
                 {data.navRightBtns.map((btn, index) => (
-                  <div className="rightbtn" key={index}>
-                    <Button
-                      sx={{ my: 2, color: "white", display: "block" }}
-                      className="inter"
-                      onClick={
-                        btn === "EN" || btn === "فارسی"
-                          ? toggleLanguage
-                          : handleCloseNavMenu
-                      }
-                    >
-                      {isImageUrl(btn) ? (
-                        <img
-                          src={btn}
-                          alt="icon"
-                          key={index}
-                          style={{ width: 24, height: 24 }}
-                        />
-                      ) : (
-                        btn
-                      )}
-                    </Button>
+                  <div className="rightbtn inter" key={index}>
+                    {btn === "Sign In" ? (
+                      <Button
+                        onClick={handleClickOpen}
+                        sx={{ my: 2, color: "white", display: "block" }}
+                      >
+                        Sign In
+                      </Button>
+                    ) : (
+                      <Button
+                        sx={{ my: 2, color: "white", display: "block" }}
+                        className="inter"
+                        onClick={
+                          btn === "EN" || btn === "فارسی"
+                            ? toggleLanguage
+                            : handleCloseNavMenu
+                        }
+                      >
+                        {isImageUrl(btn) ? (
+                          <img
+                            src={btn}
+                            alt="icon"
+                            key={index}
+                            style={{ width: 24, height: 24 }}
+                          />
+                        ) : (
+                          btn
+                        )}
+                      </Button>
+                    )}
                   </div>
                 ))}
               </Box>
             </div>
           </Box>
+          <Signup />
         </Toolbar>
       </Container>
     </AppBar>

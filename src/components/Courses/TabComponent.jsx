@@ -18,7 +18,7 @@ const TabComponent = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [items, setItems] = useState(4);
   const [selectedTab, setSelectedTab] = useState("");
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   // Ensure that selectedTab and value are reset when data (language) changes
   useEffect(() => {
@@ -143,7 +143,11 @@ const TabComponent = () => {
   return (
     <div className="tab-container">
       <div className="tab-buttons flex">{renderTabs()}</div>
-      <div className={`course-content flex ${isTransitioning ? "fade-out" : "fade-in"}`}>
+      <div
+        className={`course-content flex ${
+          isTransitioning ? "fade-out" : "fade-in"
+        }`}
+      >
         {renderCourses()}
       </div>
     </div>
