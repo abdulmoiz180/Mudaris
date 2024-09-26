@@ -8,7 +8,12 @@
     "pausebtn": "Pause Video",
     "playbtn": "Play Video"
   },
-  "pagesnav": ["Explore", "Analysis Personalize", "Try Now", "Portfolio"],
+  "pagesnav": [
+    "Explore",
+    "Analysis Personalize",
+    "Try Now",
+    "Portfolio"
+  ],
   "navRightBtns": [
     "EN",
     "../../src/assets/Icons/Heart.png",
@@ -787,14 +792,12 @@
       ]
     }
   ],
-
   "whatyouget": [
     {
       "headtitle1": "HERE'S WHAT YOU GET",
       "headtitle2": "When You Join Educate Today, You Get Full & Immediate Access To",
       "headtitle3": "You Get Full & Immediate Access To"
     },
-
     {
       "role": "Agency Navigator",
       "description": "Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
@@ -820,7 +823,6 @@
       "purpleboxtext": "Social Media"
     }
   ],
-
   "gettoknow": {
     "headtitle": "Get to know Dr. Enayat Modares more",
     "headdescription": "Hello, I am Inayat Modares - I came from poverty to the third university in the world, I worked with the United Nations, I was invited to the biggest world conferences, I changed the lives of thousands of people, tens of institutions andI founded a successful business, worked with the best national and international media, completed my medicine and master's degree in the most prestigious university in the world. At the moment, there are several online businesses and unique programs ",
@@ -831,7 +833,6 @@
     "transformdescription": "From poverty to the third best university in the world, from cooperation with the United Nations to being invited to the biggest world conferences, from working with the best national and international media to leading several institutions. and successful business, from practicing medicine to completing a master's degree, from building dozens of leading online businesses to changing the lives of thousands of people around the world. Now I came to you with the latest knowledge and Today's money making skills will equip you to achieve your dreams",
     "featuredline": "AS FEATURED IN - Associates of Dr. Modares"
   },
-
   "companylogos": {
     "logo0": "../assets/Images/sciencespo.png",
     "logo1": "../assets/Images/tolonews.png",
@@ -840,7 +841,6 @@
     "logo4": "../assets/Images/undplogo.png",
     "logo5": "../assets/Images/onelogo.png"
   },
-
   "getajob": {
     "headtitle": "Get a job and side income with 31 sessions in (two months).",
     "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job.",
@@ -1018,277 +1018,272 @@
     "DataScienceDuplicateDummy": "../assets/Images/DataScienceimg.png",
     "TechnologyDuplicateDummy": "../assets/Images/Technologyimg.png"
   },
-
-"Duration":{
-"title":"Duration:",
-"description":"The course lasts for 62 days, with live classes conducted 5 days a week."
-},
-"Class":[
-{
-"title":"Class Length",
-"description":"Each session lasts for 1 hour, but may extend to 3-4 hours to ensure in-depth learning and optimal experience. There are a total of 31 sessions."  
-},
-{
-"title":"Class Time",
-"description":"Class timings will be decided after consulting with the participants, based on time zone differences to ensure global participation."  
-},
-{
-"title":"Missed a Class?",
-"description":"Don’t worry! All classes will be recorded and made available on the same day for you to catch up at your convenience."  
-},
-{
-"title":"Practice Assignments",
-"description":"After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills."  
-  "DataScienceCourse": [
+  "Duration": {
+    "title": "Duration:",
+    "description": "The course lasts for 62 days, with live classes conducted 5 days a week."
+  },
+  "Class": [
     {
-      "title": "Data Science Course",
-      "description": "Choose from hundreds of online courses from amazing mentor and find what fascinates you as you explore classes"
+      "title": "Class Length",
+      "description": "Each session lasts for 1 hour, but may extend to 3-4 hours to ensure in-depth learning and optimal experience. There are a total of 31 sessions."
     },
     {
-      "tabname": "RELATED SKILLS"
+      "title": "Class Time",
+      "description": "Class timings will be decided after consulting with the participants, based on time zone differences to ensure global participation."
     },
     {
-      "skill1": "Python",
-      "skill2": "Machine Learning",
-      "skill3": "Deep Learning",
-      "skill4": "Data Analysis",
-      "skill5": "R (Programming Language)",
-      "skill6": "AI"
+      "title": "Missed a Class?",
+      "description": "Don’t worry! All classes will be recorded and made available on the same day for you to catch up at your convenience."
+    },
+    {
+      "title": "Practice Assignments",
+      "description": "After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills.",
+      "DataScienceCourse": [
+        {
+          "title": "Data Science Course",
+          "description": "Choose from hundreds of online courses from amazing mentor and find what fascinates you as you explore classes"
+        },
+        {
+          "tabname": "RELATED SKILLS"
+        },
+        {
+          "skill1": "Python",
+          "skill2": "Machine Learning",
+          "skill3": "Deep Learning",
+          "skill4": "Data Analysis",
+          "skill5": "R (Programming Language)",
+          "skill6": "AI"
+        }
+      ],
+      "DataScienceCourseCardsSectiontitle": "Top courses in Data Science",
+      "DataScienceCourseCardsSection": [
+        {
+          "img": "../assets/Images/coursepagecardimage.png",
+          "title": "Introduction to Python for Data Science",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "52 videos",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "24 hours",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp175,000",
+          "actualPrice": "Rp550,000",
+          "btn": "Join Course"
+        },
+        {
+          "img": "../assets/Images/coursepagecardimageML.png",
+          "title": "Machine Learning with Python: A Practical Approach",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "8 videos",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "3.5 hours",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp175,000",
+          "actualPrice": "Rp200,000",
+          "btn": "Join Course"
+        },
+        {
+          "img": "../assets/Images/coursepagecardimageDV.png",
+          "title": "Introduction to Python for Data Science",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "16 videos",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "7 hours",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "price": "Rp175,000",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "actualPrice": "Rp280,000",
+          "btn": "Join Course"
+        }
+      ],
+      "DataScienceCourseCardsSectionButtons": [
+        {
+          "button1": "+ Filter",
+          "button2": "+ Sort by most popular"
+        },
+        {
+          "button3": "Showing",
+          "span": "320 courses"
+        }
+      ],
+      "DataScienceCourseCardsSectionMenuBarSide": [
+        {
+          "title": "Level",
+          "1": "Beginner",
+          "2": "Intermediate",
+          "3": "Advanced"
+        },
+        {
+          "title": "Video Duration",
+          "1": "0-5 Hour",
+          "2": "5-10 Hour",
+          "3": "10+ Hour"
+        },
+        {
+          "1": "Paid Course",
+          "2": "Free Course",
+          "3": "With Certificate"
+        }
+      ],
+      "DataScienceCourseCardsSectionButtonsCourses": [
+        {
+          "img": "../assets/Images/ImageCardCourse1.png",
+          "title": "Data Science Methodology",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "24",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "8.5h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp175,000",
+          "actualPrice": "Rp550,000",
+          "special": "Special offer",
+          "best": "Bestseller",
+          "level": "Beginner"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse2.png",
+          "title": "Data Science: Inference and Modeling",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "6",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "4h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp100,000",
+          "actualPrice": "Rp250,000",
+          "best": "Bestseller",
+          "new": "new",
+          "level": "Intermediate"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse3.png",
+          "title": "Introduction to Data Science",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "12",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "6h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp200,000",
+          "actualPrice": "Rp600,000",
+          "new": "new",
+          "level": "Beginner"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse4.png",
+          "title": "Applied Data Science",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "10",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "7h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp175,000",
+          "actualPrice": "Rp500,000",
+          "special": "Special offer",
+          "level": "Intermediate"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse5.png",
+          "title": "Data Science and AI Fundamentals",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "15",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "9h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp150,000",
+          "actualPrice": "Rp450,000",
+          "best": "Bestseller",
+          "level": "Beginner"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse6.png",
+          "title": "Advanced Data Science with Python",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "8",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "5h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp250,000",
+          "actualPrice": "Rp700,000",
+          "level": "Expert"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse7.png",
+          "title": "Data Science for Business",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "16",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "10h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp180,000",
+          "actualPrice": "Rp600,000",
+          "special": "Special offer",
+          "level": "Intermediate"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse8.png",
+          "title": "Big Data and Data Science",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "20",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "8h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp190,000",
+          "actualPrice": "Rp550,000",
+          "best": "Bestseller",
+          "level": "Expert"
+        },
+        {
+          "img": "../assets/Images/ImageCardCourse9.png",
+          "title": "Data Science for Machine Learning",
+          "videoIcon": "../assets/Icons/videoIcon.png",
+          "videos": "18",
+          "clockIcon": "../assets/Icons/clockIcon.png",
+          "time": "7.5h",
+          "certificateIcon": "../assets/Icons/certificateIcon.png",
+          "heartIcon": "../assets/Icons/heartIcon.png",
+          "fillHeart": "../assets/Icons/Heart(1).png",
+          "price": "Rp220,000",
+          "actualPrice": "Rp500,000",
+          "level": "Intermediate"
+        }
+      ]
     }
   ],
-  "DataScienceCourseCardsSectiontitle": "Top courses in Data Science",
-  "DataScienceCourseCardsSection": [
+  "DonotJoinCourse": [
     {
-      "img": "../assets/Images/coursepagecardimage.png",
-      "title": "Introduction to Python for Data Science",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "52 videos",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "24 hours",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp175,000",
-      "actualPrice": "Rp550,000",
-      "btn": "Join Course"
+      "title": "Who Should Not Join This Course?",
+      "description": "This course is not for:"
     },
     {
-      "img": "../assets/Images/coursepagecardimageML.png",
-      "title": "Machine Learning with Python: A Practical Approach",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "8 videos",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "3.5 hours",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp175,000",
-      "actualPrice": "Rp200,000",
-      "btn": "Join Course"
+      "listitem": "Those who are content with a mediocre life and don’t aspire to achieve their dream lifestyle."
     },
     {
-      "img": "../assets/Images/coursepagecardimageDV.png",
-      "title": "Introduction to Python for Data Science",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "16 videos",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "7 hours",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "price": "Rp175,000",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "actualPrice": "Rp280,000",
-      "btn": "Join Course"
-    }
-  ],
-  "DataScienceCourseCardsSectionButtons": [
-    {
-      "button1": "+ Filter",
-      "button2": "+ Sort by most popular"
+      "listitem": "People who prefer to complain about their circumstances rather than make a real effort to change."
     },
     {
-      "button3": "Showing",
-      "span": "320 courses"
-    }
-  ],
-  "DataScienceCourseCardsSectionMenuBarSide": [
-    {
-      "title": "Level",
-      "1": "Beginner",
-      "2": "Intermediate",
-      "3": "Advanced"
+      "listitem": "Individuals who don’t value learning new skills and see investing in education as a burden."
     },
     {
-      "title": "Video Duration",
-      "1": "0-5 Hour",
-      "2": "5-10 Hour",
-      "3": "10+ Hour"
-    },
-    {
-      "1": "Paid Course",
-      "2": "Free Course",
-      "3": "With Certificate"
-    }
-  ],
-  "DataScienceCourseCardsSectionButtonsCourses": [
-    {
-      "img": "../assets/Images/ImageCardCourse1.png",
-      "title": "Data Science Methodology",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "24",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "8.5h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp175,000",
-      "actualPrice": "Rp550,000",
-      "special": "Special offer",
-      "best": "Bestseller",
-      "level": "Beginner"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse2.png",
-      "title": "Data Science: Inference and Modeling",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "6",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "4h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp100,000",
-      "actualPrice": "Rp250,000",
-      "best": "Bestseller",
-      "new": "new",
-      "level": "Intermediate"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse3.png",
-      "title": "Introduction to Data Science",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "12",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "6h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp200,000",
-      "actualPrice": "Rp600,000",
-      "new": "new",
-      "level": "Beginner"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse4.png",
-      "title": "Applied Data Science",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "10",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "7h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp175,000",
-      "actualPrice": "Rp500,000",
-      "special": "Special offer",
-      "level": "Intermediate"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse5.png",
-      "title": "Data Science and AI Fundamentals",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "15",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "9h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp150,000",
-      "actualPrice": "Rp450,000",
-      "best": "Bestseller",
-      "level": "Beginner"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse6.png",
-      "title": "Advanced Data Science with Python",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "8",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "5h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp250,000",
-      "actualPrice": "Rp700,000",
-      "level": "Expert"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse7.png",
-      "title": "Data Science for Business",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "16",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "10h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp180,000",
-      "actualPrice": "Rp600,000",
-      "special": "Special offer",
-      "level": "Intermediate"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse8.png",
-      "title": "Big Data and Data Science",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "20",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "8h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp190,000",
-      "actualPrice": "Rp550,000",
-      "best": "Bestseller",
-      "level": "Expert"
-    },
-    {
-      "img": "../assets/Images/ImageCardCourse9.png",
-      "title": "Data Science for Machine Learning",
-      "videoIcon": "../assets/Icons/videoIcon.png",
-      "videos": "18",
-      "clockIcon": "../assets/Icons/clockIcon.png",
-      "time": "7.5h",
-      "certificateIcon": "../assets/Icons/certificateIcon.png",
-      "heartIcon": "../assets/Icons/heartIcon.png",
-      "fillHeart": "../assets/Icons/Heart(1).png",
-      "price": "Rp220,000",
-      "actualPrice": "Rp500,000",
-      "level": "Intermediate"
+      "listitem": "Those who are willing to work for others for the rest of their lives without seeking control and freedom over their time."
     }
   ]
 }
-],
-
-"DonotJoinCourse":[
-{
-"title":"Who Should Not Join This Course?",
-"description":"This course is not for:"
-},
-{
-"listitem":"Those who are content with a mediocre life and don’t aspire to achieve their dream lifestyle."
-},
-{
-"listitem":"People who prefer to complain about their circumstances rather than make a real effort to change."
-},
-{
-"listitem":"Individuals who don’t value learning new skills and see investing in education as a burden."
-},
-{
-"listitem":"Those who are willing to work for others for the rest of their lives without seeking control and freedom over their time."  
-}
-
-]
-
-}
-

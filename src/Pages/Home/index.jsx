@@ -10,13 +10,14 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import GettoKnow from "../../components/GettoKnow/Index";
 import DigitalEducation from "../../components/DigitalEducationSlider";
-import Community from '../../components/Community'
-import WhatYouGet from '../../components/WhatYouGet'
-import GetaJob from '../../components/GetaJob'
+import Community from "../../components/Community";
+import WhatYouGet from "../../components/WhatYouGet";
+import GetaJob from "../../components/GetaJob";
 import Participate from "../../components/Participate";
 import Classes from "../../components/Classes";
-import { DataScience } from "../../components/DataScienceCourse";
+const Home = () => {
   const { language } = useLanguage();
+
   return (
     <>
       <section
@@ -27,21 +28,20 @@ import { DataScience } from "../../components/DataScienceCourse";
         <Testimonials />
         <Review />
         <E_Learn />
-        <PriceCards/>
-        <Participate/> 
-        <Classes/>
-        <DigitalEducation/>
-        <LineCards/>
+        <PriceCards />
+        <Participate />
+        <Classes />
+        <DigitalEducation />
         <Community />
         <WhatYouGet />
         <DigitalEducation />
-        <LineCards />
         <GettoKnow />
-        {/* <GetaJob /> */}
-        <DataScience/>
+        <GetaJob />
+      
         <FAQ />
         <GetStart />
       </section>
     </>
-
+  );
+};
 export default Home;
