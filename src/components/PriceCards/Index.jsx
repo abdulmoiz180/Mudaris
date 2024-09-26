@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Card,
@@ -11,16 +11,34 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./PriceCard.css";
 import Line from "../../assets/Icons/line.png";
 import Tick from "../../assets/Icons/tick.png";
-
+import PaymentScreen from "./PaymentScreen";
 export const PriceCards = () => {
   const { data, language } = useLanguage();
-
+  const [isPaymentScreenVisible, setIsPaymentScreenVisible] = useState(false); // New state to track payment screen visibility
+  const [selectedPlan, setSelectedPlan] = useState(null);
   // Ensure data is correctly loaded
   if (!data) {
     return <div>Loading...</div>; // Handle loading state
   }
-
+  if (isPaymentScreenVisible) {
+    return <PaymentScreen selectedPlan={selectedPlan} />;
+  }
   const paymentPlans = data.paymentPlans; // Correct access to paymentPlans
+  const handleSubscribe = (plan, index) => {
+    setIsPaymentScreenVisible(true);
+    setSelectedPlan({
+      planTitle: plan[`plan${index + 1}`],
+      price: plan.price,
+      perks: [
+        plan.perk1,
+        plan.perk2,
+        plan.perk3,
+        plan.perk4,
+        plan.perk5,
+        plan.perk6,
+      ].filter(Boolean), // Remove any falsy values (e.g., null or undefined perks)
+    });
+  };
 
   return (
     <Container className="price-container">
@@ -32,7 +50,7 @@ export const PriceCards = () => {
           {data.paymentPlans[0].description}
         </Typography>
       </Box>
-       <Box className="card-wrapper">
+      <Box className="card-wrapper">
         {paymentPlans.slice(1, 4).map((plan, index) => (
           <Card
             key={index}
@@ -69,15 +87,20 @@ export const PriceCards = () => {
               </ul>
             </CardContent>
             <Box className="ButtonDiv">
-              <Button className="subscribe-button">
+              <Button
+                className="subscribe-button"
+                onClick={() => handleSubscribe(plan, index)}
+              >
                 {paymentPlans[4].subscribe}
               </Button>
             </Box>
           </Card>
         ))}
-      </Box> 
+      </Box>
     </Container>
   );
 };
 
 export default PriceCards;
+
+// screens

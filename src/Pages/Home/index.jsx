@@ -40,7 +40,5 @@ const Home = () => {
         <GetStart />
       </section>
     </>
-  );
-};
 
 export default Home;

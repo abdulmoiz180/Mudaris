@@ -9,9 +9,7 @@
   font-family: "Public Sans", sans-serif;
 
 }
-body{
-  background-color: black !important;
-}
+
 :root {
   --primary-clr: #020103;
   --secondary-clr: #4d3763;
@@ -23,6 +21,9 @@ body{
 }
 .dark-gray {
   color: #aaaaaa !important;
+}
+body {
+  background: var(--primary-clr) !important;
 }
 
 .line-through {
