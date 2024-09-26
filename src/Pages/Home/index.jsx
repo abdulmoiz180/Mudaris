@@ -9,13 +9,13 @@ import Review from "../../components/Review/Index";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import GettoKnow from "../../components/GettoKnow/Index";
-import LineCards from "../../components/ReadIt";
 import DigitalEducation from "../../components/DigitalEducationSlider";
-import Community from "../../components/Community";
-import WhatYouGet from "../../components/WhatYouGet";
-import GetaJob from "../../components/GetaJob";
+import Community from '../../components/Community'
+import WhatYouGet from '../../components/WhatYouGet'
+import GetaJob from '../../components/GetaJob'
+import Participate from "../../components/Participate";
+import Classes from "../../components/Classes";
 import { DataScience } from "../../components/DataScienceCourse";
-const Home = () => {
   const { language } = useLanguage();
   return (
     <>
@@ -25,12 +25,15 @@ const Home = () => {
       >
         <Hero />
         <Testimonials />
-        {/* <Courses /> */}
         <Review />
         <E_Learn />
+        <PriceCards/>
+        <Participate/> 
+        <Classes/>
+        <DigitalEducation/>
+        <LineCards/>
         <Community />
         <WhatYouGet />
-        <PriceCards />
         <DigitalEducation />
         <LineCards />
         <GettoKnow />

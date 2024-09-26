@@ -1018,6 +1018,27 @@
     "DataScienceDuplicateDummy": "../assets/Images/DataScienceimg.png",
     "TechnologyDuplicateDummy": "../assets/Images/Technologyimg.png"
   },
+
+"Duration":{
+"title":"Duration:",
+"description":"The course lasts for 62 days, with live classes conducted 5 days a week."
+},
+"Class":[
+{
+"title":"Class Length",
+"description":"Each session lasts for 1 hour, but may extend to 3-4 hours to ensure in-depth learning and optimal experience. There are a total of 31 sessions."  
+},
+{
+"title":"Class Time",
+"description":"Class timings will be decided after consulting with the participants, based on time zone differences to ensure global participation."  
+},
+{
+"title":"Missed a Class?",
+"description":"Don’t worry! All classes will be recorded and made available on the same day for you to catch up at your convenience."  
+},
+{
+"title":"Practice Assignments",
+"description":"After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills."  
   "DataScienceCourse": [
     {
       "title": "Data Science Course",
@@ -1247,3 +1268,27 @@
     }
   ]
 }
+],
+
+"DonotJoinCourse":[
+{
+"title":"Who Should Not Join This Course?",
+"description":"This course is not for:"
+},
+{
+"listitem":"Those who are content with a mediocre life and don’t aspire to achieve their dream lifestyle."
+},
+{
+"listitem":"People who prefer to complain about their circumstances rather than make a real effort to change."
+},
+{
+"listitem":"Individuals who don’t value learning new skills and see investing in education as a burden."
+},
+{
+"listitem":"Those who are willing to work for others for the rest of their lives without seeking control and freedom over their time."  
+}
+
+]
+
+}
+
