@@ -1,6 +1,11 @@
 .slick-slider {
   margin: 0;
 }
+.slick-dots {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+}
 .slick-dots li {
   width: 25px;
   height: 20px;

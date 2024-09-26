@@ -1,0 +1,43 @@
+.CourseCardMenuBarLeft {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-section {
+  display: flex;
+  flex-direction: column;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu-header p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 20px;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-items input {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px !important;
+  border: 1px solid #aaa !important;
+  background: #141415 !important;
+}
+.menu-bar-CoursesCardSection {
+  font-size: 16px;
+  font-weight: 400;
+}

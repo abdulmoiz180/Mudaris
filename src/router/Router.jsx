@@ -6,7 +6,7 @@ import ResponsiveAppBar from "../components/NavBar/Index";
 const Router = () => {
   return (
     <BrowserRouter>
-      <ResponsiveAppBar />
+      <ResponsiveAppBar/>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
