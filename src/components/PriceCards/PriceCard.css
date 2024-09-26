@@ -142,9 +142,6 @@
 }
 
 /* screen */
-/* .checkout-card-upper{
-
-} */
 
 .payment-screen .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
   border-color: #1e44cc !important ;
@@ -183,9 +180,6 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-.payment-screen .css-heg063-MuiTabs-flexContainer {
-  justify-content: flex-start !important;
-}
 .payment-screen .fs-36 {
   font-size: 36px !important;
   letter-spacing: -0.36px !important;
@@ -215,7 +209,7 @@
   justify-content: space-between;
 }
 .payment-screen .crypto-container {
-  width: 600px !important;
+  width: 100% !important;
 }
 .payment-screen .g-20 {
   gap: 20px;
@@ -230,7 +224,18 @@
 .payment-screen .g-10 {
   gap: 10px;
 }
-
+.payment-screen .css-10asit4-MuiTabs-root {
+  width: 100% !important;
+}
+.payment-screen .css-11sinib-MuiButtonBase-root-MuiTab-root {
+  width: 100% !important;
+  align-items: flex-start;
+  color: #ffffff !important;
+  border-bottom: 3px solid gray !important;
+}
+.payment-screen .css-10asit4-MuiTabs-root .MuiTabs-indicator {
+  width: 50% !important;
+}
 /* card override css */
 .checkout-plan-card {
   height: 600px;

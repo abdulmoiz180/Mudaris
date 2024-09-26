@@ -15,13 +15,11 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import "./form.css";
-import signUpSchema from "../../Schema/signUpSchema";
 import Google from "../../assets/Icons/google.svg";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import { FacebookRounded } from "@mui/icons-material";
 import { GlobalContext } from "../../globalContext/GobalContext";
+import { SigninSchema } from "../../Schema/signUpSchema";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -32,13 +30,6 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 const fields = [
-  {
-    name: "username",
-    type: "text",
-    label: "Your Name",
-    placeholder: "e.g John Smith",
-    icon: <AccountCircleOutlinedIcon />,
-  },
   {
     name: "email",
     type: "email",
@@ -55,21 +46,21 @@ const fields = [
   },
 ];
 
-const Signup = ({ open, handleClose }) => {
-  const { signUpUser } = useContext(GlobalContext);
+const Signin = ({ open, handleClose }) => {
+  const { signInUser } = useContext(GlobalContext);
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
       username: "",
     },
-    validationSchema: signUpSchema,
+    validationSchema: SigninSchema,
     onSubmit: async (values) => {
       console.log("Form Data", values);
       if (!values.email || !values.password || !values.confirmPassword) {
         return;
       }
-      await signUpUser(values.email, values.password);
+      await signInUser(values.email, values.password);
     },
   });
 
@@ -199,9 +190,9 @@ const Signup = ({ open, handleClose }) => {
           </DialogActions>
 
           <p className="clr-white dm-sans center">
-            Already have an account?{" "}
+            Don't have any account?{" "}
             <Link className="purple link" to={"/"}>
-              Sign in now
+              Sign up now
             </Link>
           </p>
         </DialogContent>
@@ -210,4 +201,4 @@ const Signup = ({ open, handleClose }) => {
   );
 };
 
-export default Signup;
+export default Signin;
