@@ -37,7 +37,7 @@ import { DataScience } from "../../components/DataScienceCourse";
         <DigitalEducation />
         <LineCards />
         <GettoKnow />
-        <GetaJob />
+        {/* <GetaJob /> */}
         <DataScience/>
         <FAQ />
         <GetStart />
