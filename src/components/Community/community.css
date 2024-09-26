@@ -90,6 +90,7 @@
   .community-section {
     justify-content: center;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 100%;
     padding: 0 10px;
   }
