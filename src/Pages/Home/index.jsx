@@ -15,7 +15,6 @@ import WhatYouGet from "../../components/WhatYouGet";
 import GetaJob from "../../components/GetaJob";
 import Participate from "../../components/Participate";
 import Classes from "../../components/Classes";
-import { DataScience } from "../../components/DataScienceCourse";
 const Home = () => {
   const { language } = useLanguage();
 
@@ -38,7 +37,7 @@ const Home = () => {
         <DigitalEducation />
         <GettoKnow />
         <GetaJob />
-        <DataScience />
+      
         <FAQ />
         <GetStart />
       </section>
