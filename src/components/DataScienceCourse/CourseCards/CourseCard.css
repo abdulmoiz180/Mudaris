@@ -1,0 +1,65 @@
+.DataScienceCoursePageCourseSectionParent {
+  width: 80%;
+}
+.DataScienceCoursePageCourseSection {
+  display: flex;
+  width: 85%;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.DataScienceCourses {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.DataScienceCoursesFrontImg {
+  width: 100%;
+}
+.DataScienceCourseCardPriceComp {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.DataScienceCourseCardPriceComp :nth-child(1) {
+  font-size: 22px;
+  font-weight: 700;
+}
+.DataScienceCourseCardPriceComp :nth-child(2) {
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.DataScienceCourses h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.DataScienceCourseCardVideocomp p {
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+}
+.DataScienceCourseCardCertificateandheartIcon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.DataScienceCourseCardExtraTags p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 12px;
+  text-transform: capitalize;
+    width: fit-content;
+}
+.SpecialExtraCardsNew{
+    background: #AB800C;
+}
+.SpecialExtraCardsLatest{
+    background: #184417;
+}
+.SpecialExtraCardsSpecial{
+    background: #744399;
+}
