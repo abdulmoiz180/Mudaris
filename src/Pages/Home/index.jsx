@@ -34,7 +34,7 @@ const Home = () => {
         <DigitalEducation />
         <LineCards />
         <GettoKnow />
-        <GetaJob />
+        {/* <GetaJob /> */}
         <DataScience/>
         <FAQ />
         <GetStart />
