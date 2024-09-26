@@ -14,6 +14,8 @@ import DigitalEducation from "../../components/DigitalEducationSlider";
 import Community from '../../components/Community'
 import WhatYouGet from '../../components/WhatYouGet'
 import GetaJob from '../../components/GetaJob'
+import Participate from "../../components/Participate";
+import Classes from "../../components/Classes";
 const Home = () => {
   const {language } = useLanguage(); 
   return (
@@ -31,6 +33,8 @@ const Home = () => {
         <Community/>
         <WhatYouGet/>
         <PriceCards/>
+        <Participate/> 
+        <Classes/>
         <DigitalEducation/>
         <LineCards/>
         <GettoKnow/>
