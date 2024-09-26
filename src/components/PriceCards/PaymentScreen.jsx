@@ -68,8 +68,6 @@ const PaymentScreen = ({ selectedPlan }) => {
                   sx={{
                     color: "white",
                     textTransform: "inherit",
-                    width: "50%",
-                    alignItems: "flex-start",
                   }}
                   label="Debit / Credit Card"
                 />
@@ -78,8 +76,6 @@ const PaymentScreen = ({ selectedPlan }) => {
                   sx={{
                     color: "white",
                     textTransform: "inherit",
-                    width: "50%",
-                    alignItems: "flex-start",
                   }}
                   label="Payment with Crypto"
                 />
@@ -92,7 +88,10 @@ const PaymentScreen = ({ selectedPlan }) => {
                         className="column payment-fields-container"
                         key={index}
                       >
-                        <label className="clr-white inter fs-16" htmlFor="">
+                        <label
+                          className="clr-white inter fs-16"
+                          htmlFor={field.label}
+                        >
                           {field.label}
                         </label>
                         <TextField

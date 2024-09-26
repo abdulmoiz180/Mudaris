@@ -1,6 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
 import { GlobalContext } from "./GobalContext";
-
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../utils/firebase";
 // Correct paths to JSON files after moving to public directory
 const englishJson = "../../public/Constants/Seedenglish.json";
 const persianJson = "../../public/Constants/Seedpersian.json";
@@ -10,16 +14,63 @@ export const useLanguage = () => useContext(GlobalContext);
 const GlobalProvider = ({ children }) => {
   const [language, setLanguage] = useState("english");
   const [data, setData] = useState(null);
-  const [open, setOpen] = useState(false);
+  const [token, setToken] = useState(null);
+  const [userId, setUserId] = useState();
+  // for auth
+  useEffect(() => {
+    const storedToken = sessionStorage.getItem("token");
+    if (storedToken) {
+      const parsedToken = JSON.parse(storedToken);
+      setToken(parsedToken.token);
+      setUserId(parsedToken.userId);
+    }
+  }, []);
 
-  // this is for nav bar...
-  const handleClickOpen = () => {
-    setOpen(true);
-    console.log("clicked");
+  useEffect(() => {
+    if (token && userId) {
+      sessionStorage.setItem("token", JSON.stringify({ token, userId }));
+    }
+  }, [token, userId]);
+  const signUpUser = async (email, password) => {
+    try {
+      let userCredentials = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredentials.user;
+
+      if (user) {
+        setToken(user.accessToken);
+        setUserId(user.uid);
+      } else {
+        console.log("Error encountered");
+      }
+    } catch (error) {
+      console.error("Error signing up:", error);
+    }
   };
-  const handleClose = () => {
-    setOpen(false);
+  const signInUser = async (email, password) => {
+    try {
+      let userCredentials = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredentials.user;
+
+      if (user) {
+        setToken(user.accessToken);
+        setUserId(user.uid);
+      } else {
+        console.log("Error encountered");
+      }
+    } catch (error) {
+      console.error("Error signing up:", error);
+    }
   };
+
+  console.log("uid", userId);
 
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === "english" ? "persian" : "english"));
@@ -51,9 +102,11 @@ const GlobalProvider = ({ children }) => {
         toggleLanguage,
         data,
         language,
-        handleClickOpen,
-        handleClose,
-        open,
+        token,
+        setToken,
+        signInUser,
+        signUpUser,
+        userId,
       }}
     >
       {children}

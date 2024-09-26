@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,14 +12,24 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Logo from "../../assets/Icons/Nav/Frame 1.png";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
-import { GlobalContext } from "../../globalContext/GobalContext";
 import Signup from "../../Pages/Signup";
+import Signin from "../../Pages/Login";
 function ResponsiveAppBar() {
+  const [open, setOpen] = useState(false);
   const { toggleLanguage, data } = useLanguage();
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const { handleClickOpen } = React.useContext(GlobalContext);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [currentForm, setCurrentForm] = useState("SignIn");
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+  };
+  // this is for nav bar...
+  const handleClickOpen = (formType) => {
+    setCurrentForm(formType);
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
   };
 
   const handleCloseNavMenu = () => {
@@ -124,9 +134,16 @@ function ResponsiveAppBar() {
               <Box component="div" className="navBarBtns2 BorderDiv">
                 {data.navRightBtns.map((btn, index) => (
                   <div className="rightbtn inter" key={index}>
-                    {btn === "Sign In" ? (
+                    {btn === "Get Started" ? (
                       <Button
-                        onClick={handleClickOpen}
+                        onClick={() => handleClickOpen("Signup")}
+                        sx={{ my: 2, color: "white", display: "block" }}
+                      >
+                        Get Started
+                      </Button>
+                    ) : btn === "Sign In" ? (
+                      <Button
+                        onClick={() => handleClickOpen("SignIn")}
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
                         Sign In
@@ -135,11 +152,11 @@ function ResponsiveAppBar() {
                       <Button
                         sx={{ my: 2, color: "white", display: "block" }}
                         className="inter"
-                        onClick={
-                          btn === "EN" || btn === "فارسی"
-                            ? toggleLanguage
-                            : handleCloseNavMenu
-                        }
+                        // onClick={
+                        //   btn === "EN" || btn === "فارسی"
+                        //     ? toggleLanguage
+                        //     : handleCloseNavMenu
+                        // }
                       >
                         {isImageUrl(btn) ? (
                           <img
@@ -158,7 +175,12 @@ function ResponsiveAppBar() {
               </Box>
             </div>
           </Box>
-          <Signup />
+          {currentForm === "SignIn" && (
+            <Signin open={open} handleClose={handleClose} />
+          )}
+          {currentForm === "Signup" && (
+            <Signup open={open} handleClose={handleClose} />
+          )}
         </Toolbar>
       </Container>
     </AppBar>
