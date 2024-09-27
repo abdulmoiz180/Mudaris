@@ -1,2 +1,0 @@
-1-> UI: checkout method tabs
-2-> UI: Registration Dialog
