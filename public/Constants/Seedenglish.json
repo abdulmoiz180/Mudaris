@@ -107,31 +107,35 @@
       "description": "Simple, flexible, and affordable pricing for everyone."
     },
     {
-      "plan1": "Monthly Plan",
-      "price": "$29/mo",
-      "perk1": "Access to all courses",
-      "perk2": "Monthly progress reports",
-      "perk3": "Basic customer support",
-      "perk4": "Access to community forums"
+      "plan1": "Standard Payment",
+      "price": "$299",
+      "para":"For $299, you’ll have complete access to all live sessions, resources, and community support. This was our original model, and it remains available for those who prefer a one-time payment."
     },
     {
-      "plan2": "2 Year Plan",
-      "price": "$79/mo",
-      "perk1": "Everything in the Yearly Plan",
-      "perk2": "Save 25% on course access",
-      "perk3": "Personalized learning paths",
-      "perk4": "Early access to new courses",
-      "perk5": "Content suggestions",
-      "perk6": "Link optimization"
+      "plan2": "Pay in 2 Installments",
+      "price": "$149.50",
+     "para":"Want to split the payment? Pay in 2 installments of $149.50 to unlock the same access to live sessions and course materials. This option is perfect for those seeking financial flexibility while gaining all the advantages of our expert-led training."
     },
     {
-      "plan3": "Year Plan",
-      "price": "$149/mo",
-      "perk1": "Everything in the Monthly Plan",
-      "perk2": "Save 15% on course access",
-      "perk3": "Priority customer support",
-      "perk4": "Exclusive webinars and events",
-      "perk5": "Everything in the Monthly Plan"
+      "plan3": "Monthly Subscription",
+      "price": "$49.99/month",
+      "para":"For a small monthly fee, access all 6 of our courses, including 10 modules each, more than 150 hours of updated lectures, and entry into our exclusive VIP community. With this plan, you’ll",
+      "perk1": "24/7 access",
+      "perk2": "Three live sessions",
+      "perk3": "Daily VIP signals",
+      "perk4": "Instant access to 6 courses",
+      "perk5": "A supportive community"
+    },
+    {
+      "plan4": "Annual Subscription",
+      "price": "$999/year",
+      "para":"Commit to an entire year of unparalleled skill development and unlock massive savings. In this plan, you’ll receive",
+      "perk1": "Everything in the monthly subscription",
+      "perk2": "Three live sessions",
+      "perk3": "Comprehensive Skill Training",
+      "perk4": "24/7 Learning",
+      "perk5": "Private Network & Support",
+      "perk6":"Live Sessions"
     },
     {
       "subscribe": "Subscribe Now"
@@ -1038,7 +1042,9 @@
 },
 {
 "title":"Practice Assignments",
-"description":"After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills."  
+"description":"After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills."
+}
+],
   "DataScienceCourse": [
     {
       "title": "Data Science Course",
@@ -1266,10 +1272,7 @@
       "actualPrice": "Rp500,000",
       "level": "Intermediate"
     }
-  ]
-}
-],
-
+  ],
 "DonotJoinCourse":[
 {
 "title":"Who Should Not Join This Course?",

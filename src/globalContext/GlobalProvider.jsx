@@ -5,7 +5,6 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-// Correct paths to JSON files after moving to public directory
 const englishJson = "../../public/Constants/Seedenglish.json";
 const persianJson = "../../public/Constants/Seedpersian.json";
 
