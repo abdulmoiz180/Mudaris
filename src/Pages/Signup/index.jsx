@@ -70,7 +70,7 @@ const Signup = ({ open, handleClose }) => {
         return;
       }
       await signUpUser(values.email, values.password);
-      navigate("/profile");
+      navigate("/dashboard");
       console.log("clicked");
     },
   });
