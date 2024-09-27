@@ -1,5 +1,5 @@
 import React from "react";
-// import E_Learn from "./components/E_Learn";
+import E_Learn from "./components/E_Learn";
 import Hero from "./components/Hero/Index";
 import FAQ from "./components/Accordion";
 import GetStart from "./components/GetStarted";

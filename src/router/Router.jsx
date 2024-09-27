@@ -6,6 +6,7 @@ import ResponsiveAppBar from "../layout/NavBar/Index";
 import Profile from "../Pages/Profile";
 import { GlobalContext } from "../globalContext/GobalContext";
 import NotFound404 from "../Pages/NotFound";
+import { Dashboard } from "../Pages/DashBoard";
 const Router = () => {
   const { token } = useContext(GlobalContext);
   return (
@@ -13,6 +14,10 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
         <Route path="*" element={<NotFound404 />} />
+        <Route
+          path="/dashboard"
+          element={<Dashboard/>}
+        />
         {token ? (
           <Route path="/profile" element={<Profile />} />
         ) : (

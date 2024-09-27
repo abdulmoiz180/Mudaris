@@ -61,7 +61,7 @@ const Signin = ({ open, handleClose }) => {
         return;
       }
       await signInUser(values.email, values.password);
-      navigate("/profile");
+      navigate("/dashboard");
     },
   });
 
