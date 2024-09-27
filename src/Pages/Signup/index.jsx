@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useFormik } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Button,
   InputAdornment,
@@ -22,7 +22,6 @@ import Google from "../../assets/Icons/google.svg";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import { FacebookRounded } from "@mui/icons-material";
 import { GlobalContext } from "../../globalContext/GobalContext";
-
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -57,19 +56,22 @@ const fields = [
 
 const Signup = ({ open, handleClose }) => {
   const { signUpUser } = useContext(GlobalContext);
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
+      username: "",
       email: "",
       password: "",
-      username: "",
     },
     validationSchema: signUpSchema,
     onSubmit: async (values) => {
       console.log("Form Data", values);
-      if (!values.email || !values.password || !values.confirmPassword) {
+      if (!values.email || !values.password) {
         return;
       }
       await signUpUser(values.email, values.password);
+      navigate("/profile");
+      console.log("clicked");
     },
   });
 

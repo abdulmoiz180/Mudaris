@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
 import { useFormik } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Button,
   InputAdornment,
   TextField,
   Divider,
   Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  IconButton,
 } from "@mui/material";
-import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -48,19 +48,20 @@ const fields = [
 
 const Signin = ({ open, handleClose }) => {
   const { signInUser } = useContext(GlobalContext);
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: "",
       password: "",
-      username: "",
     },
     validationSchema: SigninSchema,
     onSubmit: async (values) => {
       console.log("Form Data", values);
-      if (!values.email || !values.password || !values.confirmPassword) {
+      if (!values.email || !values.password) {
         return;
       }
       await signInUser(values.email, values.password);
+      navigate("/profile");
     },
   });
 
@@ -179,7 +180,7 @@ const Signin = ({ open, handleClose }) => {
             </p>
           </div>
 
-          <DialogActions className="flex flex-center">
+          <div className="flex flex-center">
             <Button
               variant="contained"
               type="submit"
@@ -187,7 +188,7 @@ const Signin = ({ open, handleClose }) => {
             >
               Sign Up
             </Button>
-          </DialogActions>
+          </div>
 
           <p className="clr-white dm-sans center">
             Don't have any account?{" "}

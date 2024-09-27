@@ -11,7 +11,7 @@ import { useLanguage } from "../../../globalContext/GlobalProvider";
 import "./courseCard.css";
 
 const Cards = () => {
-  const { data, language } = useLanguage();
+  const { data } = useLanguage();
 
   if (!data || !data.tabs || data.tabs.length < 2) {
     console.log("Data is not loading or there are not enough tabs");
@@ -32,7 +32,11 @@ const Cards = () => {
   return (
     <div>
       {selectedTab.courses.map((course, index) => (
-        <Card key={index} sx={{ maxWidth: 345 }} className="courses-card column">
+        <Card
+          key={index}
+          sx={{ maxWidth: 345 }}
+          className="courses-card column"
+        >
           <CardMedia
             component="img"
             height="150"
@@ -91,8 +95,12 @@ const Cards = () => {
               </span>
             </div>
             <div className="flex flex-center gap-5 mt-10">
-              {course.tag && <img src={course.tag} alt="" className="label-img" />}
-              <span className="clr-white discount-tag inter">{course.discount}</span>
+              {course.tag && (
+                <img src={course.tag} alt="" className="label-img" />
+              )}
+              <span className="clr-white discount-tag inter">
+                {course.discount}
+              </span>
             </div>
           </CardContent>
         </Card>
