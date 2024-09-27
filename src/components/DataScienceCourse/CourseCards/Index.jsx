@@ -1,12 +1,12 @@
 import React,{useState} from "react";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { useLanguage } from "../../../globalContext/GlobalProvider";
 import "./CourseCard.css";
 export const CourseCards = () => {
   const { language, data } = useLanguage();
   if (!data) return <div> data is loading..... </div>;
   const [hearts, setHearts] = useState(
-    new Array(data.DataScienceCourseCardsSection.length).fill(false)
+    new Array(data.DataScienceCourseCardsSectionButtonsCourses.length).fill(false)
   );
   const toggleHeart = (index) => {
     setHearts((prevHearts) => {

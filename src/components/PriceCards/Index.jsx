@@ -12,10 +12,12 @@ import "./PriceCard.css";
 import Line from "../../assets/Icons/line.png";
 import Tick from "../../assets/Icons/tick.png";
 import PaymentScreen from "./PaymentScreen";
+
 export const PriceCards = () => {
   const { data, language } = useLanguage();
   const [isPaymentScreenVisible, setIsPaymentScreenVisible] = useState(false); // New state to track payment screen visibility
   const [selectedPlan, setSelectedPlan] = useState(null);
+
   // Ensure data is correctly loaded
   if (!data) {
     return <div>Loading...</div>; // Handle loading state
@@ -23,6 +25,7 @@ export const PriceCards = () => {
   if (isPaymentScreenVisible) {
     return <PaymentScreen selectedPlan={selectedPlan} />;
   }
+
   const paymentPlans = data.paymentPlans; // Correct access to paymentPlans
   const handleSubscribe = (plan, index) => {
     setIsPaymentScreenVisible(true);
@@ -41,17 +44,17 @@ export const PriceCards = () => {
   };
 
   return (
-    <Container className="price-container">
+    <section className="price-container">
       <Box className="text-container">
         <Typography variant="h1" className="plan-title inter">
-          {data.paymentPlans[0].title}
+          {paymentPlans[0].title}
         </Typography>
         <Typography variant="body1" className="plan-description inter">
-          {data.paymentPlans[0].description}
+          {paymentPlans[0].description}
         </Typography>
       </Box>
       <Box className="card-wrapper">
-        {paymentPlans.slice(1, 4).map((plan, index) => (
+        {paymentPlans.slice(1, 5).map((plan, index) => (
           <Card
             key={index}
             className={`plan-card ${
@@ -68,6 +71,13 @@ export const PriceCards = () => {
                 </Typography>
                 <img src={Line} className="linePic" alt="line separator" />
               </Box>
+              {/* Display paragraph if available */}
+              {plan.para && (
+                <Typography variant="body2" className="plan-para inter">
+                  {plan.para}
+                </Typography>
+              )}
+              {/* Display perks if available */}
               <ul className="plan-perks">
                 {[
                   plan.perk1,
@@ -91,16 +101,14 @@ export const PriceCards = () => {
                 className="subscribe-button"
                 onClick={() => handleSubscribe(plan, index)}
               >
-                {paymentPlans[4].subscribe}
+                {paymentPlans[5].subscribe}
               </Button>
             </Box>
           </Card>
         ))}
       </Box>
-    </Container>
+    </section>
   );
 };
 
 export default PriceCards;
-
-// screens

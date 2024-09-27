@@ -7,15 +7,15 @@ import { MenuSide } from "./CourseCardSideMenu";
 import PaginationComponent from "./Pagination";
 
 export const DataScience = () => {
-  const { data } = useLanguage();
+  const { language, data } = useLanguage();
+console.log(data);
+  // Ensure data is loaded
+  if (!data) return <div>Data is loading...</div>;
+  if (!data.DataScienceCourse) return <div>No courses available.</div>;
+
   const [hearts, setHearts] = useState(
-    data.DataScienceCourseCardsSection.length.fill(false)
+    data.DataScienceCourseCardsSection ? new Array(data.DataScienceCourseCardsSection.length).fill(false) : []
   );
-  if (!data) return <div> data is loading..... </div>;
-
-  const course = data?.DataScienceCourse;
-
-  console.log(hearts);
 
   const toggleHeart = (index) => {
     setHearts((prevHearts) => {
@@ -29,13 +29,13 @@ export const DataScience = () => {
     <section className="DataScienceCoursePageComponentParent clr-white">
       <Box className="DataScienceCoursePageHero">
         <Box className="DataScienceCoursePageHeroTextContentMain">
-          <h2 className="manrope">{course[0]?.title}</h2>
-          <p className="dm-sans">{course[0]?.description}</p>
+          <h2 className="manrope">{data.DataScienceCourse[0].title}</h2>
+          <p className="dm-sans">{data.DataScienceCourse[0].description}</p>
         </Box>
         <Box className="DataScienceCoursePageHeroRelatedSkills">
-          <h4>{course[1]?.tabname}</h4>
+          <h4>{data.DataScienceCourse[1].tabname}</h4>
           <Box className="DataScienceCoursePageHeroRelatedSkillsTabs">
-            {Object.values(course[2])?.map((tab, index) => (
+            {Object.values(data.DataScienceCourse[2]).map((tab, index) => (
               <Button key={index} className="dm-sans">
                 {tab}
               </Button>
@@ -45,66 +45,51 @@ export const DataScience = () => {
       </Box>
 
       <Box className="DataScienceCoursePageCardSectionParent">
-        <h2>{data?.DataScienceCourseCardsSectiontitle}</h2>
+        <h2>{data.DataScienceCourseCardsSectiontitle}</h2>
         <Box className="DataScienceCoursePageCardSection">
-          {Object.values(data?.DataScienceCourseCardsSection)?.map(
-            (c, index) => (
-              <Box className="DataScienceCourseCard" key={index}>
-                <img src={c.img} className="DataScienceCourseCardMainImg" />
-                <h3 className="manrope">{c.title}</h3>
-                <Box className="DataScienceCourseCardVideocomp">
-                  <img src={c.videoIcon} />
-                  <p className="DataScienceCourseCardVideocompInfo dm-sans">
-                    {c.videos}
-                  </p>
-                  <img src={c.clockIcon} />
-                  <p className="DataScienceCourseCardVideocompInfo dm-sans">
-                    {c.time}
-                  </p>
-                  <img src={c.certificateIcon} />
-                  <Box className="DataScienceCourseCardCertificateandheartIconBox">
-                    {/* Heart icon toggle logic */}
-                    <img
-                      src={hearts[index] ? c.fillHeart : c.heartIcon}
-                      onClick={() => toggleHeart(index)}
-                      className="clickable-heart" // Add a cursor pointer or similar style
-                      alt="Heart Icon"
-                    />
-                  </Box>
-                </Box>
-
-                <Box className="DataScienceCourseCardPricecomp">
-                  <Box className="DataScienceCourseCardPriceonly">
-                    <p className="dm-sans">{c.price}</p>
-                    <p className="DataScienceCourseCardPriceonlyPriceDashed dm-sans">
-                      {c.actualPrice}
-                    </p>
-                  </Box>
-                  <Box className="DataScienceCourseCardPricecompButtonDiv">
-                    <Button className="dm-sans">{c.btn}</Button>
-                  </Box>
+          {data.DataScienceCourseCardsSection && Object.values(data.DataScienceCourseCardsSection).map((c, index) => (
+            <Box className="DataScienceCourseCard" key={index}>
+              <img src={c.img} className="DataScienceCourseCardMainImg" />
+              <h3 className="manrope">{c.title}</h3>
+              <Box className="DataScienceCourseCardVideocomp">
+                <img src={c.videoIcon} />
+                <p className="DataScienceCourseCardVideocompInfo dm-sans">{c.videos}</p>
+                <img src={c.clockIcon} />
+                <p className="DataScienceCourseCardVideocompInfo dm-sans">{c.time}</p>
+                <img src={c.certificateIcon} />
+                <Box className="DataScienceCourseCardCertificateandheartIconBox">
+                  <img
+                    src={hearts[index] ? c.fillHeart : c.heartIcon}
+                    onClick={() => toggleHeart(index)}
+                    className="clickable-heart"
+                    alt="Heart Icon"
+                  />
                 </Box>
               </Box>
-            )
-          )}
+
+              <Box className="DataScienceCourseCardPricecomp">
+                <Box className="DataScienceCourseCardPriceonly">
+                  <p className="dm-sans">{c.price}</p>
+                  <p className="DataScienceCourseCardPriceonlyPriceDashed dm-sans">{c.actualPrice}</p>
+                </Box>
+                <Box className="DataScienceCourseCardPricecompButtonDiv">
+                  <Button className="dm-sans">{c.btn}</Button>
+                </Box>
+              </Box>
+            </Box>
+          ))}
         </Box>
       </Box>
 
       <Box className="DataScienceCoursePagebtnSection">
-        {Object.entries(data?.DataScienceCourseCardsSectionButtons[0]).map(
+        {data.DataScienceCourseCardsSectionButtons[0] && Object.entries(data.DataScienceCourseCardsSectionButtons[0]).map(
           ([key, value], index) => (
-            <Button key={index} className="dm-sans">
-              {value}
-            </Button>
+            <Button key={index} className="dm-sans">{value}</Button>
           )
         )}
         <Box className="DataScienceCoursePagebtnspanSection">
-          <p className="dm-sans">
-            {data.DataScienceCourseCardsSectionButtons[1].button3}
-          </p>
-          <span className="dm-sans">
-            {data.DataScienceCourseCardsSectionButtonsCourses.length} courses
-          </span>
+          <p className="dm-sans">{data.DataScienceCourseCardsSectionButtons[1].button3}</p>
+         <span>{data.DataScienceCourseCardsSectionButtonsCourses.length} courses</span>
         </Box>
       </Box>
       <Box className="DataScienceCoursePagebtnCardsMainSection">
