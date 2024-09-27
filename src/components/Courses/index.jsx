@@ -2,14 +2,14 @@ import React from "react";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import Box from "@mui/material/Box";
 import "./courses.css";
-import TabComponent from './TabComponent'
+import TabComponent from "./TabComponent";
 import { Typography } from "@mui/material";
 const Courses = () => {
-  const { data, language } = useLanguage();
+  const { data } = useLanguage();
 
   // Check if data is loaded
   if (!data) {
-    console.log('data ni arha');
+    console.log("data is not loading...");
     return <div>Loading...</div>; // Loading state if data isn't available
   }
 
