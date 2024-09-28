@@ -1,13 +1,12 @@
 import React, { useState, useRef } from "react";
 import { Box, Card, CardContent, Container, Typography } from "@mui/material";
 import "./style.css";
-import LandingPageVideo from "../../../../assets/LandingPageVideo.mp4";
-import BlurGlow from "../../../../assets/Images/Blur2.png";
-import Play from "../../../../assets/Icons/play.svg";
-import { useLanguage } from "../../../../globalContext/GlobalProvider";
-
+import LandingPageVideo from "@assets/LandingPageVideo.mp4";
+import BlurGlow from "@assets/Images/Blur2.png";
+import Play from "@assets/Icons/play.svg";
+import useLanguageData from "@hooks/useLanguage";
 const Hero = () => {
-  const { language, data } = useLanguage();
+  const { language, data, status, error } = useLanguageData();
   const [video, setVideo] = useState(false);
   const videoRef = useRef(null);
 
@@ -23,7 +22,18 @@ const Hero = () => {
     });
   };
 
-  if (!data) return <div>Loading...</div>;
+  // Handle different states
+  if (status === "loading") {
+    return <div className="clr-white">Loading data...</div>;
+  }
+
+  if (status === "failed") {
+    return <div className="clr-white">Error: {error}</div>;
+  }
+
+  if (!data) {
+    return <div className="clr-white">Data is not available</div>;
+  }
 
   return (
     <Container className="HeroPagecontainer">
