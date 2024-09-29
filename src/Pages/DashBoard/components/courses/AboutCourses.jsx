@@ -241,7 +241,7 @@ const AboutCourses = () => {
             <div className="cs-language">
             <h3>{languages[0]}</h3>
             <div className="language-buttons">
-            {courses.slice(1).map((lang, index) => (
+            {languages.slice(1).map((lang, index) => (
           <Button className='language-filled-button'
             key={index} 
             variant="contained" 

@@ -25,7 +25,10 @@ gap: 30px;
 .dc-about-img-card{
 display: flex;
 flex-direction: column;
-background-color: #fff;
+border-radius: 10px !important;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: rgba(0, 0, 0, 0.06) !important;
+color: #fff;
 }
 .dc-about-img-card img{
 width: 100%;     
@@ -34,12 +37,13 @@ width: 100%;
 padding: 25px;
 }
 .dc-about-course-card{
-border-radius: 10px;
-background-color: #fff;
+border-radius: 10px !important;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: rgba(0, 0, 0, 0.06) !important;
+color: #fff;
 display: flex;
 flex-direction: column;
 padding: 25px;
-
 }
 .ac-card-head{
 display: flex;
@@ -50,13 +54,13 @@ flex-direction: column;
 padding-bottom: 15px;
 }
 .ac-card-head p{
-border-top: 1px solid black;
+border-top: 1px solid rgba(255, 255, 255, 0.15);
 text-align: left;
 padding-top: 30px;
 }
 .ac-card-listitem{
 display: flex;
-border-bottom: 1px solid black;
+border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 justify-content: space-between;    
 padding: 10px 0px;
 }
@@ -64,52 +68,66 @@ padding: 10px 0px;
 display: flex;
 flex-direction: column;
 gap: 15px;
-background: #fff; 
+border-radius: 10px !important;
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: rgba(0, 0, 0, 0.06) !important;
 width: 70%;
 }
 .cs-text{ 
 padding: 25px;
+color: #fff;
 }
 .cs-our-courses{
 display: flex !important;
 flex-direction: column !important;
 gap: 10px;
 padding: 25px;
+color: #fff;
 }
 .course-buttons{
 display: flex;
 gap: 15px;    
 }
 .course-outlined-button{
+
+background: rgba(140, 69, 255, 0.40);
 border-radius: 25px !important; 
 text-align: center !important;
 padding: 10px 35px !important;
-border: 1px solid black !important;
-color: black !important;
+border: 1px solid rgba(255, 255, 255, 0.15) !important;
+color: #fff !important;
 }
 .course-outlined-button:hover{
-background-color: black !important;
+background-color:rgba(140, 69, 255, 0.4) !important;
 color: #fff !important;    
 }
 .cs-language{
 display: flex;
 flex-direction: column;
 gap: 15px;
-padding: 25px;      
+padding: 25px;  
+color: #fff;    
 }
 .language-buttons{
 display: flex;
 gap: 15px;       
 }
 .language-filled-button{
-background-color: black !important;
-padding: 10px 10px !important;  
+
+border-radius: 8px;
+border: 1px solid rgba(255, 255, 255, 0.15) !important;
+background: rgba(140, 69, 255, 0.40) !important;
+box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.25) inset !important;
+backdrop-filter: blur(7px) !important;
+color: #fff !important;    
+padding: 10px 18px !important;  
 }
 .cs-courses-info{
 display: flex;
 flex-direction: column;
 gap: 10px;
 padding: 25px;    
+color: #fff;
 }
 .courses-info-para{
 display: flex;
@@ -117,7 +135,7 @@ flex-direction: column;
 gap: 10px;
 }
 .courses-info-para > :not(:first-child) {
-border-bottom: 1px solid black;
+border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 padding-bottom: 10px;
 }
 .ac-card-foot{
@@ -125,8 +143,8 @@ display: flex;
 justify-content: center;    
 }
 .ac-card-foot > :nth-child(2) {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+    border-left: 2px solid rgba(255, 255, 255, 0.15);
+    border-right: 2px solid rgba(255, 255, 255, 0.15);
   }
 
 .ac-card-foot-item{
