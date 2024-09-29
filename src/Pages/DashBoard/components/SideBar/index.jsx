@@ -5,14 +5,20 @@ import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
-import DescriptionIcon from "@mui/icons-material/Description";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import SearchIcon from "@mui/icons-material/Search";
-import { AppProvider } from "@toolpad/core/AppProvider";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import SchoolIcon from "@mui/icons-material/School";
+import { useNavigate } from "react-router-dom";
 import "./sidebar.css";
+import { AppProvider } from "@toolpad/core/AppProvider";
+import { DashboardLayout } from "@toolpad/core/DashboardLayout";
+
+function DashboardContent() {
+  return <Typography>Welcome to the Dashboard</Typography>;
+}
+
+function AboutCourseContent() {
+  return <Typography>About this Course</Typography>;
+}
 
 const NAVIGATION = [
   {
@@ -25,17 +31,17 @@ const NAVIGATION = [
     icon: <DashboardIcon />,
   },
   {
-    segment: "Courses",
+    segment: "dashboard/Courses",
     title: "Courses",
     icon: <SchoolIcon />,
     children: [
       {
-        segment: "Add Course",
+        segment: "AddCourse",
         title: "Add Course",
         icon: <SchoolIcon />,
       },
       {
-        segment: "About Course",
+        segment: "AboutCourse",
         title: "About Course",
         icon: <SchoolIcon />,
       },
@@ -43,125 +49,72 @@ const NAVIGATION = [
   },
 ];
 
-function DemoPageContent({ pathname }) {
-  return (
-    <Box
-      sx={{
-        py: 4,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-      }}
-    >
-      <Typography>Dashboard content for {pathname}</Typography>
-    </Box>
-  );
-}
-
-DemoPageContent.propTypes = {
-  pathname: PropTypes.string.isRequired,
-};
-function Icons() {
-  return (
-    <React.Fragment>
-      <Tooltip title="Profile" enterDelay={1000}>
-        <IconButton aria-label="profile">
-          <AccountCircle />
-        </IconButton>
-      </Tooltip>
-      <Tooltip title="Search" enterDelay={1000}>
-        <IconButton aria-label="search">
-          <SearchIcon />
-        </IconButton>
-      </Tooltip>
-      <Tooltip title="Dashboard" enterDelay={1000}>
-        <IconButton aria-label="dashboard">
-          <DashboardIcon />
-        </IconButton>
-      </Tooltip>
-      <Tooltip title="Description" enterDelay={1000}>
-        <IconButton aria-label="description">
-          <DescriptionIcon />
-        </IconButton>
-      </Tooltip>
-    </React.Fragment>
-  );
-}
-
-function Name(){
-  return(
-    <>
-    {/* <img src={}/> */}
-    <h2>Madaras Academy</h2>
-    </>
-  )
-}
-function Search() {
+function Search({ onNavigate }) {
   return (
     <React.Fragment>
       <Box className="ParentSideBarNav">
-        <Name/>
-      <Tooltip title="Search" enterDelay={1000}>
-        <div>
-          <IconButton
-            type="button"
-            aria-label="search"
-            sx={{
-              display: { xs: "inline", md: "none" },
-            }}
-          >
-          </IconButton>
-        </div>
-      </Tooltip>
-      <TextField
-        variant="outlined"
-        size="small"
-        placeholder="Search"
-        slotProps={{
-          input: {
-            endAdornment: (
-              <IconButton type="button" aria-label="search" size="small">
-                <SearchIcon />
-              </IconButton>
-            ),
-            sx: { pr: 0.5 },
-          },
-        }}
-        sx={{
-          display: { xs: "none", md: "inline-block" },
-          mr: 1,
-          "& .MuiOutlinedInput-root": {
-            borderRadius: "22px", // Change this value to the desired border radius
-          },
-        }}
-      />
-      <Box className="IconsInsideNavBar">
-      <Icons />
-      </Box>
+        <h2>Madaras Academy</h2>
+        <TextField
+          variant="outlined"
+          size="small"
+          placeholder="Search"
+          sx={{
+            display: { xs: "none", md: "inline-block" },
+            mr: 1,
+            "& .MuiOutlinedInput-root": {
+              borderRadius: "22px", // Customize border radius
+            },
+          }}
+        />
+        <Box className="IconsInsideNavBar">
+          {NAVIGATION.map((item) => {
+            // Check if the item has children (like Courses)
+            if (item.children) {
+              return (
+                <React.Fragment key={item.segment}>
+                  {item.children.map((child) => (
+                    <Tooltip key={child.segment} title={child.title} enterDelay={1000}>
+                      <IconButton
+                        aria-label={child.title}
+                        onClick={() => onNavigate(`${item.segment}/${child.segment}`)}
+                      >
+                        {child.icon}
+                      </IconButton>
+                    </Tooltip>
+                  ))}
+                </React.Fragment>
+              );
+            }
+            return (
+              <Tooltip key={item.segment} title={item.title} enterDelay={1000}>
+                <IconButton aria-label={item.title} onClick={() => onNavigate(item.segment)}>
+                  {item.icon}
+                </IconButton>
+              </Tooltip>
+            );
+          })}
+        </Box>
       </Box>
     </React.Fragment>
   );
 }
+
+Search.propTypes = {
+  onNavigate: PropTypes.func.isRequired,
+};
+
 function DashboardLayoutSlots(props) {
   const { window } = props;
+  const navigate = useNavigate(); // Use useNavigate to handle routing
 
-  const [pathname, setPathname] = React.useState("/dashboard");
-
-  const router = React.useMemo(() => {
-    return {
-      pathname,
-      searchParams: new URLSearchParams(),
-      navigate: (path) => setPathname(String(path)),
-    };
-  }, [pathname]);
-
-  const demoWindow = window !== undefined ? window() : undefined;
+  const handleNavigate = (segment) => {
+    navigate(`/${segment}`); // Navigate to the respective route dynamically
+  };
 
   return (
-    <AppProvider navigation={NAVIGATION} router={router} window={demoWindow}>
-      <DashboardLayout slots={{ toolbarActions: Search }}>
-        <DemoPageContent pathname={pathname} />
+    <AppProvider navigation={NAVIGATION}>
+      <DashboardLayout slots={{ toolbarActions: () => <Search onNavigate={handleNavigate} /> }}>
+        {props.children}
       </DashboardLayout>
     </AppProvider>
   );
