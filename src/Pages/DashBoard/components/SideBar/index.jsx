@@ -6,8 +6,10 @@ import TextField from "@mui/material/TextField";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
+import LogoutIcon from '@mui/icons-material/Logout';
 import "./sidebar.css";
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
@@ -48,6 +50,11 @@ const NAVIGATION = [
     ],
   },
 ];
+const Icons = [
+  { icon: <DashboardIcon />, title: "Dashboard", segment: "dashboard" },
+  { icon: <AccountCircle />, title: "Profile", segment: "profile" },
+  { icon: <LogoutIcon />, title: "Logout", segment: "logout" }
+];
 
 function Search({ onNavigate }) {
   return (
@@ -67,32 +74,16 @@ function Search({ onNavigate }) {
           }}
         />
         <Box className="IconsInsideNavBar">
-          {NAVIGATION.map((item) => {
-            // Check if the item has children (like Courses)
-            if (item.children) {
-              return (
-                <React.Fragment key={item.segment}>
-                  {item.children.map((child) => (
-                    <Tooltip key={child.segment} title={child.title} enterDelay={1000}>
-                      <IconButton
-                        aria-label={child.title}
-                        onClick={() => onNavigate(`${item.segment}/${child.segment}`)}
-                      >
-                        {child.icon}
-                      </IconButton>
-                    </Tooltip>
-                  ))}
-                </React.Fragment>
-              );
-            }
-            return (
-              <Tooltip key={item.segment} title={item.title} enterDelay={1000}>
-                <IconButton aria-label={item.title} onClick={() => onNavigate(item.segment)}>
-                  {item.icon}
-                </IconButton>
-              </Tooltip>
-            );
-          })}
+          {Icons.map((item, index) => (
+            <Tooltip key={index} title={item.title} enterDelay={1000}>
+              <IconButton
+                aria-label={item.title}
+                onClick={() => onNavigate(item.segment)}
+              >
+                {item.icon}
+              </IconButton>
+            </Tooltip>
+          ))}
         </Box>
       </Box>
     </React.Fragment>
