@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useFormik } from "formik";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -7,11 +7,11 @@ import {
   TextField,
   Divider,
   Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  IconButton,
 } from "@mui/material";
-import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
-import DialogActions from "@mui/material/DialogActions";
-import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/material/styles";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -21,41 +21,12 @@ import signUpSchema from "../../Schema/signUpSchema";
 import Google from "../../assets/Icons/google.svg";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import { FacebookRounded } from "@mui/icons-material";
-import { GlobalContext } from "../../globalContext/GobalContext";
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  "& .MuiDialogContent-root": {
-    padding: theme.spacing(2),
-  },
-  "& .MuiDialogActions-root": {
-    padding: theme.spacing(1),
-  },
-}));
-const fields = [
-  {
-    name: "username",
-    type: "text",
-    label: "Your Name",
-    placeholder: "e.g John Smith",
-    icon: <AccountCircleOutlinedIcon />,
-  },
-  {
-    name: "email",
-    type: "email",
-    label: "Email",
-    placeholder: "yourname@mail.co",
-    icon: <VisibilityOutlinedIcon />,
-  },
-  {
-    name: "password",
-    type: "password",
-    label: "Password",
-    placeholder: "enter your password",
-    icon: <LockOutlinedIcon />,
-  },
-];
+import { useDispatch } from "react-redux";
+import { signUpUser } from "../../features/auth/authThunk";
 
 const Signup = ({ open, handleClose }) => {
-  const { signUpUser } = useContext(GlobalContext);
+  const dispatch = useDispatch(); // Get the dispatch function
+
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -64,14 +35,18 @@ const Signup = ({ open, handleClose }) => {
       password: "",
     },
     validationSchema: signUpSchema,
-    onSubmit: async (values) => {
+    onSubmit: (values) => {
       console.log("Form Data", values);
-      if (!values.email || !values.password) {
-        return;
-      }
-      await signUpUser(values.email, values.password);
-      navigate("/dashboard");
-      console.log("clicked");
+      // Dispatch the signUpUser action with email and password
+      dispatch(
+        signUpUser({ email: values.email, password: values.password })
+      ).then((result) => {
+        if (result.meta.requestStatus === "fulfilled") {
+          navigate("/dashboard"); // Redirect after successful signup
+        } else {
+          console.log("Signup failed", result.payload); // Handle failure (optional)
+        }
+      });
     },
   });
 
@@ -213,3 +188,35 @@ const Signup = ({ open, handleClose }) => {
 };
 
 export default Signup;
+
+const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  "& .MuiDialogContent-root": {
+    padding: theme.spacing(2),
+  },
+  "& .MuiDialogActions-root": {
+    padding: theme.spacing(1),
+  },
+}));
+const fields = [
+  {
+    name: "username",
+    type: "text",
+    label: "Your Name",
+    placeholder: "e.g John Smith",
+    icon: <AccountCircleOutlinedIcon />,
+  },
+  {
+    name: "email",
+    type: "email",
+    label: "Email",
+    placeholder: "yourname@mail.co",
+    icon: <VisibilityOutlinedIcon />,
+  },
+  {
+    name: "password",
+    type: "password",
+    label: "Password",
+    placeholder: "enter your password",
+    icon: <LockOutlinedIcon />,
+  },
+];
