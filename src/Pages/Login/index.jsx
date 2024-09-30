@@ -18,36 +18,12 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Google from "../../assets/Icons/google.svg";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import { FacebookRounded } from "@mui/icons-material";
-import { GlobalContext } from "../../globalContext/GobalContext";
 import { SigninSchema } from "../../Schema/signUpSchema";
-
-const BootstrapDialog = styled(Dialog)(({ theme }) => ({
-  "& .MuiDialogContent-root": {
-    padding: theme.spacing(2),
-  },
-  "& .MuiDialogActions-root": {
-    padding: theme.spacing(1),
-  },
-}));
-const fields = [
-  {
-    name: "email",
-    type: "email",
-    label: "Email",
-    placeholder: "yourname@mail.co",
-    icon: <VisibilityOutlinedIcon />,
-  },
-  {
-    name: "password",
-    type: "password",
-    label: "Password",
-    placeholder: "enter your password",
-    icon: <LockOutlinedIcon />,
-  },
-];
+import { useDispatch } from "react-redux";
+import { signInUser } from "../../features/auth/authThunk";
 
 const Signin = ({ open, handleClose }) => {
-  const { signInUser } = useContext(GlobalContext);
+  const dispatch = useDispatch(); //
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
@@ -55,13 +31,18 @@ const Signin = ({ open, handleClose }) => {
       password: "",
     },
     validationSchema: SigninSchema,
-    onSubmit: async (values) => {
+    onSubmit: (values) => {
       console.log("Form Data", values);
       if (!values.email || !values.password) {
         return;
       }
-      await signInUser(values.email, values.password);
-      navigate("/dashboard");
+      dispatch(signInUser(values)).then((result) => {
+        if (result.meta.requestStatus === "fulfilled") {
+          navigate("/dashboard"); // Redirect to dashboard after successful login
+        } else {
+          console.log("Login failed", result.payload); // Handle login failure
+        }
+      });
     },
   });
 
@@ -186,7 +167,7 @@ const Signin = ({ open, handleClose }) => {
               type="submit"
               className="signup-btn signup-btn-group dm-sans "
             >
-              Sign Up
+              Sign In{" "}
             </Button>
           </div>
 
@@ -203,3 +184,38 @@ const Signin = ({ open, handleClose }) => {
 };
 
 export default Signin;
+
+const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  "& .MuiDialogContent-root": {
+    padding: theme.spacing(2),
+  },
+  "& .MuiDialogActions-root": {
+    padding: theme.spacing(1),
+  },
+}));
+const fields = [
+  {
+    name: "email",
+    type: "email",
+    label: "Email",
+    placeholder: "yourname@mail.co",
+    icon: <VisibilityOutlinedIcon />,
+  },
+  {
+    name: "password",
+    type: "password",
+    label: "Password",
+    placeholder: "enter your password",
+    icon: <LockOutlinedIcon />,
+  },
+];
+
+// email
+// :
+// "moiza8684@gmail.com"
+// password
+// :
+// "feed234,"
+// username
+// :
+// "moiza8684@gmail.com"
