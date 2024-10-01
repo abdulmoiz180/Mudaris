@@ -11,6 +11,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
 import LogoutIcon from '@mui/icons-material/Logout';
 import "./sidebar.css";
+import LogoMadaris from '../assets/images/LogoAcademy.jfif'
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 
@@ -55,6 +56,11 @@ const NAVIGATION = [
       
     ],
   },
+  {
+    segment: "logout",
+    title: "Logout",
+    icon: <LogoutIcon />
+  }
 ];
 const Icons = [
   { icon: <DashboardIcon />, title: "Dashboard", segment: "dashboard" },
@@ -66,7 +72,10 @@ function Search({ onNavigate }) {
   return (
     <React.Fragment>
       <Box className="ParentSideBarNav">
-        <h2>Madaras Academy</h2>
+        <Box className="SideBarNavLogoandName">
+        <img src={LogoMadaris}/>
+        <h2>Mudaris Academy</h2>
+        </Box>
         <TextField
           variant="outlined"
           size="small"

@@ -1,3 +1,47 @@
-p{
-    color: wheat;
+.AddCoursePage {
+  margin-top: 80px;
+  color: white !important;
+}
+.AddCoursePageFieldIndividualField ::placeholder {
+  color: #aaa !important;
+}
+.AddCoursePageFieldContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.css-1qm1lh {
+  width: 48%;
+}
+.css-1qm1lh:nth-child(3) {
+  width: 98%;
+}
+.addCourseaddButton {
+  height: 40px;
+}
+.AddCoursePageParentContainer {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  box-shadow: -5px -5px 95px -25px rgba(140, 69, 255, 0.84);
+  -webkit-box-shadow: -5px -5px 95px -25px rgba(140, 69, 255, 0.84);
+  -moz-box-shadow: -5px -5px 95px -25px rgba(140, 69, 255, 0.84);
+  background-color: transparent !important;
+}
+.DashBoardAddCourseSubmitButton {
+  background-color: rgb(140, 69, 255) !important;
+  border-radius: 5px !important;
+  transition: linear 0.4s !important;
+}
+.DashBoardAddCourseSubmitButton:hover {
+  background-color: rgba(140, 69, 255, 0.317) !important;
+}
+.DashBoardAddCourseCancelButton {
+  background-color: red !important;
+  border-radius: 5px !important;
+  color: white !important;
+  transition: linear 0.4s !important;
+}
+.DashBoardAddCourseCancelButton:hover {
+  background-color: rgba(255, 0, 0, 0.684) !important;
 }
