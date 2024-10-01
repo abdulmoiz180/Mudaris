@@ -1,45 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
-import { auth } from "../../utils/firebase";
-
-// Sign Up User
-export const signUpUser = createAsyncThunk(
-  "auth/signUpUser",
-  async ({ email, password }, { rejectWithValue }) => {
-    try {
-      const userCredentials = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-      const user = userCredentials.user;
-      return { token: user.accessToken, userId: user.uid };
-    } catch (error) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-
-// Sign In User
-export const signInUser = createAsyncThunk(
-  "auth/signInUser",
-  async ({ email, password }, { rejectWithValue }) => {
-    try {
-      const userCredentials = await signInWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-      const user = userCredentials.user;
-      return { token: user.accessToken, userId: user.uid };
-    } catch (error) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
+import { createSlice } from "@reduxjs/toolkit";
+import { signInUser, signUpUser } from "./authThunk";
 
 const authSlice = createSlice({
   name: "auth",
@@ -54,9 +14,28 @@ const authSlice = createSlice({
       state.token = action.payload.token;
       state.userId = action.payload.userId;
     },
+    logout: (state) => {
+      state.token = null;
+      state.userId = null;
+    },
   },
   extraReducers: (builder) => {
     builder
+      .addCase(signInUser.fulfilled, (state, action) => {
+        state.token = action.payload.token;
+        state.userId = action.payload.userId;
+        state.status = "succeeded";
+
+        // Start a logout timer for auto logout after 1 hour (3600000 ms)
+        const expirationTime = 3600000; // 1 hour
+        setTimeout(() => {
+          store.dispatch(logout()); // Dispatch logout action after expiration time
+        }, expirationTime);
+      })
+      .addCase(signInUser.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.payload;
+      })
       .addCase(signUpUser.fulfilled, (state, action) => {
         state.token = action.payload.token;
         state.userId = action.payload.userId;
@@ -65,18 +44,9 @@ const authSlice = createSlice({
       .addCase(signUpUser.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.payload;
-      })
-      .addCase(signInUser.fulfilled, (state, action) => {
-        state.token = action.payload.token;
-        state.userId = action.payload.userId;
-        state.status = "succeeded";
-      })
-      .addCase(signInUser.rejected, (state, action) => {
-        state.status = "failed";
-        state.error = action.payload;
       });
   },
 });
 
-export const { setTokenFromStorage } = authSlice.actions;
+export const { setTokenFromStorage, logout } = authSlice.actions;
 export default authSlice.reducer;
