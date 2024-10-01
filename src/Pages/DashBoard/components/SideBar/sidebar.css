@@ -13,3 +13,12 @@
 .css-1d9cypr-MuiStack-root {
   display: none !important;
 }
+.SideBarNavLogoandName img{
+  height: 40px;
+  width: 45px;
+  mix-blend-mode: exclusion;
+}
+.SideBarNavLogoandName{
+  display: flex;
+  gap: 10px;
+}
