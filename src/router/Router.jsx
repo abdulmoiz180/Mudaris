@@ -8,9 +8,10 @@ import { GlobalContext } from "../globalContext/GobalContext";
 import NotFound404 from "../Pages/NotFound";
 import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
-import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index"
+import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
-import AboutCourses from '../Pages/DashBoard/components/courses/aboutCourses/AboutCourses'
+import AboutCourses from '../Pages/DashBoard/components/courses/aboutCourses/index';
+import AllCourses from '../Pages/DashBoard/components/courses/allCourses/index';
 const Router = () => { 
   const { token } = useContext(GlobalContext);
 
@@ -55,8 +56,9 @@ const DashboardWithLayout = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="Courses/AddCourse" element={<AddCourse />} />
-          <Route path="Courses/AboutCourse" element={<AboutCourses />} />
+          <Route path="Courses/AddCoAboutCourseurse" element={<AddCourse />} />
+          <Route path="Courses/" element={<AboutCourses />} />
+          <Route path="Courses/AllCourses" element={<AllCourses/>}/>
         </Routes>
       </div>
     </div>
