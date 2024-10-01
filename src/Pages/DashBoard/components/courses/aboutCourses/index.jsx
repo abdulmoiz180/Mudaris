@@ -126,6 +126,7 @@ const AboutCourses = () => {
           <Button className='course-outlined-button'
             key={index} 
             variant="outlined" 
+            
           >
             {course}
           </Button>
