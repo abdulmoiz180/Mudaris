@@ -90,8 +90,6 @@ display: flex;
 gap: 15px;    
 }
 .course-outlined-button{
-
-background: rgba(140, 69, 255, 0.40);
 border-radius: 25px !important; 
 text-align: center !important;
 padding: 10px 35px !important;
@@ -144,8 +142,8 @@ display: flex;
 justify-content: center;    
 }
 .ac-card-foot > :nth-child(2) {
-    border-left: 2px solid rgba(255, 255, 255, 0.15);
-    border-right: 2px solid rgba(255, 255, 255, 0.15);
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
   }
 
 .ac-card-foot-item{

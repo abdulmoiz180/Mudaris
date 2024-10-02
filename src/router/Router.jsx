@@ -12,6 +12,11 @@ import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/AboutCourses";
 import ProtectedRoutes from "./ProtectedRoutes";
 const Router = () => {
+import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
+import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
+import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
+const Router = () => {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -33,7 +38,7 @@ const Router = () => {
             </ProtectedRoutes>
           }
         />
-      </Routes>
+
     </BrowserRouter>
   );
 };
@@ -61,8 +66,14 @@ const DashboardWithLayout = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          {/* <Route path="/about-course/:courseId" component={AboutCourses} /> */}
           <Route path="Courses/AddCourse" element={<AddCourse />} />
-          <Route path="Courses/AboutCourse" element={<AboutCourses />} />
+          <Route
+            path="/Courses/AboutCourse/:courseId"
+            element={<AboutCourses />}
+          />
+          <Route path="Courses/AllCourses" element={<AllCourses />} />
+          <Route path="Courses/Livestream" element={<Livestream />} />
         </Routes>
       </div>
     </div>

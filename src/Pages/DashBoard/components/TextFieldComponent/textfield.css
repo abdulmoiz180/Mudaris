@@ -1,0 +1,24 @@
+.AddCoursePageFieldIndividualField::placeholder{
+    color: wheat !important;
+}
+.AddCoursePageFieldIndividualField label{
+    color: white !important;
+    display: block!important;
+    font-size: 22px!important;
+}
+.AddCoursePageFieldIndividualField{
+    color: white;
+}
+.css-1jk99ih-MuiInputBase-input-MuiOutlinedInput-input:focus,.css-nucs3p-MuiInputBase-root-MuiOutlinedInput-root,.css-1jk99ih-MuiInputBase-input-MuiOutlinedInput-input 
+{
+    color: wheat !important;
+}
+.css-sgfwnr-MuiInputBase-root-MuiOutlinedInput-root ,.css-nucs3p-MuiInputBase-root-MuiOutlinedInput-root{
+    border: 1px solid #aaa !important;
+    border-radius: 15px !important;
+}
+.DashboardaddCourseInputFieldIndividualDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

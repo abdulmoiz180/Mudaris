@@ -1,6 +1,6 @@
 import React from 'react'
 import DashboardLayoutBasic from './components/SideBar'
-import AboutCourses from './components/courses/aboutCourses/AboutCourses'
+import AboutCourses from './components/courses/aboutCourses/index'
 import './dashboard.css'
 export const Dashboard = () => {
   return (
