@@ -25,7 +25,24 @@ export const signUpUser = createAsyncThunk(
     }
   }
 );
+export const logoutUser = createAsyncThunk(
+  "auth/logoutUser",
+  async (_, { dispatch }) => {
+    try {
+      // Sign out the user from Firebase
+      await auth.signOut();
 
+      // Clear cookies
+      Cookies.remove("token");
+      Cookies.remove("userId");
+
+      // Dispatch the logout action to clear state
+      dispatch(logout());
+    } catch (error) {
+      console.error("Logout failed: ", error);
+    }
+  }
+);
 export const signInUser = createAsyncThunk(
   "auth/signInUser",
   async ({ email, password }, { rejectWithValue }) => {

@@ -1,32 +1,38 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React, { useContext } from "react";
+import React from "react";
 import Home from "../Pages/Home";
 import Footer from "../layout/Footer";
 import ResponsiveAppBar from "../layout/NavBar/Index";
 import Profile from "../Pages/Profile";
-import { GlobalContext } from "../globalContext/GobalContext";
 import NotFound404 from "../Pages/NotFound";
 import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
-import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index"
+import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
-import AboutCourses from '../Pages/DashBoard/components/courses/aboutCourses/AboutCourses'
-const Router = () => { 
-  const { token } = useContext(GlobalContext);
-
+import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/AboutCourses";
+import ProtectedRoutes from "./ProtectedRoutes";
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
         <Route path="*" element={<NotFound404 />} />
-        <Route path="/dashboard/*" element={<DashboardWithLayout />} />
-        {token ? (
-          <>
-            <Route path="/profile" element={<Profile />} />
-          </>
-        ) : (
-          <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
-        )}
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoutes>
+              <Profile />
+            </ProtectedRoutes>
+          }
+        />
+        <Route
+          path="/dashboard/*"
+          element={
+            <ProtectedRoutes>
+              <DashboardWithLayout />
+            </ProtectedRoutes>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

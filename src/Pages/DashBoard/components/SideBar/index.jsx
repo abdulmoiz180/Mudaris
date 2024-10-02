@@ -6,14 +6,15 @@ import TextField from "@mui/material/TextField";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import AccountCircle from '@mui/icons-material/AccountCircle';
+import AccountCircle from "@mui/icons-material/AccountCircle";
 import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
-import LogoutIcon from '@mui/icons-material/Logout';
+import LogoutIcon from "@mui/icons-material/Logout";
 import "./sidebar.css";
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
-
+import { useDispatch } from "react-redux";
+import { logoutUser } from "@features/auth/authThunk";
 function DashboardContent() {
   return <Typography>Welcome to the Dashboard</Typography>;
 }
@@ -53,10 +54,18 @@ const NAVIGATION = [
 const Icons = [
   { icon: <DashboardIcon />, title: "Dashboard", segment: "dashboard" },
   { icon: <AccountCircle />, title: "Profile", segment: "profile" },
-  { icon: <LogoutIcon />, title: "Logout", segment: "logout" }
+  { icon: <LogoutIcon />, title: "Logout", segment: "logout" },
 ];
 
 function Search({ onNavigate }) {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    dispatch(logoutUser());
+    navigate("/");
+    console.log("user Logged out...");
+  };
+
   return (
     <React.Fragment>
       <Box className="ParentSideBarNav">
@@ -78,7 +87,13 @@ function Search({ onNavigate }) {
             <Tooltip key={index} title={item.title} enterDelay={1000}>
               <IconButton
                 aria-label={item.title}
-                onClick={() => onNavigate(item.segment)}
+                onClick={() => {
+                  if (item.segment === "logout") {
+                    handleLogout(); // Call the logout function
+                  } else {
+                    onNavigate(item.segment); // Navigate for other icons
+                  }
+                }}
               >
                 {item.icon}
               </IconButton>
@@ -104,7 +119,9 @@ function DashboardLayoutSlots(props) {
 
   return (
     <AppProvider navigation={NAVIGATION}>
-      <DashboardLayout slots={{ toolbarActions: () => <Search onNavigate={handleNavigate} /> }}>
+      <DashboardLayout
+        slots={{ toolbarActions: () => <Search onNavigate={handleNavigate} /> }}
+      >
         {props.children}
       </DashboardLayout>
     </AppProvider>
