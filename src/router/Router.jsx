@@ -10,10 +10,10 @@ import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
 import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
-import AboutCourses from '../Pages/DashBoard/components/courses/aboutCourses/index';
-import AllCourses from '../Pages/DashBoard/components/courses/allCourses/index';
+import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
+import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
-const Router = () => { 
+const Router = () => {
   const { token } = useContext(GlobalContext);
 
   return (
@@ -27,7 +27,10 @@ const Router = () => {
             <Route path="/profile" element={<Profile />} />
           </>
         ) : (
-          <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
+          <Route
+            path="/"
+            element={<WithNavbarAndFooter element={<Home />} />}
+          />
         )}
       </Routes>
     </BrowserRouter>
@@ -57,10 +60,14 @@ const DashboardWithLayout = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="Courses/AddCoAboutCourseurse" element={<AddCourse />} />
-          <Route path="Courses/" element={<AboutCourses />} />
-          <Route path="Courses/AllCourses" element={<AllCourses/>}/>
-          <Route path="Courses/Livestream" element={<Livestream/>}/>
+          {/* <Route path="/about-course/:courseId" component={AboutCourses} /> */}
+          <Route path="Courses/AddCourse" element={<AddCourse />} />
+          <Route
+            path="/Courses/AboutCourse/:courseId"
+            element={<AboutCourses />}
+          />
+          <Route path="Courses/AllCourses" element={<AllCourses />} />
+          <Route path="Courses/Livestream" element={<Livestream />} />
         </Routes>
       </div>
     </div>

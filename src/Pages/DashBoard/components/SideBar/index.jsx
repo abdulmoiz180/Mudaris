@@ -15,14 +15,6 @@ import LogoMadaris from '../assets/images/LogoAcademy.jfif'
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 
-function DashboardContent() {
-  return <Typography>Welcome to the Dashboard</Typography>;
-}
-
-function AboutCourseContent() {
-  return <Typography>About this Course</Typography>;
-}
-
 const NAVIGATION = [
   {
     kind: "header",
@@ -41,11 +33,6 @@ const NAVIGATION = [
       {
         segment: "AddCourse",
         title: "Add Course",
-        icon: <SchoolIcon />,
-      },
-      {
-        segment: "AboutCourse",
-        title: "About Course",
         icon: <SchoolIcon />,
       },
       {
