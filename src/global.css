@@ -50,15 +50,15 @@ body {
 .dm-sans {
   font-family: "DM Sans", sans-serif !important;
 }
-.manrope{
+.manrope {
   font-family: "Manrope", sans-serif !important;
 }
-.public-sans{
-font-family: "Public Sans", sans-serif !important;
+.public-sans {
+  font-family: "Public Sans", sans-serif !important;
 }
 
-.barlow{
-font-family: "Barlow", sans-serif;  
+.barlow {
+  font-family: "Barlow", sans-serif;
 }
 .footer-bg {
   background-color: var(--footer-bg);
@@ -159,9 +159,9 @@ li {
   .description {
     font-size: 16px;
   }
-  .row {
+  /* .row {
     flex-direction: column;
-  }
+  } */
   .width-90 {
     width: 100% !important;
   }
@@ -177,9 +177,9 @@ li {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .row {
+  /* .row {
     flex-direction: row;
-  }
+  } */
   .width-90 {
     width: 85%; /* kindly check this block in resonsiveness and code accordingly */
   }
