@@ -53,6 +53,12 @@ const NAVIGATION = [
         title: "All Courses",
         icon: <SchoolIcon />,
       },
+
+      {
+        segment: "Livestream",
+        title: "Live Stream",
+        icon: <SchoolIcon />, 
+      },
       
     ],
   },
