@@ -123,13 +123,13 @@ const AboutCourses = () => {
             <h3>{courses[0]}</h3>
             <div className="course-buttons">
             {courses.slice(1).map((course, index) => (
-          <Button className='course-outlined-button'
+          <Chip className='course-outlined-button'
             key={index} 
             variant="outlined" 
             
           >
             {course}
-          </Button>
+          </Chip>
         ))}
             </div>
             </div>
@@ -138,13 +138,13 @@ const AboutCourses = () => {
             <h3>{languages[0]}</h3>
             <div className="language-buttons">
             {languages.slice(1).map((lang, index) => (
-          <Button className='language-filled-button'
+          <Chip className='language-filled-button'
             key={index} 
             variant="contained" 
         
           >
             {lang}
-          </Button>
+          </Chip>
             
             ))}
             </div>

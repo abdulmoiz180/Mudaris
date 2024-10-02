@@ -1,0 +1,23 @@
+.livestream-container{
+flex-direction: column !important;
+align-items: flex-start;
+justify-content: center;
+color: #fff !important;  
+margin-top: 100px;
+width: 90%;
+gap: 15px;
+}
+.livestream-video-container{
+width: 100%;  
+border: 2px solid  rgba(255, 255, 255, 0.15) !important; 
+border-radius: 15px; 
+}
+.ls-vid {
+    width: 100%;        /* Ensure the video fills the container */
+    height: 100%;       /* Maintain the video’s aspect ratio */
+    border-radius: 15px; /* Keep the same rounded corners as the container */
+  }
+.livestream-info{
+flex-direction: column !important;
+gap: 5px;    
+}

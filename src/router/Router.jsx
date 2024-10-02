@@ -12,6 +12,7 @@ import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from '../Pages/DashBoard/components/courses/aboutCourses/index';
 import AllCourses from '../Pages/DashBoard/components/courses/allCourses/index';
+import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
 const Router = () => { 
   const { token } = useContext(GlobalContext);
 
@@ -59,6 +60,7 @@ const DashboardWithLayout = () => {
           <Route path="Courses/AddCoAboutCourseurse" element={<AddCourse />} />
           <Route path="Courses/" element={<AboutCourses />} />
           <Route path="Courses/AllCourses" element={<AllCourses/>}/>
+          <Route path="Courses/Livestream" element={<Livestream/>}/>
         </Routes>
       </div>
     </div>
