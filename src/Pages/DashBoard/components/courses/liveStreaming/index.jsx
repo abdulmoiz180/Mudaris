@@ -1,6 +1,6 @@
 import React from 'react';
 import './livestream.css';
-import LandingPageVideo from "../../assets/videos/LandingPageVideo.mp4"
+import LandingPageVideo from "../../../../../../public/assets/LandingPageVideo.mp4"
 
 const livestreaminfo = [
 {

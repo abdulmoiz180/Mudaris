@@ -11,7 +11,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
 import LogoutIcon from "@mui/icons-material/Logout";
 import "./sidebar.css";
-import LogoMadaris from '../assets/images/LogoAcademy.jfif'
+import LogoMadaris from '../../../../../public/assets/Images/LogoMadaris.jfif'
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import { useDispatch } from "react-redux";

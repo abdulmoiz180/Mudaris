@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@mui/material";
 import "./allcourses.css";
-import aboutcardimg from "../../assets/images/aboutcardimg.jpg";
-import heartIcon from "../../assets/icons/heartIcon.png";
-import gradicon from "../../assets/icons/gradicon.png";
+import heartIcon from "../../../../../../public/assets/Icons/heartIcon.png";  // default heart icon from data
+import Heartfill from "../../../../../../public/assets/Icons/Heartfill.png";  // heart filled icon
+import gradicon from "../../../../../../public/assets/Icons/gradicon.png"; // graduation icon
 import { useNavigate } from "react-router-dom";
 
 const coursesCards = [
@@ -12,10 +12,10 @@ const coursesCards = [
     courseInfo: [
       {
         type: "header",
-        img: "https://i.ytimg.com/vi/3LPJfIKxwWc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA3llYo3viOLyF1FWLYmgOqiYYgqA", // Replace with actual image URL
+        img: "https://i.ytimg.com/vi/3LPJfIKxwWc/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA3llYo3viOLyF1FWLYmgOqiYYgqA",
         title: "CS50: Introduction to Computer Science",
       },
-      { type: "details", title: "Start Date:", icon: heartIcon, subtitle: "April 23" },
+      { type: "details", title: "Start Date:", icon: heartIcon, subtitle: "April 23" }, // Using heartIcon from the data
       { type: "details", title: "Duration:", subtitle: "12 weeks" },
       { type: "details", title: "Professor:", subtitle: "David Malan" },
       { type: "details", icon: gradicon, title: "Students Enrolled:", subtitle: "+3000" },
@@ -82,17 +82,30 @@ const coursesCards = [
       { type: "footer", title: "Read More" },
     ],
   },
+ 
 ];
-
 
 const AllCourses = () => {
   const navigate = useNavigate();
-  const afterClick = (segment,Idcard) => {
+  
+  // State to track liked/unliked for each card
+  const [likedCards, setLikedCards] = useState({});
+
+  // Function to toggle the heart icon
+  const toggleHeart = (cardId) => {
+    setLikedCards((prevState) => ({
+      ...prevState,
+      [cardId]: !prevState[cardId], // Toggle the liked state for the specific card
+    }));
+  };
+
+  const afterClick = (segment, Idcard) => {
     navigate(`/${segment}/${Idcard}`);
   };
+
   return (
     <div className="allcourses-container row">
-      {coursesCards.map((course, cardIndex) => (
+      {coursesCards.map((course) => (
         <div className="allcourses-card row" key={course.cardId}>
           {/* Header Section */}
           <div className="allcourses-header row">
@@ -122,11 +135,16 @@ const AllCourses = () => {
                     {/* First item: Render both title (April 23) and subtitle with heart icon */}
                     {isFirst ? (
                       <>
-                        {detail.title && <h4>{detail.title}</h4>}{" "}
-                        {/* Render title (April 23) */}
+                        {detail.title && <h4>{detail.title}</h4>}
                         <span className="detail-text-icon row">
-                          <p>{detail.subtitle}</p> {/* Render subtitle */}
-                          <img src={heartIcon} alt="heart icon" />
+                          <p>{detail.subtitle}</p>
+                          {/* Toggle heart icon on click */}
+                          <img
+                            src={likedCards[course.cardId] ? Heartfill : detail.icon}
+                            alt="heart icon"
+                            onClick={() => toggleHeart(course.cardId)} // Handle click event
+                            style={{ cursor: "pointer" }}
+                          />
                         </span>
                       </>
                     ) : isLast ? (
@@ -136,8 +154,7 @@ const AllCourses = () => {
                           <h4>{detail.title}</h4> {/* Render title */}
                           <img src={gradicon} alt="graduation icon" />
                         </span>
-                        {detail.subtitle && <p>{detail.subtitle}</p>}{" "}
-                        {/* Render subtitle (+120) */}
+                        {detail.subtitle && <p>{detail.subtitle}</p>}
                       </>
                     ) : (
                       <>
@@ -153,7 +170,7 @@ const AllCourses = () => {
 
           <div className="allcourses-footer">
             <Button
-              onClick={() => afterClick("dashboard/Courses/AboutCourse",course.cardId)}
+              onClick={() => afterClick("dashboard/Courses/AboutCourse", course.cardId)}
               className="allcourses-button"
               variant="outlined"
             >

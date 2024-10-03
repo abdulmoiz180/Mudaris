@@ -1,8 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Chip } from "@mui/material";
+import { Button } from "@mui/material";
 import "./AboutCourses.css";
 
+const coursebtntext = [
+"Check the Course's Content"  
+]
 const coursesData = [
   {
     courseId: 1,
@@ -256,8 +260,9 @@ const AboutCourses = () => {
                   className="course-outlined-button"
                   key={index}
                   variant="outlined"
+                  label= {course}
                 >
-                  {course}
+                  
                 </Chip>
               ))}
             </div>
@@ -271,8 +276,9 @@ const AboutCourses = () => {
                   className="language-filled-button"
                   key={index}
                   variant="contained"
+                  label= {lang}
                 >
-                  {lang}
+          
                 </Chip>
               ))}
             </div>
@@ -286,6 +292,14 @@ const AboutCourses = () => {
                   {ci}
                 </p>
               ))}
+            </div>
+            <div className="courses-info-btn">
+                <Button
+                variant="contained"
+                className="ci-btn" 
+               >
+                <p className="ci-btn-text">{coursebtntext}</p>
+                </Button>
             </div>
           </div>
         </div>

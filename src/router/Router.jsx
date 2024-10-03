@@ -12,7 +12,7 @@ import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; // Keep only one import
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
-import ProtectedRoutes from "./ProtectedRoutes";
+// import ProtectedRoutes from "./ProtectedRoutes";
 
 const Router = () => {
   return (
@@ -23,17 +23,17 @@ const Router = () => {
         <Route
           path="/profile"
           element={
-            <ProtectedRoutes>
+            // <ProtectedRoutes>
               <Profile />
-            </ProtectedRoutes>
+            // </ProtectedRoutes> 
           }
         />
         <Route
           path="/dashboard/*"
           element={
-            <ProtectedRoutes>
+            // <ProtectedRoutes>
               <DashboardWithLayout />
-            </ProtectedRoutes>
+            // </ProtectedRoutes> 
           }
         />
       </Routes> {/* Added closing tag here */}
