@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import React from "react";
 import Home from "../Pages/Home";
 import Footer from "../layout/Footer";
@@ -9,14 +9,12 @@ import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
 import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
-import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/AboutCourses";
-import ProtectedRoutes from "./ProtectedRoutes";
-const Router = () => {
-import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
+import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; // Keep only one import
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
-const Router = () => {
+import ProtectedRoutes from "./ProtectedRoutes";
 
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -38,7 +36,7 @@ const Router = () => {
             </ProtectedRoutes>
           }
         />
-
+      </Routes> {/* Added closing tag here */}
     </BrowserRouter>
   );
 };
@@ -55,7 +53,7 @@ const WithNavbarAndFooter = ({ element }) => {
       <Footer />
     </>
   ) : (
-    { element }
+    element
   );
 };
 
@@ -66,14 +64,14 @@ const DashboardWithLayout = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          {/* <Route path="/about-course/:courseId" component={AboutCourses} /> */}
           <Route path="Courses/AddCourse" element={<AddCourse />} />
           <Route
-            path="/Courses/AboutCourse/:courseId"
-            element={<AboutCourses />}
+            path="Courses/AboutCourse/:courseId"
+            element={<AboutCourses />} // Fixed duplicate import issue
           />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
           <Route path="Courses/Livestream" element={<Livestream />} />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </div>
     </div>

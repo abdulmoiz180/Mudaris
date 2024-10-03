@@ -16,13 +16,6 @@ import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "@features/auth/authThunk";
-function DashboardContent() {
-  return <Typography>Welcome to the Dashboard</Typography>;
-}
-
-function AboutCourseContent() {
-  return <Typography>About this Course</Typography>;
-
 
 const NAVIGATION = [
   {
