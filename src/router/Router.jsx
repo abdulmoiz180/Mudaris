@@ -12,7 +12,6 @@ import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; // Keep only one import
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
-import ProtectedRoutes from "./ProtectedRoutes";
 
 const Router = () => {
   return (
@@ -20,23 +19,10 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
         <Route path="*" element={<NotFound404 />} />
-        <Route
-          path="/profile"
-          element={
-            <ProtectedRoutes>
-              <Profile />
-            </ProtectedRoutes>
-          }
-        />
-        <Route
-          path="/dashboard/*"
-          element={
-            <ProtectedRoutes>
-              <DashboardWithLayout />
-            </ProtectedRoutes>
-          }
-        />
-      </Routes> {/* Added closing tag here */}
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/dashboard/*" element={<DashboardWithLayout />} />
+      </Routes>{" "}
+      {/* Added closing tag here */}
     </BrowserRouter>
   );
 };
