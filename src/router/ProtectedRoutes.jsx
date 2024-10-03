@@ -4,8 +4,8 @@ import { Navigate } from "react-router-dom";
 
 const ProtectedRoutes = ({ children }) => {
   const { token } = useSelector((state) => state.auth);
-
-  if (!token) {
+  console.log("Token:", token); // Check if token is being retrieved
+  if (!token || token === "") {
     return <Navigate to="/" replace />;
   }
 
