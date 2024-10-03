@@ -1,34 +1,14 @@
 import React, { useState, useRef } from "react";
-import {
-  Box,
-  Button,
-  Typography,
-  Snackbar,
-  Alert,
-} from "@mui/material";
+import { Box, Button, Typography, Snackbar, Alert } from "@mui/material";
 import "./addcourse.css";
 import CustomField from "../../TextFieldComponent/index";
-
+import { db } from "@utils/firebase";
+import { collection, addDoc } from "firebase/firestore";
 export const AddCourse = () => {
-  const [formData, setFormData] = useState({
-    courseName: "",
-    courseCode: "",
-    courseDetails: "",
-    startDate: "",
-    courseFee: "",
-    courseDuration: "",
-    professorName: "",
-    maximumStudents: "",
-    contactNumber: "",
-    courseImage: null,
-    courseVideo: null,
-  });
-
+  const [formData, setFormData] = useState(initialData);
   const [errors, setErrors] = useState({});
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState("");
-
-  // Refs for file inputs
   const imageInputRef = useRef(null);
   const videoInputRef = useRef(null);
 
@@ -50,34 +30,46 @@ export const AddCourse = () => {
     return formErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Submit button clicked...");
+
     const validationErrors = validateForm();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
       setErrors({});
       setOpenSnackbar(true);
-      setSnackbarMessage("Course added successfully!");
-      // Submit logic goes here
+      setSnackbarMessage("Processing...");
+
+      try {
+        // Create a copy of formData, excluding courseImage and courseVideo
+        const { courseImage, courseVideo, ...dataToStore } = formData;
+
+        // Log the data to see what is being sent to Firestore
+        console.log("Data to store:", dataToStore);
+
+        // Store the data in Firestore
+        await addDoc(collection(db, "courses"), dataToStore);
+        console.log("Data successfully added to Firestore");
+
+        // Update the success message
+        setSnackbarMessage("Course added successfully to Firestore!");
+
+        // Reset form data after successful submission
+        setFormData(initialData);
+      } catch (error) {
+        console.error("Error adding course to Firestore:", error);
+        setSnackbarMessage(
+          "Error adding course to Firestore! Please try again."
+        );
+      }
     }
   };
 
   const handleCancel = () => {
     // Reset form data
-    setFormData({
-      courseName: "",
-      courseCode: "",
-      courseDetails: "",
-      startDate: "",
-      courseFee: "",
-      courseDuration: "",
-      professorName: "",
-      maximumStudents: "",
-      contactNumber: "",
-      courseImage: null,
-      courseVideo: null,
-    });
+    setFormData(initialData);
 
     // Clear file inputs
     if (imageInputRef.current) {
@@ -93,29 +85,6 @@ export const AddCourse = () => {
   const handleCloseSnackbar = () => {
     setOpenSnackbar(false);
   };
-
-  const fields = [
-    { name: "courseName", label: "Course Name", required: true },
-    { name: "courseCode", label: "Course Code", required: true },
-    {
-      name: "courseDetails",
-      label: "Course Details",
-      required: true,
-      multiline: true,
-      rows: 4,
-    },
-    { name: "startDate", label: "Start From", type: "date", required: true },
-    { name: "courseDuration", label: "Course Duration", required: true },
-    { name: "courseFee", label: "Course Fee", required: true },
-    { name: "professorName", label: "Professor Name", required: true },
-    { name: "maximumStudents", label: "Maximum Students", required: false },
-    {
-      name: "contactNumber",
-      label: "Contact Number",
-      required: true,
-      type: "tel",
-    },
-  ];
 
   return (
     <section className="AddCoursePage">
@@ -189,9 +158,11 @@ export const AddCourse = () => {
             >
               Submit
             </Button>
-            <Button variant="outlined"
+            <Button
+              variant="outlined"
               className="DashBoardAddCourseCancelButton"
-            onClick={handleCancel}>
+              onClick={handleCancel}
+            >
               Cancel
             </Button>
           </Box>
@@ -209,4 +180,41 @@ export const AddCourse = () => {
       </Box>
     </section>
   );
+};
+
+const fields = [
+  { name: "courseName", label: "Course Name", required: true },
+  { name: "courseCode", label: "Course Code", required: true },
+  {
+    name: "courseDetails",
+    label: "Course Details",
+    required: true,
+    multiline: true,
+    rows: 4,
+  },
+  { name: "startDate", label: "Start From", type: "date", required: true },
+  { name: "courseDuration", label: "Course Duration", required: true },
+  { name: "courseFee", label: "Course Fee", required: true },
+  { name: "professorName", label: "Professor Name", required: true },
+  { name: "maximumStudents", label: "Maximum Students", required: false },
+  {
+    name: "contactNumber",
+    label: "Contact Number",
+    required: true,
+    type: "tel",
+  },
+];
+
+const initialData = {
+  courseName: "",
+  courseCode: "",
+  courseDetails: "",
+  startDate: "",
+  courseFee: "",
+  courseDuration: "",
+  professorName: "",
+  maximumStudents: "",
+  contactNumber: "",
+  courseImage: null,
+  courseVideo: null,
 };
