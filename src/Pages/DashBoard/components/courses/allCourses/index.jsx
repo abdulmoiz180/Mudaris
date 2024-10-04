@@ -41,23 +41,22 @@ const AllCourses = () => {
                 alt="course"
               />
             </div>
-            <h3>{course.courseName}</h3>
+            <div className="details-box">
+              <h3 className="dm-sans fs-30">{course.courseName}</h3>
+              <p className="inter">
+                {truncateParagraph(course.courseDetails, 15)}
+              </p>
+            </div>
           </div>
-
           <div className="allcourses-details row">
             <div className="detail-text row">
-              <h4>{course.startDate}</h4>
-              <span className="detail-text-icon row">
-                <p>{course.courseDetails}</p>
-                <img src={heartIcon} alt="heart icon" />
-              </span>
+              <h3 className="dm-sans fs-18">Fee</h3>
+              <p className="inter">{course.courseFee}</p>
             </div>
+
             <div className="detail-text row">
-              <span className="detail-text-icon row">
-                <h4>{course.courseFee}</h4>
-                <img src={gradicon} alt="graduation icon" />
-              </span>
-              <p>{`Max Students: ${course.maximumStudents}`}</p>
+              <h3 className="dm-sans fs-18">Students</h3>
+              <p className="inter">{course.maximumStudents}</p>
             </div>
           </div>
 
@@ -79,3 +78,10 @@ const AllCourses = () => {
 };
 
 export default AllCourses;
+const truncateParagraph = (paragraph, maxWords) => {
+  const words = paragraph.split(" ");
+  if (words.length > maxWords) {
+    return words.slice(0, maxWords).join(" ") + " ...";
+  }
+  return paragraph;
+};
