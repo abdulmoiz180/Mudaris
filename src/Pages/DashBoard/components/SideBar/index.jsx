@@ -16,51 +16,81 @@ import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "@features/auth/authThunk";
-
+import courseicon from "../assets/icons/courseicon.png"
+import dashboardicon from "../assets/icons/dashboardicon.png"
+import usericon from "../assets/icons/usericon.png"
 const NAVIGATION = [
   {
     kind: "header",
     title: "Main items",
   },
+
   {
     segment: "dashboard",
     title: "Dashboard",
-    icon: <DashboardIcon />,
+    icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />, // Custom image icon
   },
   {
     segment: "dashboard/Courses",
     title: "Courses",
-    icon: <SchoolIcon />,
+    icon: <img className="side-icon"  src={courseicon} alt="Courses"/>, // Custom image icon
     children: [
       {
         segment: "AddCourse",
         title: "Add Course",
-        icon: <SchoolIcon />,
       },
       {
         segment: "AllCourses",
         title: "All Courses",
-        icon: <SchoolIcon />,
+       
       },
-
       {
         segment: "Livestream",
         title: "Live Stream",
-        icon: <SchoolIcon />, 
+       
       },
-      
     ],
   },
+
+  // {
+  //   segment: "dashboard",
+  //   title: "Dashboard",
+  //   icon: <DashboardIcon />,
+  // },
+  // {
+  //   segment: "dashboard/Courses",
+  //   title: "Courses",
+  //   icon: <SchoolIcon />,
+  //   children: [
+  //     {
+  //       segment: "AddCourse",
+  //       title: "Add Course",
+  //       icon: <SchoolIcon />,
+  //     },
+  //     {
+  //       segment: "AllCourses",
+  //       title: "All Courses",
+  //       icon: <SchoolIcon />,
+  //     },
+
+  //     {
+  //       segment: "Livestream",
+  //       title: "Live Stream",
+  //       icon: <SchoolIcon />, 
+  //     },
+      
+  //   ],
+  // },
   {
     segment: "logout",
     title: "Logout",
-    icon: <LogoutIcon />
+    icon: <LogoutIcon className="side-icon"/>
   }
 ];
 const Icons = [
-  { icon: <DashboardIcon />, title: "Dashboard", segment: "dashboard" },
-  { icon: <AccountCircle />, title: "Profile", segment: "profile" },
-  { icon: <LogoutIcon />, title: "Logout", segment: "logout" },
+  {icon: <img className="side-icon" src={dashboardicon} alt="Dashboard"/>,},
+  { icon: <img src={usericon} className="side-icon"/>, title: "Profile", segment: "profile" },
+  { icon: <LogoutIcon className="side-icon"/>, title: "Logout", segment: "logout" },
 ];
 
 function Search({ onNavigate }) {
