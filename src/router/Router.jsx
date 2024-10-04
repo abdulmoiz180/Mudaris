@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
+import { checkAutoLogin } from "@features/auth/authThunk";
 import Home from "../Pages/Home";
 import Footer from "../layout/Footer";
 import ResponsiveAppBar from "../layout/NavBar/Index";
@@ -9,20 +10,30 @@ import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
 import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
-import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; // Keep only one import
+import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
+import ProtectedRoutes from "./ProtectedRoutes";
+import { useDispatch } from "react-redux";
 
 const Router = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // Check token from cookies and update Redux state
+    dispatch(checkAutoLogin());
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
         <Route path="*" element={<NotFound404 />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/dashboard/*" element={<DashboardWithLayout />} />
-      </Routes>{" "}
-      {/* Added closing tag here */}
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/dashboard/*" element={<DashboardWithLayout />} />
+          <Route path="/profile" element={<Profile />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };
@@ -42,7 +53,6 @@ const WithNavbarAndFooter = ({ element }) => {
     element
   );
 };
-
 const DashboardWithLayout = () => {
   return (
     <div style={{ display: "flex" }}>

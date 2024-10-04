@@ -1,6 +1,6 @@
 import React from "react";
 import { useFormik } from "formik";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   Button,
   InputAdornment,
@@ -24,7 +24,7 @@ import { FacebookRounded } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
 import { signUpUser } from "../../features/auth/authThunk";
 
-const Signup = ({ open, handleClose }) => {
+const Signup = ({ open, handleClose, toggle }) => {
   const dispatch = useDispatch(); // Get the dispatch function
 
   const navigate = useNavigate();
@@ -177,9 +177,9 @@ const Signup = ({ open, handleClose }) => {
 
           <p className="clr-white dm-sans center">
             Already have an account?{" "}
-            <Link className="purple link" to={"/"}>
+            <Button onClick={toggle} className="link-btn">
               Sign in now
-            </Link>
+            </Button>
           </p>
         </DialogContent>
       </form>

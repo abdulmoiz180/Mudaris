@@ -45,7 +45,7 @@ export const logoutUser = createAsyncThunk(
 );
 export const signInUser = createAsyncThunk(
   "auth/signInUser",
-  async ({ email, password }, { rejectWithValue }) => {
+  async ({ email, password }, { rejectWithValue, dispatch }) => {
     try {
       const userCredentials = await signInWithEmailAndPassword(
         auth,
@@ -53,6 +53,20 @@ export const signInUser = createAsyncThunk(
         password
       );
       const user = userCredentials.user;
+      Cookies.set("token", user.accessToken, {
+        expires: 7,
+        secure: true,
+        sameSite: "Lax", // Or "Strict"
+      });
+
+      Cookies.set("userId", user.uid, { expires: 7 });
+
+      dispatch(
+        setTokenFromStorage({
+          token: user.accessToken,
+          userId: user.uid,
+        })
+      );
 
       return { token: user.accessToken, userId: user.uid };
     } catch (error) {
@@ -64,6 +78,7 @@ export const signInUser = createAsyncThunk(
 export const checkAutoLogin = () => (dispatch) => {
   const storedToken = Cookies.get("token");
   const storedUserId = Cookies.get("userId");
+  console.log("Stored Token from Cookies:", storedToken);
   if (storedToken && storedUserId) {
     dispatch(
       setTokenFromStorage({
@@ -71,5 +86,7 @@ export const checkAutoLogin = () => (dispatch) => {
         userId: storedUserId,
       })
     );
+  } else {
+    dispatch(logout()); // If no token, ensure the user is logged out
   }
 };
