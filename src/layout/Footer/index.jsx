@@ -4,11 +4,11 @@ import LanguageIcon from "@mui/icons-material/Language";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
 import FaceBook from "@assets/icons/FaceBook.svg";
-import Instagram from "../../assets/icons/Instagram.svg";
-import LinkedIn from "../../assets/icons/LinkedIn.svg";
-import Youtube from "../../assets/icons/Lozenge.svg";
+import Instagram from "@assets/icons/Instagram.svg";
+import LinkedIn from "@assets/icons/LinkedIn.svg";
+import Youtube from "@assets/icons/Lozenge.svg";
 import { useLanguage } from "../../globalContext/GlobalProvider";
-import Twitter from "../../assets/icons/Twitter.svg";
+import Twitter from "@assets/icons/Twitter.svg";
 
 const Footer = () => {
   const { data } = useLanguage();
