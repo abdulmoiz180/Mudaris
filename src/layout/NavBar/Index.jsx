@@ -15,23 +15,41 @@ import "./nav.css";
 import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
 function ResponsiveAppBar() {
-  const [open, setOpen] = useState(false);
-  const { toggleLanguage, data } = useLanguage();
+  const [openLogin, setOpenLogin] = useState(false);
+  const [openSignUp, setOpenSignUp] = useState(false);
+  const { data } = useLanguage();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [currentForm, setCurrentForm] = useState("SignIn");
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  // this is for nav bar...
   const handleClickOpen = (formType) => {
     setCurrentForm(formType);
-    setOpen(true);
+    if (formType === "SignIn") {
+      setOpenLogin(true);
+      setOpenSignUp(false);
+    } else {
+      setOpenLogin(false);
+      setOpenSignUp(true);
+    }
   };
-  const handleClose = () => {
-    setOpen(false);
+  const handleToggleDialogs = () => {
+    if (currentForm === "SignIn") {
+      setCurrentForm("Signup");
+      setOpenLogin(false);
+      setOpenSignUp(true);
+    } else if (currentForm === "Signup") {
+      setCurrentForm("SignIn");
+      setOpenLogin(true);
+      setOpenSignUp(false);
+    }
   };
 
+  const handleClose = () => {
+    setOpenLogin(false);
+    setOpenSignUp(false);
+  };
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -152,11 +170,6 @@ function ResponsiveAppBar() {
                       <Button
                         sx={{ my: 2, color: "white", display: "block" }}
                         className="inter"
-                        // onClick={
-                        //   btn === "EN" || btn === "فارسی"
-                        //     ? toggleLanguage
-                        //     : handleCloseNavMenu
-                        // }
                       >
                         {isImageUrl(btn) ? (
                           <img
@@ -176,10 +189,18 @@ function ResponsiveAppBar() {
             </div>
           </Box>
           {currentForm === "SignIn" && (
-            <Signin open={open} handleClose={handleClose} />
+            <Signin
+              open={openLogin}
+              handleClose={handleClose}
+              toggle={handleToggleDialogs}
+            />
           )}
           {currentForm === "Signup" && (
-            <Signup open={open} handleClose={handleClose} />
+            <Signup
+              open={openSignUp}
+              handleClose={handleClose}
+              toggle={handleToggleDialogs}
+            />
           )}
         </Toolbar>
       </Container>

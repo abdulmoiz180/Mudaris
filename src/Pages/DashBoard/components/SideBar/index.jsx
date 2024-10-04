@@ -11,56 +11,64 @@ import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
 import LogoutIcon from "@mui/icons-material/Logout";
 import "./sidebar.css";
-import LogoMadaris from '../assets/images/LogoAcademy.jfif'
+import LogoMadaris from "../assets/images/LogoAcademy.jfif";
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "@features/auth/authThunk";
-
+import courseicon from "../assets/icons/courseicon.png";
+import dashboardicon from "../assets/icons/dashboardicon.png";
+import usericon from "../assets/icons/usericon.png";
 const NAVIGATION = [
   {
     kind: "header",
     title: "Main items",
   },
+
   {
     segment: "dashboard",
     title: "Dashboard",
-    icon: <DashboardIcon />,
+    icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />, // Custom image icon
   },
   {
     segment: "dashboard/Courses",
     title: "Courses",
-    icon: <SchoolIcon />,
+    icon: <img className="side-icon" src={courseicon} alt="Courses" />, // Custom image icon
     children: [
       {
         segment: "AddCourse",
         title: "Add Course",
-        icon: <SchoolIcon />,
       },
       {
         segment: "AllCourses",
         title: "All Courses",
-        icon: <SchoolIcon />,
       },
-
       {
         segment: "Livestream",
         title: "Live Stream",
-        icon: <SchoolIcon />, 
       },
-      
     ],
   },
+
   {
     segment: "",
     title: "Logout",
-    icon: <LogoutIcon />
-  }
+    icon: <LogoutIcon className="side-icon" />,
+  },
 ];
 const Icons = [
-  { icon: <DashboardIcon />, title: "Dashboard", segment: "dashboard" },
-  { icon: <AccountCircle />, title: "Profile", segment: "profile" },
-  { icon: <LogoutIcon />, title: "Logout", segment: "" },
+
+  { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
+  {
+    icon: <img src={usericon} className="side-icon" />,
+    title: "Profile",
+    segment: "profile",
+  },
+  {
+    icon: <LogoutIcon className="side-icon" />,
+    title: "Logout",
+    segment: "logout",
+  },
 ];
 
 function Search({ onNavigate }) {
@@ -76,8 +84,8 @@ function Search({ onNavigate }) {
     <React.Fragment>
       <Box className="ParentSideBarNav">
         <Box className="SideBarNavLogoandName">
-        <img src={LogoMadaris}/>
-        <h2>Mudaris Academy</h2>
+          <img src={LogoMadaris} />
+          <h2>Mudaris Academy</h2>
         </Box>
         <TextField
           variant="outlined"
@@ -119,7 +127,6 @@ Search.propTypes = {
 };
 
 function DashboardLayoutSlots(props) {
-  const { window } = props;
   const navigate = useNavigate(); // Use useNavigate to handle routing
 
   const handleNavigate = (segment) => {
