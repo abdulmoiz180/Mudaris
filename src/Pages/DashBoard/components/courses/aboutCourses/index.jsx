@@ -41,37 +41,58 @@ const AboutCourses = () => {
     return <div>Course not found!</div>; // If no course is found
   }
 
+  const getFirst12Words = (text) => {
+    return text.split(' ').slice(0, 12).join(' ') + (text.split(' ').length > 12 ? '...' : '');
+  };
+
   return (
     <div className="dc-about-container">
       <div className="dc-about-body">
         <div className="dc-about-cards">
           <div className="dc-about-img-card">
-            <img src={course.courseImage || "default-image-path"} alt="img" />{" "}
+            <img src={course.courseImage} alt="img" />
             <span className="img-card-text">
-              <h3>{course.earlyEducation && course.earlyEducation[0]}</h3>
+              <h3 className=" inter" >{course.courseName
+              }</h3>
             </span>
           </div>
           <div className="dc-about-course-card">
             <div className="ac-card-head">
-              {/* <h3>{course.aboutCoursetext && course.aboutCoursetext[0]}</h3> */}
-              <p>{course.details}</p>
+            <h2 className=" inter" >About Course</h2>
+            <p className=" inter dark-gray" >{getFirst12Words(course.courseDetails)}</p>
             </div>
             <div className="ac-card-list">
-              {course.detailblog &&
-                course.detailblog.map((item, index) => (
-                  <div className="ac-card-listitem" key={index}>
-                    <h4>{item.title}</h4>
-                    <p>{item.subtitle}</p>
-                  </div>
-                ))}
-              <div className="ac-card-foot">
-                {course.moreDetails &&
-                  course.moreDetails.map((item, index) => (
-                    <div className="ac-card-foot-item" key={index}>
-                      <h4>{item.title}</h4>
-                      <p>{item.desc}</p>
+                    <div className="ac-card-listitem">
+                    <h4 className=" inter" >Duration</h4>
+                    <p className=" inter dark-gray">{course.courseDuration}</p>
                     </div>
-                  ))}
+                    <div className="ac-card-listitem"> 
+                    <h4 className=" inter" >Professor</h4>  
+                    <p className=" inter dark-gray">{course.professorName}</p>
+                    </div>
+                 
+                  
+                  <div className="ac-card-listitem"> 
+                  <h4 className=" inter" >Price</h4>
+                  <p className=" inter dark-gray" >{course.courseFee}</p>
+                  </div>
+                  <div className="ac-card-listitem">
+                  <h4 className=" inter" >Date</h4> 
+                  <p className=" inter dark-gray">{course.startDate}</p>
+                  </div>
+                 
+                   
+                  
+             
+              <div className="ac-card-foot">
+               
+                    <div className="ac-card-foot-item">
+                      <p className=" inter" >{course.courseDuration}</p>
+                      </div>
+                      <div className="ac-card-foot-item">
+                      <p className=" inter" >{course.maximumStudents}</p>
+                    </div>
+                 
               </div>
             </div>
           </div>
@@ -79,15 +100,12 @@ const AboutCourses = () => {
 
         <div className="dc-about-courses-section">
           <div className="cs-text">
-            {course.coursesText &&
-              course.coursesText.map((text, index) => (
-                <div className="cs-paragraphs" key={index}>
-                  <p>{text}</p>
-                </div>
-              ))}
+            <p className=" inter dark-gray" >{course.courseDetails
+            }</p>
+             
           </div>
 
-          <div className="cs-our-courses">
+          {/* <div className="cs-our-courses">
             <h3>{course.courses && course.courses[0]}</h3>
             <div className="course-buttons">
               {course.courses &&
@@ -101,9 +119,9 @@ const AboutCourses = () => {
                   </Chip>
                 ))}
             </div>
-          </div>
+          </div> */}
 
-          <div className="cs-language">
+          {/* <div className="cs-language">
             <h3>{course.languages && course.languages[0]}</h3>
             <div className="language-buttons">
               {course.languages &&
@@ -131,7 +149,7 @@ const AboutCourses = () => {
                   </p>
                 ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
