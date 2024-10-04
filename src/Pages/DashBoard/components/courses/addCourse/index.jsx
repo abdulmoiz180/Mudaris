@@ -2,8 +2,10 @@ import React, { useState, useRef } from "react";
 import { Box, Button, Typography, Snackbar, Alert } from "@mui/material";
 import "./addcourse.css";
 import CustomField from "../../TextFieldComponent/index";
-import { db } from "@utils/firebase";
+import { db, storage } from "@utils/firebase";
 import { collection, addDoc } from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+
 export const AddCourse = () => {
   const [formData, setFormData] = useState(initialData);
   const [errors, setErrors] = useState({});
@@ -32,53 +34,73 @@ export const AddCourse = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submit button clicked...");
-
     const validationErrors = validateForm();
+
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
-    } else {
-      setErrors({});
-      setOpenSnackbar(true);
-      setSnackbarMessage("Processing...");
+      return;
+    }
 
-      try {
-        // Create a copy of formData, excluding courseImage and courseVideo
-        const { courseImage, courseVideo, ...dataToStore } = formData;
+    setErrors({});
+    setOpenSnackbar(true);
+    setSnackbarMessage("Uploading course...");
 
-        // Log the data to see what is being sent to Firestore
-        console.log("Data to store:", dataToStore);
+    try {
+      // Upload image and video to Firebase Storage
+      const courseImageFile = formData.courseImage;
+      const courseVideoFile = formData.courseVideo;
 
-        // Store the data in Firestore
-        await addDoc(collection(db, "courses"), dataToStore);
-        console.log("Data successfully added to Firestore");
+      let courseImageUrl = "";
+      let courseVideoUrl = "";
 
-        // Update the success message
-        setSnackbarMessage("Course added successfully to Firestore!");
-
-        // Reset form data after successful submission
-        setFormData(initialData);
-      } catch (error) {
-        console.error("Error adding course to Firestore:", error);
-        setSnackbarMessage(
-          "Error adding course to Firestore! Please try again."
+      // Upload Course Image
+      if (courseImageFile) {
+        const imageStorageRef = ref(
+          storage,
+          `courseImages/${courseImageFile.name}`
         );
+        const imageSnapshot = await uploadBytes(
+          imageStorageRef,
+          courseImageFile
+        );
+        courseImageUrl = await getDownloadURL(imageSnapshot.ref); // Get the image download URL
       }
+
+      // Upload Course Video
+      if (courseVideoFile) {
+        const videoStorageRef = ref(
+          storage,
+          `courseVideos/${courseVideoFile.name}`
+        );
+        const videoSnapshot = await uploadBytes(
+          videoStorageRef,
+          courseVideoFile
+        );
+        courseVideoUrl = await getDownloadURL(videoSnapshot.ref); // Get the video download URL
+      }
+
+      // Now store the form data along with the image and video URLs in Firestore
+      const courseDataToStore = {
+        ...formData,
+        courseImage: courseImageUrl, // Store the image URL
+        courseVideo: courseVideoUrl, // Store the video URL
+      };
+
+      await addDoc(collection(db, "courses"), courseDataToStore);
+
+      // Show success message
+      setSnackbarMessage("Course added to Firestore successfully!");
+      setFormData(initialData); // Reset form data
+    } catch (error) {
+      console.error("Error adding course -> ", error);
+      setSnackbarMessage("Error adding course!");
     }
   };
 
   const handleCancel = () => {
-    // Reset form data
     setFormData(initialData);
-
-    // Clear file inputs
-    if (imageInputRef.current) {
-      imageInputRef.current.value = ""; // Clear image input
-    }
-    if (videoInputRef.current) {
-      videoInputRef.current.value = ""; // Clear video input
-    }
-
+    if (imageInputRef.current) imageInputRef.current.value = ""; // Clear image input
+    if (videoInputRef.current) videoInputRef.current.value = ""; // Clear video input
     setErrors({});
   };
 
@@ -93,13 +115,9 @@ export const AddCourse = () => {
           Add New Course
         </Typography>
         <Box className="AddCoursePageFieldContainer">
+          {/* Render input fields */}
           {fields.map((field) => (
-            <Box
-              className="AddCoursePageFieldIndividual"
-              key={field.name}
-              component="div"
-              sx={{ mb: 2 }}
-            >
+            <Box key={field.name} component="div" sx={{ mb: 2 }}>
               <CustomField
                 fullWidth
                 id={field.name}
@@ -123,23 +141,21 @@ export const AddCourse = () => {
             <Typography variant="body1">Upload Course Image:</Typography>
             <input
               type="file"
-              className="addCourseaddButton"
-              name="courseImage"
               accept="image/*"
-              ref={imageInputRef} // Use ref for the image input
+              ref={imageInputRef}
               onChange={(e) =>
                 setFormData({ ...formData, courseImage: e.target.files[0] })
               }
             />
           </Box>
 
+          {/* Video Upload Input */}
           <Box sx={{ mb: 2 }}>
             <Typography variant="body1">Upload Course Video:</Typography>
             <input
               type="file"
-              name="courseVideo"
-              className="addCourseaddButton"
-              ref={videoInputRef} // Use ref for the video input
+              accept="video/*"
+              ref={videoInputRef}
               onChange={(e) =>
                 setFormData({ ...formData, courseVideo: e.target.files[0] })
               }
@@ -154,15 +170,10 @@ export const AddCourse = () => {
               color="primary"
               type="submit"
               sx={{ mr: 2 }}
-              className="DashBoardAddCourseSubmitButton"
             >
               Submit
             </Button>
-            <Button
-              variant="outlined"
-              className="DashBoardAddCourseCancelButton"
-              onClick={handleCancel}
-            >
+            <Button variant="outlined" onClick={handleCancel}>
               Cancel
             </Button>
           </Box>
@@ -210,10 +221,10 @@ const initialData = {
   courseCode: "",
   courseDetails: "",
   startDate: "",
-  courseFee: "",
+  courseFee: 0,
   courseDuration: "",
   professorName: "",
-  maximumStudents: "",
+  maximumStudents: 0,
   contactNumber: "",
   courseImage: null,
   courseVideo: null,
