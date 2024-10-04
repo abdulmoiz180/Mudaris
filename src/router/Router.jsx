@@ -9,10 +9,12 @@ import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
 import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
+// import {CourseContent} from
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; // Keep only one import
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
 import ProtectedRoutes from "./ProtectedRoutes";
+import { CourseContent } from "../Pages/DashBoard/components/courses/courseContent";
 
 const Router = () => {
   return (
@@ -31,9 +33,9 @@ const Router = () => {
         <Route
           path="/dashboard/*"
           element={
-            <ProtectedRoutes>
+            // <ProtectedRoutes>
               <DashboardWithLayout />
-            </ProtectedRoutes>
+            // </ProtectedRoutes>
           }
         />
       </Routes> {/* Added closing tag here */}
@@ -71,6 +73,7 @@ const DashboardWithLayout = () => {
           />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
           <Route path="Courses/Livestream" element={<Livestream />} />
+          <Route path="Courses/courseContent/:courseId" element={<CourseContent/>} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </div>

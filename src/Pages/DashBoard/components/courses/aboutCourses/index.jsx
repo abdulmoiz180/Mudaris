@@ -1,7 +1,8 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { Chip } from "@mui/material";
 import "./AboutCourses.css";
+import { useNavigate } from "react-router-dom";
 
 const coursesData = [
   {
@@ -195,16 +196,17 @@ const coursesData = [
     ],
   },
 ];
-
 const AboutCourses = () => {
-  console.log("hello");
   const { courseId } = useParams(); // Get the courseId from the URL params
+  const navigate = useNavigate();
   const course = coursesData.find((c) => c.courseId === parseInt(courseId));
   console.log(course);
   if (!course) {
     return <div>Course not found!</div>;
-    console.log("ye mil kr ham ko pagal bna rhy hain");
   }
+  const handleVideocome = (segment, id) => {
+    navigate(`/${segment}/${id}`);
+  };
   return (
     <div className="dc-about-container">
       <div className="dc-about-body">
@@ -290,6 +292,13 @@ const AboutCourses = () => {
           </div>
         </div>
       </div>
+      <button
+        onClick={() =>
+          handleVideocome("dashboard/Courses/courseContent", course.courseId)
+        }
+      >
+        courseContent
+      </button>
     </div>
   );
 };
