@@ -7,7 +7,7 @@ import Meeting from "../../../../assets/Images/meeting.png";
 import Podcast from "../../../../assets/Images/podcast.png";
 import Meet from "../../../../assets/Images/meet.png";
 import Play from "../../../../assets/Icons/play.svg";
-import Conversation from "../../../../assets/Images/Conversation.png";
+import Conversation from "../../../../assets/Images/conversation.png";
 const Community = () => {
   return (
     <section className="community-section">
