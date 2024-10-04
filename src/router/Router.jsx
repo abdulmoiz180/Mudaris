@@ -9,11 +9,10 @@ import { Dashboard } from "../Pages/DashBoard";
 import { useLocation } from "react-router-dom";
 import { AddCourse } from "../Pages/DashBoard/components/courses/addCourse/index";
 import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
-// import {CourseContent} from
-import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; // Keep only one import
+import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index"; 
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
-import ProtectedRoutes from "./ProtectedRoutes";
+// import ProtectedRoutes from "./ProtectedRoutes";
 import { CourseContent } from "../Pages/DashBoard/components/courses/courseContent";
 
 const Router = () => {
@@ -25,9 +24,9 @@ const Router = () => {
         <Route
           path="/profile"
           element={
-            <ProtectedRoutes>
+            // <ProtectedRoutes>
               <Profile />
-            </ProtectedRoutes>
+            // </ProtectedRoutes>
           }
         />
         <Route
@@ -38,7 +37,7 @@ const Router = () => {
             // </ProtectedRoutes>
           }
         />
-      </Routes> {/* Added closing tag here */}
+      </Routes> {/* Closing tag fixed */}
     </BrowserRouter>
   );
 };
@@ -67,13 +66,10 @@ const DashboardWithLayout = () => {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="Courses/AddCourse" element={<AddCourse />} />
-          <Route
-            path="Courses/AboutCourse/:courseId"
-            element={<AboutCourses />} // Fixed duplicate import issue
-          />
+          <Route path="Courses/AboutCourse/:courseId" element={<AboutCourses />} />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
           <Route path="Courses/Livestream" element={<Livestream />} />
-          <Route path="Courses/courseContent/:courseId" element={<CourseContent/>} />
+          <Route path="Courses/courseContent/:courseId" element={<CourseContent />} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </div>

@@ -12,7 +12,6 @@ export const CourseContent = () => {
   const [firstVideo, setFirstVideo] = useState("");
   const [mainvideoTitle, setMainVideoTitle] = useState("");
 
-  // Fetch course data from the API or server
   useEffect(() => {
     const fetchCourseData = async () => {
       try {

@@ -52,7 +52,7 @@ const NAVIGATION = [
     ],
   },
   {
-    segment: "logout",
+    segment: "",
     title: "Logout",
     icon: <LogoutIcon />
   }
@@ -60,7 +60,7 @@ const NAVIGATION = [
 const Icons = [
   { icon: <DashboardIcon />, title: "Dashboard", segment: "dashboard" },
   { icon: <AccountCircle />, title: "Profile", segment: "profile" },
-  { icon: <LogoutIcon />, title: "Logout", segment: "logout" },
+  { icon: <LogoutIcon />, title: "Logout", segment: "" },
 ];
 
 function Search({ onNavigate }) {
