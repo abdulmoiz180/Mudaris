@@ -11,25 +11,25 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import Twitter from "../../assets/icons/Twitter.svg";
 
 const Footer = () => {
-  const { toggleLanguage, data } = useLanguage();
-if(!data)return <h2>data is loading....</h2>
+  const { data } = useLanguage();
+  if (!data) return <h2>data is loading....</h2>;
   return (
     <footer className="footer-bg align-center">
       <div className="footer-section row">
         <Box component="div" className="footer-left-section column">
           <Box component="div" className="footer-content-wrapper">
             <Typography variant="h6" className="clr-white footer-h2 monts">
-              {data.footerContent[0].title} {/* Assuming this is the title for the left section */}
+              {data.footerContent[0].title}{" "}
+              {/* Assuming this is the title for the left section */}
             </Typography>
-            <Typography variant="p" className="secondary-font-clr footer-p dm-sans">
+            <Typography
+              variant="p"
+              className="secondary-font-clr footer-p dm-sans"
+            >
               {data.footerDescription}
             </Typography>
           </Box>
-          <Button
-            variant="outlined"
-            onClick={toggleLanguage}
-            className="footer-btn clr-white inter"
-          >
+          <Button variant="outlined" className="footer-btn clr-white inter">
             <span>
               <LanguageIcon />
             </span>

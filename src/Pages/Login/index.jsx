@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useFormik } from "formik";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -22,7 +22,7 @@ import { SigninSchema } from "../../Schema/signUpSchema";
 import { useDispatch } from "react-redux";
 import { signInUser } from "../../features/auth/authThunk";
 
-const Signin = ({ open, handleClose }) => {
+const Signin = ({ open, handleClose, toggle }) => {
   const dispatch = useDispatch(); //
   const navigate = useNavigate();
   const formik = useFormik({
@@ -173,9 +173,9 @@ const Signin = ({ open, handleClose }) => {
 
           <p className="clr-white dm-sans center">
             Don't have any account?{" "}
-            <Link className="purple link" to={"/"}>
+            <Button className="link-btn" onClick={toggle}>
               Sign up now
-            </Link>
+            </Button>
           </p>
         </DialogContent>
       </form>
@@ -209,13 +209,3 @@ const fields = [
     icon: <LockOutlinedIcon />,
   },
 ];
-
-// email
-// :
-// "moiza8684@gmail.com"
-// password
-// :
-// "feed234,"
-// username
-// :
-// "moiza8684@gmail.com"

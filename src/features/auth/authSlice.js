@@ -13,6 +13,7 @@ const authSlice = createSlice({
     setTokenFromStorage: (state, action) => {
       state.token = action.payload.token;
       state.userId = action.payload.userId;
+      console.log("Redux Token Updated:", state.token); // Verify token is updated in Redux
     },
     logout: (state) => {
       state.token = null;

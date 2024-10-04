@@ -1,15 +1,42 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { Navigate, Outlet } from "react-router-dom";
+import { checkAutoLogin } from "@features/auth/authThunk";
 
-const ProtectedRoutes = ({ children }) => {
+const ProtectedRoutes = () => {
   const { token } = useSelector((state) => state.auth);
-  console.log("Token:", token); // Check if token is being retrieved
-  if (!token || token === "") {
+  const dispatch = useDispatch();
+
+  const [isCheckingAuth, setIsCheckingAuth] = useState(true);
+
+  useEffect(() => {
+    const checkToken = async () => {
+      try {
+        await dispatch(checkAutoLogin()); // Await the dispatch if it's asynchronous
+      } catch (error) {
+        console.error("Error checking token:", error);
+      } finally {
+        setIsCheckingAuth(false); // Mark auth check as complete
+      }
+    };
+
+    checkToken(); // Run the async function
+  }, [dispatch]);
+
+  console.log("Token in ProtectedRoute:", token);
+
+  // While auth check is happening, render a loader or nothing
+  if (isCheckingAuth) {
+    return <div>Loading...</div>; // or any loading indicator
+  }
+
+  // If token is not found, redirect to the home page
+  if (!token) {
     return <Navigate to="/" replace />;
   }
 
-  return children;
+  // If token exists, render the protected child routes
+  return <Outlet />;
 };
 
 export default ProtectedRoutes;

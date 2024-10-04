@@ -94,3 +94,10 @@
 .form .g-20 {
   gap: 20px;
 }
+.css-rsks93-MuiPaper-root-MuiDialog-paper {
+  max-height: 100% !important;
+}
+.link-btn {
+  text-transform: inherit !important;
+  color: var(--purple) !important;
+}

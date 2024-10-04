@@ -11,14 +11,14 @@ import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
 import LogoutIcon from "@mui/icons-material/Logout";
 import "./sidebar.css";
-import LogoMadaris from '../assets/images/LogoAcademy.jfif'
+import LogoMadaris from "../assets/images/LogoAcademy.jfif";
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import { useDispatch } from "react-redux";
 import { logoutUser } from "@features/auth/authThunk";
-import courseicon from "../assets/icons/courseicon.png"
-import dashboardicon from "../assets/icons/dashboardicon.png"
-import usericon from "../assets/icons/usericon.png"
+import courseicon from "../assets/icons/courseicon.png";
+import dashboardicon from "../assets/icons/dashboardicon.png";
+import usericon from "../assets/icons/usericon.png";
 const NAVIGATION = [
   {
     kind: "header",
@@ -33,7 +33,7 @@ const NAVIGATION = [
   {
     segment: "dashboard/Courses",
     title: "Courses",
-    icon: <img className="side-icon"  src={courseicon} alt="Courses"/>, // Custom image icon
+    icon: <img className="side-icon" src={courseicon} alt="Courses" />, // Custom image icon
     children: [
       {
         segment: "AddCourse",
@@ -42,55 +42,32 @@ const NAVIGATION = [
       {
         segment: "AllCourses",
         title: "All Courses",
-       
       },
       {
         segment: "Livestream",
         title: "Live Stream",
-       
       },
     ],
   },
 
-  // {
-  //   segment: "dashboard",
-  //   title: "Dashboard",
-  //   icon: <DashboardIcon />,
-  // },
-  // {
-  //   segment: "dashboard/Courses",
-  //   title: "Courses",
-  //   icon: <SchoolIcon />,
-  //   children: [
-  //     {
-  //       segment: "AddCourse",
-  //       title: "Add Course",
-  //       icon: <SchoolIcon />,
-  //     },
-  //     {
-  //       segment: "AllCourses",
-  //       title: "All Courses",
-  //       icon: <SchoolIcon />,
-  //     },
-
-  //     {
-  //       segment: "Livestream",
-  //       title: "Live Stream",
-  //       icon: <SchoolIcon />, 
-  //     },
-      
-  //   ],
-  // },
   {
     segment: "logout",
     title: "Logout",
-    icon: <LogoutIcon className="side-icon"/>
-  }
+    icon: <LogoutIcon className="side-icon" />,
+  },
 ];
 const Icons = [
-  {icon: <img className="side-icon" src={dashboardicon} alt="Dashboard"/>,},
-  { icon: <img src={usericon} className="side-icon"/>, title: "Profile", segment: "profile" },
-  { icon: <LogoutIcon className="side-icon"/>, title: "Logout", segment: "logout" },
+  { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
+  {
+    icon: <img src={usericon} className="side-icon" />,
+    title: "Profile",
+    segment: "profile",
+  },
+  {
+    icon: <LogoutIcon className="side-icon" />,
+    title: "Logout",
+    segment: "logout",
+  },
 ];
 
 function Search({ onNavigate }) {
@@ -106,8 +83,8 @@ function Search({ onNavigate }) {
     <React.Fragment>
       <Box className="ParentSideBarNav">
         <Box className="SideBarNavLogoandName">
-        <img src={LogoMadaris}/>
-        <h2>Mudaris Academy</h2>
+          <img src={LogoMadaris} />
+          <h2>Mudaris Academy</h2>
         </Box>
         <TextField
           variant="outlined"
@@ -149,7 +126,6 @@ Search.propTypes = {
 };
 
 function DashboardLayoutSlots(props) {
-  const { window } = props;
   const navigate = useNavigate(); // Use useNavigate to handle routing
 
   const handleNavigate = (segment) => {
