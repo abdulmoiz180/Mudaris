@@ -24,11 +24,43 @@ export const AddCourse = () => {
 
   const validateForm = () => {
     let formErrors = {};
-    Object.keys(formData).forEach((field) => {
-      if (!formData[field]) {
-        formErrors[field] = `${field} is required`;
-      }
-    });
+    const {
+      courseName,
+      courseCode,
+      courseDetails,
+      startDate,
+      courseFee,
+      courseDuration,
+      professorName,
+      contactNumber,
+      courseImage,
+      courseVideo,
+    } = formData;
+
+    // Required fields validation
+    if (!courseName) formErrors.courseName = "Course name is required.";
+    if (!courseCode) formErrors.courseCode = "Course code is required.";
+    if (!courseDetails || courseDetails.length < 150) {
+      formErrors.courseDetails = "Course details must be at least 150 characters.";
+    }
+    if (!startDate || isNaN(new Date(startDate).getTime())) {
+      formErrors.startDate = "Valid start date is required.";
+    }
+    if (!courseFee || isNaN(courseFee) || courseFee <= 0) {
+      formErrors.courseFee = "Course fee must be a positive number.";
+    }
+    if (!courseDuration || isNaN(courseDuration) || courseDuration <= 0) {
+      formErrors.courseDuration = "Course duration must be a positive number.";
+    }
+    if (!professorName) formErrors.professorName = "Professor name is required.";
+    if (!contactNumber || !/^\d{10,12}$/.test(contactNumber)) {
+      formErrors.contactNumber = "Contact number must be a valid number with 10-12 digits.";
+    }
+
+    // Image and video upload validation
+    if (!courseImage) formErrors.courseImage = "Course image is required.";
+    if (!courseVideo) formErrors.courseVideo = "Course video is required.";
+
     return formErrors;
   };
 
@@ -122,7 +154,7 @@ export const AddCourse = () => {
                 fullWidth
                 id={field.name}
                 label={field.label}
-                placeholder={field.label}
+                placeholder={field.placeholder || field.label}
                 name={field.name}
                 value={formData[field.name] || ""}
                 onChange={handleInputChange}
@@ -147,6 +179,11 @@ export const AddCourse = () => {
                 setFormData({ ...formData, courseImage: e.target.files[0] })
               }
             />
+            {errors.courseImage && (
+              <Typography variant="body2" color="error">
+                {errors.courseImage}
+              </Typography>
+            )}
           </Box>
 
           {/* Video Upload Input */}
@@ -160,6 +197,11 @@ export const AddCourse = () => {
                 setFormData({ ...formData, courseVideo: e.target.files[0] })
               }
             />
+            {errors.courseVideo && (
+              <Typography variant="body2" color="error">
+                {errors.courseVideo}
+              </Typography>
+            )}
           </Box>
         </Box>
 
@@ -199,6 +241,7 @@ const fields = [
   {
     name: "courseDetails",
     label: "Course Details",
+    placeholder: "Enter 150-200 words",
     required: true,
     multiline: true,
     rows: 4,
@@ -212,7 +255,7 @@ const fields = [
     name: "contactNumber",
     label: "Contact Number",
     required: true,
-    type: "tel",
+    placeholder: "Enter 10-12 digit number",
   },
 ];
 
@@ -221,11 +264,11 @@ const initialData = {
   courseCode: "",
   courseDetails: "",
   startDate: "",
-  courseFee: 0,
   courseDuration: "",
+  courseFee: "",
   professorName: "",
-  maximumStudents: 0,
+  maximumStudents: "",
   contactNumber: "",
-  courseImage: null,
-  courseVideo: null,
+  courseImage: "",
+  courseVideo: "",
 };

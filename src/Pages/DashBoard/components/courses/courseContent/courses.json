@@ -1,0 +1,282 @@
+[
+    {
+      "courseId": 1,
+      "courseName": "React Basics",
+      "videos": [
+        {
+          "id": 1,
+          "title": "Introduction to React",
+          "src": "https://www.youtube.com/embed/dGcsHMXbSOA"
+        },
+        {
+          "id": 2,
+          "title": "React Components",
+          "src": "https://www.youtube.com/embed/fYq5PXgSsbE"
+        },
+        {
+          "id": 3,
+          "title": "JSX in React",
+          "src": "https://www.youtube.com/embed/zJYcqR13Ono"
+        },
+        {
+          "id": 4,
+          "title": "React Props",
+          "src": "https://www.youtube.com/embed/XMxkcaDWnNA"
+        },
+        {
+          "id": 5,
+          "title": "State in React",
+          "src": "https://www.youtube.com/embed/N3AkSS5hXMA"
+        },
+        {
+          "id": 6,
+          "title": "Handling Events in React",
+          "src": "https://www.youtube.com/embed/Ke90Tje7VS0"
+        },
+        {
+          "id": 7,
+          "title": "React Lifecycle Methods",
+          "src": "https://www.youtube.com/embed/DPnqb74Smug"
+        },
+        {
+          "id": 8,
+          "title": "React Hooks Overview",
+          "src": "https://www.youtube.com/embed/-MlNBTSg_Ww"
+        },
+        {
+          "id": 9,
+          "title": "React Context API",
+          "src": "https://www.youtube.com/embed/35lXWvCuM8o"
+        },
+        {
+          "id": 10,
+          "title": "React Router",
+          "src": "https://www.youtube.com/embed/Law7wfdg_ls"
+        }
+      ]
+    },
+    {
+      "courseId": 2,
+      "courseName": "Advanced JavaScript",
+      "videos": [
+        {
+          "id": 11,
+          "title": "JavaScript Basics",
+          "src": "https://www.youtube.com/embed/W6NZfCO5SIk"
+        },
+        {
+          "id": 12,
+          "title": "JavaScript Closures",
+          "src": "https://www.youtube.com/embed/1JsJx1x35c0"
+        },
+        {
+          "id": 13,
+          "title": "Asynchronous JavaScript",
+          "src": "https://www.youtube.com/embed/Ptbk2af68e8"
+        },
+        {
+          "id": 14,
+          "title": "JavaScript Promises",
+          "src": "https://www.youtube.com/embed/DHvZLI7Db8E"
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Async/Await",
+          "src": "https://www.youtube.com/embed/V_Kr9OSfDeU"
+        },
+        {
+          "id": 16,
+          "title": "Event Loop in JavaScript",
+          "src": "https://www.youtube.com/embed/8aGhZQkoFbQ"
+        },
+        {
+          "id": 17,
+          "title": "JavaScript Hoisting",
+          "src": "https://www.youtube.com/embed/Fnlnw8uY6jo"
+        },
+        {
+          "id": 18,
+          "title": "JavaScript Scope",
+          "src": "https://www.youtube.com/embed/iJKCj8uAHz8"
+        },
+        {
+          "id": 19,
+          "title": "JavaScript Prototypes",
+          "src": "https://www.youtube.com/embed/s6SH72uAn3k"
+        },
+        {
+          "id": 20,
+          "title": "JavaScript Event Delegation",
+          "src": "https://www.youtube.com/embed/YmGWGG-ys_8"
+        }
+      ]
+    },
+    {
+      "courseId": 3,
+      "courseName": "CSS for Beginners",
+      "videos": [
+        {
+          "id": 21,
+          "title": "Introduction to CSS",
+          "src": "https://www.youtube.com/embed/yfoY53QXEnI"
+        },
+        {
+          "id": 22,
+          "title": "CSS Selectors",
+          "src": "https://www.youtube.com/embed/l1mER1bV0N0"
+        },
+        {
+          "id": 23,
+          "title": "CSS Box Model",
+          "src": "https://www.youtube.com/embed/rIO5326FgPE"
+        },
+        {
+          "id": 24,
+          "title": "CSS Flexbox",
+          "src": "https://www.youtube.com/embed/JJSoEo8JSnc"
+        },
+        {
+          "id": 25,
+          "title": "CSS Grid",
+          "src": "https://www.youtube.com/embed/EFafSYg-PkI"
+        },
+        {
+          "id": 26,
+          "title": "CSS Variables",
+          "src": "https://www.youtube.com/embed/sQUB038p2Do"
+        },
+        {
+          "id": 27,
+          "title": "CSS Animations",
+          "src": "https://www.youtube.com/embed/zHUpx90NerM"
+        },
+        {
+          "id": 28,
+          "title": "CSS Positioning",
+          "src": "https://www.youtube.com/embed/zHUpx90NerM"
+        },
+        {
+          "id": 29,
+          "title": "Responsive Web Design",
+          "src": "https://www.youtube.com/embed/srvUrASNj0s"
+        },
+        {
+          "id": 30,
+          "title": "CSS Media Queries",
+          "src": "https://www.youtube.com/embed/NurFGCxoFPY"
+        }
+      ]
+    },
+    {
+      "courseId": 4,
+      "courseName": "Python Programming",
+      "videos": [
+        {
+          "id": 31,
+          "title": "Python Basics",
+          "src": "https://www.youtube.com/embed/rfscVS0vtbw"
+        },
+        {
+          "id": 32,
+          "title": "Python Functions",
+          "src": "https://www.youtube.com/embed/9Os0o3wzS_I"
+        },
+        {
+          "id": 33,
+          "title": "Python Lists",
+          "src": "https://www.youtube.com/embed/ohCDWZgNIU0"
+        },
+        {
+          "id": 34,
+          "title": "Python Dictionaries",
+          "src": "https://www.youtube.com/embed/daefaLgNkw0"
+        },
+        {
+          "id": 35,
+          "title": "Python Tuples",
+          "src": "https://www.youtube.com/embed/lbXsrHGhBAU"
+        },
+        {
+          "id": 36,
+          "title": "Python Loops",
+          "src": "https://www.youtube.com/embed/6iF8Xb7Z3wQ"
+        },
+        {
+          "id": 37,
+          "title": "Python Classes and Objects",
+          "src": "https://www.youtube.com/embed/apACNr7DC_s"
+        },
+        {
+          "id": 38,
+          "title": "Python Lambda Functions",
+          "src": "https://www.youtube.com/embed/hYzwvx9ekC8"
+        },
+        {
+          "id": 39,
+          "title": "Python File Handling",
+          "src": "https://www.youtube.com/embed/Uh2ebFW8OYM"
+        },
+        {
+          "id": 40,
+          "title": "Python Modules",
+          "src": "https://www.youtube.com/embed/Ue2kqnkEXqw"
+        }
+      ]
+    },
+    {
+      "courseId": 5,
+      "courseName": "Web Development",
+      "videos": [
+        {
+          "id": 41,
+          "title": "Introduction to HTML",
+          "src": "https://www.youtube.com/embed/pQN-pnXPaVg"
+        },
+        {
+          "id": 42,
+          "title": "HTML Forms",
+          "src": "https://www.youtube.com/embed/8t1tc0ThPCU"
+        },
+        {
+          "id": 43,
+          "title": "HTML Semantic Elements",
+          "src": "https://www.youtube.com/embed/6ophW7Ask_0"
+        },
+        {
+          "id": 44,
+          "title": "CSS Basics",
+          "src": "https://www.youtube.com/embed/qKoajPPWpmo"
+        },
+        {
+          "id": 45,
+          "title": "JavaScript Introduction",
+          "src": "https://www.youtube.com/embed/PkZNo7MFNFg"
+        },
+        {
+          "id": 46,
+          "title": "JavaScript DOM Manipulation",
+          "src": "https://www.youtube.com/embed/0ik6X4DJKCc"
+        },
+        {
+          "id": 47,
+          "title": "Responsive Web Design",
+          "src": "https://www.youtube.com/embed/srvUrASNj0s"
+        },
+        {
+          "id": 48,
+          "title": "Bootstrap Basics",
+          "src": "https://www.youtube.com/embed/5GcQtLDGXy8"
+        },
+        {
+          "id": 49,
+          "title": "Frontend Frameworks Introduction",
+          "src": "https://www.youtube.com/embed/Law7wfdg_ls"
+        },
+        {
+          "id": 50,
+          "title": "Web Hosting",
+          "src": "https://www.youtube.com/embed/q9n9y49gUOs"
+        }
+      ]
+    }
+  ]

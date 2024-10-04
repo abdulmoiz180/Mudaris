@@ -51,12 +51,13 @@ const NAVIGATION = [
   },
 
   {
-    segment: "logout",
+    segment: "",
     title: "Logout",
     icon: <LogoutIcon className="side-icon" />,
   },
 ];
 const Icons = [
+
   { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
   {
     icon: <img src={usericon} className="side-icon" />,
