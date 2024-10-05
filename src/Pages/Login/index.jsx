@@ -38,7 +38,7 @@ const Signin = ({ open, handleClose, toggle }) => {
       }
       dispatch(signInUser(values)).then((result) => {
         if (result.meta.requestStatus === "fulfilled") {
-          navigate("/dashboard"); // Redirect to dashboard after successful login
+          navigate("/Mudaris/dashboard/"); // Redirect to dashboard after successful login
         } else {
           console.log("Login failed", result.payload); // Handle login failure
         }
