@@ -1,5 +1,6 @@
 .get-start-container {
-  background: url(../../assets/Images/boxpattern.png),
+  background:
+    url(../../assets/Images/boxpattern.png),
     /* Pattern image */
       radial-gradient(
         circle farthest-corner at top center,
@@ -19,6 +20,7 @@
   gap: 25px;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   align-items: center;
+  margin-bottom: 100px;
 }
 .get-start-container h1 span {
   color: #d4a1ff !important;
