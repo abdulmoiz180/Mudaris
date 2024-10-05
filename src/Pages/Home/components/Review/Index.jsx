@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./Review.css";
-import Base from "../../../../assets/Images/Base.png";
+import Base from "@assets/Images/Base.png";
 import Brightstar from "@assets/Icons/brightstarfilled.png";
 const Review = () => {
   const [more, setMore] = useState(true);
