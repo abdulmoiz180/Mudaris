@@ -1,0 +1,827 @@
+{
+  "Introduction": {
+    "title": "ویدیوی معرفی ما را تماشا کنید",
+    "description": "کشف کنید که چگونه پلت فرم ما می تواند به شما در دستیابی به اهداف یادگیری خود کمک کند.",
+    "vidbtn": "پخش ویدیو",
+    "latest": "آخرین توصیه",
+    "tag": "جدید",
+    "pausebtn": "مکث ویدیو",
+    "playbtn": "پخش ویدیو"
+  },
+  "pagesnav": [
+    "کاوش کنید",
+    "تجزیه و تحلیل شخصی",
+    "اکنون امتحان کنید",
+    "نمونه کارها"
+  ],
+  "navRightBtns": [
+    "فارسی",
+    "../../src/assets/Icons/Heart.png",
+    "../../src/assets/Icons/Bag.png",
+    "وارد شوید",
+    "شروع کنید"
+  ],
+  "clientdata": {
+    "title": "مشتریان ما",
+    "description": "توانمندسازی شرکت ها و موسسات برتر با راه حل های یادگیری نوآورانه.",
+    "platformdescription": "این پلتفرم برنامه های آموزشی ما را متحول کرده است. نتایج برای خود صحبت می کنند!",
+    "clientname": "تالیا تیلور",
+    "clientrole": "جان دو، مدیرعامل @ Quantum",
+    "img": "../../src/assets/Images/Client.png"
+  },
+  "StudentReviews": [
+    {
+      "title": "از دانش آموزان ما بشنوید"
+    },
+    {
+      "review": "مربی باحال است، روشی که او هر مطلب را منتقل می کند نیز با جزئیات است و دسترسی به آن آسان است.",
+      "studentname": "دوون لین",
+      "coursetaken": "آموزش Figma Essentials برای طراحی UI UX (2022)",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "این دوره دارای پوشش گسترده ای از مدل های توالی به دنباله و توجه و معماری های پیشرفته یادگیری عمیق برای توالی ها و NLP است. دشوارترین مفاهیم شکسته شده و به خوبی بیان می شوند. برای هر متخصص مشتاق NLP ضروری است. من همچنین از تمرین های کدگذاری هدایت شده لذت بردم، آنها واقعا همه چیز را کنار هم قرار دادند",
+      "studentname": "دوون لین",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "منتور بسیار خوبی است، نحوه‌ی انتقال هر مطلب نیز بسیار دقیق و آسان است.",
+      "studentname": "دوون لین",
+      "coursetaken": "آموزش Figma Essentials برای طراحی UI UX (2022)",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "من این آموزش را دوست داشتم و توانستم بسیاری از عناصر پنهان را که از آنها آگاهی نداشتم پیدا کنم. از دوره رایگان سپاسگزارم.",
+      "studentname": "کاترین مورفی",
+      "coursetaken": "طراحی UI: ساخت یک وب‌سایت زیبا",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "دوره‌های بسیار خوبی در مورد برخی موضوعات ارائه شد.",
+      "studentname": "جذیب فیصل",
+      "coursetaken": "SQL: مبانی پایگاه داده",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "این دوره درک قوی از ساختارهای داده و الگوریتم‌ها به من داد. مثال‌های مدرس واضح بود و کاربردهای دنیای واقعی فهم مفاهیم سخت را آسان‌تر کرد.",
+      "studentname": "لزلی الکساندر",
+      "coursetaken": "ساختارهای داده و الگوریتم‌ها در پایتون",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "این دوره بسیار عملی و کاربردی بود که من آن را دوست داشتم. من توانستم یک برنامه کامل وب از ابتدا بسازم. راهنمایی‌های گام به گام، موضوعات پیچیده را قابل درک کردند.",
+      "studentname": "النور پنا",
+      "coursetaken": "توسعه وب Full Stack با جاوااسکریپت",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "یک دوره فوق‌العاده برای هر کسی که به یادگیری عمیق علاقه دارد! درس‌ها به قدری خوب سازماندهی شده‌اند که حتی موضوعات پیچیده نیز به راحتی قابل درک هستند. بهترین بخش پروژه‌هاست که تجربه واقعی را فراهم می‌کنند.",
+      "studentname": "کامرون ویلیامسون",
+      "coursetaken": "یادگیری عمیق A-Z: شبکه‌های عصبی مصنوعی عملی",
+      "brightstar": "../../src/assets/Icons/Star Review.png"
+    },
+    {
+      "review": "دوره‌های بسیار خوبی در مورد برخی موضوعات ارائه شد.",
+      "studentname": "نام دانشجو نامشخص"
+    }
+  ],
+  "whyElearn": [
+    {
+      "img": [
+        "../assets/Icons/Home.svg",
+        "../assets/Icons/caseStudy.svg",
+        "../assets/Icons/communication.svg",
+        "../assets/Icons/scheduel.svg",
+        "../assets/Icons/diploma.svg",
+        "../assets/Icons/upload.png"
+      ]
+    },
+    {
+      "title": "چرا آموزش الکترونیکی؟",
+      "box1": "بحث 24/7",
+      "box2": "مطالعات موردی",
+      "box3": "هر چیزی را در هر مکانی بیاموزید",
+      "box4": "آپلود نمونه کارها",
+      "box5": "گواهی",
+      "box6": "با مربی برنامه ریزی کنید"
+    }
+  ],
+  "paymentPlans": [
+    {
+      "title": "برنامه خود را انتخاب کنید",
+      "description": "قیمت ساده، انعطاف پذیر و مقرون به صرفه برای همه."
+    },
+    {
+      "plan1": "برنامه ماهانه",
+      "price": "29 دلار در ماه",
+      "perk1": "دسترسی به تمامی دوره ها",
+      "perk2": "گزارش پیشرفت ماهانه",
+      "perk3": "پشتیبانی اولیه مشتری",
+      "perk4": "دسترسی به انجمن های انجمن"
+    },
+    {
+      "plan2": "برنامه 2 ساله",
+      "price": "79 دلار در ماه",
+      "perk1": "همه چیز در برنامه سالانه",
+      "perk2": "25٪ در دسترسی به دوره صرفه جویی کنید",
+      "perk3": "مسیرهای یادگیری شخصی",
+      "perk4": "دسترسی زودهنگام به دوره های جدید",
+      "perk5": "پیشنهادات محتوا",
+      "perk6": "بهینه سازی لینک"
+    },
+    {
+      "plan3": "برنامه سال",
+      "price": "149 دلار در ماه",
+      "perk1": "همه چیز در برنامه ماهانه",
+      "perk2": "15٪ در دسترسی به دوره صرفه جویی کنید",
+      "perk3": "اولویت پشتیبانی مشتری",
+      "perk4": "وبینارها و رویدادهای اختصاصی",
+      "perk5": "همه چیز در برنامه ماهانه"
+    },
+    {
+      "subscribe": "اکنون مشترک شوید"
+    }
+  ],
+  "GetStarted": {
+    "title1": "با یک آزمایش",
+    "span": " رایگان",
+    "title2": " شروع کنید",
+    "inputfield": "ایمیل شما",
+    "buttontext": "به لیست انتظار بپیوندید",
+    "creditcard": "بدون نیاز به کارت اعتباری",
+    "freetrial": "7 روز آزمایشی رایگان"
+  },
+  "faqTitle": {
+    "title": "سوالات متداول",
+    "description": "هنوز سوالی دارید؟ با تیم ما از طریق hello@squareup.com تماس بگیرید"
+  },
+  "faqArray": [
+    {
+      "question": "آیا می توانم مطالب درسی را دانلود کنم؟",
+      "answer": "بله، مطالب قابل دانلود برای اکثر دوره ها موجود است و در داشبورد دوره قابل دسترسی است."
+    },
+    {
+      "question": "چگونه رمز عبور خود را بازنشانی کنم؟",
+      "answer": "برای بازنشانی رمز عبور، به صفحه ورود بروید و روی لینک 'فراموشی رمز عبور' کلیک کنید. دستورالعمل‌های ارسال‌شده به ایمیل خود را دنبال کنید."
+    },
+    {
+      "question": "آیا اپلیکیشن موبایلی موجود است؟",
+      "answer": "بله، ما یک برنامه موبایل برای هر دو پلتفرم Android و iOS داریم. شما می‌توانید آن را از فروشگاه‌های برنامه مربوطه دانلود کنید."
+    },
+    {
+      "question": "چگونه گواهی دوره دریافت کنم؟",
+      "answer": "برای دریافت گواهی دوره، باید تمام تکالیف مورد نیاز را تکمیل کرده و در آزمون نهایی قبول شوید. گواهی در پروفایل شما برای دانلود در دسترس خواهد بود."
+    },
+    {
+      "question": "اگر در مورد محتوای دوره به کمک نیاز داشته باشم چه می شود؟",
+      "answer": "اگر به کمک در محتوای دوره نیاز دارید، می‌توانید با تیم پشتیبانی ما تماس بگیرید یا به انجمن‌های جامعه ما بپیوندید تا از اساتید و همتایان خود کمک بگیرید."
+    },
+    {
+      "question": "آیا می توانم طرح اشتراک خود را ارتقا دهم؟",
+      "answer": "بله، شما می‌توانید هر زمان که بخواهید از تنظیمات حساب خود برنامه اشتراک خود را ارتقا دهید. برنامه جدید بلافاصله فعال خواهد شد."
+    },
+    {
+      "question": "آیا تخفیفی وجود دارد؟",
+      "answer": "ما در طول سال تخفیف‌های مختلفی ارائه می‌دهیم. برای جدیدترین تبلیغات و تخفیف‌ها، به وب‌سایت و خبرنامه‌های ما سر بزنید."
+    },
+    {
+      "question": "چگونه اشتراک خود را لغو کنم؟",
+      "answer": "برای لغو اشتراک خود، به تنظیمات حساب خود بروید و گزینه 'لغو اشتراک' را انتخاب کنید. برای تکمیل فرآیند لغو، مراحل را دنبال کنید."
+    }
+  ],
+  "footerDescription": "E-Learn یک پلت فرم یادگیری آنلاین جهانی است که به هر کسی و در هر کجا دسترسی به دوره های آنلاین را ارائه می دهد.",
+  "togglebutton":"فارسی",
+  "footerContent": [
+    {
+      "title": "آموزش الکترونیکی",
+      "links": [
+        "درباره",
+        "آموزش در E-Learn",
+        "نقشه راه",
+        "مشاغل",
+        "اخبار",
+        "تیم ما",
+        "شریک شوید"
+      ]
+    },
+    {
+      "title": "جامعه",
+      "links": [
+        "نمونه کارها",
+        "توسعه دهندگان",
+        "گواهینامه ها",
+        "وبلاگ ها",
+        "وابسته",
+        "بورسیه های ما"
+      ]
+    },
+    {
+      "title": "بیشتر",
+      "links": [
+        "سوالات متداول",
+        "مراکز راهنمایی",
+        "شرایط",
+        "حریم خصوصی",
+        "کد رفتار",
+        "تنظیم کوکی"
+      ]
+    }
+  ],
+  "copyWrite": {
+    "text": "© 2022 E-Learn, Inc. کلیه حقوق محفوظ است."
+  },
+  "tabsTitle": "دوره برتر را کشف کنید",
+  "tabs": [
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    },
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    },
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    },
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    },
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    },
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    },
+    {
+      "name": "همه دسته ها",
+      "courses": [
+        {
+          "courseTitle": "تسلط بر مهارت های ارتباط موثر",
+          "reviews": "244 بررسی ها",
+          "rating": 4.8,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp320,000",
+          "discountedPrice": "Rp150,000",
+          "videos": 24,
+          "duration": "8.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgMaster.png"
+        },
+        {
+          "courseTitle": "تبدیل شدن به یک مذاکره کننده قدرتمند: استراتژی های برد-برد",
+          "reviews": "425 بررسی ها",
+          "rating": 4.2,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarOutlined.png"
+          ],
+          "originalPrice": "Rp250,000",
+          "discountedPrice": "Rp100,000",
+          "videos": 6,
+          "duration": "4h",
+          "discount": "30%",
+          "profileImage": "../assets/Icons/imgBecoming.png"
+        },
+        {
+          "courseTitle": "تکنیک های مدیریت زمان برای حداکثر بهره وری",
+          "reviews": "227 بررسی ها",
+          "rating": 4.7,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp550,000",
+          "discountedPrice": "Rp250,000",
+          "videos": 8,
+          "duration": "1.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgTimemanagement.png"
+        },
+        {
+          "courseTitle": "تجزیه و تحلیل احساسات با یادگیری عمیق با استفاده از BERT",
+          "reviews": "25 بررسی ها",
+          "rating": 4.9,
+          "rateStar": [
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarFilled.png",
+            "../assets/Icons/dimStarHalffilled.png"
+          ],
+          "originalPrice": "Rp400,000",
+          "discountedPrice": "Rp120,000",
+          "videos": 32,
+          "duration": "12.5h",
+          "discount": "30%",
+          "tag": "../assets/Icons/bestsellerPersian.png",
+          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+        }
+      ]
+    }
+
+  ],
+  "gettoknow":{
+  
+  "headtitle": "دکتر عنایت مدرس را بیشتر بشناسید",  
+  "headdescription": "سلام من عنایت مدرس هستم - از فقر و ناداری به سومین دانشگاه جهان راه‌ یافتم، با سازمان ملل کار کردم، در بزرگترین همایش‌های جهانی دعوت شدم، زندگی هزاران فرد را متحول ساختم، ده‌ها نهاد و تجارت موفق را بنیاد گذاشتم، با بهترین رسانه‌های ملی و بین‌المللی کار کردم، طبابت و کارشناسی ارشدم را در معتبرترین دانشگاه دنیا به اتمام رساندم. فعلا هم چندین تجارت آنلاین و برنامه‌‌های بی‌نظیر دیگر را رهبری می‌کنم. حالا اینجا آمدم تا دانش، تجارب و مهارت‌هایی را که در این مسیر فرا گرفتم، صادقانه و خالصانه با شما شریک بسازم که بتواند شما را از دام فقر نجات دهد و به خواب‌هایتان برساند.",
+  "buttonlabel": "Round 5 is closed",
+  "img": "../assets/Images/Dr-img.png",
+  "transformtitle": "تا کنون زندگی هزاران انسان را متحول ساختم",
+  "transformdescription": "از فقر و ناداری تا سومین دانشگاه برتر جهان، از همکاری با سازمان ملل تا دعوت شدن در بزرگترین همایش‌های جهانی، از کار با بهترین رسانه‌‌های ملی و بین‌المللی تا رهبری چندین نهاد و تجارت موفق، از طبابت تا پایان رساندن کارشناسی ارشد، از ساختن ده‌ها تجارت آنلاین پیشتاز تا تغییر زندگی هزاران فرد در سراسر جهان. حالا هم آمدم تا شما را با آخرین دانش و مهارت‌های پولساز عصر امروز مجهز بسازم تا به خواب‌های تان برسید.",
+  "featuredline": "AS FEATURED IN - همکاران دکتر مدرس"
+  },
+  
+  "companylogos": [
+  "../assets/Images/sciencespo.png",
+  "../assets/Images/tolonews.png",
+  "../assets/Images/1tv.png",
+  "../assets/Images/mudaris.png",
+  "../assets/Images/undplogo.png",
+  "../assets/Images/onelogo.png" 
+  ],
+  
+  "getajob":{
+  "headtitle":"Get a job and side income with 31 sessions in (two months).",    
+  "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job. But where is the problem? Most people do not know where to start and how to start? At Modars Academy, we teach you these skills from (A to Z) in a practical way",
+  "descriptionpara2": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
+  "descriptionpara3": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
+  "descriptionpara4": "Know that education and learning is always a long-term and valuable investment for you Read the following carefully if you want to change your life forever",
+  "contentinfobox": "The following content will be taught all at once in these 60 days        The most complete educational package of the digital age The package that every person needs in today's era"
+  }
+  
+  }
+
