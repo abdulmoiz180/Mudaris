@@ -8,11 +8,16 @@
     "pausebtn": "Pause Video",
     "playbtn": "Play Video"
   },
-  "pagesnav": ["Explore", "Analysis Personalize", "Try Now", "Portfolio"],
+  "pagesnav": [
+    "Explore",
+    "Analysis Personalize",
+    "Try Now",
+    "Portfolio"
+  ],
   "navRightBtns": [
     "EN",
-    "../../src/assets/Icons/Heart.png",
-    "../../src/assets/Icons/Bag.png",
+    "../assets/Icons/Heart.png",
+    "/assets/Icons/Bag.png",
     "Sign In",
     "Get Started"
   ],
@@ -22,7 +27,7 @@
     "platformdescription": "This platform has revolutionized our training programs. The results speak for themselves!",
     "clientname": "Talia Taylor",
     "clientrole": "John Doe, CEO of @ Quantum",
-    "img": "../../src/assets/Images/Client.png"
+    "img": "../assets/Images/Client.png"
   },
   "StudentReviews": [
     {
@@ -32,52 +37,52 @@
       "review": "This course has extensive coverage of sequence to sequence and attention models and advanced deep learning architectures for sequences and NLP. The most difficult concepts are broken down and articulated well. Essential for every aspiring NLP expert. I also enjoyed the guided coding exercises, they really put everything together",
       "studentname": "Diamond Forest",
       "coursetaken": "NLP - Natural Language Processing w/ Python",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "Easy to understand and very straight forward",
       "studentname": "Robert Fox",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "The mentor is cool, the way he conveys each material is also detailed and easy to reach.",
       "studentname": "Devon Lane",
       "coursetaken": "Learn Figma Essentials for UI UX Design(2022)",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "I love the tutorial and was able to find many hidden elements which I was not aware of this. Thanks for the free course.",
       "studentname": "Kathryn Murphy",
       "coursetaken": "UI Design: Make a Beautiful Website",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "Very nice courses on what some covered",
       "studentname": "Jazib Faisal",
       "coursetaken": "SQL: Database Basics",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "This course gave me a strong understanding of data structures and algorithms. The instructor’s examples were clear, and the real-world applications made it easier to grasp difficult concepts.",
       "studentname": "Leslie Alexander",
       "coursetaken": "Data Structures and Algorithms in Python",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "The course was very practical and hands-on, which I loved. I was able to build a full-stack web application from scratch. The step-by-step guidance made complex topics approachable.",
       "studentname": "Eleanor Pena",
       "coursetaken": "Full Stack Web Development with JavaScript",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "A fantastic course for anyone interested in deep learning! The lessons are structured so well that even complex topics are easy to follow. The best part is the projects that provide real-world experience.",
       "studentname": "Cameron Williamson",
       "coursetaken": "Deep Learning A-Z: Hands-On Artificial Neural Networks",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     },
     {
       "review": "Very nice courses on what some covered",
-      "brightstar": "../../src/assets/Icons/Star Review.png"
+      "brightstar": "../assets/Icons/Star Review.png"
     }
   ],
   "whyElearn": [
@@ -109,17 +114,17 @@
     {
       "plan1": "Standard Payment",
       "price": "$299",
-      "para":"For $299, you’ll have complete access to all live sessions, resources, and community support. This was our original model, and it remains available for those who prefer a one-time payment."
+      "para": "For $299, you’ll have complete access to all live sessions, resources, and community support. This was our original model, and it remains available for those who prefer a one-time payment."
     },
     {
       "plan2": "Pay in 2 Installments",
       "price": "$149.50",
-     "para":"Want to split the payment? Pay in 2 installments of $149.50 to unlock the same access to live sessions and course materials. This option is perfect for those seeking financial flexibility while gaining all the advantages of our expert-led training."
+      "para": "Want to split the payment? Pay in 2 installments of $149.50 to unlock the same access to live sessions and course materials. This option is perfect for those seeking financial flexibility while gaining all the advantages of our expert-led training."
     },
     {
       "plan3": "Monthly Subscription",
       "price": "$49.99/month",
-      "para":"For a small monthly fee, access all 6 of our courses, including 10 modules each, more than 150 hours of updated lectures, and entry into our exclusive VIP community. With this plan, you’ll",
+      "para": "For a small monthly fee, access all 6 of our courses, including 10 modules each, more than 150 hours of updated lectures, and entry into our exclusive VIP community. With this plan, you’ll",
       "perk1": "24/7 access",
       "perk2": "Three live sessions",
       "perk3": "Daily VIP signals",
@@ -129,13 +134,13 @@
     {
       "plan4": "Annual Subscription",
       "price": "$999/year",
-      "para":"Commit to an entire year of unparalleled skill development and unlock massive savings. In this plan, you’ll receive",
+      "para": "Commit to an entire year of unparalleled skill development and unlock massive savings. In this plan, you’ll receive",
       "perk1": "Everything in the monthly subscription",
       "perk2": "Three live sessions",
       "perk3": "Comprehensive Skill Training",
       "perk4": "24/7 Learning",
       "perk5": "Private Network & Support",
-      "perk6":"Live Sessions"
+      "perk6": "Live Sessions"
     },
     {
       "subscribe": "Subscribe Now"
@@ -791,14 +796,12 @@
       ]
     }
   ],
-
   "whatyouget": [
     {
       "headtitle1": "HERE'S WHAT YOU GET",
       "headtitle2": "When You Join Educate Today, You Get Full & Immediate Access To",
       "headtitle3": "You Get Full & Immediate Access To"
     },
-
     {
       "role": "Agency Navigator",
       "description": "Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
@@ -824,7 +827,6 @@
       "purpleboxtext": "Social Media"
     }
   ],
-
   "gettoknow": {
     "headtitle": "Get to know Dr. Enayat Modares more",
     "headdescription": "Hello, I am Inayat Modares - I came from poverty to the third university in the world, I worked with the United Nations, I was invited to the biggest world conferences, I changed the lives of thousands of people, tens of institutions andI founded a successful business, worked with the best national and international media, completed my medicine and master's degree in the most prestigious university in the world. At the moment, there are several online businesses and unique programs ",
@@ -835,7 +837,6 @@
     "transformdescription": "From poverty to the third best university in the world, from cooperation with the United Nations to being invited to the biggest world conferences, from working with the best national and international media to leading several institutions. and successful business, from practicing medicine to completing a master's degree, from building dozens of leading online businesses to changing the lives of thousands of people around the world. Now I came to you with the latest knowledge and Today's money making skills will equip you to achieve your dreams",
     "featuredline": "AS FEATURED IN - Associates of Dr. Modares"
   },
-
   "companylogos": {
     "logo0": "../assets/Images/sciencespo.png",
     "logo1": "../assets/Images/tolonews.png",
@@ -844,7 +845,6 @@
     "logo4": "../assets/Images/undplogo.png",
     "logo5": "../assets/Images/onelogo.png"
   },
-
   "getajob": {
     "headtitle": "Get a job and side income with 31 sessions in (two months).",
     "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job.",
@@ -1022,29 +1022,28 @@
     "DataScienceDuplicateDummy": "../assets/Images/DataScienceimg.png",
     "TechnologyDuplicateDummy": "../assets/Images/Technologyimg.png"
   },
-
-"Duration":{
-"title":"Duration:",
-"description":"The course lasts for 62 days, with live classes conducted 5 days a week."
-},
-"Class":[
-{
-"title":"Class Length",
-"description":"Each session lasts for 1 hour, but may extend to 3-4 hours to ensure in-depth learning and optimal experience. There are a total of 31 sessions."  
-},
-{
-"title":"Class Time",
-"description":"Class timings will be decided after consulting with the participants, based on time zone differences to ensure global participation."  
-},
-{
-"title":"Missed a Class?",
-"description":"Don’t worry! All classes will be recorded and made available on the same day for you to catch up at your convenience."  
-},
-{
-"title":"Practice Assignments",
-"description":"After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills."
-}
-],
+  "Duration": {
+    "title": "Duration:",
+    "description": "The course lasts for 62 days, with live classes conducted 5 days a week."
+  },
+  "Class": [
+    {
+      "title": "Class Length",
+      "description": "Each session lasts for 1 hour, but may extend to 3-4 hours to ensure in-depth learning and optimal experience. There are a total of 31 sessions."
+    },
+    {
+      "title": "Class Time",
+      "description": "Class timings will be decided after consulting with the participants, based on time zone differences to ensure global participation."
+    },
+    {
+      "title": "Missed a Class?",
+      "description": "Don’t worry! All classes will be recorded and made available on the same day for you to catch up at your convenience."
+    },
+    {
+      "title": "Practice Assignments",
+      "description": "After each class, you will receive assignments to practice and apply what you've learned. This ensures a hands-on approach to developing valuable money-making skills."
+    }
+  ],
   "DataScienceCourse": [
     {
       "title": "Data Science Course",
@@ -1273,25 +1272,22 @@
       "level": "Intermediate"
     }
   ],
-"DonotJoinCourse":[
-{
-"title":"Who Should Not Join This Course?",
-"description":"This course is not for:"
-},
-{
-"listitem":"Those who are content with a mediocre life and don’t aspire to achieve their dream lifestyle."
-},
-{
-"listitem":"People who prefer to complain about their circumstances rather than make a real effort to change."
-},
-{
-"listitem":"Individuals who don’t value learning new skills and see investing in education as a burden."
-},
-{
-"listitem":"Those who are willing to work for others for the rest of their lives without seeking control and freedom over their time."  
+  "DonotJoinCourse": [
+    {
+      "title": "Who Should Not Join This Course?",
+      "description": "This course is not for:"
+    },
+    {
+      "listitem": "Those who are content with a mediocre life and don’t aspire to achieve their dream lifestyle."
+    },
+    {
+      "listitem": "People who prefer to complain about their circumstances rather than make a real effort to change."
+    },
+    {
+      "listitem": "Individuals who don’t value learning new skills and see investing in education as a burden."
+    },
+    {
+      "listitem": "Those who are willing to work for others for the rest of their lives without seeking control and freedom over their time."
+    }
+  ]
 }
-
-]
-
-}
-
