@@ -12,12 +12,14 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Logo from "../../assets/Icons/Nav/Frame 1.png";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
-import Signup from "../../Pages/Signup";
-import Signin from "../../Pages/Login";
-const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
-const RightBtns = ["EN", Heart, Cart, "Sign In", "Get Started"];
 import Heart from "../../assets/Icons/Heart.png";
 import Cart from "../../assets/Icons/Bag.png";
+import Signup from "../../Pages/Signup";
+import Signin from "../../Pages/Login";
+
+const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
+const RightBtns = ["EN", Heart, Cart, "Sign In", "Get Started"];
+
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
