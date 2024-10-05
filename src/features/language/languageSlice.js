@@ -7,8 +7,8 @@ export const fetchLanguageData = createAsyncThunk(
     try {
       const response = await fetch(
         language === "english"
-          ? "/Constants/Seedenglish.json"
-          : "/Constants/Seedpersian.json"
+          ? "/Mudaris/Constants/Seedenglish.json"
+          : "/Mudaris/Constants/Seedpersian.json"
       );
       if (!response.ok) throw new Error("Failed to fetch language data");
       const data = await response.json();

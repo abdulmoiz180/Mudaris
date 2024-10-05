@@ -34,6 +34,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   height: 70%;
 }
+
 .btnContainer Button {
   color: rgba(255, 255, 255, 0.6);
   font-family: Inter;
@@ -58,6 +59,10 @@
 .BorderDiv {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+.right-btn {
+  text-transform: inherit !important;
 }
 .BorderDiv .rightbtn:nth-child(4),
 .BorderDiv .rightbtn:nth-child(5) {

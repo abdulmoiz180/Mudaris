@@ -6,9 +6,20 @@ import { CourseCards } from "./CourseCards/Index";
 import { MenuSide } from "./CourseCardSideMenu";
 import PaginationComponent from "./Pagination";
 
+// Import images
+import courseImage1 from "../../../../assets/Images/coursepagecardimage.png";   // Course image 1
+import courseImage2 from "../../../../assets/Images/coursepagecardimageML.png"; // Course image 2
+import courseImage3 from "../../../../assets/Images/coursepagecardimageDV.png"; // Course image 3
+import videoIcon from "../../../../assets/Icons/videoIcon.png";              // Video icon
+import clockIcon from "../../../../assets/Icons/clockIcon.png";              // Clock icon
+import certificateIcon from "../../../../assets/Icons/certificateIcon.png";        // Certificate icon
+import heartIcon from "../../../../assets/Icons/heartIcon.png";              // Heart icon
+import filledHeartIcon from "../../../../assets/Icons/Heartfilled.png";         // Filled heart icon
+
 export const DataScience = () => {
   const { data } = useLanguage();
   console.log(data);
+  
   // Ensure data is loaded
   if (!data) return <div>Data is loading...</div>;
   if (!data.DataScienceCourse) return <div>No courses available.</div>;
@@ -50,45 +61,43 @@ export const DataScience = () => {
         <h2>{data.DataScienceCourseCardsSectiontitle}</h2>
         <Box className="DataScienceCoursePageCardSection">
           {data.DataScienceCourseCardsSection &&
-            Object.values(data.DataScienceCourseCardsSection).map(
-              (c, index) => (
-                <Box className="DataScienceCourseCard" key={index}>
-                  <img src={c.img} className="DataScienceCourseCardMainImg" />
-                  <h3 className="manrope">{c.title}</h3>
-                  <Box className="DataScienceCourseCardVideocomp">
-                    <img src={c.videoIcon} />
-                    <p className="DataScienceCourseCardVideocompInfo dm-sans">
-                      {c.videos}
-                    </p>
-                    <img src={c.clockIcon} />
-                    <p className="DataScienceCourseCardVideocompInfo dm-sans">
-                      {c.time}
-                    </p>
-                    <img src={c.certificateIcon} />
-                    <Box className="DataScienceCourseCardCertificateandheartIconBox">
-                      <img
-                        src={hearts[index] ? c.fillHeart : c.heartIcon}
-                        onClick={() => toggleHeart(index)}
-                        className="clickable-heart"
-                        alt="Heart Icon"
-                      />
-                    </Box>
-                  </Box>
-
-                  <Box className="DataScienceCourseCardPricecomp">
-                    <Box className="DataScienceCourseCardPriceonly">
-                      <p className="dm-sans">{c.price}</p>
-                      <p className="DataScienceCourseCardPriceonlyPriceDashed dm-sans">
-                        {c.actualPrice}
-                      </p>
-                    </Box>
-                    <Box className="DataScienceCourseCardPricecompButtonDiv">
-                      <Button className="dm-sans">{c.btn}</Button>
-                    </Box>
+            Object.values(data.DataScienceCourseCardsSection).map((c, index) => (
+              <Box className="DataScienceCourseCard" key={index}>
+                <img src={index === 0 ? courseImage1 : index === 1 ? courseImage2 : courseImage3} className="DataScienceCourseCardMainImg" alt={`Course ${index + 1}`} />
+                <h3 className="manrope">{c.title}</h3>
+                <Box className="DataScienceCourseCardVideocomp">
+                  <img src={videoIcon} alt="Video Icon" /> {/* Video icon */}
+                  <p className="DataScienceCourseCardVideocompInfo dm-sans">
+                    {c.videos}
+                  </p>
+                  <img src={clockIcon} alt="Clock Icon" /> {/* Clock icon */}
+                  <p className="DataScienceCourseCardVideocompInfo dm-sans">
+                    {c.time}
+                  </p>
+                  <img src={certificateIcon} alt="Certificate Icon" /> {/* Certificate icon */}
+                  <Box className="DataScienceCourseCardCertificateandheartIconBox">
+                    <img
+                      src={hearts[index] ? filledHeartIcon : heartIcon} // Heart icon based on state
+                      onClick={() => toggleHeart(index)}
+                      className="clickable-heart"
+                      alt="Heart Icon"
+                    />
                   </Box>
                 </Box>
-              )
-            )}
+
+                <Box className="DataScienceCourseCardPricecomp">
+                  <Box className="DataScienceCourseCardPriceonly">
+                    <p className="dm-sans">{c.price}</p>
+                    <p className="DataScienceCourseCardPriceonlyPriceDashed dm-sans">
+                      {c.actualPrice}
+                    </p>
+                  </Box>
+                  <Box className="DataScienceCourseCardPricecompButtonDiv">
+                    <Button className="dm-sans">{c.btn}</Button>
+                  </Box>
+                </Box>
+              </Box>
+            ))}
         </Box>
       </Box>
 

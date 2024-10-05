@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import "./Testimonials.css";
 import Ellipse7 from "../../../../assets/Images/Ellipse7.png";
 import Avatar from "../../../../assets/Images/Avatar.png";
+import Client from "../../../../assets/Images/Client.png"
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 
 function Testimonials() {
@@ -19,7 +20,7 @@ function Testimonials() {
           <img className="ellipse" src={Ellipse7} alt="img" />
           <img
             className="square-image"
-            src={data.clientdata.img} // Use image from data
+            src={Client} // Use image from data
             alt="Client"
           />
           <img src={Avatar} className="avatar" alt="img" />

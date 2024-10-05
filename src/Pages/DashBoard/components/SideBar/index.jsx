@@ -4,10 +4,6 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 import Tooltip from "@mui/material/Tooltip";
-import Typography from "@mui/material/Typography";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
 import LogoutIcon from "@mui/icons-material/Logout";
 import "./sidebar.css";
@@ -19,48 +15,46 @@ import { logoutUser } from "@features/auth/authThunk";
 import courseicon from "../assets/icons/courseicon.png";
 import dashboardicon from "../assets/icons/dashboardicon.png";
 import usericon from "../assets/icons/usericon.png";
+
 const NAVIGATION = [
   {
     kind: "header",
-    title: "Main items",
   },
-
   {
-    segment: "dashboard",
+    segment: "Mudaris/dashboard",
     title: "Dashboard",
-    icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />, // Custom image icon
+    icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />,
   },
   {
-    segment: "dashboard/Courses",
+    segment: "Mudaris/dashboard", // Parent segment for "Courses"
     title: "Courses",
-    icon: <img className="side-icon" src={courseicon} alt="Courses" />, // Custom image icon
+    icon: <img className="side-icon" src={courseicon} alt="Courses" />,
     children: [
       {
-        segment: "AddCourse",
+        segment: "courses/AddCourse", // Correct full segment path
         title: "Add Course",
       },
       {
-        segment: "AllCourses",
+        segment: "courses/AllCourses", // Correct full segment path
         title: "All Courses",
       },
       {
-        segment: "Livestream",
+        segment: "courses/Livestream", // Correct full segment path
         title: "Live Stream",
       },
     ],
   },
-
   {
-    segment: "",
+    segment: "", // Segment for Logout, you might need this to handle routing properly
     title: "Logout",
     icon: <LogoutIcon className="side-icon" />,
   },
 ];
-const Icons = [
 
+const Icons = [
   { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
   {
-    icon: <img src={usericon} className="side-icon" />,
+    icon: <img src={usericon} className="side-icon" alt="Profile" />,
     title: "Profile",
     segment: "profile",
   },
@@ -74,17 +68,18 @@ const Icons = [
 function Search({ onNavigate }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const handleLogout = () => {
     dispatch(logoutUser());
-    navigate("/");
-    console.log("user Logged out...");
+    navigate("/Mudaris");
+    console.log("User logged out...");
   };
 
   return (
     <React.Fragment>
       <Box className="ParentSideBarNav">
         <Box className="SideBarNavLogoandName">
-          <img src={LogoMadaris} />
+          <img src={LogoMadaris} alt="Mudaris Academy" />
           <h2>Mudaris Academy</h2>
         </Box>
         <TextField
@@ -106,9 +101,9 @@ function Search({ onNavigate }) {
                 aria-label={item.title}
                 onClick={() => {
                   if (item.segment === "logout") {
-                    handleLogout(); // Call the logout function
+                    handleLogout();
                   } else {
-                    onNavigate(item.segment); // Navigate for other icons
+                    onNavigate(item.segment); // Correctly navigate to segment
                   }
                 }}
               >
@@ -127,10 +122,11 @@ Search.propTypes = {
 };
 
 function DashboardLayoutSlots(props) {
-  const navigate = useNavigate(); // Use useNavigate to handle routing
+  const navigate = useNavigate();
 
   const handleNavigate = (segment) => {
-    navigate(`/${segment}`); // Navigate to the respective route dynamically
+    navigate(`/Mudaris/dashboard/${segment}`); // Prefix routes with `/Mudaris/dashboard/`
+    console.log(segment);
   };
 
   return (

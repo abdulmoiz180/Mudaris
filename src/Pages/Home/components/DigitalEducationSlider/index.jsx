@@ -4,7 +4,22 @@ import "slick-carousel/slick/slick.css";
 import { Box, Typography, Button } from "@mui/material";
 import "slick-carousel/slick/slick-theme.css";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
-import "./DigitalEducation.css"; // Make sure this file is properly linked
+import "./DigitalEducation.css";
+import Development from "@assets/Images/Developmentimg.png";
+import Design from "@assets/Images/Designimg.png";
+import Marketing from "@assets/Images/Marketingimg.png";
+import Business from "@assets/Images/Businessimg.png";
+import DataScience from "@assets/Images/DataScienceimg.png";
+import Technology from "@assets/Images/Technologyimg.png";
+
+const NIGGA_images = [
+  Development,
+  Design,
+  Marketing,
+  Business,
+  DataScience,
+  Technology,
+];
 
 export default function DigitalEducation() {
   const { data } = useLanguage();
@@ -14,52 +29,9 @@ export default function DigitalEducation() {
     return <div>Data is loading...</div>;
   }
 
+  // Get the JSON data that corresponds to each image
   const images = data.digitaleducationcards;
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   arrows: false,
-  //   speed: 500,
-  //   slidesToShow: 6,
-  //   slidesToScroll: 6,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1044,
-  //       settings: {
-  //         slidesToShow: 4,
-  //         slidesToScroll: 3,
-  //         infinite: true,
-  //         dots: true,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 844,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         infinite: true,
-  //         dots: false,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 2,
-  //         initialSlide: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         dots: false,
-  //       },
-  //     },
-  //   ],
-  // };
   const settings = {
     dots: true,
     infinite: true,
@@ -69,7 +41,7 @@ export default function DigitalEducation() {
     slidesToScroll: 6,
     responsive: [
       {
-        breakpoint: 1544, // Large screens
+        breakpoint: 1544,
         settings: {
           slidesToShow: 5,
           slidesToScroll: 3,
@@ -78,7 +50,7 @@ export default function DigitalEducation() {
         },
       },
       {
-        breakpoint: 1044, // Large screens
+        breakpoint: 1044,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 3,
@@ -87,9 +59,9 @@ export default function DigitalEducation() {
         },
       },
       {
-        breakpoint: 960, // Medium screens
+        breakpoint: 960,
         settings: {
-          slidesToShow: 3, // Adjust to 3 slides for 844px and below
+          slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
           dots: false,
@@ -108,7 +80,6 @@ export default function DigitalEducation() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
@@ -143,51 +114,54 @@ export default function DigitalEducation() {
           <Button>See All</Button>
         </Box>
       </Box>
+
       <Slider {...settings}>
-        {Object.entries(images).map(([category, imagePath], index) => (
-          <Box key={index} className="DigitalEducationSlide">
-            <Box
-              className="PicBgDigitalEducationSlide"
-              sx={{
-                backgroundImage: `url(${imagePath.pic})`,
-                backgroundSize: "cover", // Ensures the image covers the div fully
-              }}
-            >
+        {NIGGA_images.map((img, index) => (
+          <Box
+            key={index}
+            className="PicBgDigitalEducationSlide"
+            sx={{
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+            }}
+          >
+            {/* If data.digitaleducationcards exists, match it with the image */}
+            {images[index] && (
               <Box className="DigitalEducationSlideNewandPicBox">
                 <Box className="DigitalEducationSlideNewChildBox">
-                  {imagePath.new && (
+                  {images[index].new && (
                     <Typography
                       variant="body"
-                      className="dm-sans DigitalEducationSlideNew"
+                      className="dm-sans DigitalEducationSlideNew clr-white"
                     >
-                      {imagePath.new}
+                      {images[index].new}
                     </Typography>
                   )}
                 </Box>
               </Box>
-              {/* <img src={imagePath.pic} className="DigitalEducationImage" /> */}
-              <Box
-                className={
-                  imagePath.des
-                    ? "DigitalEducationSlideTitleandPicBoxwith-description" // Apply this class if `des` exists
-                    : "DigitalEducationSlideTitleandPicBox" // Default class when `des` does not exist
-                }
+            )}
+
+            <Box
+              className={
+                images[index].des
+                  ? "DigitalEducationSlideTitleandPicBoxwith-description"
+                  : "DigitalEducationSlideTitleandPicBox"
+              }
+            >
+              <Typography
+                variant="h5"
+                className="DigitalEducationCardTitle inter clr-white"
               >
+                {images[index]?.title}
+              </Typography>
+              {/* {images[index]?.des && (
                 <Typography
-                  variant="h5"
-                  className="DigitalEducationCardTitle inter"
+                  variant="body"
+                  className="dm-sans DigitalEducationSlideDescription clr-white"
                 >
-                  {imagePath.title}
-                </Typography>
-                {imagePath.des && (
-                  <Typography
-                    variant="body"
-                    className="dm-sans DigitalEducationSlideDescription"
-                  >
-                    {imagePath.des}
-                  </Typography>
-                )}
-              </Box>
+                  {images[index]?.des}
+                </Typography> 
+                     )}*/}
             </Box>
           </Box>
         ))}
