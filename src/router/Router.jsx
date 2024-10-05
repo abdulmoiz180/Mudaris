@@ -27,13 +27,20 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         {/* Public Routes */}
-        <Route path="/Mudaris" element={<WithNavbarAndFooter element={<Home />} />} />
+        <Route
+          path="/Mudaris"
+          element={<WithNavbarAndFooter element={<Home />} />}
+        />
         <Route path="*" element={<NotFound404 />} />
-        
+
         {/* Protected Routes */}
         <Route element={<ProtectedRoutes />}>
-          <Route path="/Mudaris/dashboard/*" element={<DashboardWithLayout />} />
-          <Route path="/Mudaris/profile" element={<Profile />} /> {/* Adjusted path */}
+          <Route
+            path="/Mudaris/dashboard/*"
+            element={<DashboardWithLayout />}
+          />
+          <Route path="/Mudaris/profile" element={<Profile />} />{" "}
+          {/* Adjusted path */}
         </Route>
       </Routes>
     </BrowserRouter>
@@ -66,12 +73,18 @@ const DashboardWithLayout = () => {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="Courses/AddCourse" element={<AddCourse />} />
-          <Route path="Courses/AboutCourse/:courseId" element={<AboutCourses />} />
+          <Route
+            path="Courses/AboutCourse/:courseId"
+            element={<AboutCourses />}
+          />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
           <Route path="Courses/Livestream" element={<Livestream />} />
-          
+
           {/* Catch-all for dashboard */}
-          <Route path="*" element={<Navigate to="/Mudaris/dashboard" replace />} />
+          <Route
+            path="*"
+            element={<Navigate to="/Mudaris/dashboard" replace />}
+          />
         </Routes>
       </div>
     </div>

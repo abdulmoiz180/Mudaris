@@ -21,31 +21,31 @@ const NAVIGATION = [
     kind: "header",
   },
   {
-    segment: "dashboard",
+    segment: "Mudaris/dashboard",
     title: "Dashboard",
     icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />,
   },
   {
-    segment: "Mudaris/dashboard",  // Parent segment for "Courses"
+    segment: "Mudaris/dashboard", // Parent segment for "Courses"
     title: "Courses",
     icon: <img className="side-icon" src={courseicon} alt="Courses" />,
     children: [
       {
-        segment: "courses/AddCourse",  // Correct full segment path
+        segment: "courses/AddCourse", // Correct full segment path
         title: "Add Course",
       },
       {
-        segment: "courses/AllCourses",  // Correct full segment path
+        segment: "courses/AllCourses", // Correct full segment path
         title: "All Courses",
       },
       {
-        segment: "courses/Livestream",  // Correct full segment path
+        segment: "courses/Livestream", // Correct full segment path
         title: "Live Stream",
       },
     ],
   },
   {
-    segment: "",  // Segment for Logout, you might need this to handle routing properly
+    segment: "", // Segment for Logout, you might need this to handle routing properly
     title: "Logout",
     icon: <LogoutIcon className="side-icon" />,
   },
@@ -54,7 +54,7 @@ const NAVIGATION = [
 const Icons = [
   { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
   {
-    icon: <img src={usericon} className="side-icon" alt="Profile"/>,
+    icon: <img src={usericon} className="side-icon" alt="Profile" />,
     title: "Profile",
     segment: "profile",
   },
@@ -125,7 +125,7 @@ function DashboardLayoutSlots(props) {
   const navigate = useNavigate();
 
   const handleNavigate = (segment) => {
-    navigate(`/Mudaris/dashboard/${segment}`);  // Prefix routes with `/Mudaris/dashboard/`
+    navigate(`/Mudaris/dashboard/${segment}`); // Prefix routes with `/Mudaris/dashboard/`
     console.log(segment);
   };
 
