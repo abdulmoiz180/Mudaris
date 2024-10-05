@@ -26,17 +26,14 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/Mudaris"
-          element={<WithNavbarAndFooter element={<Home />} />}
-        />
+        {/* Public Routes */}
+        <Route path="/Mudaris" element={<WithNavbarAndFooter element={<Home />} />} />
         <Route path="*" element={<NotFound404 />} />
+        
+        {/* Protected Routes */}
         <Route element={<ProtectedRoutes />}>
-          <Route
-            path="/Mudaris/dashboard/*"
-            element={<DashboardWithLayout />}
-          />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/Mudaris/dashboard/*" element={<DashboardWithLayout />} />
+          <Route path="/Mudaris/profile" element={<Profile />} /> {/* Adjusted path */}
         </Route>
       </Routes>
     </BrowserRouter>
@@ -45,9 +42,10 @@ const Router = () => {
 
 export default Router;
 
+// Wrapper for Navbar and Footer
 const WithNavbarAndFooter = ({ element }) => {
   const location = useLocation();
-  const shouldRenderNavbarAndFooter = location.pathname !== "/profile";
+  const shouldRenderNavbarAndFooter = location.pathname !== "/Mudaris/profile"; // Adjust the path
   return shouldRenderNavbarAndFooter ? (
     <>
       <ResponsiveAppBar />
@@ -58,6 +56,8 @@ const WithNavbarAndFooter = ({ element }) => {
     element
   );
 };
+
+// Dashboard layout including sidebar and nested routes
 const DashboardWithLayout = () => {
   return (
     <div style={{ display: "flex" }}>
@@ -65,14 +65,13 @@ const DashboardWithLayout = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/Courses/AddCourse" element={<AddCourse />} />
-          <Route
-            path="Courses/AboutCourse/:courseId"
-            element={<AboutCourses />} // Fixed duplicate import issue
-          />
+          <Route path="Courses/AddCourse" element={<AddCourse />} />
+          <Route path="Courses/AboutCourse/:courseId" element={<AboutCourses />} />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
           <Route path="Courses/Livestream" element={<Livestream />} />
-          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+          
+          {/* Catch-all for dashboard */}
+          <Route path="*" element={<Navigate to="/Mudaris/dashboard" replace />} />
         </Routes>
       </div>
     </div>

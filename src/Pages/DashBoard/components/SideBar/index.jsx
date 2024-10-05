@@ -15,6 +15,7 @@ import { logoutUser } from "@features/auth/authThunk";
 import courseicon from "../assets/icons/courseicon.png";
 import dashboardicon from "../assets/icons/dashboardicon.png";
 import usericon from "../assets/icons/usericon.png";
+
 const NAVIGATION = [
   {
     kind: "header",
@@ -25,26 +26,26 @@ const NAVIGATION = [
     icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />,
   },
   {
-    segment: "Courses",
+    segment: "Mudaris/dashboard",  // Parent segment for "Courses"
     title: "Courses",
     icon: <img className="side-icon" src={courseicon} alt="Courses" />,
     children: [
       {
-        segment: "AddCourse", // Updated to include parent 'Courses'
+        segment: "courses/AddCourse",  // Correct full segment path
         title: "Add Course",
       },
       {
-        segment: "AllCourses", // Updated to include parent 'Courses'
+        segment: "courses/AllCourses",  // Correct full segment path
         title: "All Courses",
       },
       {
-        segment: "Livestream", // Updated to include parent 'Courses'
+        segment: "courses/Livestream",  // Correct full segment path
         title: "Live Stream",
       },
     ],
   },
   {
-    segment: "", // You may want to set segment to handle logout properly
+    segment: "",  // Segment for Logout, you might need this to handle routing properly
     title: "Logout",
     icon: <LogoutIcon className="side-icon" />,
   },
@@ -53,7 +54,7 @@ const NAVIGATION = [
 const Icons = [
   { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
   {
-    icon: <img src={usericon} className="side-icon" />,
+    icon: <img src={usericon} className="side-icon" alt="Profile"/>,
     title: "Profile",
     segment: "profile",
   },
@@ -67,17 +68,18 @@ const Icons = [
 function Search({ onNavigate }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const handleLogout = () => {
     dispatch(logoutUser());
     navigate("/Mudaris");
-    console.log("user Logged out...");
+    console.log("User logged out...");
   };
 
   return (
     <React.Fragment>
       <Box className="ParentSideBarNav">
         <Box className="SideBarNavLogoandName">
-          <img src={LogoMadaris} />
+          <img src={LogoMadaris} alt="Mudaris Academy" />
           <h2>Mudaris Academy</h2>
         </Box>
         <TextField
@@ -99,9 +101,9 @@ function Search({ onNavigate }) {
                 aria-label={item.title}
                 onClick={() => {
                   if (item.segment === "logout") {
-                    handleLogout(); // Call the logout function
+                    handleLogout();
                   } else {
-                    onNavigate(item.segment); // Navigate for other icons
+                    onNavigate(item.segment); // Correctly navigate to segment
                   }
                 }}
               >
@@ -123,7 +125,8 @@ function DashboardLayoutSlots(props) {
   const navigate = useNavigate();
 
   const handleNavigate = (segment) => {
-    navigate(`${segment}`); // This will now work for both parent and child segments
+    navigate(`/Mudaris/dashboard/${segment}`);  // Prefix routes with `/Mudaris/dashboard/`
+    console.log(segment);
   };
 
   return (
