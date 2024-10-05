@@ -7,7 +7,6 @@ import PriceCards from "./components/PriceCards/Index";
 import Courses from "./components/Courses";
 import Review from "./components/Review/Index";
 import Testimonials from "./components/Testimonials/Testimonials";
-import { useLanguage } from "../../globalContext/GlobalProvider";
 import GettoKnow from "./components/GettoKnow/Index";
 import DigitalEducation from "./components/DigitalEducationSlider";
 import Community from "./components/Community";
@@ -18,13 +17,8 @@ import Classes from "./components/Classes";
 import { DataScience } from "./components/DataScienceCourse";
 import "./home.css";
 const Home = () => {
-  const { language } = useLanguage(); // Moved inside the function
-
   return (
-    <section
-      className="home-page column primary-bg"
-      dir={language === "english" ? "ltr" : "rtl"} // Set text direction based on language
-    >
+    <section className="home-page column primary-bg">
       <Hero />
       <Testimonials />
       <Review />
