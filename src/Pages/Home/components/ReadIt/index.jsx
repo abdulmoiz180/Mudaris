@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { useLanguage } from "../../globalContext/GlobalProvider";
+import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./LineCard.css";
 
 const LineCards = () => {
