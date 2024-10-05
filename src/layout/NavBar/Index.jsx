@@ -14,10 +14,6 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
-
-const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
-const RightBtns = ["EN", "Sign In", "Get Started"];
-
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
@@ -107,7 +103,7 @@ function ResponsiveAppBar() {
                 },
               }}
             >
-              {pages.map((page, index) => (
+              {data.pagesnav.map((page, index) => (
                 <Button
                   key={index}
                   onClick={handleCloseNavMenu}
@@ -134,11 +130,11 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <div className="Btns">
               <div className="btnContainer">
-                {pages.map((page, i) => (
+                {data.pagesnav.map((page, i) => (
                   <Button
                     key={i}
                     onClick={handleCloseNavMenu}
-                    className="nav-menu-btn btnContainer"
+                    className="nav-menu-btn"
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
                     {page === "Explore" ? (
@@ -154,13 +150,11 @@ function ResponsiveAppBar() {
 
               {/* Right-side Buttons */}
               <Box component="div" className="navBarBtns2 BorderDiv">
-                {RightBtns.map((btn, index) => (
+                {data.navRightBtns.map((btn, index) => (
                   <div className="rightbtn inter" key={index}>
                     {btn === "Get Started" ? (
                       <Button
                         onClick={() => handleClickOpen("Signup")}
-                        variant="outlined"
-                        className="BorderDiv right-btn"
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
                         Get Started
@@ -168,12 +162,27 @@ function ResponsiveAppBar() {
                     ) : btn === "Sign In" ? (
                       <Button
                         onClick={() => handleClickOpen("SignIn")}
-                        variant="outlined"
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
                         Sign In
                       </Button>
-                    ) : null}
+                    ) : (
+                      <Button
+                        sx={{ my: 2, color: "white", display: "block" }}
+                        className="inter"
+                      >
+                        {isImageUrl(btn) ? (
+                          <img
+                            src={btn}
+                            alt="icon"
+                            key={index}
+                            style={{ width: 24, height: 24 }}
+                          />
+                        ) : (
+                          btn
+                        )}
+                      </Button>
+                    )}
                   </div>
                 ))}
               </Box>

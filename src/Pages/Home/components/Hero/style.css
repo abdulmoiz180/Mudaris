@@ -57,7 +57,7 @@
   background: linear-gradient(180deg, #ffffff 54.17%, #b372cf 100%);
   -webkit-background-clip: inherit;
   background-clip: inherit;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent !important;
   font-size: 82px;
   font-weight: 500 !important;
   line-height: 84px;

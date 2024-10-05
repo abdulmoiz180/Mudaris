@@ -1,8 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { GlobalContext } from "./GobalContext";
-const englishJson = "/Mudaris/Constants/Seedenglish.json";
-const persianJson = "/Mudaris/Constants/Seedpersian.json";
-
+const englishJson = "../../public/Constants/Seedenglish.json";
+const persianJson = "../../public/Constants/Seedpersian.json";
 export const useLanguage = () => useContext(GlobalContext);
 
 const GlobalProvider = ({ children }) => {

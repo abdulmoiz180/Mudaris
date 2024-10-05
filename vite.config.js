@@ -4,7 +4,6 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "Mudaris",
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "src/assets"),

@@ -27,10 +27,7 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         {/* Public Routes */}
-        <Route
-          path="/Mudaris"
-          element={<WithNavbarAndFooter element={<Home />} />}
-        />
+        <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
         <Route path="*" element={<NotFound404 />} />
 
         {/* Protected Routes */}
