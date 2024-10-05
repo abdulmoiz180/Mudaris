@@ -18,7 +18,7 @@ import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
 
 const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
-const RightBtns = ["EN", Heart, Cart, "Sign In", "Get Started"];
+const RightBtns = ["EN", "Sign In", "Get Started"];
 
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
@@ -172,23 +172,7 @@ function ResponsiveAppBar() {
                       >
                         Sign In
                       </Button>
-                    ) : (
-                      <Button
-                        sx={{ my: 2, color: "white", display: "block" }}
-                        className="inter"
-                      >
-                        {isImageUrl(btn) ? (
-                          <img
-                            src={btn}
-                            alt="icon"
-                            key={index}
-                            style={{ width: 24, height: 24 }}
-                          />
-                        ) : (
-                          btn
-                        )}
-                      </Button>
-                    )}
+                    ) : null}
                   </div>
                 ))}
               </Box>
