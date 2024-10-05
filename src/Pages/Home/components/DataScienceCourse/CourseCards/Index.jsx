@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import { useLanguage } from "../../../../../globalContext/GlobalProvider";
 import "./CourseCard.css";
 export const CourseCards = () => {
-  const { language, data } = useLanguage();
+  const { data } = useLanguage();
   if (!data) return <div> data is loading..... </div>;
   const [hearts, setHearts] = useState(
     new Array(data.DataScienceCourseCardsSectionButtonsCourses.length).fill(
