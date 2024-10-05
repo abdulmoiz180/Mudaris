@@ -1,5 +1,5 @@
 .get-start-container {
-  background: url(../../assets/Images/boxpattern.png),
+  background: url("../../../../assets/Images/boxpattern.png"),
     /* Pattern image */
       radial-gradient(
         circle farthest-corner at top center,

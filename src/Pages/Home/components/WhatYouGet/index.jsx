@@ -2,10 +2,18 @@ import React from "react";
 import "./whatyouget.css";
 import { Box } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
+import blueverifiedbadge from "../../../../assets/Icons/blueverifiedbadge.png";
+import AgencyNavigatorMale from "../../../../assets/Images/AgencyNavigatorMale.png";
+import AgencyNavigatorFemale from "../../../../assets/Images/AgencyNavigatorFemale.png";
+import SixFigureSalesRep from "../../../../assets/Images/SixFigureSalesRep.png";
+import playbuttonimg from "../../../../assets/Images/playbuttonimg.png"
+
+const wygImages = [AgencyNavigatorMale, AgencyNavigatorFemale, SixFigureSalesRep];
 
 const WhatYouGet = () => {
   const { language, data } = useLanguage();
-  if (!data) return <div> data is loading..... </div>;
+  if (!data) return <div>data is loading.....</div>;
+
   const pickData = data.whatyouget;
 
   return (
@@ -22,7 +30,7 @@ const WhatYouGet = () => {
               <div className="badgeandrole">
                 <h2 className="public-sans">{item.role}</h2>
                 <img
-                  src={item.blueverifiedbadge}
+                  src={blueverifiedbadge}
                   alt="Verified badge"
                   className="whatyouget-verified-badge"
                 />
@@ -30,9 +38,14 @@ const WhatYouGet = () => {
               <p className="public-sans">{item.description}</p>
             </div>
             <div className="whatyouget-card-imagecontainer">
-              <img src={item.video} alt={item.role} className="imagevid" />
+              {/* Render the corresponding image based on the index */}
               <img
-                src={item.playbutton}
+                src={wygImages[index]} // Select the correct image for each card
+                className="imagevid"
+                alt={`dynamic-img-${index}`}
+              />
+              <img
+                src={playbuttonimg}
                 alt="Play button"
                 className="whatyouget-playbutton"
               />

@@ -2,6 +2,16 @@ import React from "react";
 import { Box, Button, Divider, Typography, Container } from "@mui/material";
 import "./get.css";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
+import Drimg from "../../../../assets/Images/Drimg.png"
+import sciencespo from "../../../../assets/Images/sciencespo.png"
+import tolonews from "../../../../assets/Images/tolonews.png"
+import tv from "../../../../assets/Images/tv.png"
+import mudaris from "../../../../assets/Images/mudaris.png"
+import undplogo from "../../../../assets/Images/undplogo.png"
+import onelogo from "../../../../assets/Images/onelogo.png"
+
+const logos = [sciencespo, tolonews, tv, mudaris, undplogo, onelogo];
+
 const GettoKnow = () => {
   const { language, data } = useLanguage();
   if (!data) return <div> data is loading..... </div>;
@@ -10,7 +20,7 @@ const GettoKnow = () => {
     <section className="GetToknowMainSection">
       <Box className="GetToknowMainContainer">
         <Box className="GetToknowContent">
-          <img src={getData.img} />
+          <img src={Drimg} />
           <Box className="GetToknowTextContent inter">
             <h2 className="inter">{getData.headtitle}</h2>
             <Box className="paraDivGettoKnow">
@@ -29,12 +39,11 @@ const GettoKnow = () => {
             </Box>
           </Box>
           <Box className="GetToknowContentbelowLogoBox">
-            {data.companylogos &&
-              Object.values(data.companylogos).map((logo, key) => (
-                <Box className="GetToknowContentbelowLogo">
-                  <img key={key} src={logo} alt={`Company logo ${key}`} />
-                </Box>
-              ))}
+            {logos.map((logo, key) => (
+              <Box key={key} className="GetToknowContentbelowLogo">
+                <img src={logo} alt={`Company logo ${key}`} />
+              </Box>
+            ))}
           </Box>
         </Box>
       </Box>
