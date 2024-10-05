@@ -220,76 +220,42 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
+          "rateStar": [],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     },
@@ -300,76 +266,41 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     },
@@ -380,76 +311,41 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     },
@@ -460,76 +356,41 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     },
@@ -540,76 +401,41 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     },
@@ -620,76 +446,41 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     },
@@ -700,76 +491,41 @@
           "courseTitle": "Mastering Effective Communication Skills",
           "reviews": "244 reviews",
           "rating": 4.8,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp320,000",
           "discountedPrice": "Rp150,000",
           "videos": 24,
           "duration": "8.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgMaster.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Becoming a Power Negotiator: Win-Win Strategies",
           "reviews": "425 reviews",
           "rating": 4.2,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarOutlined.png"
-          ],
           "originalPrice": "Rp250,000",
           "discountedPrice": "Rp100,000",
           "videos": 6,
           "duration": "4h",
-          "discount": "30%",
-          "profileImage": "../assets/Icons/imgBecoming.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Time Management Techniques for Maximum Productivity",
           "reviews": "227 reviews",
           "rating": 4.7,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp550,000",
           "discountedPrice": "Rp250,000",
           "videos": 8,
           "duration": "1.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgTimemanagement.png"
+          "discount": "30%"
         },
         {
           "courseTitle": "Sentiment Analysis with Deep Learning using BERT",
           "reviews": "25 reviews",
           "rating": 4.9,
-          "rateStar": [
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarFilled.png",
-            "../assets/Icons/dimStarHalffilled.png"
-          ],
           "originalPrice": "Rp400,000",
           "discountedPrice": "Rp120,000",
           "videos": 32,
           "duration": "12.5h",
-          "discount": "30%",
-          "tag": "../assets/Icons/bestsellerLabel.png",
-          "profileImage": "../assets/Icons/imgSentimentAnalysis.png"
+          "discount": "30%"
         }
       ]
     }
@@ -783,25 +539,16 @@
     {
       "role": "Agency Navigator",
       "description": "Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
-      "video": "../assets/Images/AgencyNavigatorMale.png",
-      "playbutton": "../assets/Images/playbuttonimg.png",
-      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
       "purpleboxtext": "HTML"
     },
     {
       "role": "6-Figure Sales Rep",
       "description": "Inside of 6-Figure Sales Rep, Paul is gonna teach you the best and most timeless high-income skill to go from zero to six figures in record time. He'll give you the same proven sales process that we use internally at all of my companies and that Paul has used to train hundreds of people from all walks of life and turn them into world class Remote Sales Rep.",
-      "video": "../assets/Images/6-FigureSalesRep.png",
-      "playbutton": "../assets/Images/playbuttonimg.png",
-      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
       "purpleboxtext": "Business"
     },
     {
       "role": "Agency Navigator",
       "description": "Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
-      "video": "../assets/Images/AgencyNavigatorFemale.png",
-      "playbutton": "../assets/Images/playbuttonimg.png",
-      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
       "purpleboxtext": "Social Media"
     }
   ],
@@ -810,18 +557,9 @@
     "headdescription": "Hello, I am Inayat Modares - I came from poverty to the third university in the world, I worked with the United Nations, I was invited to the biggest world conferences, I changed the lives of thousands of people, tens of institutions andI founded a successful business, worked with the best national and international media, completed my medicine and master's degree in the most prestigious university in the world. At the moment, there are several online businesses and unique programs ",
     "headdescription2": "I lead the other. Now I came here to honestly and sincerely share the knowledge, experiences and skills I have learned along the way, which can save you from the trap of poverty and fulfill your dreams. deliver",
     "buttonlabel": "Round 5 is closed",
-    "img": "../assets/Images/Dr-img.png",
     "transformtitle": "So far, I have transformed the lives of thousands of people",
     "transformdescription": "From poverty to the third best university in the world, from cooperation with the United Nations to being invited to the biggest world conferences, from working with the best national and international media to leading several institutions. and successful business, from practicing medicine to completing a master's degree, from building dozens of leading online businesses to changing the lives of thousands of people around the world. Now I came to you with the latest knowledge and Today's money making skills will equip you to achieve your dreams",
     "featuredline": "AS FEATURED IN - Associates of Dr. Modares"
-  },
-  "companylogos": {
-    "logo0": "../assets/Images/sciencespo.png",
-    "logo1": "../assets/Images/tolonews.png",
-    "logo2": "../assets/Images/1tv.png",
-    "logo3": "../assets/Images/mudaris.png",
-    "logo4": "../assets/Images/undplogo.png",
-    "logo5": "../assets/Images/onelogo.png"
   },
   "getajob": {
     "headtitle": "Get a job and side income with 31 sessions in (two months).",
@@ -847,26 +585,21 @@
         {
           "title": "Important:",
           "title2": "Read This Before Making Your Decision",
-          "description": "Lorem ipsum dolor sit amet",
-          "lineImg": "../assets/Icons/linewo.png"
+          "description": "Lorem ipsum dolor sit amet"
         },
         {
-          "symbol": "../assets/Icons/Symbol.png",
           "Cardtitle": "Have Excuses for Not Joining?",
           "Carddescription": "Think again. Overcome the reasons holding you back and take the leap toward a brighter future."
         },
         {
-          "symbol": "../assets/Icons/Symbol (1).png",
           "Cardtitle": "Hear Me Out",
           "Carddescription": "Before you make a decision, let me share why this course could be life-changing for you."
         },
         {
-          "symbol": "../assets/Icons/Symbol (2).png",
           "Cardtitle": "Is This Course Right for You?",
           "Carddescription": "Whether you're an aspiring entrepreneur or a professional looking to upskill, this course is designed for anyone ready to take their career to the next level."
         },
         {
-          "symbol": "../assets/Icons/Symbol (3).png",
           "Cardtitle": "Still Reading? Let’s Talk",
           "Carddescription": "If you've made it this far, you're already serious about improving yourself. Now, let’s dive in and make it happen."
         }
@@ -877,28 +610,23 @@
         {
           "title": "Why should I participate in Madras",
           "title2": "Academy?",
-          "description": "Lorem ipsum dolor sit amet",
-          "lineImg": "../assets/Icons/linewo.png"
+          "description": "Lorem ipsum dolor sit amet"
         },
         {
           "Cardtitle": "Master Money-Making Skills",
-          "Carddescription": "Learn the most valuable, real-world skills that generate income in today’s competitive marketplace. From entrepreneurship to digital marketing, you’ll be equipped with the knowledge to succeed.",
-          "symbol": "../assets/Icons/moneyicon.png"
+          "Carddescription": "Learn the most valuable, real-world skills that generate income in today’s competitive marketplace. From entrepreneurship to digital marketing, you’ll be equipped with the knowledge to succeed."
         },
         {
           "Cardtitle": "World-Class Curriculum",
-          "Carddescription": "Benefit from an education inspired by Harvard, Cambridge, and Stanford. Our program combines the academic rigor of top universities with practical, actionable insights.",
-          "symbol": "../assets/Icons/currciculumicon.png"
+          "Carddescription": "Benefit from an education inspired by Harvard, Cambridge, and Stanford. Our program combines the academic rigor of top universities with practical, actionable insights."
         },
         {
           "Cardtitle": "Network with the Brightest Minds",
-          "Carddescription": "Surround yourself with innovators and thinkers. Build lasting connections with experts and peers who are shaping the future.",
-          "symbol": "../assets/Icons/networkbrighticon.png"
+          "Carddescription": "Surround yourself with innovators and thinkers. Build lasting connections with experts and peers who are shaping the future."
         },
         {
           "Cardtitle": "University-Level Learning in Weeks",
-          "Carddescription": "Get the same in-depth education as a full university session, but in a condensed and efficient format. Our 60-day program is designed to give you maximum value in minimal time.",
-          "symbol": "../assets/Icons/unilevelicon.png"
+          "Carddescription": "Get the same in-depth education as a full university session, but in a condensed and efficient format. Our 60-day program is designed to give you maximum value in minimal time."
         }
       ]
     }
@@ -911,64 +639,52 @@
   "digitaleducationcards": [
     {
       "title": "Development",
-      "pic": "../assets/Images/develop.png",
       "new": "new"
     },
     {
       "title": "Design",
-      "pic": "../assets/Images/design.png",
       "new": "new"
     },
     {
       "title": "Marketing",
-      "pic": "../assets/Images/Market.png",
       "new": "new"
     },
     {
       "title": "Business",
-      "pic": "../assets/Images/business.png",
       "new": "new"
     },
     {
       "title": "Data Science",
-      "pic": "../assets/Images/datas.png",
       "new": "new",
       "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "title": "Technology",
-      "pic": "../assets/Images/ai.png",
       "new": "new"
     },
     {
       "title": "Development",
-      "pic": "../assets/Images/develop.png",
       "new": "new"
     },
     {
       "title": "Design",
-      "pic": "../assets/Images/design.png",
       "new": "new"
     },
     {
       "title": "Marketing",
-      "pic": "../assets/Images/Market.png",
       "new": "new"
     },
     {
       "title": "Business",
-      "pic": "../assets/Images/business.png",
       "new": "new"
     },
     {
       "title": "Data Science",
-      "pic": "../assets/Images/datas.png",
       "new": "new",
       "des": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "title": "Technology",
-      "pic": "../assets/Images/ai.png",
       "new": "new"
     }
   ],
@@ -980,26 +696,7 @@
     "DataScience": "De",
     "Technology": "De"
   },
-  "digitaleducationimages": {
-    "Development": "../assets/Images/Developmentimg.png",
-    "Design": "../assets/Images/Designimg.png",
-    "Marketing": "../assets/Images/Marketingimg.png",
-    "Business": "../assets/Images/Businessimg.png",
-    "DataScience": "../assets/Images/DataScienceimg.png",
-    "Technology": "../assets/Images/Technologyimg.png",
-    "DevelopmentDuplicate": "../assets/Images/Developmentimg.png",
-    "DesignDuplicate": "../assets/Images/Designimg.png",
-    "MarketingDuplicate": "../assets/Images/Marketingimg.png",
-    "BusinessDuplicate": "../assets/Images/Businessimg.png",
-    "DataScienceDuplicate": "../assets/Images/DataScienceimg.png",
-    "TechnologyDuplicate": "../assets/Images/Technologyimg.png",
-    "DevelopmentDuplicateDummy": "../assets/Images/Developmentimg.png",
-    "DesignDuplicateDummy": "../assets/Images/Designimg.png",
-    "MarketingDuplicateDummy": "../assets/Images/Marketingimg.png",
-    "BusinessDuplicateDummy": "../assets/Images/Businessimg.png",
-    "DataScienceDuplicateDummy": "../assets/Images/DataScienceimg.png",
-    "TechnologyDuplicateDummy": "../assets/Images/Technologyimg.png"
-  },
+  "digitaleducationimages": {},
   "Duration": {
     "title": "Duration:",
     "description": "The course lasts for 62 days, with live classes conducted 5 days a week."
