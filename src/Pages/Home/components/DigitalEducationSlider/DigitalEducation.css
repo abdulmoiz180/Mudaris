@@ -9,7 +9,7 @@
 .slick-dots li {
   width: 25px;
   height: 20px;
-  margin: 0px 5px;
+  margin: 20px 5px;
 }
 .slick-dots li button:before {
   width: 10px !important;
@@ -55,6 +55,7 @@
   flex-direction: column;
   gap: 20px;
   width: 70%;
+  margin: 30px 0 !important;
 }
 .DigitalEducationComponentMainTitle {
   font-size: 48px !important;
