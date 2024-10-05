@@ -95,7 +95,7 @@
 .DigitalEducationSlide {
   color: white;
 }
-.PicBgDigitalEducationSlide{
+.PicBgDigitalEducationSlide {
   width: 200px !important;
   height: 313px !important;
 }
@@ -125,9 +125,18 @@
   margin: auto;
   align-items: flex-end;
 }
-.DigitalEducationSlideTitleandPicBoxwith-description {
+/* .DigitalEducationSlideTitleandPicBoxwith-description {
   width: 90% !important;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+} */
+.DigitalEducationSlideTitleandPicBoxwith-description {
+  width: 90% !important;
+  margin: 70px auto;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -3,7 +3,7 @@ import { Box, Typography, Button } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./Review.css";
 import Base from "../../../../assets/Images/Base.png";
-
+import Brightstar from "@assets/Icons/brightstarfilled.png";
 const Review = () => {
   const [more, setMore] = useState(true);
   const wrap = useRef(null);
@@ -62,7 +62,7 @@ const Review = () => {
                     </Box>
                     <Box component="div" className="ratingsImageStar">
                       {review.brightstar && (
-                        <img src={review.brightstar} alt="Rating Star" />
+                        <img src={Brightstar} alt="Rating Star" />
                       )}
                     </Box>
                   </Box>
