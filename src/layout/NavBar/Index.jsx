@@ -12,8 +12,6 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Logo from "../../assets/Icons/Nav/Frame 1.png";
 import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
-import Heart from "../../assets/Icons/Heart.png";
-import Cart from "../../assets/Icons/Bag.png";
 import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
 
@@ -140,7 +138,7 @@ function ResponsiveAppBar() {
                   <Button
                     key={i}
                     onClick={handleCloseNavMenu}
-                    className="nav-menu-btn"
+                    className="nav-menu-btn btnContainer"
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
                     {page === "Explore" ? (
@@ -161,6 +159,8 @@ function ResponsiveAppBar() {
                     {btn === "Get Started" ? (
                       <Button
                         onClick={() => handleClickOpen("Signup")}
+                        variant="outlined"
+                        className="BorderDiv right-btn"
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
                         Get Started
@@ -168,6 +168,7 @@ function ResponsiveAppBar() {
                     ) : btn === "Sign In" ? (
                       <Button
                         onClick={() => handleClickOpen("SignIn")}
+                        variant="outlined"
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
                         Sign In
