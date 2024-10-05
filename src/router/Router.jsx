@@ -20,7 +20,6 @@ const Router = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // Check token from cookies and update Redux state
     dispatch(checkAutoLogin());
   }, [dispatch]);
 
@@ -66,7 +65,7 @@ const DashboardWithLayout = () => {
       <div style={{ flex: 1 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="Courses/AddCourse" element={<AddCourse />} />
+          <Route path="/Courses/AddCourse" element={<AddCourse />} />
           <Route
             path="Courses/AboutCourse/:courseId"
             element={<AboutCourses />} // Fixed duplicate import issue

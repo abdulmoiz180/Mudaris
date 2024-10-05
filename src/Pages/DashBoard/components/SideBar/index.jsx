@@ -4,10 +4,6 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 import Tooltip from "@mui/material/Tooltip";
-import Typography from "@mui/material/Typography";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import SchoolIcon from "@mui/icons-material/School";
 import { useNavigate } from "react-router-dom";
 import LogoutIcon from "@mui/icons-material/Logout";
 import "./sidebar.css";
@@ -22,42 +18,39 @@ import usericon from "../assets/icons/usericon.png";
 const NAVIGATION = [
   {
     kind: "header",
-    title: "Main items",
   },
-
   {
     segment: "dashboard",
     title: "Dashboard",
-    icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />, // Custom image icon
+    icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />,
   },
   {
-    segment: "dashboard/Courses",
+    segment: "Courses",
     title: "Courses",
-    icon: <img className="side-icon" src={courseicon} alt="Courses" />, // Custom image icon
+    icon: <img className="side-icon" src={courseicon} alt="Courses" />,
     children: [
       {
-        segment: "AddCourse",
+        segment: "AddCourse", // Updated to include parent 'Courses'
         title: "Add Course",
       },
       {
-        segment: "AllCourses",
+        segment: "AllCourses", // Updated to include parent 'Courses'
         title: "All Courses",
       },
       {
-        segment: "Livestream",
+        segment: "Livestream", // Updated to include parent 'Courses'
         title: "Live Stream",
       },
     ],
   },
-
   {
-    segment: "",
+    segment: "", // You may want to set segment to handle logout properly
     title: "Logout",
     icon: <LogoutIcon className="side-icon" />,
   },
 ];
-const Icons = [
 
+const Icons = [
   { icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" /> },
   {
     icon: <img src={usericon} className="side-icon" />,
@@ -76,7 +69,7 @@ function Search({ onNavigate }) {
   const navigate = useNavigate();
   const handleLogout = () => {
     dispatch(logoutUser());
-    navigate("/");
+    navigate("/Mudaris");
     console.log("user Logged out...");
   };
 
@@ -127,10 +120,10 @@ Search.propTypes = {
 };
 
 function DashboardLayoutSlots(props) {
-  const navigate = useNavigate(); // Use useNavigate to handle routing
+  const navigate = useNavigate();
 
   const handleNavigate = (segment) => {
-    navigate(`/${segment}`); // Navigate to the respective route dynamically
+    navigate(`${segment}`); // This will now work for both parent and child segments
   };
 
   return (
