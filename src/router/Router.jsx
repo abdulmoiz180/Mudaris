@@ -33,7 +33,10 @@ const Router = () => {
         />
         <Route path="*" element={<NotFound404 />} />
         <Route element={<ProtectedRoutes />}>
-          <Route path="/dashboard/*" element={<DashboardWithLayout />} />
+          <Route
+            path="/Mudaris/dashboard/*"
+            element={<DashboardWithLayout />}
+          />
           <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
