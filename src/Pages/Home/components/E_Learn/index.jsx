@@ -29,7 +29,7 @@ const E_Learn = () => {
             language === "persian" ? `align-right` : `align-left`
           }`}
         >
-          {whyElearn[1].title}
+          Why E Learn{" "}
         </Typography>
         <Box component="div" className="why_card_wrapper flex border-gradient">
           {imgs.map((image, index) => (
