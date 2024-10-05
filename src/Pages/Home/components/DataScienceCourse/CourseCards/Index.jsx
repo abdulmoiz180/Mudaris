@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { Box } from "@mui/material";
 import { useLanguage } from "../../../../../globalContext/GlobalProvider";
 import "./CourseCard.css";
+// import coursepagecardimage from "../../../../../assets/Images/coursepagecardimage.png"
+// import videoIcon from "../../../../../assets//IconsvideoIcon.png"
+// import clockIcon from "../../../../../assets/Icons/clockIcon.png"
+// import certificateIcon from "../../../../../assets/Icons/certificateIcon.png"
+// import heartIcon from "../../../../../assets/Icons/heartIcon.png"
+// import Heartfilled from "../../../../../assets/Icons/Heartfilled.png"
+
 export const CourseCards = () => {
   const { data } = useLanguage();
   if (!data) return <div> data is loading..... </div>;
