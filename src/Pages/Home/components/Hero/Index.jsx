@@ -4,9 +4,9 @@ import "./style.css";
 import LandingPageVideo from "@assets/LandingPageVideo.mp4";
 import BlurGlow from "@assets/Images/Blur2.png";
 import Play from "@assets/Icons/play.svg";
-import useLanguageData from "@hooks/useLanguage";
+import {useLanguage} from "../../../../globalContext/GlobalProvider";
 const Hero = () => {
-  const { language, data, status, error } = useLanguageData();
+  const { language, data, status, error } = useLanguage();
   const [video, setVideo] = useState(false);
   const videoRef = useRef(null);
 

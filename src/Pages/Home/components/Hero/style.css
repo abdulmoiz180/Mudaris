@@ -55,8 +55,8 @@
 
 .mainHeading {
   background: linear-gradient(180deg, #ffffff 54.17%, #b372cf 100%);
-  -webkit-background-clip: inherit;
-  background-clip: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent !important;
   font-size: 82px;
   font-weight: 500 !important;
@@ -64,6 +64,7 @@
   text-align: center;
   width: 66%;
 }
+
 
 .mainDescription {
   font-size: 22px !important;
