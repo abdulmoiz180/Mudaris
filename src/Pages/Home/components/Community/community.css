@@ -11,6 +11,9 @@
   width: fit-content !important;
   text-transform: capitalize !important;
 }
+.persian{
+  display: none;
+}
 .community-header {
   gap: 30px;
   width: 40%;

@@ -814,14 +814,17 @@
     "../assets/Images/undplogo.png",
     "../assets/Images/onelogo.png"
   ],
-  "getajob": {
-    "headtitle": "Get a job and side income with 31 sessions in (two months).",
-    "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job. But where is the problem? Most people do not know where to start and how to start? At Modars Academy, we teach you these skills from (A to Z) in a practical way",
-    "descriptionpara2": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
-    "descriptionpara3": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
-    "descriptionpara4": "Know that education and learning is always a long-term and valuable investment for you Read the following carefully if you want to change your life forever",
-    "contentinfobox": "The following content will be taught all at once in these 60 days        The most complete educational package of the digital age The package that every person needs in today's era"
+"getajob": {
+    "headtitle": "با 31 جلسه در (دو ماه) شغل و درآمد جانبی بدست آورید.",
+    "descriptionpara1": "در عصر امروز و با توجه به شرایط اقتصادی کنونی، هر فردی باید حداقل یک شغل جانبی آنلاین داشته باشد که بتواند علاوه بر شغل اصلی، روزانه صدها دلار برای او درآمد داشته باشد.",
+    "descriptionquestion1": "ما مشکل کجاست؟",
+    "descriptionquestion2": "  اکثر مردم نمی دانند از کجا و چگونه شروع کنند؟ ما در آکادمی مدرس این مهارت ها را از (الف تا ض) به صورت عملی به شما آموزش می دهیم",
+    "descriptionpara3": "با ما در 60 روز به اندازه یک دانشگاه 🎓 بیاموزید و در پایان این دوره چندین منبع درآمد ایجاد کنید که روزی 100 دلار برای شما درآمد داشته باشد. مهارت‌های پول‌سازی که در آکادمی مدرس یاد می‌گیرید تا آخر عمر برای شما درآمد ایجاد می‌کند، مانند ماشین 🏧 چاپ پول 💰",
+    "descriptionpara4": "آنچه در این 60 روز یاد می گیرید در حال حاضر در دانشگاه هاروارد، ساینسپو، استنفورد و MIT تدریس می شود. ما نزدیک به دو سال روی توسعه این برنامه انقلابی کار کرده‌ایم که دیدگاه شما را نسبت به پول و ثروت، فقر و آزادی و قوانین پیچیده دنیای امروز به طور کامل و برای همیشه تغییر خواهد داد.",
+    "descriptionparaknowthat1": "بدانید که آموزش و یادگیری همیشه یک سرمایه گذاری بلند مدت و ارزشمند برای شماست اگر می خواهید زندگی خود را برای همیشه تغییر دهید، مطالب زیر را با دقت بخوانید",
+    "contentinfobox": "مطالب زیر به صورت یکجا در این 60 روز آموزش داده می شود کامل ترین پکیج آموزشی عصر دیجیتال پکیج مورد نیاز هر فردی در عصر امروز"
   },
+  
   "numbersforparentarray": {
     "number1": "1",
     "number2": "2",
@@ -919,6 +922,32 @@
       "playbutton": "../assets/Images/playbuttonimg.png",
       "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
       "purpleboxtext": "رسانه‌های اجتماعی"
+    },
+    {
+      "role": "راهنمای آژانس",
+      "description": "بیش از ۴۰ ساعت آموزش گام‌به‌گام که هر جنبه‌ای از ساختن یک آژانس، بهترین مدل کسب‌وکار برای مبتدیان را از ابتدا پوشش می‌دهد. این تقریباً یک سیستم آماده و بازی است. امضای قراردادها با مشتریان، اجرای تبلیغات فیسبوک، ساخت تیم خود، ورود مشتریان، صدور فاکتور و فروش. این برنامه همه چیز را برای شما پوشش داده است.",
+      "video": "../assets/Images/AgencyNavigatorMale.png",
+      "playbutton": "../assets/Images/playbuttonimg.png",
+      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
+      "purpleboxtext": "HTML"
+    },
+    {
+      "role": "نماینده فروش ۶ رقمی",
+      "description": "در دوره نماینده فروش ۶ رقمی، پاول به شما مهارت درآمدزای بی‌نظیر و همیشه ماندگاری را آموزش می‌دهد که شما را در زمان کوتاهی از صفر به درآمد شش رقمی می‌رساند. او همان فرآیند فروش ثابت شده‌ای را به شما می‌دهد که ما در تمام شرکت‌های داخلی خود استفاده می‌کنیم و پاول از آن برای آموزش صدها نفر از اقشار مختلف استفاده کرده و آن‌ها را به نمایندگان فروش از راه دور در سطح جهانی تبدیل کرده است.",
+      "video": "../assets/Images/6-FigureSalesRep.png",
+      "playbutton": "../assets/Images/playbuttonimg.png",
+      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
+      "purpleboxtext": "کسب و کار"
     }
-  ]
+  ],
+  "studentvideoreviews": {
+    "title": "دانش‌آموزان ما چه می‌گویند",
+    "para": "این عنوان بر اصالت و تأثیرگذاری دوره از طریق صدای واقعی دانش‌آموزان تأکید می‌کند.",
+    "button": "به جامعه دانش‌آموزان موفق ما بپیوندید"
+  },
+  "digitaleducation": {
+    "headtitle": "Unlock the Most Comprehensive Digital Education Package in Just 60 Days",
+    "description": "A complete program designed for success in today’s digital world.",
+    "seebtn": "See All"
+  }
 }

@@ -57,16 +57,6 @@ const Hero = () => {
           <Typography variant="body1" className="mainDescription inter">
             {data.Introduction.description}
           </Typography>
-          <div className="HeroComponentButtonDiv">
-            <button
-              className={`hero-section-button inter ${
-                language === "persian" ? `w-half` : ``
-              }`}
-              onClick={videoPlay}
-            >
-              {video ? data.Introduction.pausebtn : data.Introduction.playbtn}
-            </button>
-          </div>
           <span className="hero-bg-lines">
             <img src={BlurGlow} className="BlurGlow" />
           </span>

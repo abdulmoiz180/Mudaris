@@ -19,11 +19,16 @@ const NIGGA_images = [
   Business,
   DataScience,
   Technology,
+  Development,
+  Design,
+  Marketing,
+  Business,
+  DataScience,
+  Technology
 ];
 
 export default function DigitalEducation() {
-  const { data } = useLanguage();
-
+  const { language, data, status, error } = useLanguage();
   if (!data || !data.digitaleducationimages) {
     console.log("Data is not loading");
     return <div>Data is loading...</div>;
