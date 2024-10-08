@@ -24,6 +24,9 @@
   width: 80% !important;
   margin: auto;
 }
+.css-5iifl-MuiPaper-root-MuiAppBar-root {
+  background: transparent !important;
+}
 .btnContainer {
   display: flex;
   padding: 0px 40px;
@@ -124,6 +127,9 @@
   .css-1jmxzwo-MuiToolbar-root {
     min-height: 60px !important;
     justify-content: center !important;
+    border-bottom: 1px solid #aaaaaa !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
   }
   .css-nt0iva-MuiPaper-root-MuiAppBar-root {
     width: 100% !important;

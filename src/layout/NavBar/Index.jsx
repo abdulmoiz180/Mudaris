@@ -67,8 +67,15 @@ function ResponsiveAppBar() {
   if (!data) return <div>Loading...</div>;
 
   return (
-    <AppBar position="static" className="Navbar">
-      <Container maxWidth="xl">
+    <AppBar
+      position="static"
+      className="Navbar"
+      sx={{ background: "transparent" }}
+    >
+      <Container
+        maxWidth="xl"
+        sx={{ borderBottom: "1px solid #aaa", background: "transparent" }}
+      >
         <Toolbar disableGutters>
           <Typography variant="h6" noWrap component="a">
             <img src={Logo} alt="LOGO" />

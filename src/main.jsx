@@ -13,10 +13,10 @@ const root = createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider>
+      {/* <ThemeProvider theme={theme}> */}
+      {/* <CssBaseline /> */}
+      <App />
+      {/* </ThemeProvider> */}
     </Provider>
   </React.StrictMode>
 );
