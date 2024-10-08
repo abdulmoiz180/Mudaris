@@ -2,13 +2,33 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./LineCard.css";
+import LineImg from '../../../../assets/Images/linewo.png';
+import Symbol from '../../../../../public/assets/Icons/Symbol.png';
+import Symbol1 from '../../../../../public/assets/Icons/Symbol (1).png';
+import Symbol2 from '../../../../../public/assets/Icons/Symbol (2).png';
+import Symbol3 from '../../../../../public/assets/Icons/Symbol (3).png';
+import Symbol4 from '../../../../../public/assets/Icons/moneyicon.png';
+import Symbol5 from '../../../../../public/assets/Icons/currciculumicon.png';
+import Symbol6 from '../../../../../public/assets/Icons/networkbrighticon.png';
+import Symbol7 from '../../../../../public/assets/Icons/unilevelicon.png';
 
 const LineCards = () => {
-  const { data,language } = useLanguage();
+  const { data, language } = useLanguage();
   if (!data) return <Typography>Data not available</Typography>;
 
   const parentArray = data.parentarray;
   const numbers = data.numbersforparentarray;
+
+  const symbolArray = [
+    Symbol,
+    Symbol1,
+    Symbol2,
+    Symbol3,
+    Symbol4,
+    Symbol5,
+    Symbol6,
+    Symbol7
+  ];
 
   return (
     <>
@@ -43,7 +63,7 @@ const LineCards = () => {
             <Box className="LineCardContainerMain">
               <Box className="LineCardContainerMainPic">
                 <img
-                  src={sectionItems[0]?.lineImg}
+                  src={LineImg}
                   className="importanttoreadLinePic"
                   alt="Line"
                 />
@@ -72,7 +92,8 @@ const LineCards = () => {
                   <Box className="uaatest" key={index}>
                     <Box className="importanttoreadCard">
                       <Box className="importanttoreadCardPicDiv">
-                        <img src={item.symbol} alt={`Symbol ${index}`} />
+                        {/* Use the symbol from the symbolArray based on the index */}
+                        <img src={symbolArray[index % symbolArray.length]} alt={`Symbol ${index}`} />
                       </Box>
                       <Box className="importanttoreadCardContentText">
                         <Typography
