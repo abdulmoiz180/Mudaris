@@ -378,7 +378,7 @@
   .mainHeading::before {
     position: absolute;
     content: "";
-    background-image: url(../../assets/Icons//circle.svg);
+    background-image: url(../../../../assets/Icons//circle.svg);
     width: 21.911px;
     height: 21.911px;
     top: 220px;
