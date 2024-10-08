@@ -14,6 +14,10 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
+const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
+const RightBtns = ["EN", Heart, Cart, "Sign In", "Get Started"];
+import Heart from "../../assets/Icons/Heart.png";
+import Cart from "../../assets/Icons/Bag.png";
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
@@ -103,7 +107,7 @@ function ResponsiveAppBar() {
                 },
               }}
             >
-              {data.pagesnav.map((page, index) => (
+              {pages.map((page, index) => (
                 <Button
                   key={index}
                   onClick={handleCloseNavMenu}
@@ -130,7 +134,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <div className="Btns">
               <div className="btnContainer">
-                {data.pagesnav.map((page, i) => (
+                {pages.map((page, i) => (
                   <Button
                     key={i}
                     onClick={handleCloseNavMenu}
@@ -150,7 +154,7 @@ function ResponsiveAppBar() {
 
               {/* Right-side Buttons */}
               <Box component="div" className="navBarBtns2 BorderDiv">
-                {data.navRightBtns.map((btn, index) => (
+                {RightBtns.map((btn, index) => (
                   <div className="rightbtn inter" key={index}>
                     {btn === "Get Started" ? (
                       <Button

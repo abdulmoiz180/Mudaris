@@ -18,7 +18,10 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
+        <Route
+          path="/Mudaris"
+          element={<WithNavbarAndFooter element={<Home />} />}
+        />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>
