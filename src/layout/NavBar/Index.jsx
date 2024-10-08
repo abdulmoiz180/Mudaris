@@ -15,7 +15,7 @@ import "./nav.css";
 import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
 const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
-const RightBtns = ["EN", Heart, Cart, "Sign In", "Get Started"];
+const RightBtns = ["EN", "Sign In", "Get Started"];
 import Heart from "../../assets/Icons/Heart.png";
 import Cart from "../../assets/Icons/Bag.png";
 function ResponsiveAppBar() {
