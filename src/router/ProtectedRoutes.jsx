@@ -30,12 +30,10 @@ const ProtectedRoutes = () => {
     return <div>Loading...</div>; // or any loading indicator
   }
 
-  // If token is not found, redirect to the home page
   if (!token) {
     return <Navigate to="/" replace />;
   }
 
-  // If token exists, render the protected child routes
   return <Outlet />;
 };
 

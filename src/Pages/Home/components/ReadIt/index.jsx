@@ -4,7 +4,7 @@ import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./LineCard.css";
 
 const LineCards = () => {
-  const { data } = useLanguage();
+  const { data,language } = useLanguage();
   if (!data) return <Typography>Data not available</Typography>;
 
   const parentArray = data.parentarray;

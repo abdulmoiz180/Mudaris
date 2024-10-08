@@ -148,20 +148,34 @@
   top: 0px;
   left: -20px;
 }
-.importanttoreadCardnumberDiv:nth-child(2) {
+/*
+forEnglishversion dont want english yet so iam hidding this and below is forpersian
+ .importanttoreadCardnumberDiv:nth-child(2) {
   top: 630px;
   right: 3px;
+} */
+.importanttoreadCardnumberDiv:nth-child(2) {
+  top: 560px;
+  right: 3px;
 }
-.importanttoreadCardnumberDiv:nth-child(3) {
+/* .importanttoreadCardnumberDiv:nth-child(3) {
   bottom: 635px;
+} */
+.importanttoreadCardnumberDiv:nth-child(3) {
+  bottom: 560px;
 }
 .specialClassForSecondComponent:nth-child(3){
   bottom: 675px;
 }
-.specialClassForSecondComponent:nth-child(2){
+/* .specialClassForSecondComponent:nth-child(2){
   top: 675px;
+} */
+.specialClassForSecondComponent:nth-child(2) {
+  top: 590px;
 }
-
+.specialClassForSecondComponent:nth-child(3) {
+  bottom: 570px;
+}
 /* .importanttoreadCardnumberDiv */
 @media screen and (max-width: 1180px) {
   .uaatest {

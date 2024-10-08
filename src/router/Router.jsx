@@ -13,6 +13,7 @@ import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
+import { CourseContent } from "../Pages/DashBoard/components/courses/courseContent/index";
 import ProtectedRoutes from "./ProtectedRoutes";
 import { useDispatch } from "react-redux";
 
@@ -31,10 +32,10 @@ const Router = () => {
         <Route path="*" element={<NotFound404 />} />
 
         {/* Protected Routes */}
-        <Route element={<ProtectedRoutes />}>
-          <Route path="/dashboard/*" element={<DashboardWithLayout />} />
-          <Route path="/profile" element={<Profile />} /> {/* Adjusted path */}
-        </Route>
+        {/* <Route element={<ProtectedRoutes />}> */}
+        <Route path="/dashboard/*" element={<DashboardWithLayout />} />
+        <Route path="/profile" element={<Profile />} />
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
   );
@@ -45,7 +46,7 @@ export default Router;
 // Wrapper for Navbar and Footer
 const WithNavbarAndFooter = ({ element }) => {
   const location = useLocation();
-  const shouldRenderNavbarAndFooter = location.pathname !== "/Mudaris/profile"; // Adjust the path
+  const shouldRenderNavbarAndFooter = location.pathname !== "/profile"; // Adjust the path
   return shouldRenderNavbarAndFooter ? (
     <>
       <ResponsiveAppBar />
@@ -71,13 +72,14 @@ const DashboardWithLayout = () => {
             element={<AboutCourses />}
           />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
+          <Route
+            path="Courses/Coursecontent/:courseId"
+            element={<CourseContent />}
+          />
           <Route path="Courses/Livestream" element={<Livestream />} />
 
           {/* Catch-all for dashboard */}
-          <Route
-            path="*"
-            element={<Navigate to="/Mudaris/dashboard" replace />}
-          />
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
       </div>
     </div>

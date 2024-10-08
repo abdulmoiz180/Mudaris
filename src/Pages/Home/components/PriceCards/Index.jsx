@@ -1,39 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Card, CardContent, Typography, Button } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./PriceCard.css";
 import Line from "../../../../assets/Icons/line.png";
 import Tick from "../../../../assets/Icons/tick.png";
-import PaymentScreen from "./PaymentScreen";
 
 export const PriceCards = () => {
   const { data, language } = useLanguage();
-  const [isPaymentScreenVisible, setIsPaymentScreenVisible] = useState(false); // New state to track payment screen visibility
-  const [selectedPlan, setSelectedPlan] = useState(null);
 
-  // Ensure data is correctly loaded
   if (!data) {
-    return <div>Loading...</div>; // Handle loading state
-  }
-  if (isPaymentScreenVisible) {
-    return <PaymentScreen selectedPlan={selectedPlan} />;
+    return <div>Loading...</div>;
   }
 
-  const paymentPlans = data.paymentPlans; // Correct access to paymentPlans
-  const handleSubscribe = (plan, index) => {
-    setIsPaymentScreenVisible(true);
-    setSelectedPlan({
-      planTitle: plan[`plan${index + 1}`],
-      price: plan.price,
-      perks: [
-        plan.perk1,
-        plan.perk2,
-        plan.perk3,
-        plan.perk4,
-        plan.perk5,
-        plan.perk6,
-      ].filter(Boolean), // Remove any falsy values (e.g., null or undefined perks)
-    });
+  const paymentPlans = data.paymentPlans;
+
+  const handleSubscribe = (plan) => {
+    const url =
+      plan.price === "$299"
+        ? "https://buy.stripe.com/5kA8ww5xk2EUe0o6oL"
+        : "https://buy.stripe.com/4gw7ssf7U6Va09y4gF";
+    window.location.href = url;
   };
 
   return (
@@ -64,13 +50,11 @@ export const PriceCards = () => {
                 </Typography>
                 <img src={Line} className="linePic" alt="line separator" />
               </Box>
-              {/* Display paragraph if available */}
               {plan.para && (
                 <Typography variant="body2" className="plan-para inter">
                   {plan.para}
                 </Typography>
               )}
-              {/* Display perks if available */}
               <ul className="plan-perks">
                 {[
                   plan.perk1,
@@ -92,7 +76,7 @@ export const PriceCards = () => {
             <Box className="ButtonDiv">
               <Button
                 className="subscribe-button"
-                onClick={() => handleSubscribe(plan, index)}
+                onClick={() => handleSubscribe(plan)}
               >
                 {paymentPlans[5].subscribe}
               </Button>

@@ -825,6 +825,22 @@
       "playbutton": "../assets/Images/playbuttonimg.png",
       "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
       "purpleboxtext": "Social Media"
+    },
+    {
+      "role": "Agency Navigator",
+      "description": "Over 40 hours of step-by-step training covering EVERY aspect of building an agency, the best business model for beginners, from scratch. This is almost a plug & play system. Signing clients, running Facebook ads, building out your team, on-boarding clients, invoicing, sales. This program has everything covered for you.",
+      "video": "../assets/Images/AgencyNavigatorMale.png",
+      "playbutton": "../assets/Images/playbuttonimg.png",
+      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
+      "purpleboxtext": "HTML"
+    },
+    {
+      "role": "6-Figure Sales Rep",
+      "description": "Inside of 6-Figure Sales Rep, Paul is gonna teach you the best and most timeless high-income skill to go from zero to six figures in record time. He'll give you the same proven sales process that we use internally at all of my companies and that Paul has used to train hundreds of people from all walks of life and turn them into world class Remote Sales Rep.",
+      "video": "../assets/Images/6-FigureSalesRep.png",
+      "playbutton": "../assets/Images/playbuttonimg.png",
+      "blueverifiedbadge": "../assets/Icons/blueverifiedbadge.png",
+      "purpleboxtext": "Business"
     }
   ],
   "gettoknow": {
@@ -1289,5 +1305,10 @@
     {
       "listitem": "Those who are willing to work for others for the rest of their lives without seeking control and freedom over their time."
     }
-  ]
+  ],
+  "studentvideoreviews":{
+"title":"What Our students are saying",
+"para":"This heading emphasizes the authenticity and impact of the course through real student voices.",
+"button":"Join Our Community of successful students"
+  }
 }

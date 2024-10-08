@@ -1,26 +1,32 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import "./community.css";
+import {useLanguage} from "../../../../globalContext/GlobalProvider";
 import Person from "../../../../assets/Images/communityPerson.png";
 import Picture from "../../../../assets/Images/nigga.png";
 import Meeting from "../../../../assets/Images/meeting.png";
 import Podcast from "../../../../assets/Images/podcast.png";
+
 import Meet from "../../../../assets/Images/meet.png";
 import Play from "../../../../assets/Icons/play.svg";
 import Conversation from "../../../../assets/Images/conversation.png";
 const Community = () => {
+  const { language, data, status, error } = useLanguage();
+  
+  if (!data) {
+    return <div className="clr-white">Data is not available</div>;
+  }
   return (
     <section className="community-section">
       <div className="community-header column ">
         <Typography variant="h3" className="clr-white inter community-title ">
-          What Our students are saying
+          {data.studentvideoreviews.title}
         </Typography>
         <Typography variant="h3" className="clr-white inter description">
-          This heading emphasizes the authenticity and impact of the course
-          through real student voices.
+        {data.studentvideoreviews.para}
         </Typography>
         <Button variant="contained" className="community-btn inter">
-          Join Our Community of Successful Students
+        {data.studentvideoreviews.button}
         </Button>
       </div>
       <section className="community-stories flex">

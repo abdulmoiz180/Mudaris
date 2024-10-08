@@ -99,7 +99,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 95px;
+    width: 105px;
     height: 36px;
     border-radius: 6px;
     opacity: 0.6;
@@ -115,7 +115,12 @@
   left: 100px;
   top: 60px;
 }
-
+.hidden{
+  display: none;
+}
+.playbuttonactive{
+  display: block;
+}
 @media only screen and (max-width: 600px) {
   .whatyouget-card-imagecontainer {
     display: none;

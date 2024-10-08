@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import E_Learn from "./components/E_Learn";
 import Hero from "./components/Hero/Index";
 import FAQ from "./components/Accordion";
@@ -12,20 +12,34 @@ import WhatYouGet from "./components/WhatYouGet";
 import "./home.css";
 import GetaJob from "./components/GetaJob";
 import LineCards from "./components/ReadIt";
+import { GetStartedButton } from "./components/GetStartedButton";
 const Home = () => {
+  const priceCardsRef = useRef(null);
+
+  const scrollToPriceCards = () => {
+    if (priceCardsRef.current) {
+      priceCardsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="home-page column primary-bg">
       <Hero />
       <GetaJob />
+      <GetStartedButton onButtonClick={scrollToPriceCards} />
       <DigitalEducation />
       <Community />
+      <GetStartedButton onButtonClick={scrollToPriceCards} />
       <LineCards />
       <WhatYouGet />
-      <PriceCards />
+      <div className="price" ref={priceCardsRef}>
+      <PriceCards/>
+      </div>
       <GettoKnow />
       <Review />
+      <GetStartedButton onButtonClick={scrollToPriceCards} />
       <E_Learn />
       <FAQ />
+      <GetStartedButton onButtonClick={scrollToPriceCards} />
       <GetStart />
     </section>
   );

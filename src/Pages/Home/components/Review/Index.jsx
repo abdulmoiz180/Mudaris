@@ -3,7 +3,7 @@ import { Box, Typography, Button } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./Review.css";
 import Base from "@assets/Images/Base.png";
-import Brightstar from "@assets/Icons/brightstarfilled.png";
+import Brightstar from "@assets/Icons/StarReview.png";
 const Review = () => {
   const [more, setMore] = useState(true);
   const wrap = useRef(null);
