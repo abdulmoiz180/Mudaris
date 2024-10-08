@@ -13,6 +13,7 @@ import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
+import {CourseContent} from '../Pages/DashBoard/components/courses/courseContent/index'
 import ProtectedRoutes from "./ProtectedRoutes";
 import { useDispatch } from "react-redux";
 
@@ -31,13 +32,12 @@ const Router = () => {
         <Route path="*" element={<NotFound404 />} />
 
         {/* Protected Routes */}
-        {/* <Route element={<ProtectedRoutes />}>
+         {/* <Route element={<ProtectedRoutes />}> */}
           <Route
             path="/Mudaris/dashboard/*"
             element={<DashboardWithLayout />}
           />
-          <Route path="/Mudaris/profile" element={<Profile />} />{" "} */}
-          {/* Adjusted path */}
+          <Route path="/Mudaris/profile" element={<Profile />} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>
@@ -62,28 +62,29 @@ const WithNavbarAndFooter = ({ element }) => {
 };
 
 // Dashboard layout including sidebar and nested routes
-// const DashboardWithLayout = () => {
-//   return (
-//     <div style={{ display: "flex" }}>
-//       <DashboardLayoutSlots />
-//       <div style={{ flex: 1 }}>
-//         <Routes>
-//           <Route path="/" element={<Dashboard />} />
-//           <Route path="Courses/AddCourse" element={<AddCourse />} />
-//           <Route
-//             path="Courses/AboutCourse/:courseId"
-//             element={<AboutCourses />}
-//           />
-//           <Route path="Courses/AllCourses" element={<AllCourses />} />
-//           <Route path="Courses/Livestream" element={<Livestream />} />
+const DashboardWithLayout = () => {
+  return (
+    <div style={{ display: "flex" }}>
+      <DashboardLayoutSlots />
+      <div style={{ flex: 1 }}>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="Courses/AddCourse" element={<AddCourse />} />
+          <Route
+            path="Courses/AboutCourse/:courseId"
+            element={<AboutCourses />}
+          />
+          <Route path="Courses/AllCourses" element={<AllCourses />} />
+          <Route path="Courses/Coursecontent/:courseId" element={<CourseContent />} />
+          <Route path="Courses/Livestream" element={<Livestream />} />
 
-//           {/* Catch-all for dashboard */}
-//           <Route
-//             path="*"
-//             element={<Navigate to="/Mudaris/dashboard" replace />}
-//           />
-//         </Routes>
-//       </div>
-//     </div>
-//   );
-// };
+          {/* Catch-all for dashboard */}
+          <Route
+            path="*"
+            element={<Navigate to="/Mudaris/dashboard" replace />}
+          />
+        </Routes>
+      </div>
+    </div>
+  );
+};

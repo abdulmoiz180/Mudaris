@@ -20,21 +20,24 @@ const WhatYouGet = () => {
   const { language, data } = useLanguage();
   if (!data) return <div>data is loading.....</div>;
 
-  const videoRefs = useRef([]);
-  const playButtonRefs = useRef([]);
+  const videoRefs = useRef([]); // To store video elements
+  const playButtonRefs = useRef([]); // To store play button elements
 
   const videoPlay = (index) => {
     const currentVideo = videoRefs.current[index];
     const currentPlayButton = playButtonRefs.current[index];
 
     if (currentVideo.paused) {
+      // Play the current video and hide its play button
       currentVideo.play();
       currentPlayButton.classList.add("hidden");
     } else {
+      // Pause the current video and show its play button
       currentVideo.pause();
       currentPlayButton.classList.remove("hidden");
     }
 
+    // Pause all other videos
     videoRefs.current.forEach((video, idx) => {
       if (idx !== index && video) {
         video.pause();
@@ -70,6 +73,7 @@ const WhatYouGet = () => {
               <video
                 src={wygImages[index]}
                 ref={(el) => (videoRefs.current[index] = el)}
+                className="whatyouget-video"
               ></video>
               <img
                 src={playbuttonimg}

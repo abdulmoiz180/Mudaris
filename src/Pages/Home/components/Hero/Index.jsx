@@ -4,7 +4,8 @@ import "./style.css";
 import LandingPageVideo from "@assets/LandingPageVideo.mp4";
 import BlurGlow from "@assets/Images/Blur2.png";
 import Play from "@assets/Icons/play.svg";
-import {useLanguage} from "../../../../globalContext/GlobalProvider";
+import { useLanguage } from "../../../../globalContext/GlobalProvider";
+
 const Hero = () => {
   const { language, data, status, error } = useLanguage();
   const [video, setVideo] = useState(false);
@@ -12,13 +13,13 @@ const Hero = () => {
 
   const videoPlay = () => {
     setVideo((prevState) => {
-      const newState = !prevState;
-      if (newState) {
+      const newVideoState = !prevState;
+      if (newVideoState) {
         videoRef.current.play();
       } else {
         videoRef.current.pause();
       }
-      return newState;
+      return newVideoState;
     });
   };
 
@@ -52,7 +53,7 @@ const Hero = () => {
         </Card>
         <Box className="ContainerText">
           <Typography variant="h1" className="mainHeading inter">
-            {data.Introduction.title}
+             {data.Introduction.title}
           </Typography>
           <Typography variant="body1" className="mainDescription inter">
             {data.Introduction.description}
@@ -73,7 +74,8 @@ const Hero = () => {
             <video
               ref={videoRef}
               src={LandingPageVideo}
-              className="LandingPageVideo"
+              className={`LandingPageVideo`}
+              onClick={videoPlay}
             />
           </div>
         </Box>

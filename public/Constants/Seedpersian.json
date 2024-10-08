@@ -940,14 +940,78 @@
       "purpleboxtext": "کسب و کار"
     }
   ],
+  "digitaleducation": {
+  "headtitle": "کامل‌ترین بسته آموزش دیجیتال را در عرض ۶۰ روز باز کنید",
+  "description": "یک برنامه کامل طراحی شده برای موفقیت در دنیای دیجیتال امروز.",
+  "seebtn": "مشاهده همه"
+},
+  "digitaleducationcards": [
+  {
+    "title": "توسعه",
+    "pic": "../assets/Images/develop.png",
+    "new": "جدید"
+  },
+  {
+    "title": "طراحی",
+    "pic": "../assets/Images/design.png",
+    "new": "جدید"
+  },
+  {
+    "title": "بازاریابی",
+    "pic": "../assets/Images/Market.png",
+    "new": "جدید"
+  },
+  {
+    "title": "کسب و کار",
+    "pic": "../assets/Images/business.png",
+    "new": "جدید"
+  },
+  {
+    "title": "علوم داده",
+    "pic": "../assets/Images/datas.png",
+    "new": "جدید",
+    "des": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+  },
+  {
+    "title": "فناوری",
+    "pic": "../assets/Images/ai.png",
+    "new": "جدید"
+  },
+  {
+    "title": "توسعه",
+    "pic": "../assets/Images/develop.png",
+    "new": "جدید"
+  },
+  {
+    "title": "طراحی",
+    "pic": "../assets/Images/design.png",
+    "new": "جدید"
+  },
+  {
+    "title": "بازاریابی",
+    "pic": "../assets/Images/Market.png",
+    "new": "جدید"
+  },
+  {
+    "title": "کسب و کار",
+    "pic": "../assets/Images/business.png",
+    "new": "جدید"
+  },
+  {
+    "title": "علوم داده",
+    "pic": "../assets/Images/datas.png",
+    "new": "جدید",
+    "des": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+  },
+  {
+    "title": "فناوری",
+    "pic": "../assets/Images/ai.png",
+    "new": "جدید"
+  }
+],
   "studentvideoreviews": {
     "title": "دانش‌آموزان ما چه می‌گویند",
     "para": "این عنوان بر اصالت و تأثیرگذاری دوره از طریق صدای واقعی دانش‌آموزان تأکید می‌کند.",
     "button": "به جامعه دانش‌آموزان موفق ما بپیوندید"
-  },
-  "digitaleducation": {
-    "headtitle": "Unlock the Most Comprehensive Digital Education Package in Just 60 Days",
-    "description": "A complete program designed for success in today’s digital world.",
-    "seebtn": "See All"
   }
 }

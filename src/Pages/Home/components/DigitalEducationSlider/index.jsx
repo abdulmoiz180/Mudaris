@@ -12,7 +12,7 @@ import Business from "@assets/Images/Businessimg.png";
 import DataScience from "@assets/Images/DataScienceimg.png";
 import Technology from "@assets/Images/Technologyimg.png";
 
-const NIGGA_images = [
+const educationImages = [
   Development,
   Design,
   Marketing,
@@ -29,7 +29,7 @@ const NIGGA_images = [
 
 export default function DigitalEducation() {
   const { language, data, status, error } = useLanguage();
-  if (!data || !data.digitaleducationimages) {
+  if (!data) {
     console.log("Data is not loading");
     return <div>Data is loading...</div>;
   }
@@ -121,7 +121,7 @@ export default function DigitalEducation() {
       </Box>
 
       <Slider {...settings}>
-        {NIGGA_images.map((img, index) => (
+        {educationImages.map((img, index) => (
           <Box
             key={index}
             className="PicBgDigitalEducationSlide"
@@ -130,7 +130,6 @@ export default function DigitalEducation() {
               backgroundSize: "cover",
             }}
           >
-            {/* If data.digitaleducationcards exists, match it with the image */}
             {images[index] && (
               <Box className="DigitalEducationSlideNewandPicBox">
                 <Box className="DigitalEducationSlideNewChildBox">
@@ -159,14 +158,15 @@ export default function DigitalEducation() {
               >
                 {images[index]?.title}
               </Typography>
+              {/* Uncomment the following code if you want to display descriptions */}
               {/* {images[index]?.des && (
                 <Typography
                   variant="body"
                   className="dm-sans DigitalEducationSlideDescription clr-white"
                 >
                   {images[index]?.des}
-                </Typography> 
-                     )}*/}
+                </Typography>
+              )} */}
             </Box>
           </Box>
         ))}
