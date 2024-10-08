@@ -67,8 +67,8 @@
 .right-btn {
   text-transform: inherit !important;
 }
-.BorderDiv .rightbtn:nth-child(4),
-.BorderDiv .rightbtn:nth-child(5) {
+.BorderDiv .rightbtn:nth-child(2),
+.BorderDiv .rightbtn:nth-child(3) {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
@@ -78,10 +78,10 @@
   height: 42px;
   backdrop-filter: blur(7px);
 }
-.BorderDiv .rightbtn:nth-child(5) {
+/* .BorderDiv .rightbtn:nth-child(2) {
   margin-left: 10px;
-}
-.BorderDiv .rightbtn:nth-child(4) Button {
+} */
+.BorderDiv .rightbtn:nth-child(2) Button {
   width: 109px;
   height: 30px;
   border-radius: 8px;
@@ -93,7 +93,7 @@
   font-size: 14px;
   text-transform: capitalize !important;
 }
-.BorderDiv .rightbtn:nth-child(5) Button {
+.BorderDiv .rightbtn:nth-child(3) Button {
   font-size: 14px;
   font-weight: 400 !important;
   width: 109px;
@@ -127,7 +127,6 @@
   .css-1jmxzwo-MuiToolbar-root {
     min-height: 60px !important;
     justify-content: center !important;
-    border-bottom: 1px solid #aaaaaa !important;
     border-left: 0 !important;
     border-right: 0 !important;
   }
