@@ -145,6 +145,10 @@
   background-blend-mode: screen;
   overflow: hidden !important;
 }
+
+.plan-card:nth-child(3) {
+display: none !important;
+} 
 .plan-para {
   color: #fff;
   font-size: 14px !important;

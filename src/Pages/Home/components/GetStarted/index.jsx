@@ -47,8 +47,7 @@ function GetStart() {
         />
 
         <button
-          className={`get-start-button inter button-text ${
-            language === "persian" ? `m-right` : ``
+          className={`get-start-button inter button-text 
           }`}
         >
           {data.GetStarted.buttontext}

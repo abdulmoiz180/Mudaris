@@ -76,7 +76,7 @@ const AllCourses = () => {
             <div className="allcourses-footer">
               <Button
                 onClick={() =>
-                  afterClick("dashboard/Courses/AboutCourse", course.id)
+                  afterClick("Mudaris/dashboard/Courses/AboutCourse", course.id)
                 }
                 className="allcourses-button"
                 variant="outlined"

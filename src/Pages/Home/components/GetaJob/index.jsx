@@ -2,31 +2,40 @@ import React from "react";
 import "./getajob.css";
 import { Box } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
-import Spline from "@splinetool/react-spline";
-
+import MudarisLogo from '../../../../assets/Images/mudarislogo.jfif'
 const GetaJob = () => {
-  const { data } = useLanguage();
+  const { data,language } = useLanguage();
   if (!data) return <div> data is loading..... </div>;
   const pickData = data.getajob;
   return (
     <section className="getajob-container">
       <Box className="getajob-heading">
-        <h2 className="inter">{pickData.headtitle}</h2>
+        <h1 className="inter">{pickData.headtitle}</h1>
       </Box>
       <Box className="getajob-content">
         <div className="getajob-paragraphs">
+          <div className='getajobParaforbg'>
+            <div className="getajobparacontentonly">
           <p className="getajob-para dm-sans">{pickData.descriptionpara1}</p>
           <div className="getajob-para">
             <p className="getajob-qa dm-sans">
               {pickData.descriptionquestion1}
             </p>
+            </div>
             <p className="getajob-qa dm-sans">
               {pickData.descriptionquestion2}
             </p>
             <p className="getajob-qa dm-sans">{pickData.descriptionanswer}</p>
+            </div>
+
           </div>
+          <div className="getajobParaforbg">
           <p className="getajob-para dm-sans">{pickData.descriptionpara3}</p>
+          </div>
+          <div className="getajobParaforbg">
           <p className="getajob-para dm-sans">{pickData.descriptionpara4}</p>
+          </div>
+          <div className="getajobParaforbg">
           <div className="getajob-para">
             <p className="getajob-knwothat dm-sans">
               {pickData.descriptionparaknowthat1}
@@ -35,10 +44,8 @@ const GetaJob = () => {
               {pickData.descriptionparaknowthat2}
             </p>
           </div>
-        </div>
-
-        <div className="getajob-circle">
-          <Spline scene="https://prod.spline.design/37l9lw5REBf6fMtO/scene.splinecode" />
+          </div>
+              <img src={MudarisLogo}  className="logodiv"/>
         </div>
       </Box>
       <div className="getajob-infobox">

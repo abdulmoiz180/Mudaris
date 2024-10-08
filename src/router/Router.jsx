@@ -13,6 +13,7 @@ import DashboardLayoutSlots from "../Pages/DashBoard/components/SideBar/index";
 import AboutCourses from "../Pages/DashBoard/components/courses/aboutCourses/index";
 import AllCourses from "../Pages/DashBoard/components/courses/allCourses/index";
 import Livestream from "../Pages/DashBoard/components/courses/liveStreaming/index";
+import {CourseContent} from '../Pages/DashBoard/components/courses/courseContent/index'
 import ProtectedRoutes from "./ProtectedRoutes";
 import { useDispatch } from "react-redux";
 
@@ -31,14 +32,13 @@ const Router = () => {
         <Route path="*" element={<NotFound404 />} />
 
         {/* Protected Routes */}
-        <Route element={<ProtectedRoutes />}>
+         {/* <Route element={<ProtectedRoutes />}> */}
           <Route
             path="/Mudaris/dashboard/*"
             element={<DashboardWithLayout />}
           />
-          <Route path="/Mudaris/profile" element={<Profile />} />{" "}
-          {/* Adjusted path */}
-        </Route>
+          <Route path="/Mudaris/profile" element={<Profile />} />
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
   );
@@ -75,6 +75,7 @@ const DashboardWithLayout = () => {
             element={<AboutCourses />}
           />
           <Route path="Courses/AllCourses" element={<AllCourses />} />
+          <Route path="Courses/Coursecontent/:courseId" element={<CourseContent />} />
           <Route path="Courses/Livestream" element={<Livestream />} />
 
           {/* Catch-all for dashboard */}
