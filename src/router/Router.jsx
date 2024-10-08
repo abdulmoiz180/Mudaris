@@ -32,12 +32,8 @@ const Router = () => {
 
         {/* Protected Routes */}
         <Route element={<ProtectedRoutes />}>
-          <Route
-            path="/Mudaris/dashboard/*"
-            element={<DashboardWithLayout />}
-          />
-          <Route path="/Mudaris/profile" element={<Profile />} />{" "}
-          {/* Adjusted path */}
+          <Route path="/dashboard/*" element={<DashboardWithLayout />} />
+          <Route path="/profile" element={<Profile />} /> {/* Adjusted path */}
         </Route>
       </Routes>
     </BrowserRouter>

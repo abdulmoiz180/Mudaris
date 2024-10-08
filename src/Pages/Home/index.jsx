@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <section className="home-page column primary-bg">
       <Hero />
-      {/* <GetaJob /> */}
+      <GetaJob />
       <DigitalEducation />
       <Community />
       <LineCards />

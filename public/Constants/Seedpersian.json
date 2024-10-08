@@ -815,12 +815,16 @@
     "../assets/Images/onelogo.png"
   ],
   "getajob": {
-    "headtitle": "Get a job and side income with 31 sessions in (two months).",
-    "descriptionpara1": "In today's era and considering the current economic conditions, every person should have at least one online side job that can earn him hundreds of dollars daily in addition to his main job. But where is the problem? Most people do not know where to start and how to start? At Modars Academy, we teach you these skills from (A to Z) in a practical way",
-    "descriptionpara2": "With us, learn 🎓 as much as a university 🏫 in 60 days and at the end of this course, create several sources of income that will earn you 100s of dollars 💵 a day. The money-making skills you learn in Modares Academy will generate income for you for the rest of your life, like a machine 🏧 money printing 💰",
-    "descriptionpara3": "What you learn in these 60 days is being taught right now at Harvard, SciencePo, Stanford and MIT. We have worked for nearly two years on the development of this revolutionary program that will completely and forever change your view of money and wealth, poverty and freedom, and the complex rules of today's world.",
-    "descriptionpara4": "Know that education and learning is always a long-term and valuable investment for you Read the following carefully if you want to change your life forever",
-    "contentinfobox": "The following content will be taught all at once in these 60 days        The most complete educational package of the digital age The package that every person needs in today's era"
+    "headtitle": "با ۳۱ جلسه در دو ماه شغل و درآمد جانبی پیدا کنید.",
+    "descriptionpara1": "در عصر امروز و با توجه به شرایط اقتصادی فعلی، هر فرد باید حداقل یک شغل جانبی آنلاین داشته باشد که بتواند علاوه بر شغل اصلی خود، روزانه صدها دلار درآمد کسب کند.",
+    "descriptionquestion1": "اما مشکل کجاست؟",
+    "descriptionquestion2": "بیشتر افراد نمی‌دانند از کجا شروع کنند و چگونه شروع کنند؟",
+    "descriptionanswer": "در آکادمی مدرس، ما این مهارت‌ها را به صورت عملی از (الف تا ی) به شما آموزش می‌دهیم.",
+    "descriptionpara3": "با ما، در ۶۰ روز به اندازه یک دانشگاه 🎓 یاد بگیرید 🏫 و در پایان این دوره، چندین منبع درآمد ایجاد کنید که روزانه صدها دلار 💵 برای شما درآمد داشته باشد. مهارت‌های پول‌سازی که در آکادمی مدرس یاد می‌گیرید برای تمام عمر مانند یک ماشین 🏧 چاپ پول 💰 برای شما درآمد تولید خواهد کرد.",
+    "descriptionpara4": "آنچه که در این ۶۰ روز می‌آموزید هم اکنون در دانشگاه‌های هاروارد، ساینس پو، استنفورد و MIT تدریس می‌شود. ما نزدیک به دو سال بر روی توسعه این برنامه انقلابی کار کرده‌ایم که دیدگاه شما را نسبت به پول و ثروت، فقر و آزادی، و قوانین پیچیده دنیای امروز به طور کامل و برای همیشه تغییر خواهد داد.",
+    "descriptionparaknowthat1": "بدانید که آموزش و یادگیری همیشه یک سرمایه‌گذاری بلندمدت و ارزشمند برای شما است.",
+    "descriptionparaknowthat2": "اگر می‌خواهید زندگی خود را برای همیشه تغییر دهید، موارد زیر را با دقت بخوانید.",
+    "contentinfobox": "محتوای زیر به طور کامل در این ۶۰ روز آموزش داده خواهد شد📚 کامل‌ترین بسته آموزشی عصر دیجیتال 💻📷 بسته‌ای که هر فرد در عصر امروز به آن نیاز دارد."
   },
   "numbersforparentarray": {
     "number1": "1",
