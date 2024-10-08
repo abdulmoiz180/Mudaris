@@ -11,8 +11,7 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import Twitter from "@assets/Icons/Twitter.svg";
 
 const Footer = () => {
-  // const { data, toggleLanguage } = useLanguage();
-  const { data } = useLanguage();
+  const { data, toggleLanguage } = useLanguage();
   if (!data) return <h2>data is loading....</h2>;
   return (
     <footer className="footer-bg align-center">
@@ -32,7 +31,7 @@ const Footer = () => {
           </Box>
           <Button
             variant="outlined"
-            // onClick={toggleLanguage}
+            onClick={toggleLanguage}
             className="footer-btn clr-white inter"
           >
             <span>

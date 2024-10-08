@@ -17,18 +17,18 @@ const AllCourses = () => {
   };
 
   const fetchCourses = async () => {
-    setLoading(true); 
+    setLoading(true);
     try {
       const querySnapshot = await getDocs(collection(db, "courses"));
       const coursesData = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
-        id: doc.id, 
+        id: doc.id,
       }));
-      setCourses(coursesData); 
+      setCourses(coursesData);
     } catch (error) {
       console.error("Error fetching courses:", error);
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
@@ -76,7 +76,7 @@ const AllCourses = () => {
             <div className="allcourses-footer">
               <Button
                 onClick={() =>
-                  afterClick("Mudaris/dashboard/Courses/AboutCourse", course.id)
+                  afterClick("/dashboard/Courses/AboutCourse", course.id)
                 }
                 className="allcourses-button"
                 variant="outlined"
