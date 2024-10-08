@@ -159,7 +159,6 @@ function ResponsiveAppBar() {
                 ))}
               </div>
 
-              {/* Right-side Buttons */}
               <Box component="div" className="navBarBtns2 BorderDiv">
                 {RightBtns.map((btn, index) => (
                   <div className="rightbtn inter" key={index}>
