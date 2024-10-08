@@ -42,7 +42,7 @@ const Signup = ({ open, handleClose, toggle }) => {
         signUpUser({ email: values.email, password: values.password })
       ).then((result) => {
         if (result.meta.requestStatus === "fulfilled") {
-          navigate("/Mudaris/dashboard/"); // Redirect after successful signup
+          navigate("/dashboard/"); // Redirect after successful signup
         } else {
           console.log("Signup failed", result.payload); // Handle failure (optional)
         }

@@ -21,12 +21,12 @@ const NAVIGATION = [
     kind: "header",
   },
   {
-    segment: "Mudaris/dashboard",
+    segment: "dashboard",
     title: "Dashboard",
     icon: <img className="side-icon" src={dashboardicon} alt="Dashboard" />,
   },
   {
-    segment: "Mudaris/dashboard", // Parent segment for "Courses"
+    segment: "dashboard", // Parent segment for "Courses"
     title: "Courses",
     icon: <img className="side-icon" src={courseicon} alt="Courses" />,
     children: [
@@ -71,7 +71,7 @@ function Search({ onNavigate }) {
 
   const handleLogout = () => {
     dispatch(logoutUser());
-    navigate("/Mudaris");
+    navigate("/");
     console.log("User logged out...");
   };
 
@@ -125,7 +125,7 @@ function DashboardLayoutSlots(props) {
   const navigate = useNavigate();
 
   const handleNavigate = (segment) => {
-    navigate(`/Mudaris/dashboard/${segment}`); // Prefix routes with `/Mudaris/dashboard/`
+    navigate(`/dashboard/${segment}`); // Prefix routes with `/Mudaris/dashboard/`
     console.log(segment);
   };
 
