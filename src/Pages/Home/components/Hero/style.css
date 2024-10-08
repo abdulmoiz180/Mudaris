@@ -23,6 +23,30 @@
   justify-content: center;
   background-color: transparent !important;
 }
+/* language exception handling */
+.persianHeading {
+  font-size: 82px !important;
+  height: 200px;
+  display: flex;
+  font-weight: 500 !important;
+  align-items: center;
+  width: 700px;
+  background: linear-gradient(180deg, #fff 54.17%, #b372cf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: -4.149px;
+  -webkit-text-fill-color: transparent;
+}
+.persianDescription {
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px; /* 155% */
+  letter-spacing: -0.002px;
+  width: 500px !important;
+}
 
 .cardText {
   display: flex;

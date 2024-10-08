@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import E_Learn from "./components/E_Learn";
 import Hero from "./components/Hero/Index";
 import FAQ from "./components/Accordion";
@@ -18,7 +18,7 @@ const Home = () => {
 
   const scrollToPriceCards = () => {
     if (priceCardsRef.current) {
-      priceCardsRef.current.scrollIntoView({ behavior: 'smooth' });
+      priceCardsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
   return (
@@ -32,7 +32,7 @@ const Home = () => {
       <LineCards />
       <WhatYouGet />
       <div className="price" ref={priceCardsRef}>
-      <PriceCards/>
+        <PriceCards />
       </div>
       <GettoKnow />
       <Review />

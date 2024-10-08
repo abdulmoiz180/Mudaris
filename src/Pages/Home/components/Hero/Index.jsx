@@ -7,7 +7,7 @@ import Play from "@assets/Icons/play.svg";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 
 const Hero = () => {
-  const { language, data, status, error } = useLanguage();
+  const { language, data } = useLanguage();
   const [video, setVideo] = useState(false);
   const videoRef = useRef(null);
 
@@ -23,15 +23,6 @@ const Hero = () => {
     });
   };
 
-  // Handle different states
-  if (status === "loading") {
-    return <div className="clr-white">Loading data...</div>;
-  }
-
-  if (status === "failed") {
-    return <div className="clr-white">Error: {error}</div>;
-  }
-
   if (!data) {
     return <div className="clr-white">Data is not available</div>;
   }
@@ -41,21 +32,27 @@ const Hero = () => {
       <Box className="ContainerContent">
         <Card className="card">
           <CardContent
-            className={`cardText inter ${
-              language === "persian" ? `w-half` : ``
-            }`}
+            className={` ${language === "persian" ? "w-half cardText rubik" : ""}`}
           >
-            <Typography variant="p" className="NewText">
+            <Typography variant="p" className="NewText inter">
               {data.Introduction.tag}
             </Typography>
             <Typography variant="p">{data.Introduction.latest}</Typography>
           </CardContent>
         </Card>
         <Box className="ContainerText">
-          <Typography variant="h1" className="mainHeading inter">
-             {data.Introduction.title}
+          {/*  */}
+          <Typography
+            variant="h1"
+            className={`  ${language === "persian" ? "persianHeading clr-white rubik" : "mainHeading inter"}`}
+          >
+            {data.Introduction.title}
           </Typography>
-          <Typography variant="body1" className="mainDescription inter">
+
+          <Typography
+            variant="body1"
+            className={` ${language === "persian" ? "persianDescription clr-white rubik" : "mainDescription inter"}`}
+          >
             {data.Introduction.description}
           </Typography>
           <span className="hero-bg-lines">

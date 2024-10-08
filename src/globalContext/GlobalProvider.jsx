@@ -5,7 +5,7 @@ const persianJson = "../../public/Constants/Seedpersian.json";
 export const useLanguage = () => useContext(GlobalContext);
 
 const GlobalProvider = ({ children }) => {
-  const [language, setLanguage] = useState("english");
+  const [language, setLanguage] = useState("persian");
   const [data, setData] = useState(null);
 
   const toggleLanguage = () => {
