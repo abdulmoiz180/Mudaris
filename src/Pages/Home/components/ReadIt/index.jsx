@@ -79,7 +79,7 @@ const LineCards = () => {
                     >
                       <Typography
                         variant="h6"
-                        className="importanttoreadCardnumber inter"
+                        className={`${language === "persian" ? "importanttoreadCardnumber" : "importanttoreadCardnumber Eng"} inter`} // Corrected className
                       >
                         {num}
                       </Typography>

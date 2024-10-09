@@ -1,33 +1,44 @@
 import React from "react";
-import { Box, Button, Divider, Typography, Container } from "@mui/material";
+import { Box, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import "./get.css";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
-import Drimg from "../../../../assets/Images/Drimg.png"
-import sciencespo from "../../../../assets/Images/sciencespo.png"
-import tolonews from "../../../../assets/Images/tolonews.png"
-import tv from "../../../../assets/Images/tv.png"
-import mudaris from "../../../../assets/Images/mudaris.png"
-import undplogo from "../../../../assets/Images/undplogo.png"
-import onelogo from "../../../../assets/Images/onelogo.png"
+import Drimg from "../../../../assets/Images/Drimg.png";
+import sciencespo from "../../../../assets/Images/sciencespo.png";
+import tolonews from "../../../../assets/Images/tolonews.png";
+import tv from "../../../../assets/Images/tv.png";
+import mudaris from "../../../../assets/Images/mudaris.png";
+import undplogo from "../../../../assets/Images/undplogo.png";
+import onelogo from "../../../../assets/Images/onelogo.png";
 
 const logos = [sciencespo, tolonews, tv, mudaris, undplogo, onelogo];
 
 const GettoKnow = () => {
   const { language, data } = useLanguage();
+  const navigate = useNavigate(); // Create navigate instance
+
   if (!data) return <div> data is loading..... </div>;
   const getData = data.gettoknow;
+
+  // Function to handle button click and navigate
+  const handleButtonClick = () => {
+    navigate("/Mudaris/AboutOwner"); // Navigate to /Mudaris/AboutOwner
+  };
+
   return (
     <section className="GetToknowMainSection">
       <Box className="GetToknowMainContainer">
         <Box className="GetToknowContent">
-          <img src={Drimg} />
+          <img src={Drimg} alt="Drimg" />
           <Box className="GetToknowTextContent inter">
             <h2 className="inter">{getData.headtitle}</h2>
             <Box className="paraDivGettoKnow">
               <p className="inter">{getData.headdescription}</p>
               <p className="inter">{getData.headdescription2}</p>
             </Box>
-            <Button className="dm-sans">{getData.buttonlabel}</Button>
+            <Button className="dm-sans" onClick={handleButtonClick}> {/* Add onClick event */}
+              {getData.buttonlabel}
+            </Button>
           </Box>
         </Box>
         <Box className="GetToknowContentbelowContainer">
@@ -50,4 +61,5 @@ const GettoKnow = () => {
     </section>
   );
 };
+
 export default GettoKnow;

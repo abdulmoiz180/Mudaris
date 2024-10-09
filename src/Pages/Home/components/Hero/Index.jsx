@@ -32,7 +32,7 @@ const Hero = () => {
       <Box className="ContainerContent">
         <Card className="card">
           <CardContent
-            className={` ${language === "persian" ? "w-half cardText rubik" : ""}`}
+            className={` ${language === "persian" ? "w-half cardText rubik" : "cardText"}`}
           >
             <Typography variant="p" className="NewText inter">
               {data.Introduction.tag}

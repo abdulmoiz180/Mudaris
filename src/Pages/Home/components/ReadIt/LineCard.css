@@ -150,7 +150,7 @@
 }
 /*
 forEnglishversion dont want english yet so iam hidding this and below is forpersian
- .importanttoreadCardnumberDiv:nth-child(2) {
+ .importanttoreadCardnumber Eng:nth-child(2) {
   top: 630px;
   right: 3px;
 } */
@@ -158,7 +158,7 @@ forEnglishversion dont want english yet so iam hidding this and below is forpers
   top: 560px;
   right: 3px;
 }
-/* .importanttoreadCardnumberDiv:nth-child(3) {
+/* .importanttoreadCardnumber Eng:nth-child(3) {
   bottom: 635px;
 } */
 .importanttoreadCardnumberDiv:nth-child(3) {
@@ -167,9 +167,9 @@ forEnglishversion dont want english yet so iam hidding this and below is forpers
 .specialClassForSecondComponent:nth-child(3){
   bottom: 675px;
 }
-/* .specialClassForSecondComponent:nth-child(2){
+.specialClassForSecondComponent:nth-child(2){
   top: 675px;
-} */
+}
 .specialClassForSecondComponent:nth-child(2) {
   top: 590px;
 }
