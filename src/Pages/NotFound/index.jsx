@@ -8,7 +8,7 @@ const NotFound404 = () => {
     <main>
       <Typography className="clr-white inter">404 Page not found</Typography>
       <Button variant="contained">
-        <Link to="/Mudaris">Go to home page</Link>
+        <Link to="/">Go to home page</Link>
       </Button>
     </main>
   );

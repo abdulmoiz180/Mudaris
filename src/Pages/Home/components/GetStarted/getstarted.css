@@ -1,12 +1,11 @@
 .get-start-container {
-  background:
-    url("../../../../assets/Images/boxpattern.png"),
-      radial-gradient(
-        circle farthest-corner at top center,
-        #000000 0%,
-        #622a9a 0%,
-        #000000 50%
-      ) !important;
+  background: url("../../../../assets/Images/boxpattern.png"),
+    radial-gradient(
+      circle farthest-corner at top center,
+      #000000 0%,
+      #622a9a 0%,
+      #000000 50%
+    ) !important;
   background-size: cover; /* Ensure the pattern image covers the container */
   background-blend-mode: color-dodge; /* Blend the image and gradient if needed */
 
@@ -52,7 +51,18 @@
   line-height: 31px;
   letter-spacing: -0.0101em;
 }
-
+.my-with {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: -50%;
+  width: 50%;
+  height: 47px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.0101em;
+}
 .get-start-credit {
   font-size: 16px;
   font-weight: 400;

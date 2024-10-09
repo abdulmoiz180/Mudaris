@@ -292,11 +292,13 @@
   .ContainerContent {
     gap: 15px;
   }
-  .mainHeading {
+  .mainHeading,
+  .persianHeading {
     font-size: 40px !important;
     width: 100%;
   }
-  .mainDescription {
+  .mainDescription,
+  .persianDescription {
     font-size: 18px !important;
     width: 100%;
   }
