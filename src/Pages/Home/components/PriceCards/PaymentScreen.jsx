@@ -16,8 +16,9 @@ import Tick from "../../../../assets/Icons/tick.png";
 const PaymentScreen = ({ selectedPlan }) => {
   const [value, setValue] = useState("one");
   console.table(selectedPlan.planTitle);
+
   return (
-    <section className="payment-screen flex ">
+    <section className="payment-screen flex">
       <main className="column checkout-section">
         <Typography className="clr-white inter fs-36" variant="h6">
           Checkout
@@ -37,17 +38,15 @@ const PaymentScreen = ({ selectedPlan }) => {
                 <TextField
                   placeholder={f.placeholder}
                   type={f.type}
-                  className="checkout-field "
+                  className="checkout-field"
                   sx={{ width: "380px" }}
                 />
               </div>
             ))}
           </Box>
+
           <div className="payment-method-wrapper">
-            <Typography
-              className="clr-white inter fs-24-w-500 flex g-20"
-              variant="h6"
-            >
+            <Typography className="clr-white inter fs-24-w-500 flex g-20">
               <span>2. </span>
               Payment Method
             </Typography>
@@ -114,7 +113,7 @@ const PaymentScreen = ({ selectedPlan }) => {
                   <Box
                     display="flex"
                     flexDirection="column"
-                    className="crypto-container "
+                    className="crypto-container"
                   >
                     {tabData.two.map((field, index) => (
                       <div className="payment-fields-container crypto-fields">
@@ -147,6 +146,7 @@ const PaymentScreen = ({ selectedPlan }) => {
           </div>
         </div>
       </main>
+
       <section>
         <Card className="plan-card checkout-plan-card">
           <CardContent>
@@ -161,7 +161,7 @@ const PaymentScreen = ({ selectedPlan }) => {
             </Box>
             <ul className="plan-perks">
               {selectedPlan.perks.map((perk, index) => (
-                <Box className="perk  flex inter" key={index}>
+                <Box className="perk flex inter" key={index}>
                   <img src={Tick} alt="Tick Icon" />
                   <li className="fs-18" key={index}>
                     {perk}
@@ -172,7 +172,7 @@ const PaymentScreen = ({ selectedPlan }) => {
           </CardContent>
           <Box className="ButtonDiv">
             <Button className="subscribe-button checkout-subscribe-btn">
-              subscribe
+              Subscribe
             </Button>
           </Box>
         </Card>
@@ -180,59 +180,26 @@ const PaymentScreen = ({ selectedPlan }) => {
     </section>
   );
 };
+
 export default PaymentScreen;
 
-let contactInfo = [
-  {
-    label: "First Name",
-    placeholder: "john",
-    type: "text",
-  },
-  {
-    label: "Last Name",
-    placeholder: "doe",
-    type: "text",
-  },
-  {
-    label: "Phone Number",
-    placeholder: "090978601",
-    type: "tel",
-  },
-  {
-    label: "Email Address",
-    placeholder: "example@test.com",
-    type: "email",
-  },
+const contactInfo = [
+  { label: "First Name", placeholder: "john", type: "text" },
+  { label: "Last Name", placeholder: "doe", type: "text" },
+  { label: "Phone Number", placeholder: "090978601", type: "tel" },
+  { label: "Email Address", placeholder: "example@test.com", type: "email" },
 ];
+
 const tabData = {
   one: [
-    {
-      label: "Name on Card",
-      type: "text",
-      placeholder: "Name on card",
-      grid: 6,
-    },
-    {
-      label: "Enter Card Number",
-      type: "number",
-      placeholder: "0000 0000 0000",
-      grid: 6,
-    },
-    { label: "Valid Date", type: "text", placeholder: "MM/YY", grid: 6 },
-    { label: "Security Code", type: "password", placeholder: "123", grid: 6 },
+    { label: "Name on Card", type: "text", placeholder: "Name on card" },
+    { label: "Enter Card Number", type: "number", placeholder: "0000 0000 0000" },
+    { label: "Valid Date", type: "text", placeholder: "MM/YY" },
+    { label: "Security Code", type: "password", placeholder: "123" },
   ],
   two: [
     { label: "Pay With", type: "text", placeholder: "USDT (ERC-20)" },
-    {
-      label: "Send to this address",
-      type: "text",
-      value: "0x123...abc",
-      placeholder: "56gff5fg6565225fg4fg64631fg55",
-    },
-    {
-      label: "USDT (ERC-20) Amount to be received",
-      type: "number",
-      placeholder: "$999",
-    },
+    { label: "Send to this address", type: "text", value: "0x123...abc" },
+    { label: "USDT (ERC-20) Amount to be received", type: "number", placeholder: "$999" },
   ],
 };

@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import { Box, Typography, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./DigitalEducation.css";
@@ -24,11 +25,13 @@ const educationImages = [
   Marketing,
   Business,
   DataScience,
-  Technology
+  Technology,
 ];
 
 export default function DigitalEducation() {
   const { language, data, status, error } = useLanguage();
+  const navigate = useNavigate(); // Create navigate instance
+
   if (!data) {
     console.log("Data is not loading");
     return <div>Data is loading...</div>;
@@ -98,6 +101,11 @@ export default function DigitalEducation() {
     ],
   };
 
+  // Function to handle "See All" button click
+  const handleSeeAllClick = () => {
+    navigate("/Mudaris/datascience"); // Navigate to Mudaris/datascience
+  };
+
   return (
     <section className="DigitalEducationComponent">
       <Box className="DigitalEducationComponentTextComponent">
@@ -116,7 +124,7 @@ export default function DigitalEducation() {
           </Typography>
         </Box>
         <Box className="DigitalEducationComponentButtonDiv">
-          <Button>See All</Button>
+          <Button onClick={handleSeeAllClick}>See All</Button> {/* Add onClick event */}
         </Box>
       </Box>
 
@@ -158,15 +166,6 @@ export default function DigitalEducation() {
               >
                 {images[index]?.title}
               </Typography>
-              {/* Uncomment the following code if you want to display descriptions */}
-              {/* {images[index]?.des && (
-                <Typography
-                  variant="body"
-                  className="dm-sans DigitalEducationSlideDescription clr-white"
-                >
-                  {images[index]?.des}
-                </Typography>
-              )} */}
             </Box>
           </Box>
         ))}

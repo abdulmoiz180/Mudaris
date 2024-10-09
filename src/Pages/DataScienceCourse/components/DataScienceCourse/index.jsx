@@ -17,10 +17,7 @@ import heartIcon from "../../../../assets/Icons/heartIcon.png";              // 
 import filledHeartIcon from "../../../../assets/Icons/Heartfilled.png";         // Filled heart icon
 
 export const DataScience = () => {
-  const { data } = useLanguage();
-  console.log(data);
-  
-  // Ensure data is loaded
+  const { data } = useLanguage();  
   if (!data) return <div>Data is loading...</div>;
   if (!data.DataScienceCourse) return <div>No courses available.</div>;
 
