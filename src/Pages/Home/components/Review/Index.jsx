@@ -8,7 +8,7 @@ const Review = () => {
   const [more, setMore] = useState(true);
   const wrap = useRef(null);
   const bg = useRef(null);
-  const { data } = useLanguage();
+  const { data, language } = useLanguage();
 
   // Check if data is available and valid before accessing it
   if (!data || !data.StudentReviews || data.StudentReviews.length === 0) {
@@ -31,11 +31,11 @@ const Review = () => {
       bg.current.className = "ReviewComponentButton";
     }
   };
-
+ 
   return (
     <section className="reviewComponentParentSection">
       <Box component="div" className="ReviewContainer">
-        <Typography variant="h2" className="inter title heading">
+        <Typography variant="h2" className={`${language === "persian" ? "title heading rubik" : "title heading inter"}`}>
           {studentReviews[0].title} {/* Access the title */}
         </Typography>
         <Box component="div" ref={wrap} className="reviewWrapper">
@@ -43,19 +43,19 @@ const Review = () => {
             (review, index) =>
               index !== 0 && ( // Skip the first entry (title object)
                 <Box key={index} component="div" className="review">
-                  <Typography variant="h4" className="dm-sans reviewcontent">
+                  <Typography variant="h4" className={`${language === "persian" ? "reviewcontent rubik" : "reviewcontent dm-sans"}`}>
                     {review.review}
                   </Typography>
                   <Box component="div" className="contentwrap">
                     <Box component="div" className="reviewers">
                       <Typography
                         variant="body1"
-                        className="dm-sans studentname"
+                        className={`${language === "persian" ? "studentname rubik" : "studentname dm-sans"}`}
                       >
                         {review.studentname || "Anonymous"}
                       </Typography>
                       {review.coursetaken && (
-                        <Typography variant="body1" className="dm-sans course">
+                        <Typography variant="body1" className={`${language === "persian" ? "course rubik" : "course dm-sans"}`}>
                           {review.coursetaken}
                         </Typography>
                       )}
@@ -72,7 +72,7 @@ const Review = () => {
         </Box>
       </Box>
       <Box className="ReviewComponentButton" ref={bg}>
-        <Button className="dm-sans viewBtn" onClick={viewMore}>
+        <Button className={`${language === "persian" ? "viewBtn rubik" : "viewBtn dm-sans"}`} onClick={viewMore}>
           {more ? "View More" : "Show Less"}
         </Button>
       </Box>

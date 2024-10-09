@@ -11,7 +11,7 @@ import "./faq.css";
 
 export default function FAQ() {
   const [expanded, setExpanded] = useState(false);
-  const { data } = useLanguage();
+  const { data, language} = useLanguage();
 
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -24,10 +24,10 @@ export default function FAQ() {
   return (
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
-        <Typography variant="h6" className="clr-white inter faq-title">
+        <Typography variant="h6" className={`${language === "persian" ? "clr-white faq-title rubik" : "clr-white faq-title inter"}`}>
           {data.faqTitle.title}
         </Typography>
-        <Typography className="clr-white inter faq-subtitle">
+        <Typography className={`${language === "persian" ? "clr-white faq-subtitle rubik" : "clr-white faq-subtitle inter"}`}>
           {data.faqTitle.description}
         </Typography>
       </Box>
@@ -55,23 +55,23 @@ export default function FAQ() {
             >
               <span className="faq-number-container flex flex-center">
                 <Typography
-                  className={`faq-number inter ${
-                    expanded === index ? "purple" : "clr-white"
-                  }`}
+    className={`faq-number ${expanded === index ? "purple" : "clr-white"} ${
+      language === "persian" ? "rubik" : "inter"
+    }`}
                 >
                   {faq.index}
                 </Typography>
               </span>
               <Typography
-                className={`faq-question inter flex flex-center ${
-                  expanded === index ? "purple" : "clr-white"
-                }`}
+  className={`faq-question flex flex-center ${
+    expanded === index ? "purple" : "clr-white"
+  } ${language === "persian" ? "rubik" : "inter"}`}
               >
                 {faq.question}
               </Typography>
             </AccordionSummary>
             <AccordionDetails className="faq-answer-wrapper">
-              <Typography className="gray">{faq.answer}</Typography>
+              <Typography className={`${language === "persian" ? "gray rubik" : "gray inter"}`}>{faq.answer}</Typography>
             </AccordionDetails>
           </Accordion>
         ))}
