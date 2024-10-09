@@ -58,6 +58,7 @@
   letter-spacing: -0.006em;
   color: rgba(216, 216, 216, 1);
   width: 95%;
+  text-align: center;
 }
 .getajobParaforbg {
   display: flex;
@@ -66,7 +67,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 24px;
-  background: #141415;
+  background: var(--LBG1, linear-gradient(107deg, #190d2e 0.54%, #020103 99.46%));
   padding: 56px;
 }
 .getajob-paragraphs p {

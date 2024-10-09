@@ -14,7 +14,6 @@ const E_Learn = () => {
 
   // Ensure `data` exists before accessing `data.whyElearn`
   if (!data || !data.whyElearn) {
-    console.log("Data is not loading");
     return <div>Data is loading...</div>;
   }
 
@@ -29,9 +28,12 @@ const E_Learn = () => {
             language === "persian" ? `align-right rubik`  : `align-left inter`
           }`}
         >
-          Why E Learn{" "}
+          {whyElearn[1].title}
         </Typography>
-        <Box component="div" className="why_card_wrapper flex border-gradient">
+        <Box component="div" 
+        className={`why_card_wrapper flex border-gradient ${
+          language === "persian" ? `row-reverse` : ``
+        }`}>
           {imgs.map((image, index) => (
             <React.Fragment key={index}>
               <Box component="div" className="why_card column">

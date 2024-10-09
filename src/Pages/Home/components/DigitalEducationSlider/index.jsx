@@ -33,13 +33,11 @@ export default function DigitalEducation() {
   const navigate = useNavigate(); // Create navigate instance
 
   if (!data) {
-    console.log("Data is not loading");
     return <div>Data is loading...</div>;
   }
 
   // Get the JSON data that corresponds to each image
   const images = data.digitaleducationcards;
-
   const settings = {
     dots: true,
     infinite: true,
@@ -108,11 +106,15 @@ export default function DigitalEducation() {
 
   return (
     <section className="DigitalEducationComponent">
-      <Box className="DigitalEducationComponentTextComponent">
-        <Box className="DigitalEducationComponentTitleDesc">
+      <Box
+        className={`DigitalEducationComponentTextComponent`}
+      >
+        <Box
+          className={`DigitalEducationComponentTitleDesc`}
+        >
           <Typography
             variant="h1"
-            className={`${language === "persian" ? "DigitalEducationComponentMainTitle rubik" : "DigitalEducationComponentMainTitle inter"}`}
+
           >
             {data.digitaleducation.headtitle}
           </Typography>
@@ -124,7 +126,8 @@ export default function DigitalEducation() {
           </Typography>
         </Box>
         <Box className="DigitalEducationComponentButtonDiv">
-          <Button onClick={handleSeeAllClick}>See All</Button> {/* Add onClick event */}
+          <Button onClick={handleSeeAllClick}>See All</Button>{" "}
+          {/* Add onClick event */}
         </Box>
       </Box>
 

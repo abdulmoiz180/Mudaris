@@ -16,12 +16,11 @@ export default function FAQ() {
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-  if (!data)
-    return (
-      <>
-        <h2>not loading</h2>
-      </>
-    );
+
+  if (!data) {
+    return <h2>not loading</h2>;
+  }
+
   return (
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
@@ -43,13 +42,9 @@ export default function FAQ() {
             <AccordionSummary
               expandIcon={
                 expanded === index ? (
-                  <CloseIcon
-                    className={expanded === index ? "purple" : "clr-white"}
-                  />
+                  <CloseIcon className="purple" />
                 ) : (
-                  <AddIcon
-                    className={expanded === index ? "purple" : "clr-white"}
-                  />
+                  <AddIcon className="clr-white" />
                 )
               }
               aria-controls={`panel${index}-content`}
@@ -64,7 +59,7 @@ export default function FAQ() {
       language === "persian" ? "rubik" : "inter"
     }`}
                 >
-                  0{index + 1}
+                  {faq.index}
                 </Typography>
               </span>
               <Typography

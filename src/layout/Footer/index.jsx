@@ -29,19 +29,6 @@ const Footer = () => {
               {data.footerDescription}
             </Typography>
           </Box>
-          <Button
-            variant="outlined"
-            onClick={toggleLanguage}
-            className="footer-btn clr-white inter"
-          >
-            <span>
-              <LanguageIcon />
-            </span>
-            {data.togglebutton}
-            <span>
-              <ArrowForwardIosIcon className="footer-arrow-icon" />
-            </span>
-          </Button>
         </Box>
 
         <Box component="div" className="flex footer-right-section">

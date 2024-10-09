@@ -13,6 +13,9 @@ const GetaJob = () => {
       <Box className="getajob-heading">
         <h1 className= {` ${language === "persian" ? "rubik" : "inter"}`}>{pickData.headtitle}</h1>
       </Box>
+      <div className="getajob-infobox">
+        <p className="getajob-info inter">{pickData.contentinfobox}</p>
+      </div>
       <Box className="getajob-content">
         <div className="getajob-paragraphs">
           <div className='getajobParaforbg'>
@@ -49,9 +52,11 @@ const GetaJob = () => {
               <img src={MudarisLogo}  className="logodiv"/>
         </div>
       </Box>
+
       <div className="getajob-infobox">
         <p className={`${language === "persian" ? "getajob-info rubik" : "getajob-info inter"}`}>{pickData.contentinfobox}</p>
       </div>
+
     </section>
   );
 };
