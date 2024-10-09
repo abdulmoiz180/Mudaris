@@ -24,15 +24,16 @@ const GettoKnow = () => {
   const handleButtonClick = () => {
     navigate("/Mudaris/AboutOwner"); // Navigate to /Mudaris/AboutOwner
   };
-
   // Dynamically set the font based on the language
   const fontClass = language === "persian" ? "rubik" : "";
+
 
   return (
     <section className="GetToknowMainSection">
       <Box className="GetToknowMainContainer">
         <Box className="GetToknowContent">
           <img src={Drimg} alt="Drimg" />
+     
           <Box className={`GetToknowTextContent inter ${fontClass}`}>
             <h2 className={`inter ${fontClass}`}>{getData.headtitle}</h2>
             <Box className="paraDivGettoKnow">

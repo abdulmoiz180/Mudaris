@@ -114,6 +114,7 @@ export default function DigitalEducation() {
         >
           <Typography
             variant="h1"
+            className={`DigitalEducationComponentMainTitle inter`}
 
           >
             {data.digitaleducation.headtitle}

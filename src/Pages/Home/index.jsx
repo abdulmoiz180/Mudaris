@@ -23,11 +23,10 @@ const Home = () => {
   };
   return (
     <section className="home-page column primary-bg">
-      <Hero />
+      {/* <Hero /> */}
       <GetaJob />
       <GetStartedButton onButtonClick={scrollToPriceCards} />
       <DigitalEducation />
-      <Community />
       <GetStartedButton onButtonClick={scrollToPriceCards} />
       <LineCards />
       <WhatYouGet />

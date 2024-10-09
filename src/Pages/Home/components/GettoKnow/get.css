@@ -171,6 +171,12 @@
   .GetToknowTextContent p {
     font-size: 22px;
   }
+  .GetToknowContentbelowLogoBox {
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
 }
 @media screen and (max-width: 768px) {
   .GetToknowContentbelowLogoBox {
@@ -188,6 +194,7 @@
   .GetToknowMainContainer {
     width: 90% !important;
   }
+
   .GetToknowContent {
     flex-direction: column !important;
   }

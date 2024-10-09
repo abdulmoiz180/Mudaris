@@ -2,13 +2,10 @@
   "name": "mudaris",
   "version": "5.0.0",
   "private": true,
-  "homepage": "https://abdulmoiz180.github.io/Mudaris/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -35,7 +32,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "latest",
-    "gh-pages": "^6.1.1",
     "vite": "latest"
   }
 }

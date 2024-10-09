@@ -11,7 +11,7 @@ import "./faq.css";
 
 export default function FAQ() {
   const [expanded, setExpanded] = useState(false);
-  const { data, language} = useLanguage();
+  const { data, language } = useLanguage();
 
   const handleAccordionChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -24,6 +24,7 @@ export default function FAQ() {
   return (
     <section className="width-90 faq-section">
       <Box component="div" className="faq-title-container column">
+
         <Typography variant="h6" className={`${language === "persian" ? "clr-white faq-title rubik" : "clr-white faq-title inter"}`}>
           {data.faqTitle.title}
         </Typography>

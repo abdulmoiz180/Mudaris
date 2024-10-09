@@ -19,6 +19,12 @@ export const PriceCards = () => {
   const paymentPlans = data.paymentPlans;
 
   const handleSubscribe = (plan) => {
+      const url =
+        plan.price === "$299"
+          ? "https://buy.stripe.com/5kA8ww5xk2EUe0o6oL"
+          : "https://buy.stripe.com/4gw7ssf7U6Va09y4gF";
+      window.location.href = url; // Redirect for other prices
+    }
     const url =
       plan.price === "$299"
         ? "https://buy.stripe.com/5kA8ww5xk2EUe0o6oL"
@@ -27,10 +33,11 @@ export const PriceCards = () => {
   };
 
   // Dynamically set the font based on the language
-  const fontClass = language === "persian" ? "rubik" : "previous-font";
+  const fontClass = language === "persian" ? "rubik" : "";
 
   return (
     <section className="price-container">
+     
       <>
         <Box className="text-container">
           <Typography variant="h1" className={`plan-title inter ${fontClass}`}>
