@@ -16,15 +16,15 @@ import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
 const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
 const RightBtns = ["EN", "Sign In", "Get Started"];
-import Heart from "../../assets/Icons/Heart.png";
-import Cart from "../../assets/Icons/Bag.png";
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
-  const { data } = useLanguage();
+  const { data,toggleLanguage } = useLanguage();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [currentForm, setCurrentForm] = useState("SignIn");
-
+  if (!data) return <div>Loading...</div>;
+  const pages=data.pagesnav;
+  const RightBtns=data.navRightBtns;
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -62,9 +62,6 @@ function ResponsiveAppBar() {
   const isImageUrl = (url) => {
     return /\.(png|jpg|jpeg|gif|svg)$/.test(url);
   };
-
-  // Ensure that data is loaded before rendering
-  if (!data) return <div>Loading...</div>;
 
   return (
     <AppBar
@@ -162,7 +159,8 @@ function ResponsiveAppBar() {
               <Box component="div" className="navBarBtns2 BorderDiv">
                 {RightBtns.map((btn, index) => (
                   <div className="rightbtn inter" key={index}>
-                    {btn === "Get Started" ? (
+                    { 
+                    btn === "Get Started" ? (
                       <Button
                         onClick={() => handleClickOpen("Signup")}
                         sx={{ my: 2, color: "white", display: "block" }}
@@ -180,6 +178,7 @@ function ResponsiveAppBar() {
                       <Button
                         sx={{ my: 2, color: "white", display: "block" }}
                         className="inter"
+                        onClick={toggleLanguage}
                       >
                         {isImageUrl(btn) ? (
                           <img

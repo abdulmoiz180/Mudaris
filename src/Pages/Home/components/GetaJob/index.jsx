@@ -12,6 +12,9 @@ const GetaJob = () => {
       <Box className="getajob-heading">
         <h1 className="inter">{pickData.headtitle}</h1>
       </Box>
+      <div className="getajob-infobox">
+        <p className="getajob-info inter">{pickData.contentinfobox}</p>
+      </div>
       <Box className="getajob-content">
         <div className="getajob-paragraphs">
           <div className='getajobParaforbg'>
@@ -48,9 +51,6 @@ const GetaJob = () => {
               <img src={MudarisLogo}  className="logodiv"/>
         </div>
       </Box>
-      <div className="getajob-infobox">
-        <p className="getajob-info inter">{pickData.contentinfobox}</p>
-      </div>
     </section>
   );
 };

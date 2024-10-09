@@ -30,16 +30,6 @@ const Hero = () => {
   return (
     <Container className="HeroPagecontainer">
       <Box className="ContainerContent">
-        <Card className="card">
-          <CardContent
-            className={` ${language === "persian" ? "w-half cardText rubik" : "cardText"}`}
-          >
-            <Typography variant="p" className="NewText inter">
-              {data.Introduction.tag}
-            </Typography>
-            <Typography variant="p">{data.Introduction.latest}</Typography>
-          </CardContent>
-        </Card>
         <Box className="ContainerText">
           {/*  */}
           <Typography

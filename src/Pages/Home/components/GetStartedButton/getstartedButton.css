@@ -9,6 +9,8 @@
   height: 64px !important;
   padding: 8px 32px !important;
   color: white !important;
+  font-size: 24px !important;
+  text-transform: inherit !important;
 }
 .GetStartedButtonDiv {
   display: flex;
