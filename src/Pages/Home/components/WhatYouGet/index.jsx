@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import "./whatyouget.css";
 import { Box } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
@@ -48,26 +48,29 @@ const WhatYouGet = () => {
 
   const pickData = data.whatyouget;
 
+  // Dynamically choose the font based on the language
+  const fontClass = language === "persian" ? "rubik" : ""; // Use your default font class
+
   return (
-    <section className="whatyouget-container">
+    <section className={`whatyouget-container ${fontClass}`}>
       <Box className="whatyouget-headings">
-        <p className="inter wyg-para1">{pickData[0].headtitle1}</p>
-        <h2 className="inter wyg-head1">{pickData[0].headtitle2}</h2>
-        <p className="inter wyg-para2">{pickData[0].headtitle3}</p>
+        <p className={`inter wyg-para1 ${fontClass}`}>{pickData[0].headtitle1}</p>
+        <h2 className={`inter wyg-head1 ${fontClass}`}>{pickData[0].headtitle2}</h2>
+        <p className={`inter wyg-para2 ${fontClass}`}>{pickData[0].headtitle3}</p>
       </Box>
       <Box className="whatyouget-cards">
         {pickData.slice(1).map((item, index) => (
-          <div key={index} className="whatyouget-card">
+          <div key={index} className={`whatyouget-card ${fontClass}`}>
             <div className="whatyouget-card-text">
               <div className="badgeandrole">
-                <h2 className="public-sans">{item.role}</h2>
+                <h2 className={`public-sans ${fontClass}`}>{item.role}</h2>
                 <img
                   src={blueverifiedbadge}
                   alt="Verified badge"
                   className="whatyouget-verified-badge"
                 />
               </div>
-              <p className="public-sans">{item.description}</p>
+              <p className={`public-sans ${fontClass}`}>{item.description}</p>
             </div>
             <div className="whatyouget-card-imagecontainer">
               <video
@@ -82,7 +85,7 @@ const WhatYouGet = () => {
                 onClick={() => videoPlay(index)}
                 ref={(el) => (playButtonRefs.current[index] = el)}
               />
-              <p className="purple-box-text public-sans">
+              <p className={`purple-box-text public-sans ${fontClass}`}>
                 {item.purpleboxtext}
               </p>
             </div>

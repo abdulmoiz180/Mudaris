@@ -112,13 +112,13 @@ export default function DigitalEducation() {
         <Box className="DigitalEducationComponentTitleDesc">
           <Typography
             variant="h1"
-            className="DigitalEducationComponentMainTitle inter"
+            className={`${language === "persian" ? "DigitalEducationComponentMainTitle rubik" : "DigitalEducationComponentMainTitle inter"}`}
           >
             {data.digitaleducation.headtitle}
           </Typography>
           <Typography
             variant="body1"
-            className="DigitalEducationComponentDescription inter"
+            className={`${language === "persian" ? "DigitalEducationComponentDescription rubik" : "DigitalEducationComponentDescription inter"}`}
           >
             {data.digitaleducation.description}
           </Typography>
@@ -144,7 +144,7 @@ export default function DigitalEducation() {
                   {images[index].new && (
                     <Typography
                       variant="body"
-                      className="dm-sans DigitalEducationSlideNew clr-white"
+                      className={`${language === "persian" ? "DigitalEducationSlideNew clr-white rubik" : "DigitalEducationSlideNew clr-white dm-sans"}`}
                     >
                       {images[index].new}
                     </Typography>
@@ -162,7 +162,7 @@ export default function DigitalEducation() {
             >
               <Typography
                 variant="h5"
-                className="DigitalEducationCardTitle inter clr-white"
+                className={`${language === "persian" ? "DigitalEducationCardTitle clr-white rubik" : "DigitalEducationCardTitle clr-white inter"}`}
               >
                 {images[index]?.title}
               </Typography>

@@ -19,14 +19,14 @@ const E_Learn = () => {
   }
 
   const whyElearn = data.whyElearn;
-
+  {`${language === "persian" ? "viewBtn rubik" : "viewBtn dm-sans"}`}
   return (
     <section className="Elearn-section">
       <div className="width-90 why-cards-container">
         <Typography
           component="h6"
-          className={`inter fs-48 why-title clr-white ${
-            language === "persian" ? `align-right` : `align-left`
+          className={`fs-48 why-title clr-white ${
+            language === "persian" ? `align-right rubik`  : `align-left inter`
           }`}
         >
           Why E Learn{" "}
@@ -38,7 +38,7 @@ const E_Learn = () => {
                 <Box component="div" className="why-img-wrapper">
                   <img src={image} alt={`icon-${index}`} />
                 </Box>
-                <Typography variant="body1" className="inter why-card-content">
+                <Typography variant="body1" className={`${language === "persian" ? "why-card-content rubik" : "why-card-content inter"}`}>
                   {whyElearn[1][`box${index + 1}`]}
                 </Typography>
               </Box>
