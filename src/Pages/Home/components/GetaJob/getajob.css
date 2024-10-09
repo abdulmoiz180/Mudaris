@@ -68,7 +68,6 @@
   align-items: center;
   border-radius: 24px;
   background: var(
-    --LBG1,
     linear-gradient(107deg, #190d2e 0.54%, #020103 99.46%)
   );
   padding: 56px;

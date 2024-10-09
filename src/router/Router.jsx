@@ -29,6 +29,14 @@ const Router = () => {
           path="/AboutOwner"
           element={<WithNavbarAndFooter element={<AboutOwner />} />}
         />
+                <Route
+          path="/Mudaris/datascience"
+          element={<WithNavbarAndFooter element={<DataSciCourse />} />}
+        />
+                       <Route
+          path="/Mudaris/AboutOwner"
+          element={<WithNavbarAndFooter element={<AboutOwner />} />}
+        />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>

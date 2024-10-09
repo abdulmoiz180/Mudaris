@@ -176,6 +176,7 @@
     justify-content: space-evenly;
     gap: 20px;
   }
+
 }
 @media screen and (max-width: 768px) {
   .GetToknowContentbelowLogoBox {
