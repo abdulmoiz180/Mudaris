@@ -1,0 +1,149 @@
+.DataScienceCoursePageComponentParent {
+  width: 95%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.DataScienceCoursePageHero {
+  display: flex;
+  flex-direction: column;
+}
+.DataScienceCoursePageHeroTextContentMain h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.DataScienceCoursePageHeroTextContentMain p {
+  color: #bcbcbc;
+  font-size: 20px;
+  font-weight: 400;
+}
+.DataScienceCoursePageHeroTextContentMain {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.DataScienceCoursePageHeroRelatedSkills {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 20px;
+}
+.DataScienceCoursePageHeroRelatedSkills Button {
+  border-radius: 50px !important;
+  border: 0.5px solid #c4c4c4 !important;
+  background: #141415 !important;
+  color: #fff;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  padding: 8px 16px !important;
+  text-transform: initial !important;
+}
+.DataScienceCoursePageHeroRelatedSkillsTabs {
+  display: flex;
+  gap: 10px;
+}
+.DataScienceCoursePageCardSectionParent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.DataScienceCoursePageCardSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.DataScienceCourseCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+.DataScienceCourseCardVideocomp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.DataScienceCourseCardMainImg {
+  height: 240px;
+}
+.DataScienceCourseCardCertificateandheartIconBox {
+  width: 53%;
+  display: flex;
+  justify-content: end;
+}
+.DataScienceCourseCard h3 {
+  width: 70%;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+}
+.DataScienceCourseCardVideocompInfo {
+  color: #bcbcbc;
+  font-size: 16px;
+  font-weight: 400;
+}
+.DataScienceCourseCardPriceonly p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.DataScienceCourseCardPriceonlyPriceDashed {
+  color: #bcbcbc !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 130% !important; /* 23.4px */
+  text-decoration-line: strikethrough !important;
+  text-decoration: line-through !important;
+}
+.DataScienceCourseCardPricecomp {
+  display: flex;
+  width: 100%;
+}
+.DataScienceCourseCardPricecompButtonDiv {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.DataScienceCourseCardPricecompButtonDiv Button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: initial !important;
+  padding: 16px 24px !important;
+  border-radius: 50px !important;
+  background: #8c45ff !important;
+}
+.DataScienceCoursePagebtnSection {
+  display: flex;
+  gap: 20px;
+}
+.DataScienceCoursePagebtnspanSection {
+  width: 70%;
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+}
+
+.DataScienceCoursePagebtnSection Button {
+  border-radius: 50px;
+  border: 0.5px solid #c4c4c4;
+  background: #151516;
+  padding: 12px 24px;
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: initial !important;
+}
+.DataScienceCoursePagebtnspanSection p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.DataScienceCoursePagebtnspanSection span {
+  color: #8c45ff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.DataScienceCoursePagebtnCardsMainSection{
+  display: flex;
+}

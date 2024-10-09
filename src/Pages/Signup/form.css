@@ -10,6 +10,7 @@
   padding: 40px 0 !important;
   width: 450px;
   height: 100% !important;
+  overflow:  hidden !important;
 }
 .divider {
   display: flex;

@@ -1,0 +1,73 @@
+.class-container{
+flex-direction: column;    
+width: 78%;
+border-top: 1px solid #262626;
+margin: auto;
+}
+.class-head{
+flex-direction: column;
+border: 1px solid #262626; 
+padding: 50px 35px;   
+}
+
+.class-head h2{
+font-size: 38px;
+font-weight: 600;
+
+}
+.class-head p{
+color: #FFF;
+font-size: 26px;
+font-weight: 400;
+}
+
+.class-cards{
+flex-direction: row;
+flex-wrap: wrap;    
+}
+.class-card{
+flex-direction: column;
+border: 1px solid #262626;
+justify-content: center;
+gap: 25px;
+width: 50%;
+padding: 35px; 
+height: 275px;   
+}
+.class-card h2{
+font-size: 32px;
+font-weight: 500;
+border-bottom: 1px solid #262626;
+padding-bottom: 30px;
+}
+.class-card p{
+color: #D2D2D2;
+font-size: 18px;
+font-weight: 400;
+}
+.class-foot{
+padding: 35px;
+flex-direction: column;
+gap: 30px;
+}
+
+.class-ft h2{
+font-size: 38px;
+font-weight: 600;    
+}
+.class-ft p{
+color: #D2D2D2;
+font-size: 18px;
+font-weight: 400;
+}
+.listi{
+color: #D2D2D2;   
+}
+.class-ul li{
+color: #D2D2D2;
+font-size: 18px;
+font-weight: 400;
+}
+.class-ul li{
+list-style: disc;    
+}

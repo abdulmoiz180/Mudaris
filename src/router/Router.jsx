@@ -7,6 +7,8 @@ import ResponsiveAppBar from "../layout/NavBar/Index";
 import NotFound404 from "../Pages/NotFound";
 import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { DataSciCourse } from "../Pages/DataScienceCourse";
+import { AboutOwner } from "../Pages/AboutOwner";
 
 const Router = () => {
   const dispatch = useDispatch();
@@ -19,6 +21,14 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<WithNavbarAndFooter element={<Home />} />} />
+        <Route
+          path="/datascience"
+          element={<WithNavbarAndFooter element={<DataSciCourse />} />}
+        />
+        <Route
+          path="/AboutOwner"
+          element={<WithNavbarAndFooter element={<AboutOwner />} />}
+        />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>

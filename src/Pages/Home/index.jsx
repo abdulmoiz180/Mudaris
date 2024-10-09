@@ -27,7 +27,6 @@ const Home = () => {
       <GetaJob />
       <GetStartedButton onButtonClick={scrollToPriceCards} />
       <DigitalEducation />
-      <Community />
       <GetStartedButton onButtonClick={scrollToPriceCards} />
       <LineCards />
       <WhatYouGet />
@@ -35,7 +34,6 @@ const Home = () => {
         <PriceCards />
       </div>
       <GettoKnow />
-      <Review />
       <GetStartedButton onButtonClick={scrollToPriceCards} />
       <E_Learn />
       <FAQ />

@@ -1,0 +1,94 @@
+.CourseCardMenuBarLeft {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-section {
+  display: flex;
+  flex-direction: column;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu-header p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 20px;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-items input {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px !important;
+  border: 1px solid #aaa !important;
+  background: #141415 !important;
+}
+.menu-bar-CoursesCardSection {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Hide the default checkbox */
+/* Hide the default checkbox */
+.menu-item input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom checkbox style */
+.menu-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.menu-bar-CoursesCardSection {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+}
+.menu-item input[type="checkbox"] + span::before {
+  content: "";
+  display: inline-block;
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  border: 1px solid #AAA; /* Border */
+  border-radius: 6px; /* Border radius */
+  background-color: #141415; /* Background color for unchecked state */
+  margin-right: 8px; /* Space between checkbox and text */
+  transition: background-color 0.2s ease;
+}
+
+/* Checkbox tick (checked state) */
+.menu-item input[type="checkbox"]:checked + span::before {
+  background-color: #8C45FF; /* Background color for checked state */
+  border: 1px solid #8C45FF; /* Optional: same color border when checked */
+}
+
+/* Custom tick (checked state) */
+.menu-item input[type="checkbox"]:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 8px;
+  height: 10px;
+  border: solid black; /* Black tick color */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  background: transparent;
+}
