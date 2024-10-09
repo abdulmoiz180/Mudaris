@@ -49,14 +49,14 @@ const WhatYouGet = () => {
   const pickData = data.whatyouget;
 
   // Dynamically choose the font based on the language
-  const fontClass = language === "persian" ? "rubik" : ""; // Use your default font class
+  const fontClass = language === "persian" ? "rubik" : "inter"; // Use your default font class
 
   return (
     <section className={`whatyouget-container ${fontClass}`}>
       <Box className="whatyouget-headings">
-        <p className={`inter wyg-para1 ${fontClass}`}>{pickData[0].headtitle1}</p>
-        <h2 className={`inter wyg-head1 ${fontClass}`}>{pickData[0].headtitle2}</h2>
-        <p className={`inter wyg-para2 ${fontClass}`}>{pickData[0].headtitle3}</p>
+        <p className={` wyg-para1 ${fontClass}`}>{pickData[0].headtitle1}</p>
+        <h2 className={` wyg-head1 ${fontClass}`}>{pickData[0].headtitle2}</h2>
+        <p className={` wyg-para2 ${fontClass}`}>{pickData[0].headtitle3}</p>
       </Box>
       <Box className="whatyouget-cards">
         {pickData.slice(1).map((item, index) => (

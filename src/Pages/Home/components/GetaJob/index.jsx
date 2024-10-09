@@ -6,24 +6,29 @@ import MudarisVideo from "@assets/Images/AgencyNavigatorMale.mp4"; // Video impo
 
 const GetaJob = () => {
   const { data, language } = useLanguage();
-  if (!data) return <div> data is loading..... </div>;
+  if (!data) return <div>Data is loading...</div>;
   const pickData = data.getajob;
 
   return (
     <section className="getajob-container">
       <Box className="getajob-heading">
-        <h1 className={` ${language === "persian" ? "rubik" : "inter"}`}>
+        <h1
+          className={`clr-white footer-h2 ${language === "persian" ? "rubik" : "inter"}`}
+        >
           {pickData.headtitle}
         </h1>
       </Box>
       <div className="getajob-infobox">
-        <p className="getajob-info inter">{pickData.contentinfobox}</p>
+        <p
+          className={`getajob-info ${language === "persian" ? "rubik" : "inter"}`}
+        >
+          {pickData.contentinfobox}
+        </p>
       </div>
       <Box className="getajob-content">
         <div className="getajob-paragraphs">
           <div className="getajobParaforbg">
             <div className="getajobparacontentonly">
-              {/* Apply conditional class for paragraphs */}
               <p
                 className={`getajob-para ${language === "persian" ? "rubik" : "dm-sans"}`}
               >
@@ -46,28 +51,6 @@ const GetaJob = () => {
               >
                 {pickData.descriptionanswer}
               </p>
-              <p
-                className={`${language === "persian" ? "getajob-para rubik" : "getajob-para dm-sans"}`}
-              >
-                {pickData.descriptionpara1}
-              </p>
-              <div className="getajob-para">
-                <p
-                  className={`${language === "persian" ? "getajob-qa rubik" : "getajob-qa dm-sans"}`}
-                >
-                  {pickData.descriptionquestion1}
-                </p>
-              </div>
-              <p
-                className={`${language === "persian" ? "getajob-qa rubik" : "getajob-qa dm-sans"}`}
-              >
-                {pickData.descriptionquestion2}
-              </p>
-              <p
-                className={`${language === "persian" ? "getajob-qa rubik" : "getajob-qa dm-sans"}`}
-              >
-                {pickData.descriptionanswer}
-              </p>
             </div>
           </div>
           <div className="getajobParaforbg">
@@ -97,51 +80,16 @@ const GetaJob = () => {
                 {pickData.descriptionparaknowthat2}
               </p>
             </div>
-            <p
-              className={`${language === "persian" ? "getajob-para rubik" : "getajob-para dm-sans"}`}
-            >
-              {pickData.descriptionpara3}
-            </p>
           </div>
-          <div className="getajobParaforbg">
-            <p
-              className={`${language === "persian" ? "getajob-para rubik" : "getajob-para dm-sans"}`}
-            >
-              {pickData.descriptionpara4}
-            </p>
-          </div>
-          <div className="getajobParaforbg">
-            <div className="getajob-para">
-              <p
-                className={`${language === "persian" ? "getajob-knwothat rubik" : "getajob-knwothat dm-sans"}`}
-              >
-                {pickData.descriptionparaknowthat1}
-              </p>
-              <p
-                className={`${language === "persian" ? "getajob-knwothat rubik" : "getajob-knwothat dm-sans"}`}
-              >
-                {pickData.descriptionparaknowthat2}
-              </p>
-            </div>
 
-            {/* Infinite looping video */}
-            <div className="logodiv">
-              <video width="100%" autoPlay loop muted>
-                <source src={MudarisVideo} type="video/mp4" />
-              </video>
-              {/* className="getajob-vid" */}
-            </div>
+          {/* Infinite looping video */}
+          <div className="logodiv">
+            <video width="100%" autoPlay loop muted>
+              <source src={MudarisVideo} type="video/mp4" />
+            </video>
           </div>
         </div>
       </Box>
-
-      <div className="getajob-infobox">
-        <p
-          className={`${language === "persian" ? "getajob-info rubik" : "getajob-info inter"}`}
-        >
-          {pickData.contentinfobox}
-        </p>
-      </div>
     </section>
   );
 };
