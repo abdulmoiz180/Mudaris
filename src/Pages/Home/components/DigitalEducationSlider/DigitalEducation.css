@@ -53,8 +53,9 @@
   color: #fff !important;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
-  width: 70%;
+  width: 100%;
   margin: 30px 0 !important;
 }
 .DigitalEducationComponentMainTitle {
@@ -62,6 +63,8 @@
   font-weight: 400 !important;
   line-height: 140% !important;
   letter-spacing: -0.72px !important;
+  margin: 0;
+  width: 80%;
 }
 
 .DigitalEducationComponentDescription {
@@ -70,14 +73,19 @@
   font-weight: 400 !important;
   line-height: 31px !important;
   letter-spacing: -0.002px !important;
+  text-align: left;
 }
 .DigitalEducationComponentTextComponent {
   display: flex !important;
-  width: 95%;
   margin: auto;
-  gap: 50px !important;
+  width: 100%;
+  text-align: center;
+  gap: 0px !important;
   justify-content: space-between;
-  align-items: flex-start;
+}
+.DigitalEducationComponentButtonDiv {
+  display: flex;
+  justify-content: right;
 }
 .DigitalEducationComponentButtonDiv Button {
   display: flex;
@@ -150,6 +158,15 @@
   font-weight: 500 !important;
   line-height: 150% !important;
 }
+.wholePer {
+  width: 100%;
+  text-align: center;
+  gap: 0px !important;
+  justify-content: space-between;
+}
+.TitleDescPer {
+  width: 100%;
+}
 @media screen and (max-width: 667px) {
   .DigitalEducationComponentMainTitle {
     font-size: 28px !important;
@@ -170,6 +187,10 @@
   .DigitalEducationComponentButtonDiv Button {
     width: 100px;
     height: 50px;
+    margin-bottom: 30px;
+  }
+  .slick-slide {
+    padding: 20px 100px !important;
   }
   .DigitalEducationSlide {
     display: flex !important;

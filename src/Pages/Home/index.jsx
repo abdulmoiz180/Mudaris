@@ -35,7 +35,6 @@ const Home = () => {
         <PriceCards />
       </div>
       <GettoKnow />
-      <Review />
       <GetStartedButton onButtonClick={scrollToPriceCards} />
       <E_Learn />
       <FAQ />

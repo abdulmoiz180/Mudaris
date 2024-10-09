@@ -11,6 +11,7 @@ import Symbol4 from '../../../../../public/assets/Icons/moneyicon.png';
 import Symbol5 from '../../../../../public/assets/Icons/currciculumicon.png';
 import Symbol6 from '../../../../../public/assets/Icons/networkbrighticon.png';
 import Symbol7 from '../../../../../public/assets/Icons/unilevelicon.png';
+import Community from "../Community";
 
 const LineCards = () => {
   const { data, language } = useLanguage();
@@ -38,6 +39,9 @@ const LineCards = () => {
 
         return (
           <Box key={sectionIndex} className="importanttoread">
+            {/* Render Community before the rest of the content if sectionKey is "participate" */}
+            {sectionKey === "participate" && <Community />}
+
             <Typography
               variant="h1"
               className="LineCardContainerMainTitle inter"
@@ -79,7 +83,7 @@ const LineCards = () => {
                     >
                       <Typography
                         variant="h6"
-                        className={`${language === "persian" ? "importanttoreadCardnumber" : "importanttoreadCardnumber Eng"} inter`} // Corrected className
+                        className={`${language === "persian" ? "importanttoreadCardnumber" : "importanttoreadCardnumber Eng"} inter`}
                       >
                         {num}
                       </Typography>
