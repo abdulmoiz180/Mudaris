@@ -60,6 +60,13 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Add transition */
+}
+.importanttoreadCard:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 .uaatest {
   display: flex;
@@ -138,7 +145,24 @@
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  transition:
+    font-size 0.3s ease,
+    background 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease; /* Added transform transition */
 }
+
+.importanttoreadCardnumber:hover {
+  font-size: 36px; /* Slight increase on hover */
+  background: linear-gradient(
+    270deg,
+    #be94ff 0%,
+    #00b3d7 100%
+  ); /* Reverse gradient on hover */
+  opacity: 0.9; /* Slight fade effect on hover */
+  transform: scale(1.1); /* Pop-up effect using scale */
+}
+
 /* extra work  */
 .importanttoreadCardnumberDiv {
   position: absolute;
@@ -164,10 +188,10 @@ forEnglishversion dont want english yet so iam hidding this and below is forpers
 .importanttoreadCardnumberDiv:nth-child(3) {
   bottom: 560px;
 }
-.specialClassForSecondComponent:nth-child(3){
+.specialClassForSecondComponent:nth-child(3) {
   bottom: 675px;
 }
-.specialClassForSecondComponent:nth-child(2){
+.specialClassForSecondComponent:nth-child(2) {
   top: 675px;
 }
 .specialClassForSecondComponent:nth-child(2) {
@@ -192,10 +216,10 @@ forEnglishversion dont want english yet so iam hidding this and below is forpers
     padding: 30px;
     gap: 20px;
     width: 350.062px;
-  }  
+  }
   .specialClassForSecondComponent:nth-child(3) {
     bottom: 705px;
-}
+  }
 }
 @media screen and (max-width: 830px) {
   .LineCardContainerMainPic {
@@ -209,7 +233,7 @@ forEnglishversion dont want english yet so iam hidding this and below is forpers
   }
   .LineCardContainerMainTitleDesc {
     margin-bottom: 30px;
-}
+  }
 }
 @media screen and (max-width: 770px) {
   .LineCardContainerMainPic {
@@ -217,7 +241,7 @@ forEnglishversion dont want english yet so iam hidding this and below is forpers
   }
   .LineCardContainerMainTitleDesc {
     margin-bottom: 10px;
-}
+  }
   .LineCardContainerMainTitle {
     font-size: 36px !important;
     line-height: 40px !important;
