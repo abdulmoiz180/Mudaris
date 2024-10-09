@@ -3,15 +3,15 @@ import { Box, Typography } from "@mui/material";
 import { useLanguage } from "../../../../globalContext/GlobalProvider";
 import "./LineCard.css";
 
-import LineImg from '../../../../assets/Images/linewo.png';
-import Symbol from '../../../../../public/assets/Icons/Symbol.png';
-import Symbol1 from '../../../../../public/assets/Icons/Symbol (1).png';
-import Symbol2 from '../../../../../public/assets/Icons/Symbol (2).png';
-import Symbol3 from '../../../../../public/assets/Icons/Symbol (3).png';
-import Symbol4 from '../../../../../public/assets/Icons/moneyicon.png';
-import Symbol5 from '../../../../../public/assets/Icons/currciculumicon.png';
-import Symbol6 from '../../../../../public/assets/Icons/networkbrighticon.png';
-import Symbol7 from '../../../../../public/assets/Icons/unilevelicon.png';
+import LineImg from "../../../../assets/Images/linewo.png";
+import Symbol from "../../../../../public/assets/Icons/Symbol.png";
+import Symbol1 from "../../../../../public/assets/Icons/Symbol (1).png";
+import Symbol2 from "../../../../../public/assets/Icons/Symbol (2).png";
+import Symbol3 from "../../../../../public/assets/Icons/Symbol (3).png";
+import Symbol4 from "../../../../../public/assets/Icons/moneyicon.png";
+import Symbol5 from "../../../../../public/assets/Icons/currciculumicon.png";
+import Symbol6 from "../../../../../public/assets/Icons/networkbrighticon.png";
+import Symbol7 from "../../../../../public/assets/Icons/unilevelicon.png";
 import Community from "../Community";
 
 const LineCards = () => {
@@ -99,7 +99,6 @@ const LineCards = () => {
                             ? "importanttoreadCardnumber rubik"
                             : "importanttoreadCardnumber Eng inter"
                         }`}
-                        className={`${language === "persian" ? "importanttoreadCardnumber" : "importanttoreadCardnumber Eng"} inter`}
                       >
                         {num}
                       </Typography>
