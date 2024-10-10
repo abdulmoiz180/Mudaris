@@ -32,16 +32,16 @@ export const PriceCards = () => {
   // window.location.href = url; // Redirect for other prices
 
   // Dynamically set the font based on the language
-  const fontClass = language === "persian" ? "rubik" : "";
+  const fontClass = language === "persian" ? "rubik" : "inter";
   return (
     <section className="price-container">
       <Box className="text-container">
-        <Typography variant="h1" className={`plan-title inter ${fontClass}`}>
+        <Typography variant="h1" className={`plan-title  ${fontClass}`}>
           {paymentPlans[0].title}
         </Typography>
         <Typography
           variant="body1"
-          className={`plan-description inter ${fontClass}`}
+          className={`plan-description  ${fontClass}`}
         >
           {paymentPlans[0].description}
         </Typography>
@@ -58,14 +58,11 @@ export const PriceCards = () => {
               <Box className="plan-upper">
                 <Typography
                   variant="h5"
-                  className={`plan-heading inter ${fontClass}`}
+                  className={`plan-heading  ${fontClass}`}
                 >
                   {plan[`plan${index + 1}`]}
                 </Typography>
-                <Typography
-                  variant="h6"
-                  className={`plan-price inter ${fontClass}`}
-                >
+                <Typography variant="h6" className={`plan-price  ${fontClass}`}>
                   {plan.price}
                 </Typography>
                 <img src={Line} className="linePic" alt="line separator" />
@@ -73,7 +70,7 @@ export const PriceCards = () => {
               {plan.para && (
                 <Typography
                   variant="body2"
-                  className={`plan-para inter ${fontClass}`}
+                  className={`plan-para  ${fontClass}`}
                 >
                   {plan.para}
                 </Typography>
@@ -89,7 +86,7 @@ export const PriceCards = () => {
                 ]
                   .filter(Boolean)
                   .map((perk, perkIndex) => (
-                    <Box className="perk flex inter" key={perkIndex}>
+                    <Box className="perk flex" key={perkIndex}>
                       <img src={Tick} alt="Tick Icon" />
                       <li className={fontClass}>{perk}</li>
                     </Box>

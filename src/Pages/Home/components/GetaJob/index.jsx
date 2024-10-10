@@ -13,7 +13,7 @@ const GetaJob = () => {
     <section className="getajob-container">
       <Box className="getajob-heading">
         <h1
-          className={`clr-white footer-h2 ${language === "persian" ? "rubik" : "inter"}`}
+          className={`clr-white ${language === "persian" ? "rubik" : "inter"}`}
         >
           {pickData.headtitle}
         </h1>

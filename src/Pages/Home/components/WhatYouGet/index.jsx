@@ -63,14 +63,14 @@ const WhatYouGet = () => {
           <div key={index} className={`whatyouget-card ${fontClass}`}>
             <div className="whatyouget-card-text">
               <div className="badgeandrole">
-                <h2 className={`public-sans ${fontClass}`}>{item.role}</h2>
+                <h2 className={` ${fontClass}`}>{item.role}</h2>
                 <img
                   src={blueverifiedbadge}
                   alt="Verified badge"
                   className="whatyouget-verified-badge"
                 />
               </div>
-              <p className={`public-sans ${fontClass}`}>{item.description}</p>
+              <p className={` ${fontClass}`}>{item.description}</p>
             </div>
             <div className="whatyouget-card-imagecontainer">
               <video

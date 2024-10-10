@@ -19,12 +19,12 @@ const RightBtns = ["EN", "Sign In", "Get Started"];
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
-  const { data,toggleLanguage } = useLanguage();
+  const { data, toggleLanguage, language } = useLanguage();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [currentForm, setCurrentForm] = useState("SignIn");
   if (!data) return <div>Loading...</div>;
-  const pages=data.pagesnav;
-  const RightBtns=data.navRightBtns;
+  const pages = data.pagesnav;
+  const RightBtns = data.navRightBtns;
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -62,6 +62,7 @@ function ResponsiveAppBar() {
   const isImageUrl = (url) => {
     return /\.(png|jpg|jpeg|gif|svg)$/.test(url);
   };
+  const fontClass = language === "persian" ? "rubik" : "inter";
 
   return (
     <AppBar
@@ -115,6 +116,7 @@ function ResponsiveAppBar() {
                 <Button
                   key={index}
                   onClick={handleCloseNavMenu}
+                  className={fontClass}
                   sx={{
                     my: 2,
                     color: "#aaaaaa",
@@ -158,9 +160,8 @@ function ResponsiveAppBar() {
 
               <Box component="div" className="navBarBtns2 BorderDiv">
                 {RightBtns.map((btn, index) => (
-                  <div className="rightbtn inter" key={index}>
-                    { 
-                    btn === "Get Started" ? (
+                  <div className={`rightbtn ${fontClass}`} key={index}>
+                    {btn === "Get Started" ? (
                       <Button
                         onClick={() => handleClickOpen("Signup")}
                         sx={{ my: 2, color: "white", display: "block" }}
@@ -177,7 +178,7 @@ function ResponsiveAppBar() {
                     ) : (
                       <Button
                         sx={{ my: 2, color: "white", display: "block" }}
-                        className="inter"
+                        className={fontClass}
                         onClick={toggleLanguage}
                       >
                         {isImageUrl(btn) ? (

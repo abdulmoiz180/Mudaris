@@ -1,5 +1,4 @@
 .css-rsks93-MuiPaper-root-MuiDialog-paper {
-  background: #020103 !important;
   border: 1px solid #66757f !important;
   border-radius: 25px !important;
 }
@@ -10,7 +9,8 @@
   padding: 40px 0 !important;
   width: 450px;
   height: 100% !important;
-  overflow:  hidden !important;
+  background: #020103 !important;
+  overflow: hidden !important;
 }
 .divider {
   display: flex;

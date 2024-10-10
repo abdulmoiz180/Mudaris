@@ -25,22 +25,24 @@ const GettoKnow = () => {
     navigate("/Mudaris/AboutOwner"); // Navigate to /Mudaris/AboutOwner
   };
   // Dynamically set the font based on the language
-  const fontClass = language === "persian" ? "rubik" : "";
-
+  const fontClass = language === "persian" ? "rubik" : "inter";
 
   return (
     <section className="GetToknowMainSection">
       <Box className="GetToknowMainContainer">
         <Box className="GetToknowContent">
           <img src={Drimg} alt="Drimg" />
-     
-          <Box className={`GetToknowTextContent inter ${fontClass}`}>
-            <h2 className={`inter ${fontClass}`}>{getData.headtitle}</h2>
+
+          <Box className={`GetToknowTextContent  ${fontClass}`}>
+            <h2 className={` ${fontClass}`}>{getData.headtitle}</h2>
             <Box className="paraDivGettoKnow">
-              <p className={`inter ${fontClass}`}>{getData.headdescription}</p>
-              <p className={`inter ${fontClass}`}>{getData.headdescription2}</p>
+              <p className={` ${fontClass}`}>{getData.headdescription}</p>
+              <p className={` ${fontClass}`}>{getData.headdescription2}</p>
             </Box>
-            <Button className={`dm-sans ${fontClass}`} onClick={handleButtonClick}>
+            <Button
+              className={`dm-sans ${fontClass}`}
+              onClick={handleButtonClick}
+            >
               {getData.buttonlabel}
             </Button>
           </Box>
@@ -48,9 +50,9 @@ const GettoKnow = () => {
         <Box className="GetToknowContentbelowContainer">
           <Box className={`GetToknowTextContentbelow ${fontClass}`}>
             <Box className="GetToknowTextContentbelowMainText">
-              <h4 className={`inter ${fontClass}`}>{getData.transformtitle}</h4>
-              <p className={`inter ${fontClass}`}>{getData.transformdescription}</p>
-              <p className={`inter ${fontClass}`}>{getData.featuredline}</p>
+              <h4 className={` ${fontClass}`}>{getData.transformtitle}</h4>
+              <p className={` ${fontClass}`}>{getData.transformdescription}</p>
+              <p className={` ${fontClass}`}>{getData.featuredline}</p>
             </Box>
           </Box>
           <Box className="GetToknowContentbelowLogoBox">
