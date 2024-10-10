@@ -14,20 +14,23 @@ import { useLanguage } from "../../globalContext/GlobalProvider";
 import "./nav.css";
 import Signup from "../../Pages/Signup";
 import Signin from "../../Pages/Login";
-const pages = ["Explore", "Analysis Personalize", "Try Now", "Portfolio"];
-const RightBtns = ["EN", "Sign In", "Get Started"];
+
 function ResponsiveAppBar() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
   const { data, toggleLanguage, language } = useLanguage();
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [currentForm, setCurrentForm] = useState("SignIn");
+
   if (!data) return <div>Loading...</div>;
+
   const pages = data.pagesnav;
   const RightBtns = data.navRightBtns;
+
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleClickOpen = (formType) => {
     setCurrentForm(formType);
     if (formType === "SignIn") {
@@ -38,6 +41,7 @@ function ResponsiveAppBar() {
       setOpenSignUp(true);
     }
   };
+
   const handleToggleDialogs = () => {
     if (currentForm === "SignIn") {
       setCurrentForm("Signup");
@@ -54,14 +58,11 @@ function ResponsiveAppBar() {
     setOpenLogin(false);
     setOpenSignUp(false);
   };
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  // Helper function to check if a string is a URL (image path)
-  const isImageUrl = (url) => {
-    return /\.(png|jpg|jpeg|gif|svg)$/.test(url);
-  };
   const fontClass = language === "persian" ? "rubik" : "inter";
 
   return (
@@ -161,36 +162,28 @@ function ResponsiveAppBar() {
               <Box component="div" className="navBarBtns2 BorderDiv">
                 {RightBtns.map((btn, index) => (
                   <div className={`rightbtn ${fontClass}`} key={index}>
-                    {btn === "Get Started" ? (
+                    {/* Use consistent keys (index) for SignIn and Signup */}
+                    {index === 2 ? ( // 'Get Started' button
                       <Button
                         onClick={() => handleClickOpen("Signup")}
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
-                        Get Started
+                        {btn}
                       </Button>
-                    ) : btn === "Sign In" ? (
+                    ) : index === 1 ? ( // 'Sign In' button
                       <Button
                         onClick={() => handleClickOpen("SignIn")}
                         sx={{ my: 2, color: "white", display: "block" }}
                       >
-                        Sign In
+                        {btn}
                       </Button>
                     ) : (
                       <Button
                         sx={{ my: 2, color: "white", display: "block" }}
+                        onClick={toggleLanguage} // Toggle language button
                         className={fontClass}
-                        onClick={toggleLanguage}
                       >
-                        {isImageUrl(btn) ? (
-                          <img
-                            src={btn}
-                            alt="icon"
-                            key={index}
-                            style={{ width: 24, height: 24 }}
-                          />
-                        ) : (
-                          btn
-                        )}
+                        {btn}
                       </Button>
                     )}
                   </div>
@@ -198,6 +191,7 @@ function ResponsiveAppBar() {
               </Box>
             </div>
           </Box>
+          {/* SignIn/Signup Modals */}
           {currentForm === "SignIn" && (
             <Signin
               open={openLogin}
