@@ -71,3 +71,173 @@ font-weight: 400;
 .class-ul li{
 list-style: disc;    
 }
+@media only screen and (max-width: 600px) {
+    .class-container{
+        gap: 20px;
+        }
+        .class-head{
+        gap: 10px;
+        }
+        
+        .class-head h2{
+        font-size: 30px; 
+    }
+        .class-head p{
+        font-size: 20px;
+        }
+        
+        .class-cards{
+        flex-direction: column !important;
+        gap: 20px;
+        flex-wrap: wrap;    
+        }
+        .class-card{
+        width: 100%;
+        }
+        .class-card h2{
+        font-size: 25px;
+        }
+        .class-card p{
+        font-size: 14px;
+        }
+        .class-ft h2{
+        font-size: 30px; 
+        }
+        .class-ft p{
+        font-size: 14px;
+        }
+        .class-ul li{
+        font-size: 14px;
+        }
+}
+
+@media only screen and (min-width: 600px) {
+    .class-container{
+        gap: 20px;
+        }
+        .class-head{
+        gap: 10px;
+        }
+        
+        .class-head h2{
+        font-size: 30px; 
+    }
+        .class-head p{
+        font-size: 20px;
+        }
+        
+        .class-cards{
+        flex-direction: column !important;
+        gap: 20px;
+        flex-wrap: wrap;    
+        }
+        .class-card{
+        width: 100%;
+        }
+        .class-card h2{
+        font-size: 25px;
+        }
+        .class-card p{
+        font-size: 14px;
+        }
+        .class-ft h2{
+        font-size: 30px; 
+        }
+        .class-ft p{
+        font-size: 14px;
+        }
+        .class-ul li{
+        font-size: 14px;
+        }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    .class-container{
+        gap: 20px;
+        }
+        .class-head{
+        gap: 10px;
+        }
+        
+        .class-head h2{
+        font-size: 33px; 
+    }
+        .class-head p{
+        font-size: 23px;
+        }
+        
+        .class-cards{
+        flex-direction: row !important;
+        flex-wrap: wrap !important; 
+        gap: 0px;   
+        }
+        .class-card{
+        width: 50% !important;
+        }
+        .class-card h2{
+        font-size: 28px;
+        }
+        .class-card p{
+        font-size: 16px;
+        }
+        .class-ft h2{
+        font-size: 33px; 
+        }
+        .class-ft p{
+        font-size: 16px;
+        }
+        .class-ul li{
+        font-size: 16px;
+        }
+}
+
+@media only screen and (min-width: 992px) {
+    .class-container{
+        flex-direction: column;    
+        width: 78%;
+        border-top: 1px solid #262626;
+        margin: auto;
+        }
+        .class-head{
+        gap: 0px; 
+        }
+        
+        .class-head h2{
+        font-size: 38px; 
+        }
+        .class-head p{
+        font-size: 26px;
+        }
+        
+        .class-cards{
+        flex-direction: row;
+        flex-wrap: wrap;    
+        }
+        .class-card{
+        flex-direction: column;
+        gap: 25px;
+        width: 50%;
+        padding: 35px; 
+        height: 275px;   
+        }
+        .class-card h2{
+        font-size: 32px;
+        }
+        .class-card p{
+        font-size: 18px;
+        }
+        .class-ft h2{
+        font-size: 38px; 
+        }
+        .class-ft p{
+        font-size: 18px;
+        }
+
+        .class-ul li{
+        font-size: 18px;
+        }
+
+
+}
