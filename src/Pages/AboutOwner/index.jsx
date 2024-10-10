@@ -10,8 +10,8 @@ export const AboutOwner = () => {
       <section className="home-page column primary-bg">
         <Participate/>
         <Classes/>
-        <FAQ/>
-        <GetStart/>
+        {/* <FAQ/>
+        <GetStart/> */}
       </section>
     </>
   );
